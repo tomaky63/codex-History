@@ -1,0 +1,164 @@
+case:
+  slug: intel-inside-ingredient-branding
+  title: Intel Insideキャンペーンとingredient branding
+  one_liner: DRAMコモディティ化の危機を脱したIntelが「Intel Inside」で消費者を直接ブランド化し、OEM支配を逆転してPC産業の利益を独占した
+  summary: >
+    1985年、Intelは主力事業だったDRAMメモリでコモディティ化の罠に落ちた。Andy Groveが下した決断は「DRAMを捨て、マイクロプロセッサに賭ける」ことだった。しかしプロセッサもまた、AMDなどのクローンメーカーに侵食されていた。Intelが打った2つの手が産業史に残る。1つは「386で第二ソースライセンスを廃止し単独供給に踏み切る」技術的防衛戦。もう1つが「Intel Insideキャンペーン」——PCのOEM（Dell、HP、Compaq）に対し、自社広告にIntelロゴを入れればco-op広告費を払うという逆転の発想。これにより最終消費者は「Intel入り」を指名購入するようになり、OEMはIntelを採用しないとかえって不利という構造が生まれた。B2B部品メーカーがB2Cブランドを持つ「ingredient branding」という概念の原型であり、コモディティ化戦争の最強の回答の一つとして産業史に刻まれた。
+  period_start: 1985
+  period_end: 2006
+  status: published
+  body_path: content/cases/intel-inside-ingredient-branding.md
+
+events:
+  - year: 1985
+    title: Andy Grove CEO就任・DRAM撤退決断
+    description: Andy GrooveがGordon Mooreとの思考実験を経てDRAMメモリ事業からの撤退を決断。Intelをメモリ会社からプロセッサ会社へと再定義した。
+    event_type: LEADERSHIP_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - year: 1987
+    title: 386プロセッサの単独供給決断：AMDへのライセンス廃止
+    description: Intelは386世代からAMDへのx86アーキテクチャのセカンドソースライセンスを廃止し、設計の独占的支配に踏み切った。IBMの反発を受けながらも断行。
+    event_type: POLICY_SHIFT
+    is_turning_point: true
+    display_order: 1
+
+  - year: 1991
+    title: Intel Insideキャンペーン開始・co-op広告費制度
+    description: OEMが製品広告に「Intel Inside」ロゴを付ければ広告費の最大6%をco-op広告費として還元するキャンペーンを開始。B2Cマスマーケティングへの本格参入。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - year: 1993
+    title: 「Pentium」ブランド発表：数字から固有名詞へ
+    description: 商標登録できない「486」の次を「Pentium」という固有ブランド名にすることで、AMDなどの数字模倣による商標希薄化を防ぎ、ブランド保護を確立した。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - year: 1994
+    title: Pentium FDIVバグ危機と全量無条件交換決断
+    description: 浮動小数点除算の設計ミスが発覚。技術的には影響限定的だったが炎上し、Intelは4億7500万ドルのコストで全量無条件交換を決断。消費者ブランドとしてのコミットメントを示した。
+    event_type: CRISIS
+    is_turning_point: true
+    display_order: 1
+
+  - year: 1997
+    title: Pentium II / Celaronによるセグメント価格差別化戦略確立
+    description: 高付加価値Pentium IIとエントリーCeleronの二本立てで、価格帯別の市場を垂直に支配するセグメント戦略を確立。AMD対策と同時にマージン最大化を実現。
+    event_type: POLICY_SHIFT
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2006
+    title: Intel Core microarchitecture発表：AMD Athlon 64への反転攻勢
+    description: Netburstアーキテクチャの失敗とAMD Athlon 64への性能・電力効率での敗北を経て、Coreアーキテクチャで反転。以降もブランドプレミアムは維持され、Intel Insideの力学が証明された。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: intel-corporation
+    name: インテル（Intel Corporation）
+    kind: COMPANY
+    description: 1968年創業の半導体企業。DRAMからマイクロプロセッサに転換し、x86アーキテクチャの独占とIngredient brandingでPC産業の利益の大半を支配した。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: andy-grove
+    name: アンドリュー・グローブ（Andy Grove）
+    kind: PERSON
+    description: ハンガリー出身のIntel CEO（1987-1998）。「戦略的転換点」の概念を提唱し、DRAMからプロセッサへの転換とIngredient brandingを主導した。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: amd-advanced-micro-devices
+    name: AMD（Advanced Micro Devices）
+    kind: COMPANY
+    description: 1969年創業のIntelのライバル半導体企業。x86互換プロセッサでIntelに挑み続け、Athlon 64では一時Intelを性能で上回ったが、ブランド力の差は埋まらなかった。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: ibm-pc-division
+    name: IBM PCディビジョン
+    kind: COMPANY
+    description: IBMのオープンアーキテクチャPC戦略がクローン市場を創出し、Intelにとってx86プロセッサの巨大な市場を与えた。一方でデュアルソース調達方針がAMDのライセンス問題の原因にもなった。
+    roles_in_case:
+      - ENABLER
+
+  - slug: compaq-computer
+    name: コンパック（Compaq Computer）
+    kind: COMPANY
+    description: 1980年代最大のIBM PCクローンメーカー。Intel Insideに当初抵抗したが、消費者需要に押されてIntelへ回帰した典型的OEMの事例。
+    roles_in_case:
+      - CUSTOMER
+
+lessons:
+  - statement: コンポーネントが消費者ブランドを持つと、中間OEMの価格交渉力が消滅し、サプライヤーが価格支配権を逆転できる
+    kind: MECHANISM
+    applies_to: B2Bコンポーネント産業全般。OEMに依存するサプライヤーがコモディティ化の罠に入りそうな時
+    display_order: 1
+
+  - statement: コモディティ化の罠を逃れる最強手は「川下消費者への直接ブランド投資」——性能差が消えた後も指名需要が残る
+    kind: PATTERN
+    applies_to: 部品・素材・インフラなど、最終製品に埋め込まれるコンポーネントを作る企業
+    display_order: 2
+
+  - statement: B2B企業が「エンドユーザーは自社顧客ではない」という前提を持ち続けると、OEMによって永続的に価格を決定される
+    kind: ANTI_PATTERN
+    applies_to: 産業財・コンポーネントメーカー。特に最終製品が消費者にブランドとして見える可能性がある分野
+    display_order: 3
+
+  - statement: 製品名が数字・型番しかないコンポーネントは商標保護が弱く模倣に脆弱——早期のブランド名化（486→Pentium）が知的財産防衛の一手
+    kind: HEURISTIC
+    applies_to: 技術系コンポーネント企業。新製品命名の意思決定時
+    display_order: 4
+
+  - statement: 消費者が製品選択時に内部部品の仕様を自発的に調べ始めたら、ingredient brandingが機能する産業転換のシグナル
+    kind: FORECAST_METHOD
+    applies_to: B2B→B2B2C転換を検討する企業。自社製品が最終消費者に見える可能性がある市場
+    display_order: 5
+
+sources:
+  - kind: BOOK
+    title: "Only the Paranoid Survive: How to Exploit the Crisis Points That Challenge Every Company"
+    author: Andrew S. Grove
+    publisher: Currency Doubleday
+    year: 1996
+    notes: Intel CEO自身による「戦略的転換点」の概念とDRAM撤退・プロセッサ転換の一次証言。Intel Insideの意思決定背景が詳述されている
+
+  - kind: BOOK
+    title: "Inside Intel: Andy Grove and the Rise of the World's Most Powerful Chip Company"
+    author: Tim Jackson
+    publisher: HarperCollins
+    year: 1997
+    notes: Intel成長史の定番ナラティブ。Ingredient brandingキャンペーンの立ち上げ経緯とOEMとの交渉の詳細が豊富
+
+  - kind: BOOK
+    title: "The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail"
+    author: Clayton M. Christensen
+    publisher: Harvard Business Review Press
+    year: 1997
+    notes: Intel事例を詳細に分析（Celeronによる下位市場攻撃への対応）。ディスラプション理論とIngredient brandingの接点
+
+  - kind: ARTICLE
+    title: "Intel's Co-op Advertising Program: Paying for Brand Presence"
+    author: Dennis Carter et al.
+    publisher: Harvard Business School Case Studies
+    year: 1993
+    notes: Intel Insideキャンペーンの設計者Dennis Carterによるco-op広告費制度の詳細。OEMとの交渉構造の一次資料
+
+relations:
+  - to_case_slug: arm-qualcomm-ip-fabless
+    relation_type: CONTRAST
+    note: ARMは中立的IPライセンスで全OEMに等しく提供する戦略を取り、IntelはB2Cブランドで一社勝者を目指す統合戦略を選んだ。同じ半導体設計の優位性を、全く逆の方向で商業化した対照事例
+
+  - to_case_slug: famicom-platform
+    relation_type: SIMILAR_MECHANISM
+    note: 任天堂もサードパーティゲームの差別化を制約してプラットフォーム支配を維持した。「中間プレイヤー（OEM/ゲームメーカー）がエコシステムのルールを決める主体ではなく、プラットフォーム保有者がルールを設定する」構造が同型
+
+  - to_case_slug: salesforce-saas-category
+    relation_type: SIMILAR_MECHANISM
+    note: 「誰が本当のバイヤーか」を再定義するリフレーミング戦略の類似。IntelはCFOから消費者へ、SalesforceはIT部門から営業部門へと意思決定者をシフトさせた

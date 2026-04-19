@@ -1,0 +1,191 @@
+# drafts/amazon-aws.yaml
+# AmazonとAWSの成立——書店から始まった企業が「クラウド」というインフラ産業を創造した軌跡
+
+case:
+  slug: amazon-aws
+  title: AmazonとAWSの成立——書店から始まった企業が「クラウド」というインフラ産業を創造した軌跡
+  period_start: 1994
+  period_end: 2015
+  primary_themes:
+    - vertical-restructuring
+    - standardization-wins
+
+events:
+  - id: ev1
+    year: 1994
+    title: Amazon設立——「インターネット利用年間2,300%増」への賭け
+    description: ジェフ・ベゾスがニューヨークの投資銀行D.E.Shawを退職しシアトルのガレージでAmazonを設立。「後悔最小化フレームワーク」（80歳になった自分が最も後悔しないかどうか）で起業を決断した。書籍を最初の商品に選んだ理由は「SKUが多く物理棚に収まらない・標準化商品・返品リスク低」という構造的優位性。1995年7月に一般公開。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1997
+    title: Amazon IPO・「Day 1」宣言——長期投資と「Everything Store」ビジョン
+    description: NASDAQにIPO（$18/株）。株主書簡にベゾスは「これはDay 1だ」と記し、「四半期利益より長期フリーキャッシュフロー最大化」を明言した。この哲学が以後20年間Amazonが利益をほぼゼロにしながら再投資し続ける基盤となった。「地球上で最も多くの商品を最も便利に買える場所」というビジョンが公式に宣言された。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev3
+    year: 2000
+    title: ドットコムバブル崩壊・株価$106→$6——「倒産懸念」を生き延びた構造転換
+    description: ナスダック崩壊でAmazon株は$106から$6へ下落（▲94%）。社債格付けはジャンク水準に落ち、「次に倒産する企業」と呼ばれた。ベゾスは事業売却の選択肢を拒否し、「長期フリーキャッシュフロー最大化」原則に戻り徹底的なコスト削減と並行してインフラ投資を継続した。2003年末に初めて通年黒字を達成し「倒産懸念」は払拭された。
+    event_type: CRISIS
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev4
+    year: 2002
+    title: Bezos APIマンデート——内部インフラを「製品」として設計する命令
+    description: ベゾスが社内メモで「全チームはデータと機能をAPIとして公開し、外部公開可能な設計にすること、違反者は解雇」と命じた。この命令でAmazon内部のエンジニアリング文化が「製品思考」に転換した。信頼性・ドキュメント・SLAという製品品質基準が内部ツールにも適用され、外部公開（AWS）への技術的・心理的障壁が下がった。AWSの思想的起点。
+    event_type: POLICY_SHIFT
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev5
+    year: 2006
+    title: AWS公開（S3・EC2）——クラウドコンピューティングの商業的誕生
+    description: 2006年3月、Amazon S3（Simple Storage Service）を公開（$0.15/GB/月）。同年8月、EC2（Elastic Compute Cloud）を公開（スモールインスタンス$0.10/時間）。固定費投資（Capex）なしでスタートアップが本番環境を持てる「ユーティリティ型インフラ」という産業カテゴリーを定義した。Dropbox・Airbnb・Netflixなど次世代スタートアップの誕生基盤となった。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev6
+    year: 2008
+    title: NetflixのAWS全面移行決定——競合他社インフラへの依存という「非常識」
+    description: NetflixがAmazon Video（直接競合）と同じAmazon傘下のAWSへの全IT移行を決定した。2008年の自社データセンター障害がきっかけ。「競合のインフラを使う」という非常識は、AWSの事業分離（AWS部門はAmazon小売・ビデオから独立）への信頼から生まれた。NetflixはAWSの「ショーケース顧客」となり、カオスモンキー等の先進的活用法をオープンソース化してAWS普及を加速した。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev7
+    year: 2015
+    title: AWSの独立財務開示——小売よりAWSが稼ぐ「逆転」が可視化
+    description: 2015年第1四半期、Amazonが初めてAWSの独立した財務数字を開示。年間換算売上$78億・営業利益率26%（同時期の北米小売は1〜2%）。Amazon全社の営業利益の大半をAWSが稼いでいることが判明し、Amazonの市場評価が根本的に変わった。開示がMicrosoft・Googleのクラウド投資加速を招き、クラウド市場全体のパイを拡大する副効果も生んだ。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+entities:
+  - slug: amazon-inc
+    name: Amazon.com, Inc.
+    kind: COMPANY
+    description: 1994年設立。書籍EC→Everything Store→マーケットプレイス→AWSという段階的な事業拡張を経て、2020年代には時価総額2兆ドルを超えた。小売・クラウド・広告・物流を垂直統合するコングロマリットとして、各事業が他事業のインフラを活用する「内部フライホイール」を形成している。AWS・物流ネットワーク・Primeは相互に強化し合う。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: jeff-bezos
+    name: ジェフ・ベゾス
+    kind: PERSON
+    description: Amazon創業者・CEO（1994〜2021）。「後悔最小化フレームワーク」「Day 1哲学」「フライホイール」「2ピザチーム」等の経営概念を実践した。長期的フリーキャッシュフロー最大化のために短期利益を犠牲にし続けた。2000年バブル崩壊時の「倒産懸念」を拒絶し、2021年にAndyJassyにCEOを引き継いだ。現在はBlue Originに専念。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: andy-jassy
+    name: アンディ・ジャシー
+    kind: PERSON
+    description: AWS創設者・初代CEO（2006〜2021）、Amazon CEO（2021〜）。2003年にベゾスの「シャドー（技術顧問）」としてAWSの原型となる事業計画書を作成。「クラウドをユーティリティとして提供する」という構想の設計者。AWSをAmazonの「利益エンジン」に育て、2021年にベゾスからAmazon CEO職を引き継いだ。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: netflix
+    name: Netflix
+    kind: COMPANY
+    description: 1997年設立の映像配信サービス。2008年の自社データセンター障害を機にAWSへの全面移行を決定し、2016年に完了。直接競合（Amazon Video）のインフラ（AWS）を使うという非常識を選択したことで、クラウド移行の「最先端ショーケース」になった。カオスモンキー等の高度なAWS活用技術をオープンソースとして公開し、クラウドコンピューティングの普及を加速した。
+    roles_in_case:
+      - ENABLER
+
+  - slug: ibm
+    name: IBM
+    kind: COMPANY
+    description: エンタープライズIT市場の長期支配者。サーバー・ストレージ・ミドルウェアを高マージンで長期リース契約で販売するモデルを確立していた。AWSの登場を「エンタープライズには使えないおもちゃ」と見なし、クラウドへの本格移行が遅れた。イノベーターのジレンマの典型例——高収益な既存事業の防衛が、次世代市場への適応を妨げた。
+    roles_in_case:
+      - ANTAGONIST
+
+lessons:
+  - id: l1
+    statement: 自社のコア事業のために構築したインフラを「外部公開可能な製品」として設計すると、内部効率化と新規事業創出を同時に達成できる。Bezos APIマンデートは「内部ツールと外部製品の品質基準を統一する」命令だったが、その副産物がAWSというまったく新しい産業を生んだ。
+    kind: MECHANISM
+    applies_to: 大企業の新規事業創出戦略、「内部ツールの外部展開」可能性の評価
+    tag_refs:
+      - pattern/outsider-innovation
+      - scope/platform-ecosystem
+
+  - id: l2
+    statement: CapexをOpexに変換するビジネスモデルは、参入障壁を劇的に下げてイノベーションの速度を上げる。AWSが「サーバー購入（$100万〜）」を「使量課金（$100〜）」に変えたことで、スタートアップのアイデア検証コストが100分の1以下になり、2006〜2015年のスタートアップ爆発を支えた。
+    kind: MECHANISM
+    applies_to: インフラビジネスのビジネスモデル設計、「固定費の変動費化」の経済効果評価
+    tag_refs:
+      - pattern/outsider-innovation
+      - industry/internet
+
+  - id: l3
+    statement: フライホイール（自己強化サイクル）は、個別の施策でなく「複数の施策が互いに強化し合う設計」から生まれる。Amazonの場合、低価格→顧客増→セラー増→品揃え増→顧客体験向上→低価格という循環と、規模→コスト削減→低価格という循環が同時に回る。フライホイールが動き出すと、単一施策の競合は追随が困難になる。
+    kind: PATTERN
+    applies_to: プラットフォーム企業の競争優位分析、「自己強化するビジネスモデル」の設計
+    tag_refs:
+      - mechanism/network-effect
+      - scope/platform-ecosystem
+
+  - id: l4
+    statement: 高収益な既存事業（IBMのサーバー長期リース）を持つ企業は、自社の収益源を侵食するクラウドへの移行を合理的に遅らせる。しかし市場が移行した後では「出遅れ」は取り返しがつかない。クリステンセンの「イノベーターのジレンマ」は、IT産業での歴史的な繰り返しパターン。
+    kind: ANTI_PATTERN
+    applies_to: 既存大手のクラウド・デジタル移行の遅延分析、「高収益事業の防衛」が招くリスクの評価
+    tag_refs:
+      - pattern/outsider-innovation
+      - industry/internet
+
+  - id: l5
+    statement: 「Day 1」哲学——常にスタートアップのように行動し、過去の成功に慢心しない——は組織設計によって支えられる。2ピザチーム・単一スレッド所有者・意思決定の分散化は、大企業になっても「小さな意思決定の速さ」を保つための構造的解答だ。
+    kind: HEURISTIC
+    applies_to: 大企業の組織設計評価、「規模を持ちながら機敏さを維持する」戦略の分析
+    tag_refs:
+      - scope/platform-ecosystem
+      - industry/internet
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: The Everything Store
+    author: Brad Stone
+    publisher: Little, Brown and Company
+    year: 2013
+    notes: ジャーナリスト・ブラッド・ストーンによるAmazonとベゾスの包括的な経営史。設立から2013年までの意思決定・組織文化・競合との戦い・AWSの誕生経緯を取材に基づいて記述。ベゾスの「後悔最小化フレームワーク」「フライホイール」の具体的文脈を理解する基本文献。
+
+  - source_key: src2
+    kind: BOOK
+    title: Working Backwards
+    author: Colin Bryar and Bill Carr
+    publisher: St. Martin's Press
+    year: 2021
+    notes: AmazonのSVP経験者2名による「Amazon内部の経営原則」の体系的解説。Bezos APIマンデート・2ピザチーム・PR/FAQ（プレスリリース先行設計）・シングルスレッドオーナーなど、AWSを含むAmazonの製品設計・組織設計の具体的な運用方法を内部者の視点で詳述。
+
+  - source_key: src3
+    kind: PRIMARY_DOC
+    title: Amazon Annual Report 2015 (Letter to Shareholders)
+    author: Jeff Bezos
+    publisher: Amazon.com, Inc.
+    year: 2015
+    notes: AWSの独立財務情報が初めて開示された年次報告書と、ベゾスの株主書簡。AWS売上・利益・成長率の数値と、ベゾスが「Day 1」哲学を再確認した書簡を含む。「AWSが小売よりも高利益率であることの可視化」という転換点の一次資料。
+
+  - source_key: src4
+    kind: ARTICLE
+    title: "Amazon Web Services: Building a New Business"
+    author: Ramiro Montealegre and H. James Nelson
+    publisher: Harvard Business School Case Study
+    year: 2010
+    notes: HBSによるAWS初期段階のビジネスモデル・競争戦略・顧客事例の分析ケーススタディ。2006〜2010年の初期顧客獲得プロセス・価格設定の根拠・IBM等の既存プレイヤーの反応を学術的に整理。クラウドコンピューティング産業の初期形成を理解するための参照文献。
+
+relations:
+  - to_case: tsmc-foundry-model
+    relation_type: SIMILAR_MECHANISM
+    note: TSMCが「競合半導体メーカーのために製造を引き受ける」というカウンターインテュイティブな戦略で半導体産業を再編したように、AWSは「競合小売企業（Walmart等）・競合コンテンツ企業（Netflix）のためにインフラを提供する」という非常識を実行した。「自社の競合に自社インフラを売る」ことで、インフラの規模経済を最大化する同型の戦略。
+
+  - to_case: famicom-platform
+    relation_type: SIMILAR_MECHANISM
+    note: ファミコンがゲームデベロッパーに開発プラットフォームを提供してエコシステムを構築したように、AWSはソフトウェアデベロッパーにインフラプラットフォームを提供してエコシステムを構築した。「プラットフォームの価値はサードパーティ開発者のエコシステムから生まれる」という二面市場の構造が同型。
+
+  - to_case: global-crossing-telecom-bubble
+    relation_type: PRECEDENT
+    note: 1990年代末の通信バブルが敷設した光ファイバー網が、その後の帯域幅コスト急落をもたらした。AWSのデータセンターが低コストで大量の帯域幅を利用できたのは、バブル崩壊後に格安で市場に出回ったインフラが基盤にあったからだ。「バブルの遺産が次世代のイノベーションを可能にする」という構造。

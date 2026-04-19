@@ -1,0 +1,164 @@
+case:
+  slug: uber-city-launch
+  title: Uberの都市ごとの立ち上げ戦略とライドシェア市場の形成
+  one_liner: 「規制の隙間に入り、普及させてから規制変更を迫る」という都市単位のブリッツスケーリングで、タクシー業界の規制で守られた市場を世界70か国で同時多発的に破壊した
+  summary: >
+    2010年にSFで始まったUberは「規制より先に普及、後に正当化」という手法で都市ごとに同じプレイブックを反復した。ドライバーへの補助金で供給を先確保→高頻度イベントで需要喚起→タクシー業界・行政の反発→ライダーを政治的圧力装置として使って規制変更を迫る。このサイクルを70か国以上の都市で同時実行するブリッツスケーリングで、2019年上場時には時価総額$820億に達した。ドライバーを「独立業者」として分類することで社会保険・最低賃金保証を回避するギグエコノミーモデルの大規模実証になったが、2017年のKalanick解任が「成長至上主義の精算」を象徴した。
+  period_start: 2009
+  period_end: 2019
+  status: published
+  body_path: content/cases/uber-city-launch.md
+
+events:
+  - year: 2009
+    title: UberCab創業——高級ハイヤーのオンデマンド配車
+    description: Travis KalanickとGarrett Campがサンフランシスコで創業。最初は既存ハイヤー業者（黒塗り高級車）と提携し法的グレーゾーンを最小化。当初の利用者はシリコンバレーのテックワーカーに限定的。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2010
+    title: SF正式サービス開始・当局から停止命令——「戦いながら運営」の開始
+    description: 2010年6月に正式サービス開始。数ヶ月後にSF市とカリフォルニア州公益事業委員会から停止命令。「UberCab」から「Uber」に改名し、法的に争いながら営業継続。規制との闘争がビジネスモデルの前提になった。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2012
+    title: UberXローンチ——「高級車」から「誰でも参加」へのゲーム変更
+    description: プロのハイヤードライバーだけでなく一般のドライバーが自分の車でサービス参加できるUberXを開始。供給が指数関数的に拡大し、タクシーの1/3の価格帯を実現。タクシー業界との全面対立が始まった。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - year: 2014
+    title: グローバル展開の加速・中国Didi戦争の開始
+    description: 世界50都市以上に拡大。中国でDidiとの補助金競争が激化。毎月$1億超の赤字を出しながら「焼き尽くし戦略」を継続。東南アジアではGrab、インドではOlaという地域特化型競合との消耗戦が始まった。
+    event_type: ENTRY
+    is_turning_point: true
+    display_order: 1
+
+  - year: 2016
+    title: 中国事業をDidiへ売却——地域特化競合に対するグローバル展開の限界
+    description: 中国市場での数十億ドル規模の損失を受け、Uberの中国事業をDidiに売却（Didi株17%を受け取り）。東南アジア（Grab）・ロシア（Yandex.Taxi）でも類似の株式交換撤退。地域ごとに地元プレイヤーが優位であることが示された。
+    event_type: RESTRUCTURING
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2017
+    title: セクハラ告発・競合妨害発覚・Kalanick CEO辞任——成長至上主義の精算
+    description: 元女性エンジニアのハラスメント告発ブログ、Lyftへの組織的妨害「ゴーストライド作戦」、Waymo技術盗用疑惑が相次いで発覚。取締役会がKalanickに辞任要求、6月に退任。Dara Khosrowshahiが「成長より信頼」で後任就任。
+    event_type: CRISIS
+    is_turning_point: true
+    display_order: 1
+
+  - year: 2019
+    title: NYSE上場——「世界で最も赤字なユニコーン」の公開市場デビュー
+    description: IPO価格$45・時価総額約$820億でニューヨーク証券取引所に上場。初日に株価が下落し、黒字化見通しの不透明さが投資家の懸念材料に。累積損失は$90億超。ライドシェア事業の収益化の難しさを公開市場に提示した。
+    event_type: OTHER
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: uber-technologies
+    name: ウーバー・テクノロジーズ（Uber Technologies, Inc.）
+    kind: COMPANY
+    description: 2009年創業（米国カリフォルニア州サンフランシスコ）。ライドシェア・フードデリバリー（Uber Eats）・貨物輸送（Uber Freight）を展開する移動・物流プラットフォーム。2023年に初めて通年黒字を達成。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: travis-kalanick
+    name: トラビス・カラニック（Travis Kalanick）
+    kind: PERSON
+    description: Uber共同創業者・CEO（2009-2017）。「競争は喧嘩だ」という信念でブリッツスケーリング戦略を主導した。ハラスメント問題・競合妨害発覚後の2017年に取締役会から辞任を求められ退任。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: didi-chuxing
+    name: 滴滴出行（Didi Chuxing）
+    kind: COMPANY
+    description: 中国最大のライドシェア企業。UberとAlibabaの支援を受けて中国市場でUberと激しく競合。2016年にUberの中国事業を吸収し、中国市場の事実上の独占を確立した。Grab（東南アジア）・Lyft（米国）との連合を組み国際的な対Uber戦線を形成。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: lyft-inc
+    name: リフト（Lyft, Inc.）
+    kind: COMPANY
+    description: 2012年創業のUberの米国最大の競合。UberXに対抗する形でローカル展開し、特にリベラル層・女性ドライバーへの訴求でUberとの差別化を図った。Uberの「ゴーストライド作戦」の標的となった。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: taxi-regulation-us
+    name: タクシー規制・免許制度（米国・欧州）
+    kind: REGULATION
+    description: タクシー事業者に免許取得・最低賃金・保険加入等を義務付ける規制体系。Uberの参入に対してニューヨーク・ロンドン・パリ等の当局が停止命令・免許取消を行使したが、多くの都市でユーザーの世論圧力により規制が緩和または黙認された。
+    roles_in_case:
+      - ANTAGONIST
+
+lessons:
+  - statement: 両面市場の「コールドスタート問題」は供給側（ドライバー）に先に補助金を払って待機させ、需要側（ライダー）を後から刺激する非対称アプローチで解決できる
+    kind: MECHANISM
+    applies_to: 両面市場・マーケットプレイスの立ち上げ設計。特に「供給と需要のどちらを先に集めるか」の判断
+    display_order: 1
+
+  - statement: 「規制より先に普及させ、ユーザーを政治的圧力装置として使って後追いで規制変更を迫る」は、民主主義的なプロセスが機能する都市では有効だが、権威主義的な規制環境では通じない
+    kind: PATTERN
+    applies_to: 規制業種への参入戦略。特に消費者向けサービスが規制と衝突する場面での対抗手段の選択
+    display_order: 2
+
+  - statement: ブリッツスケーリング（採算度外視の急速展開）は競合より先にネットワーク密度の臨界点を超えることで永続的な先占効果を生むが、財務的な持続性は別途証明が必要
+    kind: HEURISTIC
+    applies_to: 両面市場・プラットフォームビジネスの競争戦略。「速度と採算」のトレードオフ判断
+    display_order: 3
+
+  - statement: 労働者を「独立業者」として分類することで変動費化できるが、社会的・法的なリスクが累積し、規模拡大後に制度的な反発（AB5等）として回収される
+    kind: ANTI_PATTERN
+    applies_to: ギグエコノミー型ビジネスモデルの設計。短期のコスト削減と長期の法的・社会的リスクのトレードオフ
+    display_order: 4
+
+  - statement: 「文化・政治・規制の構造」はグローバルなプレイブックの有効範囲を制限する——中国・東南アジアの地域特化型競合はローカル知識と政治関係でグローバルプラットフォームを凌駕できる
+    kind: FORECAST_METHOD
+    applies_to: グローバル展開戦略の地域リスク評価。「同じプレイブックが通じない市場」の見極め
+    display_order: 5
+
+sources:
+  - kind: BOOK
+    title: "Super Pumped: The Battle for Uber"
+    author: Mike Isaac
+    publisher: W. W. Norton & Company
+    year: 2019
+    notes: NYTimesテクノロジー記者による定番Uber伝記。Kalanick時代の都市立ち上げ戦略・競合妨害・内部文化の一次取材に基づく詳細な記録
+
+  - kind: BOOK
+    title: "Blitzscaling: The Lightning-Fast Path to Building Massively Valuable Companies"
+    author: Reid Hoffman, Chris Yeh
+    publisher: Currency
+    year: 2018
+    notes: LinkedIn創業者・Greylock PartnersのReid HoffmanによるUber等を含むブリッツスケーリング戦略の体系的分析。「採算度外視の急速成長」の論理と条件を詳述
+
+  - kind: BOOK
+    title: "The Upstarts: How Uber, Airbnb, and the Killer Companies of the New Silicon Valley Are Changing the World"
+    author: Brad Stone
+    publisher: Little, Brown and Company
+    year: 2017
+    notes: Uber・Airbnbの初期立ち上げから規制との闘争までを並行して追った記録。都市ごとの参入プレイブックの詳細と規制対抗の実態
+
+  - kind: ARTICLE
+    title: "Uber Technologies, Inc. Form S-1 Registration Statement"
+    author: Uber Technologies, Inc.
+    publisher: SEC Filing
+    year: 2019
+    notes: Uber上場時のS-1申請書。累積損失・収益構造・ドライバー分類に関するリスク要因・グローバル展開状況の一次データ
+
+relations:
+  - to_case_slug: southwest-airlines-lcc
+    relation_type: SIMILAR_MECHANISM
+    note: サウスウェストが規制で守られた航空運賃市場に「規制裁定＋コスト構造革命」で参入したように、Uberもタクシー規制の裁定と「ドライバーを独立業者化するコスト革命」で参入した。規制業種への低コスト参入という同型パターン
+
+  - to_case_slug: apple-app-store
+    relation_type: SIMILAR_MECHANISM
+    note: 両面市場のコールドスタート問題を「先にハードウェア（iPhone）/先にドライバー補助金」で解決した並行構造。ただしAppleはハードウェアで供給を確保、Uberは現金補助金で供給を確保という手段の違いがある
+
+  - to_case_slug: amazon-aws
+    relation_type: CONTRAST
+    note: AmazonがAWSで「インフラコストを変動費化してスタートアップの参入障壁を下げる」ことで生態系を育てたのに対し、Uberは「ドライバーのコストを変動費化して自社の参入障壁を下げる」ことで市場を開いた。「誰のコストを変動費化するか」の方向が逆

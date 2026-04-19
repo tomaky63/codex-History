@@ -1,0 +1,164 @@
+case:
+  slug: cocacola-bottler-system
+  title: コカ・コーラのボトラー制度と濃縮液ビジネスの発明
+  one_liner: 1899年に$1で全米ボトリング権を譲渡し、秘密レシピとブランドだけを手元に残すことで世界最大の飲料ネットワークを資産ゼロで構築した
+  summary: >
+    コカ・コーラのボトラー制度は、1899年に起きた「1ドルの奇跡」から始まる。弁護士のベンジャミン・トーマスとジョセフ・ホワイトヘッドは、コカ・コーラの所有者アサ・キャンドラーから全米のボトリング権を1ドルで手に入れた——キャンドラーが「瓶入り飲料は流行らない」と思っていたからだ。コカ・コーラ社は秘密の濃縮液とブランドだけを保持し、製造・充填・配送・地域営業はすべてボトラーに委ねた。しかし「ゆるい契約」は後に深刻な問題を起こし、1920年代に訴訟合戦になった。最終的な解決は1980年の「マスターボトラー契約」、そして1986年のゴイズエタCEOによるコカ・コーラ・エンタープライズ（CCE）設立——ボトラー事業をスピンオフして「純粋な濃縮液＋ブランド会社」に変身させた。
+  period_start: 1886
+  period_end: 1986
+  status: published
+  body_path: content/cases/cocacola-bottler-system.md
+
+events:
+  - year: 1886
+    title: ジョン・ペンバートンがコカ・コーラを発明・アトランタで販売開始
+    description: 薬剤師のジョン・ペンバートンがコカ・コーラのシロップを発明し、アトランタのソーダファウンテンで販売開始。当初は薬用飲料として位置づけられた。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - year: 1891
+    title: アサ・キャンドラーがコカ・コーラを買収・ブランド確立
+    description: 実業家のアサ・キャンドラーが約2300ドルでコカ・コーラの全権利を取得。コカ・コーラ・カンパニーを設立し、ソーダファウンテン向けシロップの全国販売を本格化した。
+    event_type: MERGER
+    is_turning_point: false
+    display_order: 1
+
+  - year: 1899
+    title: 「1ドル契約」——全米ボトリング権の永久譲渡
+    description: 弁護士のベンジャミン・トーマスとジョセフ・ホワイトヘッドが、キャンドラーから全米ボトリング権を1ドルの象徴的対価で永久取得。キャンドラーは瓶入り飲料の将来性を信じていなかった。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - year: 1915
+    title: コンターボトル（くびれ瓶）のデザイン標準化・商標登録
+    description: 全国でバラバラだったコカ・コーラの容器を、グラス・デザイン社が設計した独自の「コンター（くびれ）ボトル」に統一。容器のデザイン自体を商標として登録し、ブランド統一性を確立した。
+    event_type: POLICY_SHIFT
+    is_turning_point: false
+    display_order: 1
+
+  - year: 1921
+    title: シロップ原液価格訴訟——固定価格契約の破綻と法廷闘争
+    description: 第一次大戦後の砂糖価格高騰を受け、コカ・コーラがシロップ値上げを試みるも、ボトラーが「1899年契約違反」として集団提訴。長期の訴訟合戦が始まり、コカ・コーラは限定的な価格調整権を得る和解で決着した。
+    event_type: CRISIS
+    is_turning_point: true
+    display_order: 1
+
+  - year: 1980
+    title: マスターボトラー契約——CPI連動価格式への転換
+    description: 1899年以来の固定価格構造を抜本改定し、インフレ率（CPI）連動の価格式を全ボトラーとの間で成立させた。ボトラーとの関係を「協力パートナー」として再設計するための重要な法的基盤。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - year: 1986
+    title: コカ・コーラ・エンタープライズ（CCE）設立——純粋濃縮液カンパニーへの変身
+    description: ゴイズエタCEOが経営難ボトラーを集約してCCEを設立し、49%保持・株式市場上場という「アンカーボトラー」戦略を確立。コカ・コーラをバランスシート上は純粋な濃縮液+ブランド会社に変身させ、ROICが急上昇した。
+    event_type: RESTRUCTURING
+    is_turning_point: true
+    display_order: 1
+
+entities:
+  - slug: coca-cola-company
+    name: コカ・コーラ・カンパニー（The Coca-Cola Company）
+    kind: COMPANY
+    description: 1892年設立。秘密の濃縮液（コンセントレート）とブランドを保持し、全世界のボトラーネットワークを通じて飲料を展開する。装置産業ではなくブランド・製法の会社として設計された。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: roberto-goizueta
+    name: ロベルト・ゴイズエタ（Roberto Goizueta）
+    kind: PERSON
+    description: キューバ出身のコカ・コーラCEO（1981-1997）。CCE設立とボトラー再フランチャイズ化を主導し、コカ・コーラを「濃縮液カンパニー」として再定義した。在任中の株式時価総額は4倍以上に成長した。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: asa-candler
+    name: アサ・キャンドラー（Asa Griggs Candler）
+    kind: PERSON
+    description: コカ・コーラ・カンパニーの初代実質的経営者（1891-1916）。瓶入り飲料の将来性を信じず1ドルで全米ボトリング権を譲渡してしまったが、その後コカ・コーラをソーダファウンテン向け全国ブランドに育てた。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: coca-cola-enterprises
+    name: コカ・コーラ・エンタープライズ（Coca-Cola Enterprises）
+    kind: COMPANY
+    description: 1986年にコカ・コーラがスピンオフしたアンカーボトラー会社。コカ・コーラが49%を保持しながら上場させることで、ボトリング設備をバランスシートから外しつつ品質管理の影響力を維持した。
+    roles_in_case:
+      - PARTNER
+
+  - slug: pepsi-co
+    name: ペプシコ（PepsiCo）
+    kind: COMPANY
+    description: コカ・コーラの最大の競合企業。コーラ戦争で長年2位だったが、多角化（スナック・ゲータレード）でコカ・コーラ社よりも大きな売上を持つ時期もある。ボトリングシステムでも独自の変遷を経た。
+    roles_in_case:
+      - ANTAGONIST
+
+lessons:
+  - statement: フランチャイズモデルでは「秘密の製法・ブランド」を保持し「製造・配送・地域営業」を委ねる設計が、資本効率とネットワーク拡大速度の両立を可能にする
+    kind: MECHANISM
+    applies_to: B2B2C型のフランチャイズビジネス設計。コンポーネントサプライヤーがネットワーク展開を目指す時
+    display_order: 1
+
+  - statement: 急速展開のために「ゆるい初期契約」を結ぶと、成長後に価格・品質管理の再設計コストが膨大になる——成長フェーズを想定した契約設計が必要
+    kind: ANTI_PATTERN
+    applies_to: フランチャイズ展開の初期設計時。特に価格・品質管理条項の設計において
+    display_order: 2
+
+  - statement: 「秘密」として神話化されたIP（製法・レシピ）は、特許で保護された技術より強力な心理的・経済的参入障壁になりうる
+    kind: PATTERN
+    applies_to: IPを持つ企業の保護戦略設計。特に技術が解析・模倣されやすい消費財・食品分野
+    display_order: 3
+
+  - statement: 独占テリトリーの付与はフランチャイジーの投資インセンティブを最大化する——競合テリトリーではフリーライダー問題でインフラ投資が起きない
+    kind: HEURISTIC
+    applies_to: フランチャイズ・代理店・販売チャネル設計。テリトリー分割の判断基準として
+    display_order: 4
+
+  - statement: 装置産業（製造・配送）と知識産業（ブランド・製法）を同一会社に持つと、資本効率が低下する——両者を分離することで「知識側」のROICは飛躍的に向上する
+    kind: FORECAST_METHOD
+    applies_to: 垂直統合型企業の事業構造再設計。「何が本当の価値の源泉か」を問い直す場面
+    display_order: 5
+
+sources:
+  - kind: BOOK
+    title: "For God, Country and Coca-Cola: The Definitive History of the Great American Soft Drink and the Company That Makes It"
+    author: Mark Pendergrast
+    publisher: Basic Books
+    year: 1993
+    notes: コカ・コーラ全史の定番。1899年の1ドル契約、シロップ価格訴訟、CCE設立まで詳述。コカ・コーラ社の公式協力を得た信頼性の高い資料
+
+  - kind: BOOK
+    title: "The Coca-Cola Company: A History of the World's Most Successful Brand"
+    author: Frederick Allen
+    publisher: John Wiley & Sons
+    year: 1994
+    notes: ブランド視点からのコカ・コーラ史。ゴイズエタのCCE設立とブランド価値の関係を詳細に分析
+
+  - kind: BOOK
+    title: "Buffett: The Making of an American Capitalist"
+    author: Roger Lowenstein
+    publisher: Random House
+    year: 1995
+    notes: バフェットが1988年にコカ・コーラに6億ドル投資した根拠として「濃縮液ビジネスの高ROIC」を詳述。CCE設立後の事業モデルの価値を外部から評価した視点
+
+  - kind: BOOK
+    title: "The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution"
+    author: Walter Isaacson
+    publisher: Simon & Schuster
+    year: 2014
+    notes: フランチャイズとネットワーク効果の比較事例として参照。直接のコカ・コーラ分析ではないが、プラットフォーム型ビジネスの構造比較に有用
+
+relations:
+  - to_case_slug: tdl-founding
+    relation_type: SIMILAR_MECHANISM
+    note: 東京ディズニーランドはIPをDisneyが保持しOLCがオペレーションを担う構造。コカ・コーラが製法とブランドを保持しボトラーがオペレーションを担う構造と同型——「ライセンスによるアセット分離」の二大事例
+
+  - to_case_slug: marriott-asset-light
+    relation_type: SIMILAR_MECHANISM
+    note: マリオットもブランド・運営ノウハウを保持して不動産所有をオーナーに委ねるアセットライト戦略を取った。コカ・コーラとマリオットはほぼ同時期に「装置産業からの撤退」という同じ結論に達した
+
+  - to_case_slug: arm-qualcomm-ip-fabless
+    relation_type: SIMILAR_MECHANISM
+    note: ARMが設計IPのみ保持して製造をTSMCに委ねた構造は、コカ・コーラが製法・ブランドのみ保持してボトリングをボトラーに委ねた構造の半導体版。「コアIP独占＋外部製造委託」の普遍的パターン

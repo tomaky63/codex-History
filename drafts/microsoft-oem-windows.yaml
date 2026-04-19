@@ -1,0 +1,164 @@
+case:
+  slug: microsoft-oem-windows
+  title: MicrosoftのOEM戦略とWindowsの世界標準化
+  one_liner: IBMへのDOS供給でOS所有権を保持し、すべてのPCメーカーにWindowsをプレインストールさせることでソフトウェア帝国を築いたMicrosoftの水平支配戦略
+  summary: >
+    1980年、IBMがPCプロジェクトのためにマイクロソフトに声をかけた時、Bill GatesはOSを「売る」ではなく「ライセンスする」という決断を下した。IBMとの契約でMS-DOSの所有権を手元に残したことで、マイクロソフトはIBMだけでなくすべてのPCクローンメーカーに同じOSをライセンスできる構造を手にした。Windows 3.0（1990年）で事実上の標準が確立し、Windows 95（1995年）でそれが完成した。しかしIEをバンドルしPCメーカーに他のブラウザ排除を求めたことで米国DOJ独禁法訴訟（1998年）を招いた。OEMライセンスによる水平展開の最大成功例であり、同時にプラットフォーム独占の法的限界を示す教科書事例でもある。
+  period_start: 1980
+  period_end: 2001
+  status: published
+  body_path: content/cases/microsoft-oem-windows.md
+
+events:
+  - year: 1980
+    title: IBM PCプロジェクトへの招集——マイクロソフトへの打診
+    description: IBMが秘密のPCプロジェクト（Project Chess）のためにマイクロソフトに接触。ゲイツはCPUをIntel 8088に、OSをシアトル・コンピュータ・プロダクツから購入した86-DOSに選定し、自らライセンサーになることを決断した。
+    event_type: OTHER
+    is_turning_point: false
+    display_order: 1
+
+  - year: 1981
+    title: IBM PCへのMS-DOSライセンス供与——OS所有権の保持
+    description: IBM PCが発売。MicrosoftはMS-DOSをIBMにライセンス（所有権は保持）。IBMのオープンアーキテクチャが後のクローン市場を生み、Microsoftの全OEMへのライセンス拡大を可能にした。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - year: 1990
+    title: Windows 3.0発売——GUI標準化と爆発的普及
+    description: Windows 3.0が発売後6ヶ月で100万本を突破。GUIの完成度が上がりDOS時代の複数OS並存を終わらせ「PCを買う＝Windowsを使う」という等式を確立した。アプリ開発者のWindowsへの集中が始動した。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - year: 1993
+    title: FTCがper-processor契約を調査——OEMライセンスの制限条項問題化
+    description: PCメーカーに「出荷台数ベース」でライセンス料を課す（Windowsを入れないPCも課金対象）というper-processor契約がFTCの調査対象に。1994年にMicrosoftは当該条項を廃止することで合意。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - year: 1995
+    title: Windows 95発売・Internet Explorerのバンドル開始
+    description: Windows 95がRolling Stonesの曲とともに大規模キャンペーンで発売。IEをWindowsに無料バンドルしNetscape排除を開始。PCメーカーへのIEデスクトップ表示義務化がブラウザ戦争の引き金になった。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - year: 1998
+    title: DOJ独禁法訴訟提起——IE/Netscape問題の法廷化
+    description: 米国DOJと20州がMicrosoftをシャーマン法違反で提訴。IEのバンドルと競合ブラウザ排除の強制が「独占的地位の濫用」として問われた。判事ジャクソンが会社分割命令を出す（後に破棄）。
+    event_type: CRISIS
+    is_turning_point: true
+    display_order: 1
+
+  - year: 2001
+    title: DOJ和解成立——OEM制約の一部改定
+    description: 控訴審が分割命令を破棄し、DOJとMicrosoftが和解。OEMが競合ブラウザ・ミドルウェアをプレインストールする権利を認め、APIの競合への開示を義務付け。Microsoftの構造は維持され、以後はGoogleとの次の戦いへ移行した。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: microsoft-corporation
+    name: マイクロソフト（Microsoft Corporation）
+    kind: COMPANY
+    description: 1975年創業（ビル・ゲイツ・ポール・アレン）。BASICインタープリタからMS-DOS、Windowsへと展開し、OEMライセンス戦略で世界のPC用OSを独占した。1990年代には時価総額世界首位に。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: bill-gates
+    name: ビル・ゲイツ（Bill Gates）
+    kind: PERSON
+    description: マイクロソフト共同創業者・CEO（1975-2000）。IBMとのMS-DOS契約でOS所有権を保持する判断を下し、OEMライセンスモデルを構築した。2000年にCEOを退きSteve Ballmerに引き継いだ。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: ibm-pc-division
+    name: IBM PCディビジョン
+    kind: COMPANY
+    description: IBMのPC部門。1981年にIBM PCを発売し、アーキテクチャをオープンにしたことでクローン市場を生んだ。図らずもMicrosoftのOEM戦略の基盤を提供した。
+    roles_in_case:
+      - ENABLER
+
+  - slug: netscape-communications
+    name: ネットスケープ（Netscape Communications）
+    kind: COMPANY
+    description: 1994年創業。Netscape NavigatorでWebブラウザ市場を席巻したが、MicrosoftのIEバンドリングにより急速にシェアを失い1999年にAOLに買収された。ブラウザ戦争の象徴。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: intel-corporation
+    name: インテル（Intel Corporation）
+    kind: COMPANY
+    description: x86プロセッサの独占的設計者。MicrosoftのWindowsとIntelのx86が組み合わさった「Wintel」デュオポリーはPC産業の利益の大半を独占した。互いの独占が互いを強化した。
+    roles_in_case:
+      - PARTNER
+
+lessons:
+  - statement: OSライセンスを「売る（所有権移転）」ではなく「ライセンスする（使用権のみ付与）」にすることで、ハードウェアメーカーが増えるほど収益が増える構造が成立する
+    kind: MECHANISM
+    applies_to: ソフトウェア・IP企業が流通チャネルを設計する場面。B2Bライセンス交渉での所有権vs使用権の判断
+    display_order: 1
+
+  - statement: PCのデフォルトインストールになることは、どんな優れた競合OSよりも強力な競争障壁になる——「インストールされている」という状態が「選ばれた」という状態を作る
+    kind: PATTERN
+    applies_to: ソフトウェアのディストリビューション戦略。特にOSやミドルウェアなど「基盤」になりうる製品の普及戦略
+    display_order: 2
+
+  - statement: 一度OS独占が確立すると、隣接するソフトウェア市場（ブラウザ・メディアプレイヤー・オフィスツール）をバンドリングで取り込める——ただしこれは独禁法の標的になる
+    kind: ANTI_PATTERN
+    applies_to: プラットフォーム企業の隣接市場展開。特に独占的市場での製品バンドリング戦略の設計
+    display_order: 3
+
+  - statement: IP交渉の初期段階で「所有権をどちらが保持するか」を決める一つの判断が、その後10〜20年の収益構造を決定する——初期の法的・財務的設計が最も重要
+    kind: HEURISTIC
+    applies_to: ライセンス交渉・パートナーシップ設計全般。特に技術供与契約の初期条件設定
+    display_order: 4
+
+  - statement: ハードウェアがコモディティ化する産業では、OSやプラットフォームソフトウェアに利益が集中する——ハードウェアの競合激化はソフトウェア独占者の価格交渉力を高める
+    kind: FORECAST_METHOD
+    applies_to: テクノロジー産業の収益構造分析。ハードウェアとソフトウェアの利益分配の予測
+    display_order: 5
+
+sources:
+  - kind: BOOK
+    title: "Hard Drive: Bill Gates and the Making of the Microsoft Empire"
+    author: James Wallace, Jim Erickson
+    publisher: Wiley
+    year: 1992
+    notes: IBM PC交渉の詳細とMS-DOS調達の経緯を詳述した定番伝記。86-DOS購入からライセンス契約まで一次取材に基づく
+
+  - kind: BOOK
+    title: "Gates: How Microsoft's Mogul Reinvented an Industry—and Made Himself the Richest Man in America"
+    author: Stephen Manes, Paul Andrews
+    publisher: Doubleday
+    year: 1993
+    notes: OEMライセンス戦略の展開過程とMicrosoftの企業文化。Windows 3.0までのビジネスモデル確立の経緯
+
+  - kind: ARTICLE
+    title: "United States v. Microsoft Corporation, 253 F.3d 34 (D.C. Cir. 2001)"
+    author: United States Court of Appeals for the D.C. Circuit
+    publisher: Federal Reporter
+    year: 2001
+    notes: DOJ独禁法訴訟の控訴審判決。IE/Windowsバンドリングと競合排除の法的分析。デジタルプラットフォーム独禁法の基礎判例
+
+  - kind: BOOK
+    title: "The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail"
+    author: Clayton M. Christensen
+    publisher: Harvard Business Review Press
+    year: 1997
+    notes: Microsoftのモバイル出遅れをディスラプション理論で分析するフレームワーク。Windows成功がモバイル判断を歪めた構造の理解に有用
+
+relations:
+  - to_case_slug: intel-inside-ingredient-branding
+    relation_type: SIMILAR_MECHANISM
+    note: IntelのCPU独占とMicrosoftのOS独占が組み合わさった「Wintelデュオポリー」。互いの独占が互いを強化する相互補完の構造。PC産業の利益の大半をこの2社が分けた
+
+  - to_case_slug: apple-app-store
+    relation_type: CONTRAST
+    note: Microsoftが「OS水平展開・全OEMにライセンス」を選んだのに対し、AppleはiPhone垂直統合・App Store独占という逆の戦略を取った。どちらもプラットフォーム支配を実現したが、収益構造・競争力の源泉・規制リスクが異なる
+
+  - to_case_slug: vhs-format-war
+    relation_type: SIMILAR_MECHANISM
+    note: VHSがBetamaxに勝った理由（コンテンツ量・互換機メーカーの多さ）とWindowsがOS/2・Macに勝った理由（アプリの多さ・OEMの多さ）は同型のネットワーク効果勝利パターン

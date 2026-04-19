@@ -1,0 +1,238 @@
+# drafts/tdl-founding.yaml
+# 構造データの下書き。admin UI からDB投入する前に人間がレビュー・修正する。
+# status は content/cases/tdl-founding.md の frontmatter 側で管理する。
+
+case:
+  slug: tdl-founding
+  title: 東京ディズニーランドの成立史
+  period_start: 1960
+  period_end: 1983
+  primary_themes:
+    - asset-operation-split
+    - infrastructure-mega-project
+
+events:
+  - id: tdl-1960-olc-founded
+    year: 1960
+    month: 7
+    title: オリエンタルランド設立
+    description: >
+      京成電鉄・三井不動産を主要株主として、千葉県浦安沖の埋立事業と
+      娯楽施設開発を目的に設立。設立当初はDisney導入は計画されていない。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+    entity_refs: [oriental-land, keisei-dentetsu, mitsui-fudosan]
+    source_refs: [olc-ir, awata-tdl-book]
+
+  - id: tdl-1962-chiba-contract
+    year: 1962
+    title: 千葉県との埋立契約締結
+    description: >
+      浦安沖の公有水面埋立について千葉県との契約が結ばれ、
+      土地取得プロセスの基盤が整う。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+    entity_refs: [oriental-land, chiba-pref, kokyu-suimen-umetate-ho]
+    source_refs: [olc-ir]
+
+  - id: tdl-1974-disney-contact
+    year: 1974
+    title: ウォルト・ディズニー・プロダクションズとの本格交渉開始
+    description: >
+      高橋政知を中心にDisney本社との交渉が本格化。当初Disneyは
+      海外展開に極めて慎重であり、5年近い交渉期間を要した。
+    event_type: ENTRY
+    is_turning_point: false
+    display_order: 1
+    entity_refs: [oriental-land, disney, takahashi-masachi, card-walker]
+    source_refs: [notoji-book, awata-tdl-book]
+
+  - id: tdl-1979-license-contract
+    year: 1979
+    month: 4
+    title: Disney とのライセンス契約締結
+    description: >
+      Disneyは出資せず、入場料と物販のロイヤリティのみを受け取る形式で合意。
+      土地・施設・運営はすべてOLC側が保有する非対称な契約構造となった。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+    entity_refs: [oriental-land, disney, takahashi-masachi]
+    source_refs: [notoji-book]
+
+  - id: tdl-1983-opening
+    year: 1983
+    month: 4
+    day: 15
+    title: 東京ディズニーランド開業
+    description: >
+      浦安の埋立地に開業。初年度の集客は計画値を達成し、
+      非米国Disneylandの事業可能性を実証した。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+    entity_refs: [oriental-land, disney]
+    source_refs: [olc-ir, notoji-book]
+
+entities:
+  - slug: oriental-land
+    name: 株式会社オリエンタルランド
+    kind: COMPANY
+    description: TDLの保有・運営会社。京成電鉄・三井不動産系。
+    roles_in_case: [PROTAGONIST]
+
+  - slug: disney
+    name: ウォルト・ディズニー・プロダクションズ
+    kind: COMPANY
+    description: >
+      米国のエンタテインメント企業、TDLのIP・ブランド提供元。
+      1986年以降は The Walt Disney Company。
+    roles_in_case: [PARTNER, ENABLER]
+
+  - slug: keisei-dentetsu
+    name: 京成電鉄
+    kind: COMPANY
+    description: OLCの主要株主、鉄道事業者。
+    roles_in_case: [ENABLER]
+
+  - slug: mitsui-fudosan
+    name: 三井不動産
+    kind: COMPANY
+    description: OLCの主要株主、不動産開発事業者。
+    roles_in_case: [ENABLER]
+
+  - slug: takahashi-masachi
+    name: 高橋政知
+    kind: PERSON
+    description: >
+      オリエンタルランドの交渉を主導し、後の社長。Disneyとの5年にわたる
+      交渉を粘り強く進め、契約締結の中心人物となった。
+    roles_in_case: [PROTAGONIST]
+
+  - slug: card-walker
+    name: Card Walker
+    kind: PERSON
+    description: >
+      1970年代後半のウォルト・ディズニー・プロダクションズ経営陣の中核。
+      海外展開承認の鍵を握ったキーパーソン。
+    roles_in_case: [ENABLER]
+
+  - slug: donn-tatum
+    name: Donn Tatum
+    kind: PERSON
+    description: >
+      1970年代のウォルト・ディズニー・プロダクションズ経営陣の一人で、
+      Card Walkerと並んで海外展開承認プロセスに関わった。
+      高橋政知が5年かけて関係を構築した相手の一人。
+    roles_in_case: [ENABLER]
+
+  - slug: chiba-pref
+    name: 千葉県
+    kind: INSTITUTION
+    description: 浦安沖の埋立を認可し、OLCとの長期契約主体。
+    roles_in_case: [ENABLER, REGULATOR]
+
+  - slug: kokyu-suimen-umetate-ho
+    name: 公有水面埋立法
+    kind: REGULATION
+    description: >
+      公有水面の埋立を規定する日本の法律(大正10年)。
+      TDL用地取得の制度的前提。
+    roles_in_case: [ENABLER]
+
+lessons:
+  - id: tdl-lesson-asset-operation-split
+    statement: >
+      長期運営型コンテンツ事業では、「IPを持つ側」と「運営を持つ側」を
+      出資関係ではなくライセンス契約で分離した方が、双方の自由度と
+      長期キャッシュフローが最適化されやすい。
+    kind: PATTERN
+    applies_to: >
+      IPブランドを核にした長期オペレーション事業
+      (テーマパーク、ライセンス製造、フランチャイズ)
+    tag_refs: [asset-operation-split, license-royalty]
+    source_refs: [notoji-book]
+
+  - id: tdl-lesson-non-symmetric-winwin
+    statement: >
+      「お互いに相手の領域に手を出せない」非対称な契約構造は、ガバナンスの
+      意思決定コストを下げ、結果として両者の実行速度を上げる。
+    kind: MECHANISM
+    applies_to: 大型プロジェクトの合弁 vs ライセンス判断
+    tag_refs: [governance-speed]
+    source_refs: [notoji-book]
+
+  - id: tdl-lesson-long-negotiation
+    statement: >
+      「狂気に見える長期プロジェクト」の成否は、組織ではなく
+      特定個人の持続力と相手経営陣との信頼蓄積に依存する。
+    kind: HEURISTIC
+    applies_to: 10年越しの超長期交渉プロジェクト全般
+    tag_refs: [founder-driven]
+    source_refs: [awata-tdl-book]
+
+  - id: tdl-lesson-physical-sunk-cost-as-fuel
+    statement: >
+      すでに進行した物理的投資(埋立・建設・土地取得)は、執念の持続を
+      外部から支える不可逆化装置として機能する。退路の断ち方は心理的覚悟
+      ではなく物理的既成事実で決まる。
+    kind: MECHANISM
+    applies_to: >
+      多年度にわたる大型投資プロジェクトで、初期投資が後戻り不能の
+      物理資産として蓄積されている場合
+    tag_refs: [burn-the-boats, irreversibility-commitment]
+    source_refs: [notoji-book, awata-tdl-book]
+
+  - id: tdl-lesson-persistence-needs-receiver
+    statement: >
+      執念は発信側の問題ではなく、受け手側に「共鳴できる個人」が存在して
+      初めて機能する双方向のプロセスである。長期交渉は条件を詰める時間で
+      あると同時に、相手側に同志を見つけ育てる時間でもある。
+    kind: PATTERN
+    applies_to: 相手組織との多年度交渉・大型提携・国際合意形成
+    tag_refs: [founder-driven]
+    source_refs: [notoji-book]
+
+sources:
+  - source_key: notoji-book
+    kind: BOOK
+    title: ディズニーランドという聖地
+    author: 能登路雅子
+    publisher: 岩波書店
+    year: 1990
+    isbn: ""
+    notes: >
+      TDL成立史の定番一次文献(岩波新書)。Disneyとの交渉プロセスに詳しい。
+      正式書名と刊行年は要確認。
+
+  - source_key: awata-tdl-book
+    kind: BOOK
+    title: 東京ディズニーランドはなぜ成功したか
+    author: 粟田房穂
+    publisher: 朝日新聞出版
+    year: 2012
+    isbn: ""
+    notes: >
+      OLC側の経営判断を中心に整理した通史。高橋政知の役割を
+      強調する視点。正確な刊行年・版元は要確認。
+
+  - source_key: olc-ir
+    kind: WEBSITE
+    title: オリエンタルランド 沿革・IR資料
+    url: https://www.olc.co.jp/ja/company/history.html
+    notes: 公式の沿革とプレスリリース。年代の裏取り用。
+
+relations:
+  - to_case: tokaido-shinkansen
+    relation_type: SAME_PATTERN
+    note: >
+      「個人の長期執念と巨大資本が組み合わさって成立する巨大プロジェクト」
+      という共通パターン。高橋政知 / 十河信二という対比。
+
+  - to_case: containerization
+    relation_type: CONTRAST
+    note: >
+      TDLは契約による「IPと運営の分離」、コンテナ化は規格による「輸送と
+      貨物の分離」。どちらも「非対称な分離」が長期のwin-winを作る構造。

@@ -1,0 +1,210 @@
+# drafts/japan-semiconductor.yaml
+# 日本半導体産業の興亡——超LSI研究組合からエルピーダ倒産まで
+
+case:
+  slug: japan-semiconductor
+  title: 日本半導体産業の興亡——超LSI研究組合からエルピーダ倒産まで
+  period_start: 1976
+  period_end: 2012
+  primary_themes:
+    - regulatory-turning-points
+    - standardization-wins
+    - vertical-restructuring
+
+events:
+  - id: ev1
+    year: 1976
+    title: 超LSI技術研究組合設立——競合5社が特許共有で技術キャッチアップ
+    description: 通産省主導のもと、NEC・東芝・日立・富士通・三菱電機の競合5社が電子技術総合研究所（ETL）とともに超LSI技術研究組合を設立。4年間で約700件の特許を生み出し、電子ビームリソグラフィ等で米国を超える技術を確立した。「競争前の技術共有→商業化で競争」という制度設計が日本の後発優位ゲームの起動点となった。
+    event_type: POLICY_SHIFT
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev2
+    year: 1980
+    title: HP品質調査——日本DRAMの不良率が米国の6分の1と実証される
+    description: 米国ヒューレット・パッカード社が調達したDRAMチップの品質比較で、日本3社の不良率が米国3社の平均の約6分の1であることが判明（国際電子デバイス会議で報告）。日本の製造品質優位が客観的に証明され、日本製DRAMへの需要が急増。同時に米国半導体業界に「日本脅威論」が広がる契機となった。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev3
+    year: 1986
+    title: 日本のDRAMシェア世界80%超・日米半導体協定締結——頂点と転落の同時到来
+    description: 日本のDRAMシェアが世界市場の約80%に達した同年、日米間で半導体貿易協定が締結された。日本はダンピング禁止と外国製半導体の日本市場シェア20%保証に合意。協定は意図せず日本の価格水準を透明化し、韓国・サムスン電子が「日本より少しだけ安い」価格設定を計算できる環境を整えた。頂点と構造転換の起点が同時に訪れた転換点。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev4
+    year: 1987
+    title: TSMC設立——「製造と設計の分離」というファブレスモデルの創始
+    description: 台湾のモリス・チャン（張忠謀）が台湾積体電路製造（TSMC）を設立。製造専業ファウンドリという新しいビジネスモデルが誕生し、設計専業のファブレス企業（後のQualcomm・Nvidia・ARM等）の台頭を可能にした。日本企業は垂直統合（設計+製造）の論理に留まり、この産業構造の分離に乗り遅れた。
+    event_type: ENTRY
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 1992
+    title: サムスン電子が世界DRAM首位に——「後発優位の再演」が完成
+    description: 韓国サムスン電子が世界DRAM市場でNECを抜いて首位に立った。サムスンは日本人技術者を採用して製造プロセスを習得し、韓国政府の補助金と低コスト構造を武器に日本メーカーを価格で凌駕した。日本が1976年に始めた「後発優位ゲーム」が、同じ論理で日本に適用された完成形。
+    event_type: ENTRY
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev6
+    year: 1999
+    title: エルピーダメモリ設立——日立・NEC統合、最後の集約
+    description: 日立製作所とNECのDRAM部門が統合してエルピーダメモリを設立。2002年に三菱電機のDRAM部門も合流し、日本最後の独立DRAMメーカーとなった。「合従連衡による規模拡大」という対応は、1976年の超LSI研究組合と同型の処方箋だったが、課題の性質がコスト競争に変わっており、技術共有では解決できなかった。
+    event_type: RESTRUCTURING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev7
+    year: 2012
+    title: エルピーダメモリ倒産——日本独立DRAMメーカーの消滅
+    description: エルピーダメモリが2兆3000億円の負債を抱えて会社更生法を申請。2009年の公的資金300億円の支援を経ても、2011〜2012年のDRAM価格急落と円高で資金が尽きた。マイクロン・テクノロジー（米国）に買収され、日本の独立DRAMメーカーは消滅。1976年の超LSI研究組合から始まった日本半導体産業の36年の物語が終焉した。
+    event_type: BANKRUPTCY
+    is_turning_point: true
+    display_order: 1
+
+entities:
+  - slug: vlsi-consortium
+    name: 超LSI技術研究組合
+    kind: INSTITUTION
+    description: 1976〜1980年、通産省主導でNEC・東芝・日立・富士通・三菱電機と電子技術総合研究所（ETL）が参加した政府主導R&Dコンソーシアム。4年間で約700件の特許を生み出し、日本半導体産業の技術的キャッチアップを実現した。半導体史上最も成功した政府主導R&Dプロジェクトの一つとされる。
+    roles_in_case:
+      - ENABLER
+
+  - slug: miti-japan
+    name: 通商産業省（通産省・MITI）
+    kind: INSTITUTION
+    description: 合理化計画の策定・産業調整・行政指導を通じて日本鉄鋼業の発展を主導した。高度経済成長期の日本の産業政策の中心機関。
+    roles_in_case:
+      - ENABLER
+      - PROTAGONIST
+
+  - slug: nec
+    name: 日本電気（NEC）
+    kind: COMPANY
+    description: 1980年代に世界DRAM市場でトップシェアを誇った日本の総合電機・半導体メーカー。1992年にサムスンに首位を奪われ、1999年にDRAM部門をエルピーダに分離した。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: toshiba
+    name: 東芝
+    kind: COMPANY
+    description: NAND型フラッシュメモリを1987年に発明した日本の総合電機・半導体メーカー。1980年代はDRAMでも世界首位争いを続けた。2000年代以降はNAND分野で存在感を保ったが、2017年に半導体部門をキオクシア（旧東芝メモリ）として分離売却した。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: samsung-electronics
+    name: サムスン電子
+    kind: COMPANY
+    description: 韓国の総合電機・半導体メーカー。1980年代後半に日本人技術者採用と日本式製造プロセス移植でDRAMに本格参入し、1992年に日本のNECを抜いてDRAM世界首位に。「後発優位ゲームの再演者」として日本半導体産業の構造的宿命を体現した。
+    roles_in_case:
+      - DISRUPTOR
+
+  - slug: intel-corporation
+    name: インテル（Intel）
+    kind: COMPANY
+    description: x86アーキテクチャCPUで世界のPC市場を支配した米国半導体メーカー。1987年にDRAMから撤退してCPU専業に転換し、PC時代の半導体価値連鎖の頂点に立った。日本企業が不在だった「アーキテクチャ層」の支配者として、日本の敗北の構造的背景を体現する。
+    roles_in_case:
+      - DISRUPTOR
+
+  - slug: tsmc
+    name: 台湾積体電路製造（TSMC）
+    kind: COMPANY
+    description: 1987年にモリス・チャン（張忠謀）が台湾で設立した世界初の本格的ファウンドリ（製造専業半導体会社）。「製造と設計の分離」というビジネスモデルでファブレス革命を可能にし、日本の垂直統合モデルを時代遅れにした。現在は世界最先端の製造プロセスを独占する。
+    roles_in_case:
+      - DISRUPTOR
+
+  - slug: elpida-memory
+    name: エルピーダメモリ
+    kind: COMPANY
+    description: 1999年に日立・NECのDRAM部門が統合して設立（2002年に三菱電機のDRAM部門も合流）した日本最後の独立DRAMメーカー。2009年に公的資金支援を受けたが、2012年に倒産。マイクロン・テクノロジーに買収された。日本半導体産業の36年の試みの終焉を象徴する。
+    roles_in_case:
+      - OTHER
+
+lessons:
+  - id: l1
+    statement: 製造プロセス技術による優位は「コモディティ化と後発優位の移転」によって消滅する。自分が使った勝利の方程式（後発+最新設備+品質管理）は、次の後発者が再演できるため、永続的な優位にならない。
+    kind: MECHANISM
+    applies_to: 製造業の長期競争力分析、「製造優位」の持続可能性評価、後発国の産業政策評価
+    tag_refs:
+      - pattern/cost-structure-shift
+      - pattern/outsider-innovation
+
+  - id: l2
+    statement: 産業の価値連鎖が「製造」から「設計・アーキテクチャ・プラットフォーム」に移動する時、垂直統合の内製部門（大企業グループの一事業部）は適応できない。親会社の補助が抜本的転換を先送りさせるからだ。
+    kind: MECHANISM
+    applies_to: 垂直統合企業の技術転換分析、内製部門vs専業会社の競争力比較
+    tag_refs:
+      - pattern/declining-industry-reinvention
+
+  - id: l3
+    statement: 「製造と設計の分離（ファブレスモデル）」は製造業における最も強力な構造イノベーションの一類型だ。TSMCの創設がQualcomm・Nvidia等の台頭を可能にしたように、分離設計は新規参入者の障壁を下げ産業構造を変える。
+    kind: PATTERN
+    applies_to: 製造業のバリューチェーン分析、「分業」と「統合」のどちらが競争力を生むかの判断
+    tag_refs:
+      - pattern/outsider-innovation
+
+  - id: l4
+    statement: 政府主導のR&Dコンソーシアムは「技術キャッチアップ」が課題である段階では有効だが、「価値の移動先への転換」が課題になった段階では同じ処方箋は機能しない。問題の性質が変わっているのに解法を変えないことが失敗パターンだ。
+    kind: ANTI_PATTERN
+    applies_to: 産業政策の設計評価、政府支援プログラムの有効性分析
+    tag_refs:
+      - pattern/declining-industry-reinvention
+
+  - id: l5
+    statement: 半導体産業（およびIT産業全般）では「製造→設計→アーキテクチャ→プラットフォーム」と価値の重心が上位層に移動する。ある層でのコモディティ化が始まった時、次の上位層での勝者がすでに決まっていることが多い。
+    kind: FORECAST_METHOD
+    applies_to: 半導体・IT産業の次の優位層の予測、「コモディティ化のシグナル」が見えた時の投資判断
+    tag_refs:
+      - pattern/cost-structure-shift
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: 日本半導体産業の盛衰——技術大国の夢と現実
+    author: 湯之上隆
+    publisher: 文春新書
+    year: 2013
+    notes: 半導体製造の専門家・湯之上隆による日本半導体産業の興亡の分析。「技術は負けていない」のに産業が敗北した構造的理由を詳述した基本文献。
+
+  - source_key: src2
+    kind: BOOK
+    title: 半導体覇権——日本の失敗とTSMCの勝利
+    author: 韓国産業研究院（KIET）
+    publisher: 日経BP
+    year: 2021
+    notes: 日本とサムスン・TSMCの競争史を対比的に分析。「後発優位の移転」と「ファブレス革命への対応」の差異を具体的なデータで示す。
+
+  - source_key: src3
+    kind: BOOK
+    title: チップウォー——世界最重要テクノロジーをめぐる国家間の戦い
+    author: クリス・ミラー
+    publisher: ダイヤモンド社
+    year: 2023
+    notes: 半導体産業の地政学と技術史を網羅した最新の標準的参考書。日米貿易摩擦・サムスンの台頭・TSMCの確立・エルピーダ倒産を一つの物語として描く。
+
+  - source_key: src4
+    kind: ARTICLE
+    title: Japan's VLSI Technology Research Association and the Semiconductor Industry
+    author: Daniel Okimoto
+    publisher: Stanford University
+    year: 1989
+    notes: 超LSI技術研究組合の制度設計と成果を分析した学術論文。「競争前協調→商業化で競争」という制度モデルの評価として重要。
+
+relations:
+  - to_case: japan-steel-postwar
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも「後発優位（廃墟/超LSI研究組合）で世界首位に立ち、次の後発者（POSCO/サムスン）が同じ論理で再演して敗北した」という構造的同型性を持つ。さらに「成功した産業政策が構造転換の適応を遅らせる」という逆説も共通する。日本の製造業を貫く構造的宿命を2事例で対照できる。
+
+  - to_case: famicom-platform
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも「製造品質・ハードウェア製造での支配→プラットフォーム/アーキテクチャ層での敗北」という構造を持つ。ファミコンは任天堂がプラットフォームを制したが、任天堂自身がPS（Sony）にプラットフォームを奪われた。日本半導体はIntelのx86という「プラットフォーム」に対して不在だった。「製造優位と設計優位は別物」という教訓が共通する。
+
+  - to_case: containerization
+    relation_type: SAME_PATTERN
+    note: どちらも「規格の標準化がコモディティ競争を生む」というパターン。コンテナ規格（ISO 668）の標準化が海運のコスト競争を激化させたように、DRAM仕様の世代標準化（64K→256K→1M…）がDRAMをコモディティ商品にした。標準化によって品質差別化の余地が縮小し、コスト競争が主戦場になる構造。

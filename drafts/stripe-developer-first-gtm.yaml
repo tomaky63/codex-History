@@ -1,0 +1,191 @@
+# drafts/stripe-developer-first-gtm.yaml
+# StripeのDeveloper-First GTM——7行のコードが決済産業を再設計した
+
+case:
+  slug: stripe-developer-first-gtm
+  title: StripeのDeveloper-First GTM——7行のコードが決済産業を再設計した
+  period_start: 2010
+  period_end: 2022
+  primary_themes:
+    - standardization-wins
+    - vertical-restructuring
+
+events:
+  - id: ev1
+    year: 2010
+    title: Stripe設立・Y Combinator参加——アイルランド出身の10代・20代兄弟が決済の「恐怖体験」を解く
+    description: パトリック・コリソン（21歳）とジョン・コリソン（19歳）がY Combinatorに参加しStripeを設立。「オンライン決済の実装は銀行審査・ゲートウェイ契約・PCI監査・数百行のコードが必要で最短2週間かかる」という問題を「7行のJavaScriptで10分で動く」に変えることを目標にした。ポール・グレアムはコリソン兄弟を「frighteningly smart（おそろしく賢い）」と評し、YCのすべてのスタートアップへの採用を強く推奨した。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 2011
+    title: 公開ベータ——HNで爆発的反響「なぜ誰も作らなかった」という開発者の声
+    description: 一般公開時、Hacker News（技術者向けコミュニティ）でのStripe紹介投稿が数百件のコメントを集めた。「10分で決済が動いた」「今まで何週間もかかっていたことが嘘のよう」という開発者の感動が口コミで広がった。セールスなし・マーケティングなし・広告なし——開発者体験の質そのものが「営業」として機能したDeveloper-First GTMの実証。YCのスタートアップ群がデファクトのファーストカスタマーとなった。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev3
+    year: 2014
+    title: Stripe Connect発表——マーケットプレイス向け複数者間決済でUberモデルを可能に
+    description: プラットフォーム（Uber・Airbnb・Shopify等）が複数の売り手・ドライバーへの支払いを一括管理できるConnect APIを発表。それまで「プラットフォームが売り手に代わって決済を受け取る」モデルは法的・技術的に困難だったが、ConnectがAPIで解決した。Uberがドライバーへの支払い、Shopifyが加盟店への入金、Airbnbがホストへの支払いを、すべてStripe Connectで実現できるようになった。「シェアリングエコノミー」の技術的インフラとしてのStripeの地位を確立。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev4
+    year: 2016
+    title: Stripe Atlas発表——「Day 0の顧客」戦略、世界中の起業家の米国法人設立支援
+    description: どの国の起業家でもデラウェア州C-Corp設立・SVB銀行口座開設・Stripeアカウントセットアップを数日・$500で完了できるStripe Atlasを発表。「決済サービス」から「スタートアップがビジネスを始める最初のインフラ」へポジション転換。顧客との接触点を「最初の決済の前」にさかのぼらせることで、Stripeが世界中の起業家の「Day 0のパートナー」となる戦略。YCとの連携でグローバルな起業家ネットワークへのアクセスを確立。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev5
+    year: 2019
+    title: Stripe Capital発表——決済データを使った翌日融資で金融サービスへ参入
+    description: Stripeが処理する決済データ（日次売上・成長率・チャーン率）を使った中小企業向けローンを発表。銀行の3ヶ月審査不要、翌日融資、返済は売上の一定%を自動引き落とし。既存銀行が持てない「インターネット企業のリアルタイム財務データ」を競争優位とした。「決済処理会社」から「インターネットの金融OS」へのビジョン転換を具体化した最初の金融サービス製品。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev6
+    year: 2020
+    title: Stripe Treasury・Stripe Tax——Banking as a ServiceとグローバルTax自動化
+    description: SaaSプラットフォームが自社サービスに銀行口座・送金機能を埋め込めるTreasury APIと、世界40ヶ国の売上税を自動計算・申告するTax製品を発表。「Stripe上に金融サービスを構築する」モデルが完成。Shopify・Lyft等がStripe TreasuryでEmbedded Finance機能を自社プラットフォームに統合した。同年$600億バリュエーションの資金調達で「インターネット金融インフラ」としての地位を確立した。
+    event_type: TECHNOLOGY_SHIFT
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev7
+    year: 2021
+    title: バリュエーション$950億——PayPal市場価値に迫り「金融インフラ」として完成
+    description: 2021年3月の資金調達でバリュエーション$950億を達成。11年間設立でPayPal（1998年設立）の時価総額に接近。年間処理額は$800億超、170ヶ国以上に展開。スタートアップのシェアでは「Stripeなし」のスタートアップが少数派に。上場していない（プライベート）にも関わらず世界最大のスタートアップバリュエーションの一つに。2022年のテック市場調整で$500億に下落後、2023年に$650億前後で安定した。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: stripe-inc
+    name: Stripe（ストライプ）
+    kind: COMPANY
+    description: 2010年設立（米国カリフォルニア州サンフランシスコ、及びアイルランド・ダブリン）。コリソン兄弟が設立したオンライン決済APIプロバイダー。2022年時点で170ヶ国以上・年間処理額$800億超。Payments・Connect・Atlas・Radar・Capital・Treasury・Issuing・Tax・Billingと金融サービスの全スタックへ拡張。世界の主要スタートアップ（Airbnb・Shopify・Lyft・DoorDash等）の決済インフラを担う。上場せずにプライベートカンパニーを維持している。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: patrick-collison
+    name: パトリック・コリソン
+    kind: PERSON
+    description: Stripe共同創業者・CEO（1988〜）。アイルランド・ドロミニア出身。16歳でプログラミング言語の開発、18歳でAuctomatic（eBay出品管理ツール）を設立して$5百万で売却。MITへの入学を辞退してStripeを設立。「インターネットのGDPを増やす」という哲学を持ち、上場よりも長期的な製品・インフラ構築を優先する姿勢を維持。Effective Altruismや科学研究への投資（Arcadia）にも積極的。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: john-collison
+    name: ジョン・コリソン
+    kind: PERSON
+    description: Stripe共同創業者・社長（1990〜）。パトリックの弟。MITを中退してStripeの開発に合流。Auctomatic共同設立者。Stripeのビジネス開発・パートナーシップ・グローバル展開を主導した。「Stripe Atlasは私が最も誇りに思う製品」と語り、グローバルな起業家へのアクセスと金融インフラの民主化という使命を体現。兄弟それぞれが補完的な役割（PatrickがCEO・エンジニアリング / JohnがPres・ビジネス）を担う。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: paypal
+    name: PayPal（ペイパル）
+    kind: COMPANY
+    description: 1998年設立（米国カリフォルニア）のオンライン決済の先駆者。Elon Musk・Peter Thiel・Reid Hoffmanらによる「PayPal Mafia」を生んだ。2002年にeBayに$15億で買収後、2015年に独立。消費者向け送金・eBay決済での圧倒的シェアを持つが、開発者向けAPIの複雑さとドキュメントの質でStripeに大きく遅れを取った。Stripeの台頭後も「消費者間送金（Venmo）」と「大企業向け決済処理」で差別化を図るが、「スタートアップ・デフォルト」の地位を完全に失った。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: shopify
+    name: Shopify（ショッピファイ）
+    kind: COMPANY
+    description: 2006年設立（カナダ・オタワ）のeコマース・プラットフォーム。同じくDeveloper-Firstの姿勢でECプラットフォームを構築し、加盟店が自社ECサイトを簡単に持てるようにした。StripeとShopifyは「EC事業者の決済インフラ」と「ECプラットフォーム」として相互補完・相互参照の関係。Shopify PaymentsはStripeをベースに構築され、Stripe Connectがマーケットプレイス型の売り手への入金を処理する。Developer-Firstモデルが同時代に異なる問題を解いた並行事例。
+    roles_in_case:
+      - ENABLER
+
+lessons:
+  - id: l1
+    statement: 「誰が意思決定者か」を再定義することが産業の競争軸を書き換える。Stripeは「決済を選ぶのはCFOではなく開発者だ」と定義し直すことで、CFO向けに最適化されていた既存競合の優位を無効化した。技術的評価者を経済的意思決定者に変換できれば、「営業なしに売れる」構造が生まれる。
+    kind: MECHANISM
+    applies_to: B2B製品のGTM設計、「意思決定者の再定義」による競争軸の転換評価
+    tag_refs:
+      - pattern/product-led-growth
+      - pattern/customer-interface-winner
+
+  - id: l2
+    statement: TTV（Time-to-Value：価値を体験するまでの時間）を最小化することが、ボトムアップ採用（PLG）の最重要KPIだ。Stripeは「10〜15分で動くデモ」を実現することで、「試す前に意思決定する」から「試してから意思決定する」へと顧客の行動を変えた。TTVが短いほど試用率が上がり、試用した顧客の本採用率が上がる。
+    kind: MECHANISM
+    applies_to: SaaS/API製品のオンボーディング設計、プロダクト主導成長（PLG）の指標設計
+    tag_refs:
+      - pattern/product-led-growth
+      - driver/technology-shift
+
+  - id: l3
+    statement: ドキュメントの質がB2D（Business-to-Developer）製品の第一の営業ツールだ。開発者が「試す」判断をする最初の接触点はAPIドキュメントであり、「30分で全体を理解できるドキュメント」と「PDFのXML仕様書」では採用率が桁違いに変わる。ドキュメントへの投資は営業・マーケティングへの投資より高いROIをもたらす場合がある。
+    kind: HEURISTIC
+    applies_to: API製品・開発者向けツールのドキュメント投資判断、Developer Experience（DX）の競争優位としての評価
+    tag_refs:
+      - pattern/product-led-growth
+      - pattern/outsider-innovation
+
+  - id: l4
+    statement: 「スタートアップに安く提供して、成長と共に収益を得る」モデルは、従来の「大企業を最初から狙う」モデルより長期的にLTVが高くなりうる。スタートアップは失敗率が高いが、成長した1社の処理量は失敗した99社のコストを上回る。さらに「成長した企業」はすでにシステムが統合済みで離脱コストが高い。
+    kind: MECHANISM
+    applies_to: SaaS/API企業の顧客獲得戦略、スタートアップ市場vs大企業市場のLTV比較
+    tag_refs:
+      - pattern/network-effect
+      - pattern/subscription-model
+
+  - id: l5
+    statement: データが金融サービスの参入障壁になる。Stripeが持つ「インターネット企業の日次売上・成長率・キャッシュフローのリアルタイムデータ」は、既存銀行が3ヶ月後の財務諸表しか見られない中で、翌日融資判断を可能にする。「誰よりも多くの取引データを持つ」プレイヤーが金融サービスで最も有利な立場にある。
+    kind: FORECAST_METHOD
+    applies_to: データ資産を保有するプラットフォームの金融事業参入評価、Embedded Financeの競争優位源泉分析
+    tag_refs:
+      - industry/fintech
+      - pattern/customer-interface-winner
+
+sources:
+  - source_key: src1
+    kind: ARTICLE
+    title: "Stripe: The Internet's Most Undervalued Company"
+    author: Alex Danco
+    publisher: Substack (alexdanco.com)
+    year: 2020
+    notes: Stripeのビジネスモデル・GTM戦略・金融インフラ化のビジョンを最も明快に分析した記事。「StripeはPayPalではなくVisa/MasterCardのレール層を目指している」という論点を展開。Developer-First GTMの経済的合理性とAtlasの戦略的意味を詳述。Stripeを理解するための最良の一次資料に近い分析。
+
+  - source_key: src2
+    kind: BOOK
+    title: Product-Led Growth
+    author: Wes Bush
+    publisher: Product-Led Institute
+    year: 2019
+    notes: PLG（Product-Led Growth）の概念と実装を体系化した実務書。Stripe・Slack・Calendly・Zoom等のPLG事例を分析。「セールスなしに製品が成長する」の仕組みをTTV・NRR・PQLという指標で説明。Stripeの成長モデルを理論的に位置づけるための参照文献。
+
+  - source_key: src3
+    kind: ARTICLE
+    title: "The Collison Brothers and Story Behind the Founding of Stripe"
+    author: Ryan Mac and Alex Barinka
+    publisher: Forbes
+    year: 2017
+    notes: コリソン兄弟の創業前史（アイルランドでの幼少期・Auctomatic設立・MIT中退・YC参加）からStripeの公開ベータ・初期成長期までを追った詳細な創業史。「なぜ外部者が決済問題を解けたか」という問いへの答えを一次情報として提供。
+
+  - source_key: src4
+    kind: ARTICLE
+    title: "Stripe Atlas and the Future of Startups"
+    author: Patrick Collison
+    publisher: Stripe Blog
+    year: 2016
+    notes: Stripe Atlasローンチ時のパトリック・コリソン自身のブログ記事。「インターネットのGDPを増やす」というStripeのミッションとAtlasの設計思想を当事者が語った一次資料。「起業家の地理的制約を技術で除去する」という思想の背景を理解するための文献。
+
+relations:
+  - to_case: amazon-aws
+    relation_type: SIMILAR_MECHANISM
+    note: AWSが「インフラをAPIで提供してサーバーを持たずにアプリを作れる」ことで開発者の採用を起点に市場を取ったように、StripeはAPIで決済インフラを提供して金融機関の審査なしに決済を実装できるようにした。どちらも「インフラのAPI化→開発者が試す→開発者が社内推奨→企業が正式採用」という同型のボトムアップ採用経路を使った。AWSが「インフラ層」ならStripeは「金融サービス層」を同じ方法で民主化した。
+
+  - to_case: salesforce-saas-category
+    relation_type: SIMILAR_MECHANISM
+    note: SalesforceがCFO・IT部門の意思決定を「月$50から試せる製品体験」でバイパスしたように、StripeはCFO・経理の意思決定を「10分で動くAPI体験」でバイパスした。どちらも「経済的意思決定者（Economic Buyer）を説得する」から「技術的評価者（Technical Evaluator）の支持を得て逆に動かす」へとGTMを転換した。Salesforceがボトムアップ採用を「月額課金」で実現し、Stripeが「無料トライアル→本番」で実現した。
+
+  - to_case: credit-card-network
+    relation_type: SIMILAR_MECHANISM
+    note: VisaとMastercardが「銀行（アクワイアラー）×加盟店×消費者」の三者をつなぐ決済レールを作ったように、Stripeは「開発者×事業者×エンドユーザー」をつなぐAPIレールを作った。Stripeはカード会社のネットワーク上に乗りながら、そのネットワークを「APIで使えるもの」に変換するアブストラクション層を提供した。「インフラの上に新しいインフラを作る」という階層化の典型。

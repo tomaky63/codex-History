@@ -1,0 +1,188 @@
+# drafts/seven-eleven-japan.yaml
+# セブン-イレブン・ジャパンとコンビニ物流革命
+
+case:
+  slug: seven-eleven-japan
+  title: セブン-イレブン・ジャパンとコンビニ物流革命——POS・単品管理・共同配送が作った情報小売
+  period_start: 1974
+  period_end: 2000
+  primary_themes:
+    - vertical-restructuring
+    - standardization-wins
+
+events:
+  - id: ev1
+    year: 1974
+    title: 豊洲店開業——日本第1号店、コンビニ業態の幕開け
+    description: 東京都江東区豊洲に日本第1号店を開業。米サウスランド社からライセンスを得たイトーヨーカドーが展開。24時間営業・近隣立地という米国モデルをそのまま移植したが、「なぜ鮮食品が置けないか」という問いが日本独自の進化の起点となった。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1978
+    title: 第1次総合情報システム稼働——コンピューター発注の導入
+    description: 各店舗へのコンピューター端末導入と発注支援システムの稼働。経験と勘に依存していた在庫発注にデータの補助を初めて取り入れた。「仮説を立て、データで検証する」という単品管理の哲学がこの時期に形成され、加盟店オーナーへの教育が始まった。
+    event_type: TECHNOLOGY_SHIFT
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev3
+    year: 1982
+    title: 第2次総合情報システム——グラフィックPOS端末の全店展開
+    description: グラフィック表示のPOS端末を全店に展開し、SKU単位のリアルタイム売上データが本部・加盟店・メーカーの間を流れる体制が完成した。コンビニが「消費者行動の観測ステーション」に変わり、メーカーは自社製品の全国売上をリアルタイムで把握するためにセブン-イレブンのシステムへの依存を深めた。データ優位が確立した構造的転換点。
+    event_type: TECHNOLOGY_SHIFT
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev4
+    year: 1987
+    title: 温度帯別共同配送の全国完成——鮮食品の採算を成立させた物流革命
+    description: 複数メーカーの商品を冷凍・チルド・常温・温食品の温度帯別に共同配送センターで集約し、各店舗に1日3〜4回配送する体制が全国規模で完成。従来1店舗あたり50〜70便あった個別配送が大幅に削減され、むしろ鮮度が向上した。弁当・おにぎり・惣菜という日次製造の鮮食品が採算ラインを超え、日本型コンビニの食文化が確立した転換点。
+    event_type: RESTRUCTURING
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev5
+    year: 1989
+    title: 第3次総合情報システム——衛星通信で全店リアルタイム接続
+    description: 人工衛星通信を使った第3次総合情報システムが稼働し、全国の全店舗・配送センター・本部・主要メーカーをリアルタイムで接続した。本部は全国売上・在庫・発注をリアルタイムで把握し、異常発注の自動検知や気象・イベント連動の品揃え提案が可能になった。ウォルマートの衛星ネットワーク（1987年）と同型の情報覇権を日本市場で確立。
+    event_type: TECHNOLOGY_SHIFT
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev6
+    year: 1991
+    title: イトーヨーカドーがサウスランドを支援・取得——ライセンシーがライセンサーを逆買収
+    description: 1990年に経営破綻（Chapter 11申請）した米サウスランド社の再建にイトーヨーカドーが出資し、事実上の経営支援・取得が完成。1974年にライセンスを買った日本法人が、財務規律を欠いたまま短期収益を優先した米本家を買収するという産業史上稀な逆転。「フランチャイズ料に依存して技術投資を怠ったライセンサーが、システム投資を続けたライセンシーに逆転される」という構造的必然の帰結。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev7
+    year: 2000
+    title: 国内1万店突破——日本最大の小売業態として確立
+    description: 国内店舗数が1万店を突破し、セブン-イレブン・ジャパンは日本最大の小売チェーンとして確立した。コンビニ業態全体（ファミリーマート・ローソン等）が日本流通の中心となり、「コンビニで食事・ATM・公共料金支払い・宅急便」というライフインフラ化が完成。日本型コンビニモデルが中国・タイ・米国の7-Eleven再編の青写真となった。
+    event_type: PEAK
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: seven-eleven-japan
+    name: セブン-イレブン・ジャパン
+    kind: COMPANY
+    description: 1974年にイトーヨーカドーが米サウスランド社からライセンスを得て設立した日本のコンビニエンスストアチェーン。POS・単品管理・共同配送の三位一体のインフラを自前で構築し、米国モデルを超えた日本型コンビニを確立。1991年のイトーヨーカドーによるサウスランド買収後は事実上の世界本社となった。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: suzuki-toshifumi
+    name: 鈴木敏文
+    kind: PERSON
+    description: セブン-イレブン・ジャパン代表取締役（後にセブン&アイ・ホールディングス会長）。「仮説検証型小売」の哲学を提唱し、POS・単品管理・共同配送の設計を主導した。「消費者は必要なものを言語化できない——だから需要は観察するしかない」という洞察が全ての革新の起点。日本型コンビニのビジョナリーとして産業を設計した。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: ito-yokado
+    name: イトーヨーカドー
+    kind: COMPANY
+    description: セブン-イレブン・ジャパンの親会社。伊藤雅俊が創業した日本のスーパーマーケットチェーン。1974年のコンビニ事業参入を決断し、1991年のサウスランド支援・取得を実行した。後にセブン&アイ・ホールディングスに再編。「コンビニのライセンサーを買収したスーパーマーケット」という歴史的逆転の実行主体。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: southland-corporation
+    name: サウスランド社（米7-Eleven）
+    kind: COMPANY
+    description: 1927年に米国テキサス州で創業した世界初のコンビニエンスストアチェーン。1974年に日本のイトーヨーカドーへライセンスを供与。1980年代にLBO（借入による自社買収）で財務が悪化し1990年に経営破綻。フランチャイズ収益への依存と情報・物流投資の怠慢がライセンシーに逆転される原因となった。
+    roles_in_case:
+      - ENABLER
+
+  - slug: ito-masatoshi
+    name: 伊藤雅俊
+    kind: PERSON
+    description: イトーヨーカドー創業者・会長。1974年のコンビニ事業参入と米サウスランドとのライセンス交渉を承認し、1991年のサウスランド支援を決断した。「小売業は奉仕業である」という哲学を持ち、顧客利便性への長期投資を支えた。鈴木敏文のビジョンを組織として実行できる環境を整えた後ろ盾。
+    roles_in_case:
+      - PROTAGONIST
+
+lessons:
+  - id: l1
+    statement: 単品管理（SKU単位のリアルタイム追跡）とPOSデータの組み合わせは「仮説→発注→検証」のサイクルを作り、個人の感覚に依存した発注をデータ主導に転換する。このサイクルの蓄積が、同じPOS端末を買っても短期間では模倣できない「文化的・データ的競争優位」を形成する。
+    kind: MECHANISM
+    applies_to: 小売業の情報システム投資評価、「データ優位の持続可能性」の分析
+    tag_refs:
+      - pattern/customer-interface-winner
+      - driver/technology-shift
+
+  - id: l2
+    statement: 共同配送（複数メーカーを温度帯別に集約）は物流コスト削減だけでなく、個別配送では不可能だった小口多頻度配送を可能にし、鮮度という新しい差別化軸を生んだ。「制約を取り除いた物流インフラが、それまで存在しなかった消費行動を作る」——コンテナ化が海上輸送のコストを変えたように、共同配送はコンビニで売れるものの定義を変えた。
+    kind: MECHANISM
+    applies_to: 物流インフラ投資の戦略的意義評価、「制約除去型イノベーション」の分析
+    tag_refs:
+      - pattern/cost-structure-shift
+
+  - id: l3
+    statement: ライセンシーがライセンサーを超えるのは、ライセンシーが現地の制約（高密度都市・新鮮食品需要・高い消費者期待）に適応するために革新するからだ。本家は既存資産・既存ビジネスモデルへの投資を守るインセンティブがあり、適応が遅れる。「ライセンスを与えた側が常に優位」という前提は、再投資の差が生まれた時点で崩れる。
+    kind: PATTERN
+    applies_to: ライセンス・フランチャイズ事業の長期競争力分析、「本家vs現地法人」の革新力比較
+    tag_refs:
+      - pattern/outsider-innovation
+
+  - id: l4
+    statement: 「便利さ」の定義は固定されない。1974年のコンビニの便利さは「近さ・深夜営業」だったが、1987年以降は「鮮度・品揃えの適切さ・毎日変わる商品」に変わった。消費者が次に求めるものを現在の定義で固定すると、定義が変わった時に競争力を失う。7-Eleven Japanは「便利さの定義の変化」を先取りして物流に投資した。
+    kind: HEURISTIC
+    applies_to: 消費者ニーズの構造的変化の読み方、小売・サービス業の差別化戦略評価
+    tag_refs:
+      - pattern/customer-interface-winner
+
+  - id: l5
+    statement: フランチャイズ・ライセンス収益に依存して技術インフラへの再投資を怠ると、技術投資を続けたライセンシーに逆転される。米サウスランドは短期の財務最適化（LBO）を選び、7-Eleven Japanは長期のシステム投資を選んだ。その差が17年後にライセンサー・ライセンシーの逆転として現れた。
+    kind: ANTI_PATTERN
+    applies_to: フランチャイズ・ライセンスビジネスの長期持続可能性評価
+    tag_refs:
+      - pattern/outsider-innovation
+      - driver/personal-obsession
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: コンビニエンス・ストア・システムの革新性
+    author: 矢作敏行
+    publisher: 日本経済新聞社
+    year: 1994
+    notes: 7-Eleven Japanの物流システム・情報システムの革新を学術的に分析した基本文献。共同配送の設計原理・POS導入の意義・単品管理の哲学を体系的に整理。コンビニ研究の古典。
+
+  - source_key: src2
+    kind: BOOK
+    title: セブン-イレブンの経営史——日本型情報企業への挑戦
+    author: 川辺信雄
+    publisher: 有斐閣
+    year: 2003
+    notes: セブン-イレブン・ジャパンの創業から成熟期までを一次資料と鈴木敏文へのインタビューをもとに詳述した企業史。各情報システムの開発経緯・共同配送の導入過程・サウスランド取得の内幕を網羅。
+
+  - source_key: src3
+    kind: BOOK
+    title: 仕事の夢、くらしの夢——鈴木敏文の商売と経営
+    author: 緒方知行
+    publisher: プレジデント社
+    year: 2006
+    notes: 鈴木敏文の経営哲学を長年の取材から再構成。「仮説検証型小売」の思想的背景・共同配送設計の発想・メーカーとの交渉の実態を鈴木自身の言葉で語る重要な一次情報に近い資料。
+
+  - source_key: src4
+    kind: STATISTICS
+    title: コンビニエンスストア統計調査月報
+    author: 日本フランチャイズチェーン協会（JFA）
+    publisher: 日本フランチャイズチェーン協会
+    year: 2023
+    notes: 日本のコンビニ業態の店舗数・売上・客数の長期時系列データ。セブン-イレブン・ジャパンの成長曲線（1974〜2000年）を定量的に確認するための一次統計資料（毎月更新）。
+
+relations:
+  - to_case: walmart-retail-revolution
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも「販売時点データをサプライヤーとの関係に組み込み、小売業者が情報優位を確立した」同型の構造。WalmartのRetail LinkとセブンイレブンのPOS+単品管理は「データへのアクセスを通じてサプライヤーを自社システムに依存させる」メカニズムが共通する。ただし方向が異なる——Walmartはコスト削減を動機、セブン-イレブンは鮮度・品質向上を動機とした。
+
+  - to_case: containerization
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも「物流の物理インフラを標準化・集約することで、先行者が複製困難な構造的優位を確立した」事例。コンテナが海運の積み卸し単位を標準化したように、共同配送は食品配送の温度帯別集約単位を標準化した。「インフラの設計者が、そのインフラが可能にする産業の設計者になる」という共通メカニズム。
+
+  - to_case: famicom-platform
+    relation_type: SIMILAR_MECHANISM
+    note: セブン-イレブンのシステム（POS+共同配送+フランチャイズ）は加盟店・食品メーカー・配送業者を自社エコシステムに統合するプラットフォーム構造を持つ。任天堂がロックチップで大手メーカーを囲い込んだように、セブン-イレブンは共同配送センターへの参加を通じて食品メーカーをシステムへの依存構造に組み込んだ。

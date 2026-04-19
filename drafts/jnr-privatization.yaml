@@ -1,0 +1,228 @@
+# drafts/jnr-privatization.yaml
+# 旧国鉄の分割民営化——財政崩壊から7社分割へ
+
+case:
+  slug: jnr-privatization
+  title: 旧国鉄の分割民営化——財政崩壊から7社分割へ
+  period_start: 1964
+  period_end: 1987
+  primary_themes:
+    - regulatory-turning-points
+    - vertical-restructuring
+
+events:
+  - id: ev1
+    year: 1964
+    title: 東海道新幹線開業——翌年度に単年度赤字へ転落
+    description: 10月1日の新幹線開業は技術的勝利だったが、世銀借款の返済・高速道路との競合・過剰雇用体制が重なり、翌1965年度に国鉄は単年度赤字に転落した。「成功した国策事業」が組織の財政破綻の引き金になるという逆説の起点。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev2
+    year: 1968
+    title: 「マル生運動」開始——労使対立の固定化
+    description: 国鉄が生産性向上（マル生）運動を展開したが、国労・動労の激しい抵抗で頓挫。以後、職場規律の崩壊・怠業・ストの常態化が定着し、現場の管理機能が事実上喪失した。経営陣と労組が「改革しない均衡」に落ち着く。
+    event_type: CRISIS
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev3
+    year: 1975
+    title: スト権奪還闘争——8日間全国一斉ストで国鉄不信が決定的に
+    description: 国鉄労組が8日間の全国一斉ストを敢行。旅客・貨物輸送が麻痺し、世論の国鉄離れが加速した。「つぶれないから強硬できる」という組合側の計算が表面化し、国鉄の政治的不可侵性への疑念が生まれた。
+    event_type: CRISIS
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev4
+    year: 1980
+    title: 累積債務7兆円超——3度目の経営改善計画も破綻
+    description: 長期債務残高が7兆円を超え、利払いだけで年間5,000億円に達した。3度目の「経営改善計画」の未達が確定的となり、「改善計画」サイクルの無効性が明らかになった。抜本的な構造改革論が政界・財界で浮上し始める転換前夜。
+    event_type: CRISIS
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 1981
+    title: 第2臨調設置・土光敏夫会長就任——「分割・民営化」答申の起動
+    description: 鈴木善幸内閣が第2次臨時行政調査会（第2臨調）を設置し、土光敏夫（東芝名誉会長）が会長に就任。「増税なき財政再建」を旗印に三公社民営化を正面から打ち出した。財界の権威が「専門家の答申」として改革枠組みを制度化したことが転換点。問題の「所有権」が政治から外部機関へ移転した。
+    event_type: POLICY_SHIFT
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev6
+    year: 1982
+    title: 中曽根康弘内閣発足——三公社民営化を「戦後政治の総決算」と位置づけ
+    description: 中曽根康弘が首相に就任し、国鉄改革を「戦後政治の総決算」として政権の最重要課題に据えた。国労（社会党・共産党系）の組合解体が自民党の政治的利益とも一致し、改革論理と党派的利益が重なった。
+    event_type: LEADERSHIP_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev7
+    year: 1985
+    title: 国鉄再建監理委員会が最終答申——「6社分割」の具体設計確定
+    description: 1983年設置の国鉄再建監理委員会が最終答申を提出。「6旅客会社＋1貨物会社への地理的分割」という具体的な分割設計を確定した。「民営化のみ」ではなく「分割＋民営化」によって不可逆化を実現する方針が明示された。
+    event_type: POLICY_SHIFT
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev8
+    year: 1986
+    title: 日本国有鉄道改革法成立——分割民営化の法的確定と不可逆化の完成
+    description: 12月、国会で日本国有鉄道改革法ほか関連8法が成立。翌年4月1日の施行が法的に確定した。国労の反対闘争は法成立を阻止できず、組合員の大量離脱が始まった。地理的分割という物理的措置が制度として固定され、改革の不可逆性が完成した。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev9
+    year: 1987
+    title: 国鉄消滅——JR6旅客会社＋貨物会社発足
+    description: 4月1日、日本国有鉄道が消滅。JR北海道・東日本・東海・西日本・四国・九州の6旅客会社とJR貨物が発足した。37兆円超の累積債務は旧国鉄清算事業団が引き継ぎ、約20万人の余剰人員は各JR採用と清算事業団移管で処理された。国鉄労組（国労）の多くはJR採用から排除された。
+    event_type: RESTRUCTURING
+    is_turning_point: true
+    display_order: 1
+
+entities:
+  - slug: jnr
+    name: 日本国有鉄道（国鉄）
+    kind: INSTITUTION
+    description: 1949年に運輸省から分離した公共企業体。1987年の分割民営化まで日本の鉄道網を一元的に運営した。最盛期約41万人の従業員を擁したが、慢性赤字・過剰人員・労使対立を抱え解体された。
+    roles_in_case:
+      - OTHER
+
+  - slug: jr-east
+    name: JR東日本（東日本旅客鉄道）
+    kind: COMPANY
+    description: 1987年分割民営化で誕生した本州3社の一つ。首都圏・東北・甲信越を担当。2002年に完全民営化し、Suicaや新幹線ネットワークで成長を続ける。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: jr-central
+    name: JR東海（東海旅客鉄道）
+    kind: COMPANY
+    description: 1987年分割民営化で誕生した本州3社の一つ。東海道新幹線を運営し、3社中最高の収益性を誇る。2006年に完全民営化。リニア中央新幹線の建設を主導している。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: nakasone-yasuhiro
+    name: 中曽根康弘
+    kind: PERSON
+    description: 第71〜73代内閣総理大臣（1982〜1987年）。「戦後政治の総決算」を掲げ、国鉄・電電公社・専売公社の三公社民営化を推進した。国鉄分割民営化の政治的最高推進者。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: doko-toshio
+    name: 土光敏夫
+    kind: PERSON
+    description: 東芝名誉会長・経団連会長。1981年に第2臨調会長に就任し、「増税なき財政再建」を旗印に国鉄の分割民営化を答申の核心に置いた。「ミスター行革」と呼ばれた財界の象徴的存在。個人の清廉さが改革に道徳的正当性を付与した。
+    roles_in_case:
+      - PROTAGONIST
+      - ENABLER
+
+  - slug: rincho-second
+    name: 第2次臨時行政調査会（第2臨調）
+    kind: INSTITUTION
+    description: 1981年設置の行政改革諮問機関。土光敏夫会長のもと、国鉄・電電・専売の三公社民営化を答申した。「政治判断ではなく専門家の答申」という枠組みで改革に正当性を付与した。
+    roles_in_case:
+      - ENABLER
+
+  - slug: kokuro
+    name: 国鉄労働組合（国労）
+    kind: INSTITUTION
+    description: 国鉄最大の労組。社会党・共産党系で、分割民営化に最後まで反対した。法成立後も抵抗を続けたが、JR採用から大量排除され組合員が激減した。分割民営化の最大の敗者。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: kasai-yoshiyuki
+    name: 葛西敬之
+    kind: PERSON
+    description: 国鉄時代の若手幹部として分割民営化の実務設計に関与し、民営化後はJR東海社長・会長として同社を高収益企業に育てた。「国鉄改革の語り部」として改革の経緯を詳述した著書も多い。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: kokudotsu-seirisho
+    name: 旧国鉄清算事業団
+    kind: INSTITUTION
+    description: 1987年に設立され、国鉄の37兆円超の長期債務と余剰人員を引き継いだ。土地売却等で債務処理を進めたが、1998年に解散。残存債務は国民負担（国鉄債務処理法）に帰した。
+    roles_in_case:
+      - OTHER
+
+lessons:
+  - id: l1
+    statement: 国有独占企業の財政悪化は「損失を国家・納税者に転嫁できる構造」が維持される限り止まらない。経営陣・労組・政治家の三者が互いに合理化のインセンティブを失う共依存構造が形成されるからだ。
+    kind: MECHANISM
+    applies_to: 国有企業・公的独占の改革可能性評価、規制産業における「改革インセンティブ設計」の分析
+    tag_refs:
+      - mechanism/regulatory-capture
+      - pattern/declining-industry-reinvention
+
+  - id: l2
+    statement: 政治的に困難な改革は、「外部の権威ある審議会・専門機関」に問題の所有権を移すことで、反対派を「専門家の判断に反対する既得権益者」という不利な位置に追い込める。
+    kind: HEURISTIC
+    applies_to: 行政改革・規制緩和の政治設計、改革派が抵抗勢力を超えるための戦略設計
+    tag_refs:
+      - pattern/burn-the-boats
+
+  - id: l3
+    statement: 「民営化のみ」では不十分で、「分割＋民営化」によって元に戻るコストを極大化（不可逆化）することが改革の定着を決定する。NTT（分割なし）とJR（分割あり）の比較が示す構造的教訓。
+    kind: ANTI_PATTERN
+    applies_to: 規制緩和・民営化政策の設計評価、組織変革における「後戻りを防ぐ構造設計」
+    tag_refs:
+      - pattern/irreversibility-commitment
+      - pattern/burn-the-boats
+
+  - id: l4
+    statement: 財政赤字が積み上がる公的独占企業は、ある閾値を超えると「現状維持のコスト > 改革のコスト」が明白になり、外部権威との組み合わせで政治的転換が可能になる。赤字の累積自体が改革の政治的条件を熟成させる。
+    kind: FORECAST_METHOD
+    applies_to: 公的企業改革のタイミング分析、政策転換の「機が熟す」条件の予測
+
+  - id: l5
+    statement: 成功した国策事業の実績は「組織への政治的免責」を生み、その後の構造問題の顕在化を遅らせる「成功の罠」として機能する。戦後日本鉄鋼業と同じメカニズムが、新幹線を作った国鉄でも働いた。
+    kind: PATTERN
+    applies_to: 大型プロジェクト成功後の組織的後遺症の診断、「実績への過信」が構造改革を遅らせるパターンの識別
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: 国鉄改革——分割民営化の真実
+    author: 葛西敬之
+    publisher: 中央公論新社
+    year: 2001
+    notes: JR東海会長として改革を内側から担った葛西敬之による、分割民営化の実務と政治的経緯の詳述。改革推進側の一次証言として最重要。
+
+  - source_key: src2
+    kind: BOOK
+    title: 昭和の行革——土光臨調とその時代
+    author: 飯尾潤
+    publisher: 中央公論新社
+    year: 2008
+    notes: 第2臨調の政治的背景・土光敏夫の戦略・行政改革の制度論的分析。「問題の所有権を移す」という改革メカニズムを理解するための基本文献。
+
+  - source_key: src3
+    kind: BOOK
+    title: 国鉄の軌跡——改革の真実と政治力学
+    author: 斎藤雅男
+    publisher: 中央公論新社
+    year: 1994
+    notes: 国鉄内部の視点と改革の政治力学を詳述。労組・経営・政治の三者関係の構造分析に有用。
+
+  - source_key: src4
+    kind: PRIMARY_DOC
+    title: 国鉄再建監理委員会最終答申「国鉄改革について」
+    publisher: 国鉄再建監理委員会
+    year: 1985
+    notes: 分割・民営化の具体的設計（6社分割案、清算事業団、余剰人員処理方針）を定めた一次文書。改革設計の論理と政策根拠の検証に不可欠。
+
+relations:
+  - to_case: tokaido-shinkansen
+    relation_type: SAME_INDUSTRY
+    note: 東海道新幹線建設（世銀借款・土光臨調前の国鉄成功体験）が、皮肉にも国鉄財政悪化の遠因の一つとなった。十河信二が「退路を断つ」不可逆化で作った新幹線が、後の国鉄解体を引き起こす負債の起点ともなった同一産業の連続する二つの事例。
+
+  - to_case: japan-steel-postwar
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも国家主導の「管理された縮小・産業再編」の事例。鉄鋼業は特定不況産業安定措置法（1977年）、国鉄は第2臨調＋改革法（1986年）によって、外部権威が産業構造を強制的に書き換えた。さらに「成功した国策が組織の財政を破壊する逆説（成功の罠）」というメカニズムも共通する。
+
+  - to_case: japan-shipping-foc
+    relation_type: CONTRAST
+    note: 日本海運はコスト競争から「外に逃げる」（便宜置籍船化・フラッグアウト）ことで構造を維持した。国鉄は「内側から解体・再設計」することで再生を図った。どちらも慢性的コスト圧力への対応だが、戦略の方向は正反対。外への逃避は空洞化を進め、内側の解体は痛みを伴うが実体が残る。

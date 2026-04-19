@@ -1,0 +1,188 @@
+# drafts/opec-oil-crisis.yaml
+# OPECと石油危機——産油国が奪取した価格支配権の確立と崩壊
+
+case:
+  slug: opec-oil-crisis
+  title: OPECと石油危機——産油国が奪取した価格支配権の確立と崩壊
+  period_start: 1960
+  period_end: 1986
+  primary_themes:
+    - regulatory-turning-points
+    - vertical-restructuring
+
+events:
+  - id: ev1
+    year: 1960
+    title: OPEC設立——西側石油メジャーへの対抗として5カ国が結束
+    description: ベネズエラとサウジアラビアの主導で、イラク・イラン・クウェートを加えた5カ国がバグダードでOPECを設立。セブン・シスターズによる原油公示価格の一方的引き下げへの対抗が設立動機。当初10年間は実質的な価格支配力を持てず、交渉権の確立も進まなかった。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1971
+    title: テヘラン協定締結——産油国が集団として価格設定に初参加
+    description: 1970年にリビアのカダフィ政権がOccidental Petroleum（弱小米国石油会社）との個別交渉で値上げを強制し、「拒絶すれば国有化」という威嚇が通じることを実証した。翌1971年のテヘラン協定でOPECは集団として石油会社との価格交渉に初めて参加。セブン・シスターズによる一方的価格設定の時代が終わりを告げた転換点。
+    event_type: POLICY_SHIFT
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev3
+    year: 1973
+    title: アラブ石油禁輸と第一次石油ショック——原油価格が4倍に急騰
+    description: 第四次中東戦争（ヨム・キプール戦争）を機に、OAPEC（アラブ石油輸出国機構）がイスラエル支持国（米国・オランダ）への石油輸出を全面禁止し生産を削減。ブレント原油は4ヶ月で約3ドルから12ドルへ4倍に急騰した。アラブ連帯という政治的統一がカルテルの囚人のジレンマを克服し、産油国が「資源を地政学的武器として使える」という前例を世界に示した。
+    event_type: CRISIS
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev4
+    year: 1974
+    title: 産油国による石油会社の国有化完成——セブン・シスターズが所有者から委託採掘業者へ転落
+    description: 1974〜1975年にサウジアラムコ（ARAMCO）のサウジ国有化完成、クウェートOC、アブダビNOC、イランNIOCなど主要産油国が石油会社を国有化または多数株を取得。セブン・シスターズは中東石油の「所有者」から「委託採掘業者・少数株主」へと転落した。採掘技術は保持したが、価格設定権と所有権を失ったことで収益構造が根本的に変わった。
+    event_type: RESTRUCTURING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 1979
+    title: イラン革命と第二次石油ショック——原油価格が1973年比10倍以上に
+    description: イラン革命でホメイニー政権が誕生し、イランの産油が急減。1980年のイラン・イラク戦争が追い打ちをかけ、原油価格は最高35ドル以上まで急騰した。1973年の3ドルと比較して10倍以上。消費国で省エネ技術の急速な普及と燃料転換が本格化し、北海・アラスカ・メキシコでの高コスト産油開発が採算に乗り始めた——高価格の自己破壊的動力が解放された。
+    event_type: CRISIS
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev6
+    year: 1983
+    title: OPECが生産割当制度を正式導入——カルテル維持の制度化と限界
+    description: 価格支持のために正式な生産割当（クオータ）制度を導入。しかし割当を超えて増産する加盟国（割当違反）が後を絶たず、カルテルの規律は形骸化し始めた。非OPEC産油国（北海英国・ノルウェー、アラスカ、メキシコ）の生産増大と省エネによる需要削減でOPECの市場シェアは低下し続け、価格支持のためのサウジの減産負担が増大した。
+    event_type: POLICY_SHIFT
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev7
+    year: 1986
+    title: 逆石油ショック——サウジが増産に転換し原油価格が10ドル台へ暴落
+    description: サウジアラビアが「減産による価格支持（市場シェア喪失）」から「増産による市場シェア奪回」に戦略転換。原油価格は10ドル台まで暴落し（逆石油ショック）、「OPECが高価格を維持できる」という1973年以来の市場前提が崩壊した。産油国の財政は一斉に逼迫し、同年ヤマニ石油相が解任された。高価格が解放した省エネ・代替エネルギー・非OPEC増産が、OPEC自身の価格支配を崩壊させた。
+    event_type: CRASH
+    is_turning_point: true
+    display_order: 1
+
+entities:
+  - slug: opec
+    name: 石油輸出国機構（OPEC）
+    kind: INSTITUTION
+    description: 1960年にベネズエラ・サウジアラビア・イラク・イラン・クウェートの5カ国が設立した産油国の国際機関。1970年代には13カ国に拡大。1973年の石油禁輸と価格支配の確立で国際経済を支配したが、1986年の逆石油ショックで価格支配力を失った。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: ahmed-zaki-yamani
+    name: アフマド・ザキ・ヤマニ
+    kind: PERSON
+    description: サウジアラビアの石油相（1962〜1986年）。OPECの価格交渉の主導者として「石油の親善大使」と呼ばれた。1973年の石油禁輸を主導し、OPEC内の対立を仲裁し続けた。価格支持の限界を認めて増産転換を受け入れた直後の1986年に解任された。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: seven-sisters
+    name: セブン・シスターズ（七大石油メジャー）
+    kind: COMPANY
+    description: 国際石油市場を支配した7大石油会社の総称（スタンダード・オイル・オブ・ニュージャージー/エクソン、テキサコ、シェブロン、モービル、ガルフ、BP、シェル）。1970年代以前は中東油田のコンセッション契約を通じて一方的に価格設定権を保持。国有化によって所有権を失い委託採掘業者に転落した。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: muammar-gaddafi
+    name: ムアンマル・カダフィ
+    kind: PERSON
+    description: リビアの最高指導者（1969〜2011年）。1969年の革命後、リビア石油会社のコンセッション条件の見直しに着手。弱小企業Occidental Petroleumへの圧力を通じてセブン・シスターズの結束を崩し、OPECが価格交渉の主導権を持てることを実証した。産油国集団の交渉力を最初に証明した人物。
+    roles_in_case:
+      - DISRUPTOR
+
+  - slug: saudi-aramco
+    name: サウジアラムコ（Saudi Aramco）
+    kind: COMPANY
+    description: 1933年にスタンダード・カリフォルニア（シェブロン）がサウジアラビア政府から取得した石油利権を起源とする石油会社。1973〜1980年にかけてサウジアラビア政府が段階的に国有化し、1980年に100%国有化完成。資源ナショナリズムの象徴的事例。現在は世界最大の石油会社。
+    roles_in_case:
+      - PROTAGONIST
+
+lessons:
+  - id: l1
+    statement: コモディティカルテルは①需要の短期価格弾力性が低い、②加盟国の政治的統一がある、③スウィングプロデューサーが存在する——この3条件が揃った時にのみ機能する。3条件のどれか一つが崩れればカルテルは瓦解する。
+    kind: MECHANISM
+    applies_to: コモディティ産業のカルテル評価、資源産業の価格決定力分析
+    tag_refs:
+      - mechanism/cartel-pricing
+
+  - id: l2
+    statement: 独占・カルテルによる高価格設定は代替技術の開発・節約・新規参入への投資を誘発し、長期的に自らの市場を縮小させる。OPECの1986年崩壊は高価格が招いた省エネ・非OPEC産油・燃料転換の帰結だ。独占価格の最大の敵は消費者でも政府でもなく、その「高価格」が解放する市場の反応そのものだ。
+    kind: ANTI_PATTERN
+    applies_to: 独占・寡占の価格戦略評価、「高価格維持」のリスク分析
+    tag_refs:
+      - mechanism/cartel-pricing
+      - pattern/cost-structure-shift
+
+  - id: l3
+    statement: 産業の実質的支配は「誰が生産するか」より「誰が価格を設定するか」によって決まる。OPECの国有化後も石油会社は採掘を続けたが、価格設定権を失ったことで収益構造が根本的に変わった。この原理はウォルマートとサプライヤー、プラットフォームと出品者でも反復される。
+    kind: PATTERN
+    applies_to: 産業の価値連鎖分析、「誰がインターフェースを支配するか」の評価
+    tag_refs:
+      - pattern/customer-interface-winner
+
+  - id: l4
+    statement: 外部経済ショック（石油価格急騰）は既存産業の採算前提を崩すことで「やむを得ない構造転換」を強制する。日本の重化学工業から軽薄短小・省エネへの転換は石油ショックなしに自発的には起きなかった。危機は改革の「不可逆化装置」として機能する。
+    kind: FORECAST_METHOD
+    applies_to: 外部ショックが産業構造転換を加速するメカニズムの分析
+    tag_refs:
+      - pattern/cost-structure-shift
+      - driver/cost-pressure
+
+  - id: l5
+    statement: 一次産品カルテルの持続可能性は「短期需要弾力性の低さ × 政治的結束の強さ × 非加盟国の参入コストの高さ」で評価できる。いずれかの指標が悪化し始めた時点で長期崩壊のカウントダウンが始まっていると見てよい。
+    kind: FORECAST_METHOD
+    applies_to: 資源カルテルの持続性予測、コモディティ市場の支配力分析
+    tag_refs:
+      - mechanism/cartel-pricing
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: 石油の世紀——支配をめぐる究極の闘い（上・下）
+    author: ダニエル・ヤーギン
+    publisher: 日本放送出版協会
+    year: 1991
+    notes: 国際石油産業の通史としての決定版。OPECの設立からテヘラン協定・石油ショック・逆石油ショックまでを一次資料と関係者インタビューをもとに詳述。プリッツァー賞受賞。英語原題は The Prize。
+
+  - source_key: src2
+    kind: BOOK
+    title: セブン・シスターズ——国際石油資本とその時代
+    author: アンソニー・サンプソン
+    publisher: 文藝春秋
+    year: 1975
+    notes: 七大石油メジャーの内幕と産油国との権力闘争を詳述した古典的ルポ。コンセッション体制の仕組み・セブン・シスターズの分断統治戦略・OPEC設立の背景を理解するための基本文献。
+
+  - source_key: src3
+    kind: BOOK
+    title: OPEC——25年の挑戦
+    author: イアン・スキート
+    publisher: エネルギーフォーラム
+    year: 1989
+    notes: OPEC事務局勤務経験を持つ著者によるOPEC内部からの記述。テヘラン協定・石油禁輸の意思決定過程・ヤマニの外交・加盟国間の対立を詳細に記録。OPECの機能と限界を内側から理解するための重要資料。
+
+  - source_key: src4
+    kind: STATISTICS
+    title: BP Statistical Review of World Energy
+    author: BP plc
+    publisher: BP plc
+    year: 2023
+    notes: 原油生産量・消費量・価格の長期時系列データ。1960〜1986年の産油国シェア推移・OPEC vs 非OPEC生産比率・実質原油価格の変動を定量的に確認するための一次統計資料（年次更新）。
+
+relations:
+  - to_case: japan-steel-postwar
+    relation_type: PRECEDENT
+    note: 第一次石油ショック（1973年）が日本の高炉一辺倒・エネルギー多消費型産業の採算前提を崩し、鉄鋼業の構造不況と設備削減の引き金となった。OPECの価格支配が日本鉄鋼の転換期の外部条件として機能した。
+
+  - to_case: containerization
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも「物理的フロー（石油/コンテナ）の制御権をめぐる産業権力の移転」という構造を持つ。コンテナ規格標準化が海運の主導権をISO/McLeanに与えたように、石油価格設定権がセブン・シスターズからOPECへ移転した。「誰が物理的なモノの流れのインターフェースを設計・管理するか」が産業の利益配分を決める共通メカニズム。
+
+  - to_case: japan-semiconductor
+    relation_type: PRECEDENT
+    note: 石油ショック後の産業高度化政策（省エネ・軽薄短小）が日本の半導体・電子産業への国家投資を加速させた。1976年の超LSI技術研究組合設立は、石油ショックが日本産業に強いた「重厚長大からの転換」という文脈にある。外部ショックが次の産業の発展を準備する構造。

@@ -1,0 +1,244 @@
+# drafts/japan-steel-postwar.yaml
+# 戦後日本鉄鋼業の奇跡と凋落 — 構造データ
+
+case:
+  slug: japan-steel-postwar
+  title: 戦後日本鉄鋼業の奇跡と凋落——廃墟から世界首位、そして後発者への構造移転
+  period_start: 1945
+  period_end: 1990
+  primary_themes:
+    - regulatory-turning-points
+    - standardization-wins
+    - vertical-restructuring
+
+events:
+  - id: ev1
+    year: 1945
+    title: 終戦——製鉄所壊滅、粗鋼生産量が戦前の20%以下に
+    description: 敗戦と爆撃で主要製鉄所の設備が壊滅。粗鋼生産量は1943年のピーク約780万トンから100万トン以下に落ち込む。廃墟という出発点が、後発優位の起点となる。
+    event_type: CRISIS
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1950
+    title: 朝鮮特需と第1次合理化計画——資金と需要の同時獲得
+    description: 朝鮮戦争勃発による特需で鉄鋼需要が急増。資金を獲得した通産省は第1次合理化計画を策定し、日本開発銀行の低利融資と組み合わせて近代設備への集中投資を開始した。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev3
+    year: 1953
+    title: 第2次合理化計画——LD転炉全面採用の国策決定
+    description: 通産省が第2次合理化計画でLD転炉（純酸素上底吹き転炉）の全面導入を国策として決定。1952年にオーストリアで開発されたばかりの最新技術を、旧設備を持たない日本が迷わず選択した。米英の製鉄会社は平炉設備の未償却残が障壁となり同じ決断ができなかった。
+    event_type: POLICY_SHIFT
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev4
+    year: 1959
+    title: 川崎製鉄千葉製鉄所完成——臨海一貫製鉄所モデルの完成
+    description: 川崎製鉄社長・西山弥太郎が構想した臨海一貫製鉄所が千葉に完成。鉄鉱石・石炭の直輸入から製品の直輸出まで一体化した「立地のイノベーション」が証明された。鹿島・君津・大分など新たな臨海製鉄所建設ラッシュの引き金となる。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 1968
+    title: 日本の粗鋼生産量が世界第2位に——西ドイツを抜く
+    description: 日本の粗鋼生産量が約6,600万トンとなり西ドイツを抜いて米国に次ぐ世界第2位に。品質・コストともに世界最高水準となり、米国市場への輸出が急増。先発国の製鉄業が日本製品を「脅威」と認識し始める。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev6
+    year: 1970
+    title: 八幡製鉄・富士製鉄合併——新日本製鉄誕生、世界最大の鉄鋼会社
+    description: 通産省の調整と稲山嘉寛の主導により、八幡製鉄と富士製鉄が合併して新日本製鉄が発足。粗鋼生産量で世界最大の単一鉄鋼会社となる。公正取引委員会の難色を「国際競争力強化」を名目に押し切った。日本鉄鋼業の頂点と固定化の同時到来。
+    event_type: MERGER
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev7
+    year: 1973
+    title: 浦項総合製鉄（POSCO）初出銑——後発優位の再演
+    description: 韓国POSCOが初出銑。日韓請求権協定（1965年）の賠償資金と日本からの技術支援・設備輸出により、日本よりさらに新しい設備でスタート。日本が確立した「廃墟→最新設備→低コスト」のゲームを、グリーンフィールドで再演した。
+    event_type: ENTRY
+    is_turning_point: false
+    display_order: 2
+
+  - id: ev8
+    year: 1973
+    title: 第1次石油ショック——高度成長の前提崩壊
+    description: 原油価格が4倍に急騰し、エネルギー多消費型の鉄鋼業を直撃。国内需要の伸びも鈍化し、高度成長を前提とした設備投資計画が全て過剰設備となった。「需要は戻る」という期待から設備廃棄が先送りされ、過剰設備問題が慢性化する。
+    event_type: CRISIS
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev9
+    year: 1977
+    title: 特定不況産業安定臨時措置法制定——国家主導の設備廃棄
+    description: 鉄鋼・造船など過剰設備産業に対し、国家が設備廃棄と雇用維持を調整する枠組みを整備。「管理された縮小」が始まる。市場による自然淘汰より遅いが、社会的コストを抑えた産業政策の最終局面。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev10
+    year: 1985
+    title: プラザ合意——円高で輸出競争力が構造的に消滅
+    description: G5によるプラザ合意後、円が急騰（1ドル240円→120円）。日本鉄鋼の輸出採算が根本的に悪化し、輸出主導型成長モデルが事実上終焉した。高付加価値特殊鋼・自動車鋼板等への集中が加速するが、汎用鋼市場は韓国・欧州勢に明け渡した。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: nippon-steel
+    name: 新日本製鉄（新日鉄）
+    kind: COMPANY
+    description: 1970年に八幡製鉄と富士製鉄の合併で誕生した世界最大の鉄鋼会社。2012年に住友金属工業と合併して新日鉄住金（現・日本製鉄）となった。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: yahata-steel
+    name: 八幡製鉄
+    kind: COMPANY
+    description: 官営八幡製鉄所（1901年創業）を前身とする日本最大の鉄鋼会社。1970年に富士製鉄と合併して新日本製鉄を設立した。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: kawasaki-steel
+    name: 川崎製鉄
+    kind: COMPANY
+    description: 千葉製鉄所で臨海一貫製鉄所モデルを実現した日本の大手鉄鋼会社。2003年にNKKと合併してJFEスチールとなった。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: miti-japan
+    name: 通商産業省（通産省・MITI）
+    kind: INSTITUTION
+    description: 合理化計画の策定・産業調整・行政指導を通じて日本鉄鋼業の発展を主導した。高度経済成長期の日本の産業政策の中心機関。
+    roles_in_case:
+      - ENABLER
+      - REGULATOR
+
+  - slug: inayama-yoshihiro
+    name: 稲山嘉寛
+    kind: PERSON
+    description: 新日本製鉄初代社長。八幡・富士合併を主導し、1970年代には「財界四天王」として日本経済界をリード。「鉄は国家なり」の体現者。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: nishiyama-yataro
+    name: 西山弥太郎
+    kind: PERSON
+    description: 川崎製鉄社長として業界の反対を押し切り千葉臨海製鉄所構想を断行した。「砂浜に製鉄所を建てる」という前例なき賭けが成功し、日本鉄鋼業の立地革命をもたらした。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: posco-korea
+    name: 浦項総合製鉄（POSCO）
+    kind: COMPANY
+    description: 1968年設立・1973年初出銑の韓国国営製鉄会社。日本の技術支援と日韓請求権協定の資金で設立され、日本モデルをさらに新しい設備で再演した。日本鉄鋼業の後発優位を「相対化」した存在。
+    roles_in_case:
+      - DISRUPTOR
+
+  - slug: jdb-japan
+    name: 日本開発銀行
+    kind: INSTITUTION
+    description: 合理化計画への低利融資を担った政策金融機関。民間融資だけでは困難な大規模設備投資を可能にした。
+    roles_in_case:
+      - ENABLER
+
+lessons:
+  - id: l1
+    statement: 廃墟（または白紙のグリーンフィールド）は、レガシー設備の制約なく最新技術を全面採用できる「後発優位」を生む。先発者の設備は資産であり負債でもある。
+    kind: MECHANISM
+    applies_to: 産業の新陳代謝分析、新興国の産業政策評価、既存設備を持つ企業の技術転換コストの見積もり
+    tag_refs:
+      - pattern/outsider-innovation
+      - pattern/cost-structure-shift
+
+  - id: l2
+    statement: 後発優位の論理は移転可能だ。自分が「廃墟→最新設備→低コスト」で勝ったゲームのルールは、次の後発者にも等しく適用される。後発優位で確立した地位は、それ自体が永続的な優位にならない。
+    kind: ANTI_PATTERN
+    applies_to: 製造業の長期競争力分析、「追いつき型成長」モデルの持続可能性評価
+    tag_refs:
+      - pattern/outsider-innovation
+
+  - id: l3
+    statement: 産業政策は成長期には投資調整・過剰競争防止として機能するが、衰退期には「管理された縮小の遅延」として機能する。政治的に困難な設備廃棄・雇用削減を先送りさせる引力が働く。
+    kind: MECHANISM
+    applies_to: 産業政策の効果評価、構造不況産業への政策介入の設計
+    tag_refs:
+      - pattern/declining-industry-reinvention
+
+  - id: l4
+    statement: 立地という物理的なイノベーションは、技術革新と同等以上のコスト優位をもたらすことがある。最良の輸送路で最良の資源を調達するという地理的最適化は、技術を超えた競争要因になりうる。
+    kind: PATTERN
+    applies_to: 工場立地・物流拠点の競争力分析、製造業の地理的展開戦略
+
+  - id: l5
+    statement: プロセス産業の技術は「物理的不可逆性」を持たず移転可能だが、インフラ（新幹線・港湾等）や地理（立地優位）は相対的に移転困難だ。製造業の優位性を長期化させるには、プロセス技術以外の不可逆的要素が必要。
+    kind: FORECAST_METHOD
+    applies_to: 製造業優位の持続可能性評価、国家・地域の産業戦略立案
+    tag_refs:
+      - pattern/cost-structure-shift
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: 鉄の日本史——鉄鋼業の歴史と産業政策
+    author: 橘川武郎
+    publisher: 東洋経済新報社
+    year: 2016
+    notes: 戦後日本鉄鋼業の産業政策・技術選択・国際競争の全体像を俯瞰した代表的な研究書。
+
+  - source_key: src2
+    kind: BOOK
+    title: The Japanese Steel Industry — From Post-War Recovery to World Leadership
+    author: Leonard Lynn
+    publisher: Praeger
+    year: 1982
+    notes: 英語圏の視点から日本鉄鋼業の成功要因を分析した研究。後発優位と産業政策の関係を詳論。
+
+  - source_key: src3
+    kind: BOOK
+    title: 稲山嘉寛——鉄は国家なり
+    author: 田島泰彦
+    publisher: 講談社
+    year: 1990
+    notes: 新日鉄初代社長・稲山嘉寛の評伝。八幡・富士合併の内幕と財界リーダーとしての活動を記録。
+
+  - source_key: src4
+    kind: ARTICLE
+    title: The Miracle and Its Aftermath — Japan's Steel Industry in the Postwar Period
+    author: Richard Tanner Pascale, Thomas P. Rohlen
+    publisher: Journal of Japanese Studies
+    year: 1983
+    notes: 石油ショック後の構造調整期を含む日本鉄鋼業の興亡を分析した学術論文。
+
+  - source_key: src5
+    kind: BOOK
+    title: コンテナ物語——世界を変えたのは「箱」の発明だった
+    author: マルク・レビンソン
+    publisher: 日経BP
+    year: 2007
+    notes: コンテナ革命と日本鉄鋼業の輸出拡大の同時代性を確認するための参照。臨海製鉄所とコンテナ海運の相互強化を理解するために有用。
+
+relations:
+  - to_case: containerization
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも「旧設備のない後発者が最新技術を全面採用し、コスト構造を根本から変えた」というメカニズム。McLeanがbreak-bulk船社を持たないトラック業者だったように、日本鉄鋼業は平炉を大量に持たない廃墟から出発した。さらにコンテナ革命が日本鉄鋼の輸出コスト削減を直接支援した同期的関係もある。
+
+  - to_case: tokaido-shinkansen
+    relation_type: SAME_PATTERN
+    note: どちらも1950〜60年代の産業政策（通産省・国鉄）と世銀・開銀融資を活用した巨大投資プロジェクト。新幹線建設が日本鉄鋼業の最大顧客の一つになる相互強化関係。「退路を断つ」個人の執念（西山弥太郎、十河信二）が転換点を起動した点も共通。
+
+  - to_case: japan-shipping-foc
+    relation_type: CONTRAST
+    note: 日本海運はコスト競争から「逃げる」（便宜置籍船化）ことで延命した。日本鉄鋼業はコスト競争に「留まる」（最新設備投資）ことで勝利し、最終的に後発者に追い抜かれた。同じ時代の日本産業が選んだ対照的な生存戦略。
+
+  - to_case: subsea-cable
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも「後発者が最新設備でゲームに参入し、先発者を追い抜く」という後発優位のメカニズム。海底ケーブルはバブル崩壊後の安値資産取得でBig Techが優位を確立、鉄鋼は廃墟からの全面投資で日本が優位を確立した。その優位が次世代に移転するプロセスも類似している。

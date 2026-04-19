@@ -1,0 +1,191 @@
+# drafts/ntt-privatization.yaml
+# NTT民営化と通信自由化——国営独占の解体からブロードバンド革命まで
+
+case:
+  slug: ntt-privatization
+  title: NTT民営化と通信自由化——国営独占の解体からブロードバンド革命まで
+  period_start: 1952
+  period_end: 2001
+  primary_themes:
+    - regulatory-turning-points
+    - vertical-restructuring
+
+events:
+  - id: ev1
+    year: 1952
+    title: 日本電信電話公社（電電公社）設立——国営独占の制度的確立
+    description: GHQ占領終結と同時期に電信電話公社法が施行され、逓信省電気通信部門が電電公社として独立。市内・長距離・国際電報の独占が法的に確立された。加入権制度（7万2千円）が電話需要を抑制し、職員数は最盛期に約32万人を抱えた。強力な労働組合（全電通）が改革への抵抗勢力となる基盤もここで形成された。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1985
+    title: NTT民営化・電気通信事業法施行——通信自由化の法的開幕
+    description: 中曽根内閣の行政改革（第二臨調路線）により、電電公社が株式会社NTTに移行し、電気通信事業法・NTT法が施行された。第二電電（DDI）・日本テレコム・日本高速通信の「新電電3社」が長距離電話市場への参入を許可され、「0077」「0088」等のプレフィックスダイヤルによる料金競争が始まった。市内通話・ラストマイル回線はNTT独占のまま残った。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev3
+    year: 1988
+    title: 長距離電話料金の本格的な引き下げ競争——自由化の「第一の果実」
+    description: 新電電3社の参入から3年、長距離通話料金の競争が本格化し、東京─大阪間の3分当たり通話料が電電公社時代の水準から大幅に低下した。特に法人向け大口割引が先行し、企業の通信コストが下がった。ただし個人ユーザーへの恩恵は限定的で、「自由化の果実は法人先行・個人は後回し」という構造が続いた。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev4
+    year: 1996
+    title: 携帯電話の急速普及とPHS競争——移動体通信での部分的競争成立
+    description: NTTドコモ・DDIセルラー・IDOの3社による移動体通信競争と、DDI-P・NTTPの2社によるPHSサービスが重なり、携帯電話・PHSの普及率が急上昇した。移動体通信は固定電話と異なり「設備を並行投資する」経済的合理性があったため、ラストマイル問題を回避した競争が成立した。1996年末の携帯電話普及率は約10%を超え、デジタル化が加速した。
+    event_type: TECHNOLOGY_SHIFT
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 1999
+    title: NTT持株会社制への移行——完全分割を回避した「形式的再編」
+    description: 郵政省はNTTの完全分割（地域会社の法的独立・株式分離）を要求したが、NTTのロビー活動と政治力によって持株会社制（NTT東日本・NTT西日本・NTTドコモ・NTTコミュニケーションズを傘下に置く）という中間案に着地した。ラストマイル独占は継続し、接続料の主導権もNTT側に残った。英国BTの構造分離や韓国の厳格なアンバンドル政策との対比で、日本の「不完全な競争設計」が際立つ。
+    event_type: RESTRUCTURING
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev6
+    year: 1999
+    title: NTTドコモ iモードサービス開始——世界初のモバイルインターネット
+    description: 2月22日、NTTドコモが「iモード」サービスを開始した。携帯電話でメール・情報コンテンツ・銀行・ショッピングにアクセスできる閉じたエコシステムは世界初のモバイルインターネットとして急速に普及し、2001年には2000万契約を突破した。しかしiモードの「閉じたエコシステム」は、後のiPhone（2007年）による開放型スマートフォンへの適応を困難にする伏線となった。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 2
+
+  - id: ev7
+    year: 2001
+    title: ソフトバンクYahoo!BBのADSL参入——民営化16年後の「本当の自由化」
+    description: 孫正義率いるソフトバンクが月額1,990円（当時の業界水準の半額以下）でADSL事業を開始した。無料モデム配布・駅前勧誘という非常識な獲得戦略と、NTTの設備提供遅延への規制当局への訴えを組み合わせ、加入者を急拡大。対抗上NTTもフレッツADSLを値下げせざるを得なくなり、日本のブロードバンド普及率が急上昇した。「民営化の果実」が一般家庭に届いた転換点。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+entities:
+  - slug: ntt-corporation
+    name: 日本電信電話（NTT）
+    kind: COMPANY
+    description: 1985年に電電公社から移行した通信持株会社。NTT東日本・NTT西日本・NTTドコモ・NTTコミュニケーションズ等を傘下に持つ。全国の固定電話回線（ラストマイル）を独占的に保有し、1999年の再編後も持株会社制によって実質的な統合を維持。2023年時点でもNTT東西は全国の加入者回線の約9割を保有する。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: makoto-shindo
+    name: 真藤恒
+    kind: PERSON
+    description: 電電公社最後の総裁・NTT初代社長（在任1981〜1988）。石川島播磨重工業（IHI）社長出身の民間人として電電公社に登用され、民営化プロセスを内部から推進した。経営効率化・財務改善を主導したが、通信自由化の競争設計については消極的な面もあった。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: nakasone-yasuhiro
+    name: 中曽根康弘
+    kind: PERSON
+    description: 第71〜73代内閣総理大臣（在任1982〜1987）。「三公社五現業」の民営化を行革の柱とし、電電公社・国鉄・専売公社の民営化を推進した。第二臨調（土光敏夫委員長）の提言を政治的に活用し、「小さな政府・民間活力」という言説で労組・官僚の抵抗を上回った。日本の規制改革の政治的転換点を作った人物。
+    roles_in_case:
+      - ENABLER
+
+  - slug: son-masayoshi
+    name: 孫正義（ソフトバンク）
+    kind: PERSON
+    description: ソフトバンク創業者・CEO。2001年のYahoo!BBによるADSL参入でNTTのインフラ独占に対抗し、日本のブロードバンド普及を加速させた。無料モデム配布・駅前勧誘・規制当局への異議申し立てという多面的戦略で既存者の遅延戦略を突破した。2006年のボーダフォン日本法人買収（1.75兆円）でモバイル事業者にも転換。
+    roles_in_case:
+      - DISRUPTOR
+
+  - slug: ddi-corporation
+    name: 第二電電（DDI／現KDDI）
+    kind: COMPANY
+    description: 1984年設立（京セラ・ソニーなど民間資本）。1985年の通信自由化後に長距離電話「0077」で参入した新電電3社の一角。1998年にDDI・KDD・日本移動通信が合併してKDDIとなった。サウスウエスト航空のように「規制解放の第一波」に乗った参入者として長距離料金の引き下げを主導した。
+    roles_in_case:
+      - DISRUPTOR
+
+lessons:
+  - id: l1
+    statement: インフラを独占する企業の民営化は、競争を自動的に生まない。「所有者が国から株式会社に変わる」だけでは不十分で、インフラへのアクセス条件（接続料・工事条件・技術仕様）を中立的に規制するアンバンドル設計と、場合によっては構造分離が不可欠である。
+    kind: MECHANISM
+    applies_to: 通信・電力・鉄道などインフラ産業の民営化・規制緩和の設計評価
+    tag_refs:
+      - pattern/regulatory-arbitrage
+      - scope/industry-restructuring
+
+  - id: l2
+    statement: 持株会社制は「完全分割の政治的代替案」として登場するが、インフラ保有者と競合サービス提供者のあいだの利益相反を構造的に解決しない。形式的な組織変更は、実質的な競争阻害を温存する「隠れ独占」の典型的パターンである。
+    kind: ANTI_PATTERN
+    applies_to: 国営企業の再編スキーム評価、「構造分離 vs 持株会社制」の選択分析
+    tag_refs:
+      - pattern/regulatory-arbitrage
+      - scope/industry-restructuring
+
+  - id: l3
+    statement: 外部参入者（ソフトバンク）は、既存者（NTT）の「常識の外側」にある価格設定と顧客獲得戦略で市場を破壊する。無料配布・超低価格・規制訴訟の組み合わせは、内部から出ることは不可能な戦略であり、外部者であることが最大の武器になる。
+    kind: MECHANISM
+    applies_to: インフラ産業への新規参入戦略、「外部者の優位性」の分析
+    tag_refs:
+      - pattern/outsider-innovation
+      - industry/telecoms
+
+  - id: l4
+    statement: 規制緩和後の価格破壊は「既存市場の奪い合い」ではなく「抑圧された潜在需要の顕在化」をもたらすことが多い。ADSL参入後のブロードバンド普及は、インターネット利用者の絶対数を数倍に増やした——サウスウエスト効果の通信版。
+    kind: FORECAST_METHOD
+    applies_to: 価格破壊型参入の市場影響評価、規制産業の潜在需要推計
+    tag_refs:
+      - pattern/outsider-innovation
+      - industry/telecoms
+
+  - id: l5
+    statement: 閉じたエコシステムで支配的地位を築いた企業（NTTドコモのiモード）は、次世代のオープンプラットフォームへの適応を構造的に困難にする。「独占期の成功モデル」は競争期の最大の足かせになりうる。
+    kind: HEURISTIC
+    applies_to: プラットフォーム企業の持続的競争力評価、「閉じた成功の罠」の分析
+    tag_refs:
+      - scope/industry-restructuring
+      - pattern/outsider-innovation
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: 電電民営化の真実——公社解体から通信自由化まで
+    author: 小林宏治・熊谷信昭 ほか
+    publisher: NTT出版
+    year: 1993
+    notes: 電電公社民営化プロセスの内部証言・政策立案過程を詳述した記録。第二臨調の議論、郵政省・大蔵省・NTTの各立場の交渉経緯、組合の抵抗と敗北の構造を一次資料に近い形で記録している。
+
+  - source_key: src2
+    kind: PRIMARY_DOC
+    title: 第二次臨時行政調査会 最終答申
+    author: 第二次臨時行政調査会
+    publisher: 臨時行政調査会
+    year: 1983
+    notes: 「増税なき財政再建」を掲げた土光臨調の最終答申。三公社民営化の根拠・スケジュール・設計方針を規定した政策文書。電電公社民営化の「公式根拠」であり、当時の政治的合意形成プロセスを理解する一次資料。
+
+  - source_key: src3
+    kind: BOOK
+    title: 孫正義——事業家の精神
+    author: 井上篤夫
+    publisher: 日経BP
+    year: 2012
+    notes: ソフトバンク創業者・孫正義の経営判断プロセスを追ったビジネス伝記。ADSL参入の意思決定、NTTとの交渉・対立、Yahoo!BB無料モデム配布キャンペーンの舞台裏を詳述。ソフトバンクの非対称戦略とケラーとの比較研究に有用。
+
+  - source_key: src4
+    kind: PRIMARY_DOC
+    title: 情報通信白書（各年度版）
+    author: 郵政省／総務省
+    publisher: 総務省
+    year: 2002
+    notes: 総務省が毎年発行する通信産業統計の一次資料。ブロードバンド普及率・通信料金水準・市場シェア・回線数の時系列データを含む。ADSL参入前後の普及率急上昇を定量的に確認できる。
+
+relations:
+  - to_case: jnr-privatization
+    relation_type: SAME_PATTERN
+    note: 同じ中曽根行革（1985年前後）の「三公社民営化」として同時進行した。JNRは地域分割で規模縮小→財務改善、NTTは規模維持→部分的競争という異なる結果になった。「民営化の設計選択」（分割 vs 持株会社）が長期的な競争構造を決める対比として、対で学ぶ価値が高い。
+
+  - to_case: southwest-airlines-lcc
+    relation_type: SIMILAR_MECHANISM
+    note: サウスウエストが既存大手（ブラニフ等）の妨害訴訟に粘り抜いたように、ソフトバンクはNTTの設備提供遅延・工事妨害に対して規制当局への訴えと世論工作で粘り抜いた。「外部参入者vs既存者の遅延戦略」「参入後の市場拡大効果（サウスウエスト効果）」という共通の力学。
+
+  - to_case: opec-oil-crisis
+    relation_type: PRECEDENT
+    note: 1970年代のエネルギー危機と1980年代前半の世界的な「大きな政府への懐疑」が、英国サッチャー・米国レーガン・日本中曽根という同時期の民営化・規制緩和ブームを生んだ。OPECが引き起こした石油危機は、エネルギー産業だけでなく「政府管理経済の非効率」への批判の契機となり、通信民営化の政治的文脈を形成した。

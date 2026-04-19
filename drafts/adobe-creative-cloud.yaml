@@ -1,0 +1,164 @@
+case:
+  slug: adobe-creative-cloud
+  title: AdobeのCreative Cloudへの移行と買い切りからサブスクへの転換
+  one_liner: 業界標準ソフトを武器に「買い切り永続ライセンス」を廃止してサブスク一本化に踏み切り、株価が3倍になったAdobeの強制移行戦略
+  summary: >
+    2013年5月、Adobeは「CS7は存在しない」と宣言し、新機能はCreative Cloudのみで提供すると発表した。批判は激しかったが、移行から2年でARRが急成長し、2016年には売上が移行前の2倍を超えた。永続ライセンス廃止という「強制転換」が成立した条件は「ファイル形式・スキル・作業フローの三重ロックイン」による業界標準の地位と、「解約すると使えなくなる」という構造的チャーン抑制にあった。SaaS移行戦略のプレイブックとなった一方、2021年のFigma $200億買収提案は「次の業界標準」への脅威認識を露呈させた。
+  period_start: 2007
+  period_end: 2021
+  status: published
+  body_path: content/cases/adobe-creative-cloud.md
+
+events:
+  - year: 2007
+    title: Photoshop.com開設——クラウドサービスへの最初の試み
+    description: Adobeがオンライン写真編集サービスPhotoshop.comを月額課金で試験提供（2012年終了）。クラウド型ビジネスモデルの市場検証の最初の一手。
+    event_type: OTHER
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2011
+    title: Creative Cloud並行提供開始——「選択肢として試す」フェーズ
+    description: 永続ライセンス（CS5.5/CS6）とCreative Cloudサブスクリプションを並行提供開始。月額$50でPhotoshop等の全製品が使えるモデルを「選択肢」として提供し、加入率・解約率・LTVのデータ収集期間とした。
+    event_type: ENTRY
+    is_turning_point: true
+    display_order: 1
+
+  - year: 2012
+    title: Creative Suite 6（CS6）発売——永続ライセンス最後のバージョン
+    description: CS6が発売。Adobeは内部でこれが永続ライセンスの最終バージョンになることを既に決定していた。CS7は製品ロードマップから消えていた。
+    event_type: OTHER
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2013
+    title: 「CS7は存在しない」宣言——強制移行の断行
+    description: Adobe MAX前週に「今後の新機能はCreative Cloudのみ」と発表。永続ライセンス廃止への批判が噴出（英国議会でも問題化）するも方針を撤回せず。移行後2年でCC加入者380万人（前年比3倍）に急成長。
+    event_type: POLICY_SHIFT
+    is_turning_point: true
+    display_order: 1
+
+  - year: 2016
+    title: CC加入者1100万人突破・売上が移行前の2倍超え
+    description: Creative Cloud加入者が1100万人を突破。年間売上が2013年の約18億ドルから35億ドルへ倍増。株価は移行発表時の$40台から$100超えへ。年次経常収益（ARR）の安定成長が証明され、Adobe株は市場で「SaaS移行成功事例」として評価された。
+    event_type: PEAK
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2018
+    title: Adobe Stock・Fonts・XDのエコシステム統合——CCの「プラットフォーム化」
+    description: 安定したARR基盤を活用してAdobe Stock（株式素材）、Adobe Fonts、Adobe XD（UIデザイン）をCC内に統合。コラボレーション機能の強化でCC離脱コストをさらに高め、個人ツールからチームの作業プラットフォームへと転換。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2021
+    title: Figma $200億買収提案——「次の業界標準」への脅威認識
+    description: AdobeがUI/UXデザインツールFigmaを$200億で買収すると発表。FigmaはブラウザベースでAdobeのロックインを無効化する可能性を持っていた。EU・DOJの競合保護規制により2023年に断念。
+    event_type: MERGER
+    is_turning_point: true
+    display_order: 1
+
+entities:
+  - slug: adobe-inc
+    name: アドビ（Adobe Inc.）
+    kind: COMPANY
+    description: 1982年創業。Photoshop・Illustrator・Premiere Pro・After Effects等クリエイティブ業界の標準ツール群を持つ。CC移行後は安定したSaaS収益基盤を確立し、2020年代に時価総額$2500億超に成長した。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: shantanu-narayen
+    name: シャンタヌ・ナラエン（Shantanu Narayen）
+    kind: PERSON
+    description: Adobe CEO（2007年〜）。Creative Cloudへの移行を主導した。インド出身でAdobe入社後にCOO、2007年にCEOに就任。「永続ライセンス廃止」という最大のビジネスリスクを取り、ARR経営への転換を断行した。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: figma-inc
+    name: フィグマ（Figma, Inc.）
+    kind: COMPANY
+    description: 2012年創業。ブラウザベースのUI/UXデザインコラボレーションツールで急速に成長。AdobeのCreative Cloudのロックイン（ローカルインストール・Adobe固有ファイル形式）を無効化する可能性を持ち、Adobeが$200億で買収を試みた（2023年断念）。
+    roles_in_case:
+      - DISRUPTOR
+
+  - slug: affinity-serif
+    name: アフィニティ（Affinity by Serif）
+    kind: COMPANY
+    description: 英国Serif社が開発するPhotoshop/Illustrator代替ツール「Affinity Photo」「Affinity Designer」。CC移行への反発を受けて成長し、2022年に買い切り$70のプロ品質ツールとして普及。ただし業界標準の地位は奪えていない。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: microsoft-office-365
+    name: Microsoft Office 365
+    kind: PRODUCT
+    description: MicrosoftがOfficeを永続ライセンスからサブスクリプション（Office 365）に移行した事例。AdobeのCC移行とほぼ同時期に進行し、「エンタープライズ向け」の移行プレイブックの代表事例として比較される。
+    roles_in_case:
+      - PARTNER
+
+lessons:
+  - statement: 業界標準の地位があれば「嫌なら使うな」という強制転換が成立する——スイッチングコストが十分高く、競合が業界標準を奪えない状況でのみ有効
+    kind: MECHANISM
+    applies_to: 既存ソフトウェア企業の永続ライセンス→サブスク転換。業界標準を持つ製品のビジネスモデル変更の意思決定
+    display_order: 1
+
+  - statement: 「選択肢として並行提供→データ収集→選択肢を撤廃」という段階設計が、強制移行のリスクを大幅に低下させる
+    kind: PATTERN
+    applies_to: ビジネスモデル転換全般。特に既存顧客への大きな変更を伴う移行の段取り設計
+    display_order: 2
+
+  - statement: 「解約すると使えなくなる」という恐怖（ロス回避）は、「サブスクを続ける便益」より強力なチャーン抑制機能になる——損失回避バイアスをサブスク設計に組み込む
+    kind: HEURISTIC
+    applies_to: サブスクリプション製品の解約防止設計。特にファイル形式・データ蓄積を持つソフトウェア
+    display_order: 3
+
+  - statement: 顧客の怒りは時間とともに薄れるが、スイッチングコストは薄れない——感情と経済合理性が対立した時、長期的には経済合理性が勝つ
+    kind: ANTI_PATTERN
+    applies_to: 価格変更・モデル転換への顧客反発の評価。「批判が多い＝失敗」という誤った結論を避けるフレームワーク
+    display_order: 4
+
+  - statement: 業界標準ソフトへのFigma的な「ブラウザネイティブ＋コラボレーション」の挑戦は、ファイル形式ロックインを無力化するため、従来の参入障壁を迂回する
+    kind: FORECAST_METHOD
+    applies_to: 既存の業界標準ソフトの競合評価。新規参入者が「ロックインを迂回するアーキテクチャ」を持っているかの見極め
+    display_order: 5
+
+sources:
+  - kind: ARTICLE
+    title: "Adobe's Creative Cloud Is a Massive Bet That Could Pay Off Big"
+    author: Arik Hesseldahl
+    publisher: AllThingsD / Wall Street Journal Digital
+    year: 2013
+    notes: CC移行発表直後の産業分析。顧客反発・アナリスト評価・移行リスクの当時の状況を記録した重要な一次資料
+
+  - kind: ARTICLE
+    title: "Adobe's Creative Cloud transition: Two years later"
+    author: Jason Snell
+    publisher: Macworld
+    year: 2015
+    notes: CC移行後2年間の加入者数・売上成長・顧客反応の追跡分析。移行の結果を評価した定量的レポート
+
+  - kind: BOOK
+    title: "Subscribed: Why the Subscription Model Will Be Your Company's Future—and What to Do About It"
+    author: Tien Tzuo, Gabe Weisert
+    publisher: Portfolio/Penguin
+    year: 2018
+    notes: Zuora CEOによるサブスクリプション経済の解説書。Adobe CC移行を「永続→サブスク移行の最重要事例」として詳述
+
+  - kind: ARTICLE
+    title: "Adobe and Figma call off $20 billion merger"
+    author: Reuters Staff
+    publisher: Reuters
+    year: 2023
+    notes: Adobe-Figma合併断念の報道。EU・DOJの規制論拠と「UI/UXデザイン市場でのFigmaの独立性維持」の意味を記録
+
+relations:
+  - to_case_slug: salesforce-saas-category
+    relation_type: SIMILAR_MECHANISM
+    note: Salesforceが「ソフトウェアをブラウザで売る」という概念を発明し、AdobeがそれをCreativeツールに適用した。SaaS移行プレイブックの先行事例と後継事例
+
+  - to_case_slug: microsoft-oem-windows
+    relation_type: SIMILAR_MECHANISM
+    note: MicrosoftもOffice 365でほぼ同時期に永続→サブスク移行を実施。どちらも「業界標準の地位＋スイッチングコスト」を武器にした強制転換の事例。エンタープライズ（Microsoft）とクリエイター（Adobe）で対象セグメントが異なる
+
+  - to_case_slug: cocacola-bottler-system
+    relation_type: SIMILAR_MECHANISM
+    note: コカ・コーラが「秘密レシピ」で競合を不可能にしたように、AdobeはファイルフォーマットとスキルロックインでCC以外の選択肢を不可能にした。「不可欠なインターフェース独占」による価格支配のパターン

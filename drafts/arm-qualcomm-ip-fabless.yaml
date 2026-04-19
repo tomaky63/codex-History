@@ -1,0 +1,191 @@
+# drafts/arm-qualcomm-ip-fabless.yaml
+# ARM/QualcommとIP・ファブレス型モデル——製造を持たない設計会社が半導体産業を支配した
+
+case:
+  slug: arm-qualcomm-ip-fabless
+  title: ARM/QualcommとIP・ファブレス型モデル——製造を持たない設計会社が半導体産業を支配した
+  period_start: 1985
+  period_end: 2020
+  primary_themes:
+    - vertical-restructuring
+    - standardization-wins
+
+events:
+  - id: ev1
+    year: 1985
+    title: ARMアーキテクチャ誕生・Qualcomm設立——IP型半導体の二つの起点
+    description: 英国のアコーン・コンピュータでソフィー・ウィルソンとスティーブ・ファーバーが「ARM（Acorn RISC Machine）」を設計。RISC（命令セットの極限的シンプル化）を選択し、低消費電力という副産物を得た。同年、カリフォルニア大学サンディエゴ校の研究者アービン・ジェイコブスら7名がQualcomm設立。両社は同年に出発し、15年後にモバイル半導体産業の二大基盤となる。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1990
+    title: ARM Holdings独立——「製造しない半導体会社」という前例のないモデルの誕生
+    description: Apple・アコーン・VLSI Technologyの三者合弁でARM Holdings Ltd.を設立。Appleは軽量PDAのNewton向けに低消費電力プロセッサを必要とし、アコーンはARMの技術を持っていた。ARM Holdingsはチップを一枚も製造しない方針を確定。IPコアのライセンス料＋チップ出荷1個当たりのロイヤリティという二重収益モデルを採用した。半導体業界初の「純粋IP会社」の誕生。
+    event_type: FOUNDING
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev3
+    year: 1994
+    title: QualcommのCDMAがIS-95標準採択——標準必須特許（SEP）による永続収益構造の確立
+    description: Qualcommが開発したCDMA（符号分割多元接続）技術がIS-95として米国標準に採択。主流のGSM（ヨーロッパ）に対して容量・品質で優位なCDMAを業界標準化することで、全CDMA準拠端末メーカーがQualcommに特許ロイヤリティを支払う義務が生まれた。この標準必須特許（SEP）モデルをQualcommは3G（W-CDMA）→4G（LTE）→5G（NR）と反復し、移動通信標準が更新されるたびに収益基盤を更新し続けた。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev4
+    year: 2000
+    title: Qualcommが製造部門をEricssonに売却——完全ファブレス化と「中立性」の確立
+    description: Qualcommが半導体製造部門（IC事業部）をEricssonに約$8億で売却し、完全ファブレスに移行。製造を手放すことで「全社的な中立性」を確立——Qualcommは競合するチップメーカーの「顧客」ではなく「必須ライセンサー」という立場を明確化した。設計（Snapdragon SoC）と特許ライセンスの二本柱に集中し、製造コストボラティリティをゼロにした。
+    event_type: RESTRUCTURING
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev5
+    year: 2007
+    title: Apple iPhone発売——ARM×Qualcommエコシステムが40億台市場の基盤になった
+    description: 初代iPhoneはSamsung製ARM11コアアプリケーションプロセッサとQualcommSEPライセンスによるベースバンド通信を組み合わせた。スマートフォン市場の爆発的成長（2007年：1.2億台→2016年：14億台）により、ARMの年間ロイヤリティ対象出荷数は20億個を超えた。「ARMなしでスマートフォンは存在できない」という事実が定まった転換点。Qualcommの年間特許ライセンス収入は数千億円規模に成長した。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev6
+    year: 2016
+    title: SoftBankによるARM買収£243億——知的財産が世界最大買収の対象になった
+    description: ソフトバンクグループが英国ARM Holdingsを£243億（約$314億）で買収。当時の英国企業の買収額として史上最大。ARMの価値は「物理的資産」ではなく「IPライセンス収入の将来キャッシュフロー」だった。2020年にNVIDIAが$400億で再売却を試みたが、EU・英・米の独占規制当局が「AI時代に半導体業界のインフラをNVIDIAが独占する」として2022年に阻止。2023年にARM単独でNASDAQ再上場。
+    event_type: MERGER
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev7
+    year: 2020
+    title: Apple M1——x86からARMへの覇権交代の完成
+    description: AppleがM1チップを搭載したMacを発表。ARMアーキテクチャ（Apple自設計カスタムコア）のM1はIntel Core i7を性能・電力効率の両面で上回り、「ARMはx86に劣る」という最後の偏見を払拭した。20年間IntelのCPUを使ってきたMacが完全ARMへ移行することを宣言。PCからサーバーへとARMの普及が進み始め、TSMCの最先端プロセスを使うApple SiliconがPC業界のベンチマークになった。
+    event_type: TECHNOLOGY_SHIFT
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: arm-holdings
+    name: ARM Holdings（ARM ホールディングス）
+    kind: COMPANY
+    description: 1990年設立（英国ケンブリッジ）。Apple・アコーン・VLSIの合弁として独立。世界で最も広く使われるプロセッサ命令セットアーキテクチャ（ISA）のライセンサー。2020年代には年間250億個超のチップがARM ISAを使用する。製造設備を一切持たず、IPライセンスとロイヤリティのみで収益を得る。2016年にSoftBankが買収、2023年NASDAQ再上場（時価総額$600億超）。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: qualcomm
+    name: Qualcomm（クアルコム）
+    kind: COMPANY
+    description: 1985年設立（米国カリフォルニア州サンディエゴ）。CDMA移動通信技術の発明・業界標準化を通じて標準必須特許（SEP）を確立し、全世界の携帯電話メーカーからロイヤリティを徴収するビジネスを構築。2000年に製造部門を売却し完全ファブレス化。Snapdragon SoCと特許ライセンスの二本柱で、モバイル半導体の「不可欠なパートナー」として機能。FTC・Apple・EU等との長期的な独占訴訟でも生き延びた。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: irwin-jacobs
+    name: アービン・ジェイコブス
+    kind: PERSON
+    description: Qualcomm共同創業者・初代CEO（1933〜2021）。MIT・UCSDの電気工学者。LINKABIT社でデジタル通信技術を開発後、1985年にQualcommを設立。「CDMA技術は携帯通信の未来だ」という確信を持って業界に挑んだ。GSM陣営（欧州主導）の強大な圧力の中でCDMAを標準化させ、技術的優位性を知的財産として収益化するモデルを確立した。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: sophie-wilson
+    name: ソフィー・ウィルソン
+    kind: PERSON
+    description: ARMアーキテクチャの原設計者（1957〜）。アコーン・コンピュータのエンジニアとして1985年に最初のARM命令セットを設計した。RISC設計の原則——「少ない命令を高速で、シンプルに」——を徹底した結果、低消費電力という特性が生まれた。後にBroadcomの上級研究員として半導体設計を続けた。「世界で最も広く使われるプロセッサ設計の発案者」が、スマートフォン時代まで一般には無名だった。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: intel
+    name: Intel（インテル）
+    kind: COMPANY
+    description: 1968年設立の米国半導体大手。x86アーキテクチャ（CISC）でPC・サーバー市場を長期支配。「インテル入ってる」でPC産業の事実上の標準となった。2000年代以降、ARM/Qualcommが定義したモバイル市場への参入に失敗（Atom、そしてiPhone向け製造をAppleに断られる）。2020年のApple M1がPC市場のARMシフトを加速し、Intelの設計・製造両面の優位が揺らいだ。ARMモデルとの対比における「垂直統合型の巨人」として機能する存在。
+    roles_in_case:
+      - ANTAGONIST
+
+lessons:
+  - id: l1
+    statement: 「製造しない」ことが最大の競争優位になりうる。ARMは製造を持たないことで、互いに競合するすべてのチップメーカーに同時にサービスを提供できる「中立的インフラ」になった。製造を持つと生まれる利益相反を放棄することで、より大きな生態系全体からの収益を得た。
+    kind: MECHANISM
+    applies_to: プラットフォーム・インフラビジネスの競合管理、「中立性の経済的価値」の設計
+    tag_refs:
+      - pattern/asset-light
+      - scope/platform-ecosystem
+
+  - id: l2
+    statement: 技術標準の制定に成功した特許は「競合が回避できない収益源」になる。QualcommのCDMA/LTE SEPは、FRAND義務があっても全世界の端末メーカーからロイヤリティを徴収できる。「特許を守る」より「特許を標準に埋め込む」方が、はるかに強力な知的財産戦略だ。
+    kind: MECHANISM
+    applies_to: 技術標準化を伴う知的財産戦略、「標準必須特許」の形成と収益化
+    tag_refs:
+      - pattern/standardization
+      - pattern/license-royalty
+
+  - id: l3
+    statement: 「最初の設計哲学の差」は30年経っても埋まらない。ARMのRISCシンプル設計は1985年に低消費電力という「意図しない副産物」を生んだ。モバイル時代にその副産物が最大の競争優位になったとき、Intelは30年分のx86の「技術的負債」を抱えていて追いつけなかった。
+    kind: PATTERN
+    applies_to: 技術設計の初期選択が後の競争優位・制約に与える長期影響の評価
+    tag_refs:
+      - driver/technology-shift
+      - pattern/outsider-innovation
+
+  - id: l4
+    statement: IPライセンスのネットワーク効果は採用者が増えるほど強まる。ARMを採用するメーカーが増えるほど、開発ツール・コンパイラ・OS・エンジニア人材がARMに集積し、新規参入者がARMを選ぶコストが下がり、競合ISAを立ち上げるコストが上がる。20年以上のエコシステム蓄積はRISC-Vでも短期間では代替できない。
+    kind: MECHANISM
+    applies_to: 技術標準・アーキテクチャの生態系ロックイン評価、新規標準がエコシステムを逆転できる条件
+    tag_refs:
+      - pattern/network-effect
+      - scope/platform-ecosystem
+
+  - id: l5
+    statement: 「チップを売る」ビジネスより「アーキテクチャをライセンスする」ビジネスの方が、市場拡大とともに収益が加速度的に増える。チップ販売は生産・流通コストが比例して増えるが、IPライセンスは市場が10倍になっても追加コストはほぼゼロ。知的財産ビジネスの限界コストゼロという特性が、ARMの利益率構造を変えた。
+    kind: HEURISTIC
+    applies_to: IPビジネス vs 製品ビジネスの収益スケーラビリティ比較、ライセンス型ビジネスモデルへの移行評価
+    tag_refs:
+      - pattern/license-royalty
+      - pattern/asset-light
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: Arm Holdings — The Company Behind Every Chip
+    author: Tom Simonite
+    publisher: MIT Technology Review
+    year: 2023
+    notes: ARMの2023年IPO前後に書かれた包括的なARMビジネスモデル分析。IPライセンス収益構造・RISC-V台頭との比較・SoftBank買収からNVIDIA買収失敗・再上場の経緯を包括的に記述。ARMの「中立性の経済的価値」という核心論点を整理した参照文献。
+
+  - source_key: src2
+    kind: BOOK
+    title: The Qualcomm Equation
+    author: Dave Mock
+    publisher: AMACOM
+    year: 2005
+    notes: QualcommのCDMA開発・IS-95標準採択・3G特許戦略・製造部門売却の経緯を追った企業史。Irwin JacobsのCDMAへの確信がどのように会社戦略を規定したかを詳述。SEP（標準必須特許）ビジネスモデルの形成プロセスを理解するための基本文献。
+
+  - source_key: src3
+    kind: BOOK
+    title: Designing the iPhone
+    author: Tony Fadell
+    publisher: Little, Brown（日本語版「BUILD」ダイヤモンド社）
+    year: 2022
+    notes: iPhoneの開発責任者だったFadellの回顧録。初代iPhoneでのプロセッサ選定（ARMベース）・Qualcommモデムの採用プロセス・Appleの半導体内製化への決意の形成過程を内側から記述。ARMエコシステムがAppleにどう機能したかを理解する一次情報に近い文献。
+
+  - source_key: src4
+    kind: BOOK
+    title: Chip War
+    author: Chris Miller
+    publisher: Scribner（日本語版「半導体戦争」ダイヤモンド社）
+    year: 2022
+    notes: 半導体産業の地政学的・経済的歴史を包括的に記述した決定版。ARM・Qualcomm・TSMC・Intel・NVIDIAの連関と、米中の半導体覇権競争を俯瞰。「製造を持たない設計会社がなぜ強くなったか」という本ケースの核心を産業史全体の中に位置づけるために不可欠な文献。
+
+relations:
+  - to_case: tsmc-foundry-model
+    relation_type: SIMILAR_MECHANISM
+    note: TSMCが「製造専業ファウンドリ」として半導体産業の水平分業の製造側を担ったように、ARMとQualcommは「設計・IP専業」として設計側を担った。TSMCとARM/Qualcommは補完関係——製造と設計が分離することで、それぞれが専門特化による競争優位を持てた。ファブレスモデルはTSMCなしに成立せず、TSMCはファブレス各社の受注なしに巨大fab投資を回収できなかった。
+
+  - to_case: genentech-biotech-model
+    relation_type: SIMILAR_MECHANISM
+    note: Genentechが「分子生物学の知的財産（特許・IP）が最も高い価値を持ち、製造は外注できる」というバイオ産業の分業を示したように、ARMは「半導体設計の知的財産（ISA）が最も高い価値を持ち、製造は不要」という半導体産業の分業を示した。どちらも「目に見えない知的財産が物理的製造より高い価値を生む」という時代の到来を体現している。
+
+  - to_case: famicom-platform
+    relation_type: SIMILAR_MECHANISM
+    note: 任天堂がファミコンのプラットフォームをサードパーティのゲーム会社に開放して「プラットフォームの価値はエコシステムから生まれる」ことを示したように、ARMは命令セットアーキテクチャをオープンライセンスすることで「アーキテクチャの価値は採用エコシステムから生まれる」ことを示した。どちらも「自社の独占製品」より「他社が乗るプラットフォーム」の方が大きな経済価値を生む構造。

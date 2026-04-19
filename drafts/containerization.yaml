@@ -1,0 +1,356 @@
+# drafts/containerization.yaml
+# 構造データの下書き。admin UI からDB投入する前に人間がレビュー・修正する。
+
+case:
+  slug: containerization
+  title: コンテナ化と世界海運の構造転換
+  period_start: 1956
+  period_end: 1985
+  primary_themes:
+    - standardization-wins
+    - regulatory-turning-points
+    - infrastructure-mega-project
+
+events:
+  - id: cont-1955-mclean-trucking-sale
+    year: 1955
+    title: McLean Trucking 売却と Pan-Atlantic 買収
+    description: >
+      McLeanは連邦法上トラック会社と海運会社を同一人物が所有できなかったため、
+      数十年かけて築いたMcLean Trucking社を売却し、Pan-Atlantic Steamship社を
+      買収して海運業に全面参入。42歳で全財産とキャリアをコンテナ化に賭けた決断。
+      Ideal-X航海(1956)に先立つ、事実上の起点。
+    event_type: RESTRUCTURING
+    is_turning_point: true
+    display_order: 1
+    entity_refs: [malcom-mclean, mclean-trucking, pan-atlantic]
+    source_refs: [levinson-box]
+
+  - id: cont-1956-ideal-x
+    year: 1956
+    month: 4
+    day: 26
+    title: Ideal-X の最初のコンテナ航海
+    description: >
+      McLeanが改造T2タンカー Ideal-X でニューアークからヒューストンへ
+      58個のコンテナを輸送した最初の商用コンテナ航海。海運業界への最初の実証実験。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+    entity_refs: [malcom-mclean, sea-land, pan-atlantic]
+    source_refs: [levinson-box]
+
+  - id: cont-1961-iso-tc104
+    year: 1961
+    title: ISO TC104 設立
+    description: >
+      国際標準化機構にコンテナ専門委員会 TC104 が設置され、
+      国際的な標準規格策定プロセスが始まった。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+    entity_refs: [iso]
+    source_refs: [levinson-box]
+
+  - id: cont-1966-transatlantic
+    year: 1966
+    title: Sea-Land の大西洋横断定期便開始
+    description: >
+      McLeanのSea-Land Serviceが北米-欧州間の本格的なコンテナ定期航路を開設。
+      国際海運のコンテナ化が本格的に始まった。
+    event_type: ENTRY
+    is_turning_point: false
+    display_order: 1
+    entity_refs: [sea-land, malcom-mclean]
+    source_refs: [levinson-box]
+
+  - id: cont-1967-vietnam-logistics
+    year: 1967
+    title: ベトナム戦争軍需によるコンテナ化の加速
+    description: >
+      米軍のベトナム向け補給にSea-Landが大量採用され、
+      復路に日本からの輸出貨物を積むことで太平洋航路の商業的成立を加速した。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 2
+    entity_refs: [sea-land, us-military-vietnam, japan-export]
+    source_refs: [levinson-box]
+
+  - id: cont-1968-iso-668
+    year: 1968
+    title: ISO 668 コンテナ標準規格の確立
+    description: >
+      20ft/40ftのコンテナ寸法と接合部規格が ISO 668 として正式に標準化され、
+      世界中の船社・港湾・鉄道・トラックの相互運用性が確立した。
+      ネットワーク効果の臨界点。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: true
+    display_order: 1
+    entity_refs: [iso, iso-668]
+    source_refs: [levinson-box, iso-668-history]
+
+  - id: cont-1972-labor-disputes
+    year: 1972
+    title: 米国・英国の港湾労組との本格的な対立
+    description: >
+      コンテナ化による港湾雇用減少を巡って、ILA(東海岸)、ILWU(西海岸)、
+      英国の港湾労組との交渉・対立が本格化。港湾ごとに異なる解決が現れ、
+      都市レベルの産業立地が分岐した。
+    event_type: CRISIS
+    is_turning_point: true
+    display_order: 1
+    entity_refs: [ila-us, ilwu, ny-port, oakland-port, rotterdam-port]
+    source_refs: [levinson-box]
+
+  - id: cont-1984-shipping-act
+    year: 1984
+    title: 米国 Shipping Act 制定
+    description: >
+      米国の海運規制を改正し、海運同盟の枠組みを再整理。
+      コンテナ化で成立した新しい産業構造を制度的に追認した。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+    entity_refs: [us-congress]
+    source_refs: [levinson-box]
+    note: >
+      TP判定のトータル4件上限を守るため降格。内容としては構造転換を
+      「制度的に追認した」postscript的な性格で、他の4件のTP(1955売却、
+      1956 Ideal-X、1968 ISO 668、1972 労組抗争)と比較すると
+      因果の向きが逆(原因ではなく結果の制度化)である。
+
+  - id: cont-1986-us-lines-bankrupt
+    year: 1986
+    title: McLean の US Lines 破綻
+    description: >
+      McLeanが1970年代末に低燃費超大型船へ賭けたが、1980年代の油価下落で
+      読みを外し、US Lines が破綻。コンテナ化第一幕の象徴的終わり。
+    event_type: BANKRUPTCY
+    is_turning_point: false
+    display_order: 1
+    entity_refs: [malcom-mclean, us-lines]
+    source_refs: [levinson-box]
+
+entities:
+  - slug: malcom-mclean
+    name: Malcom McLean
+    kind: PERSON
+    description: >
+      McLean Trucking Co. 創業者。1955年にトラック会社を売却し海運に参入、
+      コンテナ化の実質的創始者。
+    roles_in_case: [PROTAGONIST, DISRUPTOR]
+
+  - slug: sea-land
+    name: Sea-Land Service
+    kind: COMPANY
+    description: >
+      McLeanが設立した米国のコンテナ海運会社。後にCSX傘下を経て
+      Maerskに買収されるまでの主要コンテナ船社の一つ。
+    roles_in_case: [PROTAGONIST]
+
+  - slug: pan-atlantic
+    name: Pan-Atlantic Steamship Company
+    kind: COMPANY
+    description: McLeanが1955年に買収してSea-Landへと転換した元の海運会社。
+    roles_in_case: [ENABLER]
+
+  - slug: mclean-trucking
+    name: McLean Trucking Co.
+    kind: COMPANY
+    description: >
+      Malcom McLeanが1934年頃に創業した米国東海岸の大手トラック運送会社。
+      1955年の売却により、McLeanは海運参入の資金と、
+      退路のない立場を同時に獲得した。
+    roles_in_case: [ENABLER]
+
+  - slug: iso
+    name: 国際標準化機構(ISO)
+    kind: INSTITUTION
+    description: >
+      コンテナ規格の国際標準化を主導した機関。TC104コンテナ専門委員会を通じて
+      ISO 668 を策定。
+    roles_in_case: [REGULATOR, ENABLER]
+
+  - slug: iso-668
+    name: ISO 668 コンテナ標準規格
+    kind: REGULATION
+    description: >
+      20ft/40ftのコンテナサイズ、コーナーキャスティング接合部、重量制限などを
+      定め、世界共通のインターモーダル輸送インフラを成立させた規格。
+    roles_in_case: [ENABLER]
+
+  - slug: ila-us
+    name: 国際港湾労働者連盟(ILA)
+    kind: INSTITUTION
+    description: 米国東海岸の港湾労組。コンテナ化への抵抗が強かった側。
+    roles_in_case: [ANTAGONIST]
+
+  - slug: ilwu
+    name: 国際港湾倉庫労働組合(ILWU)
+    kind: INSTITUTION
+    description: >
+      米国西海岸の港湾労組。機械化協定を通じた受容で雇用を一定程度保障した。
+    roles_in_case: [PARTNER]
+
+  - slug: ny-port
+    name: ニューヨーク港
+    kind: REGION
+    description: >
+      20世紀前半の世界最大港。コンテナ化対応の遅れと労組対立で急速に衰退し、
+      機能の多くはニュージャージー側(Port Newark-Elizabeth)へ移った。
+    roles_in_case: [OTHER]
+
+  - slug: oakland-port
+    name: オークランド港
+    kind: REGION
+    description: >
+      コンテナ対応インフラ投資を早期に行い、サンフランシスコ湾の主力港へ成長。
+    roles_in_case: [ENABLER]
+
+  - slug: rotterdam-port
+    name: ロッテルダム港
+    kind: REGION
+    description: >
+      欧州大陸側でコンテナ対応を早期に進め、世界有数のハブ港に成長。
+    roles_in_case: [ENABLER]
+
+  - slug: us-military-vietnam
+    name: 米軍(ベトナム補給)
+    kind: INSTITUTION
+    description: >
+      ベトナム戦争の後方支援でSea-Landを大量採用し、
+      コンテナ化の経済的成立と太平洋航路確立を後押しした。
+    roles_in_case: [ENABLER, CUSTOMER]
+
+  - slug: japan-export
+    name: 日本の輸出製造業
+    kind: REGION
+    description: >
+      ベトナム帰還便に積まれる対米輸出貨物の出発点として、
+      結果的にコンテナ化の太平洋航路成立に寄与した。
+    roles_in_case: [PARTNER]
+
+  - slug: us-congress
+    name: 米国連邦議会
+    kind: INSTITUTION
+    description: 1984年のShipping Act制定主体。
+    roles_in_case: [REGULATOR]
+
+  - slug: us-lines
+    name: United States Lines
+    kind: COMPANY
+    description: >
+      McLeanが1970年代末に買収、低燃費超大型船に賭けて1986年破綻した会社。
+    roles_in_case: [OTHER]
+
+lessons:
+  - id: cont-lesson-standardization-network-effect
+    statement: >
+      インタフェースが国際的に標準化された瞬間、ネットワーク効果が起動し、
+      標準化前の参加者が構造的に有利になる。既存プレイヤーが取り残される
+      5〜10年のウィンドウが開く。
+    kind: FORECAST_METHOD
+    applies_to: >
+      物理規格 / API / プロトコル / データフォーマットの標準化が
+      進行中の領域
+    tag_refs: [standardization, network-effect]
+    source_refs: [levinson-box]
+
+  - id: cont-lesson-outsider-perspective
+    statement: >
+      破壊的イノベーションは既存業界の専門家ではなく、隣接業界からの
+      外部者が持ち込むことが多い。業界常識を疑える立場が決定要因になる。
+    kind: PATTERN
+    applies_to: 成熟産業への新規参入者分析 / 異業種連携戦略
+    tag_refs: [outsider-innovation, cross-industry]
+    source_refs: [levinson-box]
+
+  - id: cont-lesson-labor-displacement-irony
+    statement: >
+      労働集約的な既存工程を破壊するイノベーションは、その工程に従事する
+      労働者の抵抗が強い地域ほど導入が遅れ、結果として産業そのものが
+      他地域へ移転する。「変化を拒む側が変化から最も痛手を受ける」逆説。
+    kind: ANTI_PATTERN
+    applies_to: 自動化・機械化・AI導入による労働再編局面
+    tag_refs: [labor-displacement, geographic-shift]
+    source_refs: [levinson-box]
+
+  - id: cont-lesson-infrastructure-locks-in
+    statement: >
+      インフラ再投資を早く決断した地域・プレイヤーが、20年単位のロックインを
+      獲得する。後発が同じポジションを取り戻すのは極めて困難。
+    kind: MECHANISM
+    applies_to: 港湾・空港・データセンターなどの長寿命インフラ
+    tag_refs: [infrastructure-lockin]
+    source_refs: [levinson-box]
+
+  - id: cont-lesson-disruptor-second-bet
+    statement: >
+      破壊的イノベーションの創始者は、次の波を読み違えて自ら消えることが多い。
+      構造を変える力と、構造変化に乗り続ける力は別種の能力である。
+    kind: HEURISTIC
+    applies_to: 創業者依存企業の長期存続可能性の評価
+    tag_refs: [founder-dependency, succession]
+    source_refs: [levinson-box]
+
+  - id: cont-lesson-full-bet-entry
+    statement: >
+      業界の外部者が既存産業を破壊する時、中途半端な参入では業界の抵抗に
+      すり潰される。「全財産と既存キャリアを投じる」という経済的不可逆化が、
+      反対論を押し切るための最低条件として働くことがある。
+    kind: PATTERN
+    applies_to: >
+      成熟産業への破壊的参入、異業種からの新規事業立ち上げ、
+      スタートアップの全賭け判断
+    tag_refs: [burn-the-boats, outsider-innovation]
+    source_refs: [levinson-box]
+
+  - id: cont-lesson-persistence-duality
+    statement: >
+      反対を押し切る執念は、次の変化を受け入れる柔軟性を犠牲にしがちである。
+      一度目の成功パターンを二度目に無自覚に適用すると、前提変化に対して
+      脆弱になる。執念は起動には機能するが、終着には別種の能力が必要。
+    kind: ANTI_PATTERN
+    applies_to: >
+      破壊的起業家のセカンドアクト判断、成功した創業者の退き時判断
+    tag_refs: [founder-dependency, succession]
+    source_refs: [levinson-box]
+
+sources:
+  - source_key: levinson-box
+    kind: BOOK
+    title: コンテナ物語 - 世界を変えたのは「箱」の発明だった
+    author: マルク・レビンソン
+    publisher: 日経BP
+    year: 2007
+    isbn: ""
+    notes: >
+      コンテナ化の決定版通史。McLeanの経歴、ISO規格化、港湾労組、
+      軍需、規制緩和までを包括的に扱う。
+      原著: "The Box: How the Shipping Container Made the World Smaller
+      and the World Economy Bigger" (Princeton University Press, 2006).
+      改訂版・増補版あり、版の確認が必要。
+
+  - source_key: iso-668-history
+    kind: PRIMARY_DOC
+    title: ISO 668 Series 1 Freight Containers - Classification, Dimensions and Ratings
+    publisher: International Organization for Standardization
+    year: 1968
+    url: ""
+    notes: >
+      ISO 668 の原規格文書。現在の版は改訂されている。規格策定の経緯は
+      TC104 議事録を別途要確認。初版年も要確認(1968年前後)。
+
+relations:
+  - to_case: tokaido-shinkansen
+    relation_type: CONTRAST
+    note: >
+      新幹線は国家主導で「不可逆化装置」を意図的に仕込んで成立、
+      コンテナ化は民間発で「標準化によるネットワーク効果」で成立。
+      巨大インフラ変化の2つの対照的な成立経路。
+
+  - to_case: tdl-founding
+    relation_type: SAME_PATTERN
+    note: >
+      「非対称な構造(契約 / 規格)が長期のwin-winを作る」という共通パターン。
+      TDLはライセンス契約、コンテナ化はISO規格による分離。

@@ -1,0 +1,191 @@
+# drafts/zara-inditex-spa.yaml
+# ZaraとInditex——縫製工場から世界最大アパレルへの垂直統合革命
+
+case:
+  slug: zara-inditex-spa
+  title: ZaraとInditex——縫製工場から世界最大アパレルへの垂直統合革命
+  period_start: 1963
+  period_end: 2008
+  primary_themes:
+    - vertical-restructuring
+    - standardization-wins
+
+events:
+  - id: ev1
+    year: 1963
+    title: LOI縫製工場設立——ヨーロッパブランドの下請けとして出発
+    description: アマンシオ・オルテガがスペイン・ア・コルーニャでLOI（後のConfecciones Goa）縫製工場を設立。ヨーロッパブランドのバスローブ・ランジェリーのパターンを模倣した安価な製品を製造・販売する下請け業者として出発した。この「製造の内製化」という原体験が後のInditexの競争優位のすべての起点となる。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1975
+    title: Zaraショップ第1号開業——小売への垂直統合開始
+    description: ア・コルーニャにZaraショップ第1号を開業。きっかけはキャンセルされた大口注文の在庫処理だったが、自社製造した商品を自社ショップで販売するという「製造→小売の垂直統合」の原型がここに生まれた。価格はブランド品の半額以下でありながら、デザインはトレンドを反映していた。
+    event_type: ENTRY
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev3
+    year: 1985
+    title: Inditexグループ設立・カスタジャーノ招聘——システム経営への転換
+    description: オルテガは複数ブランドを束ねる持株会社Inditex（Industria de Diseño Textil）を設立し、商学者出身のホセ・マリア・カスタジャーノを経営参謀に招聘。直感的な職人経営から、KPIと物流システムによる「複製可能な経営」へ転換した。この体制でグローバル展開の再現性が生まれ、垂直統合モデルが組織に落とし込まれた。
+    event_type: RESTRUCTURING
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev4
+    year: 1990
+    title: ニューヨーク・パリ進出——Zaraの国際ブランド化
+    description: 米国ニューヨークおよびパリにZaraショップを開設。「安いアジア製品」でも「ラグジュアリー」でもない第三の競争軸——「手頃な価格でトレンドを素早く提供する」というポジションが国際的に認知されるようになった。これによりZaraは「ファストファッション」というカテゴリーを世界に定義した。
+    event_type: ENTRY
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 1994
+    title: 2週間サイクルの確立——速度の垂直統合が完成
+    description: デジタル化された発注・在庫管理システムと物流の自動化が連携し、「デザイン確定から店頭陳列まで2週間」というサプライチェーンが確立された。同業他社の6ヶ月に対して2週間という速度差が業界に認知され、Zaraのモデルが「真似できない競争優位」として確立。店頭フィードバックのリアルタイム反映と欧州近隣生産の組み合わせが完成形に達した。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev6
+    year: 2001
+    title: InditexのIPO——4000億円調達と多ブランド戦略加速
+    description: スペイン証券取引所にInditexが上場し、約4,000億円を調達。IPOを機に、Zara以外のブランド（Massimo Dutti・Bershka・Pull&Bear・Stradivarius等）への投資を加速した。多ブランド戦略で異なる価格帯・顧客層をカバーしながら、物流・製造のインフラを共有する「多ブランド垂直統合」が確立された。
+    event_type: RESTRUCTURING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev7
+    year: 2008
+    title: Gap超え・世界最大アパレルチェーン——リーマンショック下での在庫優位の実証
+    description: 2008年に売上規模でGapを超えて世界最大のアパレルチェーンとなった。同年のリーマンショックで高在庫・値引き依存の競合が苦境に陥る中、Inditexは在庫リスクの低さから業績を維持した。「垂直統合×速度」モデルの耐景気後退性が実証され、アマンシオ・オルテガは2013年に一時世界一の富豪となった。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+entities:
+  - slug: inditex
+    name: Inditex（インディテックス）
+    kind: COMPANY
+    description: 1985年設立のスペイン・ガリシア発祥のアパレル持株会社。Zara・Massimo Dutti・Bershka・Pull&Bear・Stradivarius・Oysho等8ブランドを傘下に持つ。2023年時点で世界96カ国・5,900超の店舗を展開し、時価総額はスペイン最大企業の一つ。特筆すべきは、全ブランドがア・コルーニャ近郊の物流センターを通じて週2回世界配送を受けるという垂直統合体制。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: amancio-ortega
+    name: アマンシオ・オルテガ
+    kind: PERSON
+    description: Inditex創業者（1936〜）。スペイン北西部出身、13歳でシャツ仕立て屋に就職。1963年に縫製工場を設立し、1975年にZaraショップを開業。長年メディア露出を拒否し、IPO（2001年）まで一般メディアに顔写真を出さなかった。2013年に一時世界一の富豪。ビル・ゲイツ・ジェフ・ベゾスと並ぶ自力富豪の象徴。職人出身の経営者として、製造現場の感覚を死ぬまで経営の中心に置いた。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: gap-inc
+    name: Gap Inc.
+    kind: COMPANY
+    description: 1969年設立の米国アパレル大手。GapのほかBanana Republic・Old Navyを傘下に持ち、1990〜2000年代には世界最大のアパレルチェーンだった。アジア委託製造・年2シーズン大量発注モデルの典型。2008年にInditexに首位を明け渡した。トレンドの読み誤りによる大量在庫廃棄と値引き販売の繰り返しが慢性的な収益問題となった。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: hm-group
+    name: H&Mグループ
+    kind: COMPANY
+    description: 1947年設立のスウェーデン発祥アパレル大手。GapとZaraの間で「安さとトレンド」を武器にする競合。外注製造モデルを維持しながらZaraの速度に追随しようとしたが、製造の外注に依存するため2週間サイクルの実現は困難だった。2010年代以降はオンライン化とサステナビリティ対応の遅れで収益性が低下。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: jose-maria-castellano
+    name: ホセ・マリア・カスタジャーノ
+    kind: PERSON
+    description: Inditex副社長・共同創業者的存在（1985〜2011年在任）。商学博士で、オルテガの直感的な製造・小売モデルに数値管理・ITシステム・物流最適化を組み込んだ。「ZaraのIT」と呼ばれる独自のリアルタイム在庫・発注システムを設計した立案者。2011年の退任後、Inditexはオルテガ家による世代交代経営へ移行した。
+    roles_in_case:
+      - ENABLER
+
+lessons:
+  - id: l1
+    statement: 垂直統合は「コスト削減」ではなく「速度という競争軸の創造」のための手段になりうる。Zaraは欧州近隣生産にこだわることで製造原価を犠牲にしたが、在庫廃棄・値引き損失を排除することで、実質粗利率は外注モデルの競合と同等かそれ以上を維持した。
+    kind: MECHANISM
+    applies_to: アパレル・消費財メーカーのサプライチェーン設計、「速度vs低コスト」のトレードオフ評価
+    tag_refs:
+      - pattern/vertical-integration
+      - pattern/cost-structure-shift
+
+  - id: l2
+    statement: 顧客フィードバックの速度が商品開発サイクルを規定する。ZaraはデザイナーをPOSデータと直結させることで「トレンドを作る」から「トレンドを増幅する」モデルに変えた。これは予測精度ではなく反応速度で勝つという戦略であり、後者は前者より持続的な競争優位をもたらす。
+    kind: PATTERN
+    applies_to: 消費財の商品開発サイクル設計、「予測型」vs「反応型」サプライチェーンの選択
+    tag_refs:
+      - pattern/customer-interface-winner
+      - mechanism/network-effect
+
+  - id: l3
+    statement: 外部者（農村出身の縫製職人）が業界の「常識」を知らないことで、業界が暗黙に受け入れていたコスト構造の逆転が可能になった。オルテガは「アジア委託が正解」という業界コンセンサスを知らなかったのではなく、製造の内製化という自分の強みを活かす方法を先に考えた。
+    kind: PATTERN
+    applies_to: 業界慣行に疑問を持てる「外部者」のイノベーション評価、既存業界プレイヤーが見えないコスト構造の発見
+    tag_refs:
+      - pattern/outsider-innovation
+      - driver/personal-obsession
+
+  - id: l4
+    statement: 「速度の垂直統合」は後発が追随できないモートになる。GapやH&MがZaraのモデルを学ぼうとしても、外注モデルで成長してきた企業が垂直統合へ転換するには既存取引先解消・設備投資・文化転換が必要で、実質的に新会社を作るに等しい。成功したモデルへの移行コストが防御壁になる。
+    kind: ANTI_PATTERN
+    applies_to: 業界リーダーが破壊的参入者のモデルを真似しようとする場合のコスト評価
+    tag_refs:
+      - pattern/vertical-integration
+      - pattern/cost-structure-shift
+
+  - id: l5
+    statement: 「在庫不足で売り切れ」は欠品ではなく希少性の演出になりうる。Zaraは意図的に少ない在庫で店頭を更新し、顧客の来店頻度を業界平均の年3〜4回から年17回に高めた。「次に来たら売り切れかもしれない」という緊急性が購買を加速させるメカニズムは、小売業全般に適用可能だ。
+    kind: HEURISTIC
+    applies_to: 小売の在庫・陳列戦略、顧客来店頻度を高める施策設計
+    tag_refs:
+      - pattern/customer-interface-winner
+      - scope/industry-restructuring
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: Fast Fashion
+    author: Kasra Ferdows, Michael A. Lewis, Jose A.D. Machuca
+    publisher: Harvard Business Review
+    year: 2004
+    notes: HBRに掲載されたZaraのサプライチェーン分析の決定版論文。「Rapid-Fire Fulfillment」として知られる。2週間サイクルの仕組み・コスト構造・競合比較を実証データで分析。Zaraの垂直統合モデルを「速度のための選択」として位置づけた最初の学術的整理。
+
+  - source_key: src2
+    kind: BOOK
+    title: Zara and Her Sisters
+    author: Enrique Badia
+    publisher: Palgrave Macmillan
+    year: 2009
+    notes: Inditexの社内情報に比較的近いジャーナリスト出身の著者によるZara/Inditexの経営史。オルテガの幼少期・LOI設立・Zara開業・カスタジャーノとの関係・国際展開の具体的な経緯を追う。一次情報に近い記述が豊富。
+
+  - source_key: src3
+    kind: BOOK
+    title: The Zara Story
+    author: Xabier Blanco and Jesus Salgado
+    publisher: LID Editorial
+    year: 2014
+    notes: スペイン語圏の著者によるInditexの包括的な企業史。ガリシア地域経済・地方政府との関係・工場労働者の視点からのZara誕生を描く。オルテガの経営哲学「創造と販売（crear y vender）」の具体的な記述。
+
+  - source_key: src4
+    kind: ARTICLE
+    title: "Inditex: The Zara Supply Chain"
+    author: Nelson Fraiman and Medini Singh
+    publisher: Columbia Business School Case Study
+    year: 2010
+    notes: コロンビアビジネススクールのケーススタディ。物流センター（スペイン）から世界各店舗への週2便配送体制・小ロット生産の数値的裏付け・競合他社との在庫回転率比較を実データで分析。「速度vs低コスト」のトレードオフを定量的に示す参照文献。
+
+relations:
+  - to_case: seven-eleven-japan
+    relation_type: SIMILAR_MECHANISM
+    note: セブン-イレブンが小売×配送サイクルの高速化によって「欠品より鮮度」を競争優位にしたように、Zaraは製造×物流サイクルの高速化によって「在庫より新鮮さ」を競争優位にした。どちらも「サプライチェーンの時間軸を支配することが顧客体験を規定する」という同型の構造。
+
+  - to_case: walmart-retail-revolution
+    relation_type: SIMILAR_MECHANISM
+    note: ウォルマートが「毎日低価格（EDLP）」をサプライチェーン効率化で実現したように、Zaraは「常に新しい商品」をサプライチェーンの高速化で実現した。どちらも「小売業の競争軸を単一次元（価格/速度）に絞ってサプライチェーン全体を再設計した」という点で同型。
+
+  - to_case: tsmc-foundry-model
+    relation_type: CONTRAST
+    note: TSMCが「自社ブランドを持たず、顧客の競合にもファウンドリサービスを提供する」という製造特化モデルで成功したのに対し、Zaraは「製造から販売まで垂直統合して顧客接点を完全支配する」という逆の戦略で成功した。「製造の位置づけ」が180度異なる対照事例。

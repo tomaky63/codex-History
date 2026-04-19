@@ -1,0 +1,295 @@
+# drafts/tokaido-shinkansen.yaml
+# 構造データの下書き。admin UI からDB投入する前に人間がレビュー・修正する。
+
+case:
+  slug: tokaido-shinkansen
+  title: 東海道新幹線の成立史
+  period_start: 1955
+  period_end: 1964
+  primary_themes:
+    - infrastructure-mega-project
+    - regulatory-turning-points
+
+events:
+  - id: shinkansen-1955-sogo-appointed
+    year: 1955
+    month: 5
+    day: 20
+    title: 十河信二 国鉄総裁就任
+    description: >
+      十河信二が4代目日本国有鉄道総裁に就任。就任前から広軌高速鉄道構想を持ち、
+      島秀雄を技師長に起用する人事を通じて、新幹線プロジェクトの布石を打った。
+    event_type: LEADERSHIP_CHANGE
+    is_turning_point: true
+    display_order: 1
+    entity_refs: [jnr, sogo-shinji, shima-hideo]
+    source_refs: [makihisa-sogo, sato-shinkansen]
+
+  - id: shinkansen-1957-committee-recommendation
+    year: 1957
+    title: 東海道線輸送力増強調査会が広軌別線を答申
+    description: >
+      国鉄内部の調査会が、在来線改良ではなく広軌別線の新線建設を提言。
+      政府・大蔵省の「鉄道斜陽論」に対する公式のカウンター提案となった。
+    event_type: POLICY_SHIFT
+    is_turning_point: false
+    display_order: 1
+    entity_refs: [jnr, shima-hideo]
+    source_refs: [sato-shinkansen]
+
+  - id: shinkansen-1958-cabinet-decision
+    year: 1958
+    month: 12
+    day: 12
+    title: 岸内閣が新幹線建設を閣議決定
+    description: >
+      広軌別線による新幹線建設が岸信介内閣によって正式に閣議決定され、
+      プロジェクトは省庁間調整から国家政策に昇格した。
+    event_type: POLICY_SHIFT
+    is_turning_point: true
+    display_order: 1
+    entity_refs: [jnr, kishi-cabinet]
+    source_refs: [sato-shinkansen]
+
+  - id: shinkansen-1959-construction-start
+    year: 1959
+    month: 4
+    day: 20
+    title: 新丹那トンネル起工
+    description: >
+      神奈川と静岡を結ぶ新丹那トンネルの着工により、建設が本格始動。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+    entity_refs: [jnr]
+    source_refs: [sato-shinkansen]
+
+  - id: shinkansen-1961-world-bank-loan
+    year: 1961
+    month: 5
+    title: 世界銀行借款 約8000万ドル締結
+    description: >
+      国際復興開発銀行(IBRD)から約8000万ドルの借款を獲得。
+      国内予算による政権交代リスクをヘッジし、プロジェクトの不可逆性を確立した。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: true
+    display_order: 1
+    entity_refs: [jnr, world-bank, sogo-shinji]
+    source_refs: [sato-shinkansen, ibrd-archives]
+
+  - id: shinkansen-1963-sogo-resignation
+    year: 1963
+    month: 5
+    title: 十河信二・島秀雄 辞任
+    description: >
+      予算超過問題(当初見積約1948億円に対し実質大幅超過)の責任をとり、
+      総裁と技師長が同時に辞任。プロジェクトは後任に引き継がれたが
+      方向性は変わらなかった。
+    event_type: LEADERSHIP_CHANGE
+    is_turning_point: false
+    display_order: 1
+    entity_refs: [jnr, sogo-shinji, shima-hideo]
+    source_refs: [makihisa-sogo, takahashi-shima-book]
+
+  - id: shinkansen-1964-opening
+    year: 1964
+    month: 10
+    day: 1
+    title: 東海道新幹線 開業
+    description: >
+      東京-新大阪間515kmを最高速度210km/hで結ぶ世界初の高速鉄道として開業。
+      東京五輪開幕の9日前に間に合わせた。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+    entity_refs: [jnr, broad-gauge-1435mm]
+    source_refs: [sato-shinkansen]
+
+entities:
+  - slug: jnr
+    name: 日本国有鉄道
+    kind: INSTITUTION
+    description: >
+      1949年から1987年まで存在した国営鉄道事業体。
+      新幹線プロジェクトの実施主体。
+    roles_in_case: [PROTAGONIST]
+
+  - slug: sogo-shinji
+    name: 十河信二
+    kind: PERSON
+    description: >
+      4代目国鉄総裁(1955-1963)。旧満鉄系の経歴を持ち、広軌高速鉄道構想の
+      実現に国鉄総裁のキャリアを賭けた。
+    roles_in_case: [PROTAGONIST]
+
+  - slug: shima-hideo
+    name: 島秀雄
+    kind: PERSON
+    description: >
+      国鉄技師長、後に宇宙開発事業団初代理事長。父・島安次郎から続く
+      広軌派の技術者系譜に属し、新幹線の技術的設計を主導。
+    roles_in_case: [PROTAGONIST]
+
+  - slug: shima-yasujiro
+    name: 島安次郎
+    kind: PERSON
+    description: >
+      島秀雄の父。戦前から広軌改築論を唱え続けた鉄道技術者で、
+      戦中の弾丸列車構想の中心人物の一人。島秀雄の広軌信念の源流であり、
+      新幹線は事実上「父が果たせなかった夢を子が完成させた」二代越しの事業。
+    roles_in_case: [ENABLER]
+
+  - slug: kishi-cabinet
+    name: 岸信介内閣
+    kind: INSTITUTION
+    description: 1958年12月に新幹線建設を閣議決定した岸信介首相の内閣。
+    roles_in_case: [ENABLER]
+
+  - slug: world-bank
+    name: 国際復興開発銀行(IBRD / 世界銀行)
+    kind: INSTITUTION
+    description: >
+      1961年に約8000万ドルの借款を供与し、プロジェクトの
+      国際契約化と不可逆化を成立させた。
+    roles_in_case: [ENABLER, REGULATOR]
+
+  - slug: ministry-of-finance-japan
+    name: 大蔵省
+    kind: INSTITUTION
+    description: >
+      当時の財政当局。鉄道斜陽論を背景に巨大投資に慎重で、
+      予算承認プロセスでの抵抗勢力となった。
+    roles_in_case: [ANTAGONIST]
+
+  - slug: broad-gauge-1435mm
+    name: 広軌(標準軌1435mm)
+    kind: TECHNOLOGY
+    description: >
+      在来線の狭軌1067mmではなく国際標準の1435mmを採用したことが、
+      高速走行・車両大型化・安定性の基盤となった。
+    roles_in_case: [ENABLER]
+
+  - slug: manchurian-railway-legacy
+    name: 満鉄あじあ号・弾丸列車構想
+    kind: TECHNOLOGY
+    description: >
+      戦前の満鉄における広軌高速運行と、戦中の弾丸列車構想。
+      十河・島の発想の技術的・精神的源流。
+    roles_in_case: [ENABLER]
+
+lessons:
+  - id: shinkansen-lesson-irreversibility
+    statement: >
+      巨大プロジェクトの成否は技術ではなく、合理的反対を無力化する
+      「不可逆化装置」(国際契約・絶対デッドライン・大規模先行投資)を
+      いつ・どう仕込むかで決まる。
+    kind: FORECAST_METHOD
+    applies_to: >
+      10年以上の建設期間を要する国家インフラ、大規模R&Dプログラム
+    tag_refs: [irreversibility-commitment, deadline-forcing-function]
+    source_refs: [sato-shinkansen, makihisa-sogo]
+
+  - id: shinkansen-lesson-budget-underestimation
+    statement: >
+      大型プロジェクトでは予算超過は例外ではなく構造であり、承認を得るための
+      過小見積もりと、完成後の成功による正当化によって成立するサイクルが存在する。
+    kind: PATTERN
+    applies_to: 公的セクターの巨大インフラプロジェクト一般
+    tag_refs: [commitment-escalation, sunk-cost]
+    source_refs: [makihisa-sogo]
+
+  - id: shinkansen-lesson-personnel-is-strategy
+    statement: >
+      組織のトップ人事は、戦略計画よりも強く結果を決める。
+      「そのプロジェクトのために就任した人物」を据えることが、
+      プロジェクト始動の最大の意思決定になる。
+    kind: HEURISTIC
+    applies_to: 既存組織で新規事業を立ち上げる場面
+    tag_refs: [founder-driven, leadership-change]
+    source_refs: [makihisa-sogo]
+
+  - id: shinkansen-lesson-decline-narrative-opportunity
+    statement: >
+      「斜陽産業」と見なされている領域の内部からこそ、革新的な巨大投資が
+      通りやすい逆説がある。斜陽論は反対論として強いが、同時に
+      「最後の賭け」を正当化する物語としても機能する。
+    kind: MECHANISM
+    applies_to: 既存産業が縮小期に入った時期の再投資判断
+    tag_refs: [declining-industry-reinvention]
+    source_refs: [sato-shinkansen]
+
+  - id: shinkansen-lesson-last-career-bet
+    statement: >
+      キャリア後半・最終ポストに置かれた人物は、失うものが少なく得るものが
+      大きいという構造上、通常の現役官僚にはできない賭けを可能にする。
+      「誰が意思決定者か」と同じくらい「意思決定者はキャリアのどこにいるか」
+      が重要な変数である。
+    kind: HEURISTIC
+    applies_to: >
+      組織内で前例のない大型判断を通す必要がある場面での人選・タイミング判断
+    tag_refs: [last-career-bet, founder-driven]
+    source_refs: [makihisa-sogo]
+
+  - id: shinkansen-lesson-generational-urgency
+    statement: >
+      大型の構造変革は、世代的切迫感(「自分たちでやらなければ永遠に実現しない」)
+      を持つ人物が最終ポストにいる時にしか起動しない。合理的計算ではなく
+      人生の総括としての賭けが、巨大プロジェクトの最終起動条件になる。
+    kind: PATTERN
+    applies_to: >
+      長期にわたって議論されながら実現しない課題の最終決着局面
+    tag_refs: [founder-driven, last-career-bet]
+    source_refs: [makihisa-sogo, takahashi-shima-book]
+
+sources:
+  - source_key: sato-shinkansen
+    kind: BOOK
+    title: 新幹線の歴史
+    author: 佐藤信之
+    publisher: 中央公論新社
+    year: 2015
+    isbn: ""
+    notes: >
+      新幹線成立史の定番通史。政策決定プロセスと技術選択を並行して扱う。
+      中公新書。刊行年は要確認。
+
+  - source_key: makihisa-sogo
+    kind: BOOK
+    title: 十河信二
+    author: 牧久
+    publisher: ウェッジ
+    year: 2010
+    isbn: ""
+    notes: >
+      十河信二の評伝。国鉄総裁期の意思決定と予算操作の実態に詳しい。
+      正式書名・刊行年・版元は要確認。
+
+  - source_key: takahashi-shima-book
+    kind: BOOK
+    title: 島秀雄の世界史
+    author: 高橋団吉
+    publisher: 小学館
+    year: 2000
+    isbn: ""
+    notes: 島秀雄の生涯を通じた技術思想の系譜を追う評伝。刊行年は要確認。
+
+  - source_key: ibrd-archives
+    kind: PRIMARY_DOC
+    title: World Bank Archives - Japan Tokaido Railway Loan
+    url: ""
+    notes: >
+      世銀の融資決定に関する公開文書。一次情報として価値が高い。
+      実際のアーカイブURLは要確認。
+
+relations:
+  - to_case: tdl-founding
+    relation_type: SAME_PATTERN
+    note: >
+      個人の長期執念(十河信二 / 高橋政知)が巨大プロジェクトを駆動する
+      共通パターン。組織ではなく「粘る個人」が決定要因になる構造。
+
+  - to_case: containerization
+    relation_type: CONTRAST
+    note: >
+      新幹線は国家主導の巨大インフラ、コンテナ化は民間発の破壊的インフラ。
+      巨大インフラ成立の2つの型の対比。

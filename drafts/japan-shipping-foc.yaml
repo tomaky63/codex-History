@@ -1,0 +1,215 @@
+# drafts/japan-shipping-foc.yaml
+# 日本海運の便宜置籍船化 — 構造データ
+
+case:
+  slug: japan-shipping-foc
+  title: 日本海運の便宜置籍船化
+  period_start: 1970
+  period_end: 1995
+  primary_themes:
+    - regulatory-turning-points
+    - vertical-restructuring
+
+events:
+  - id: ev1
+    year: 1970
+    title: 日本外航海運が世界3位圏の規模を誇る最盛期
+    description: 日本籍外航船は約1,400隻・約3,000万総トン。高度経済成長を背景に日本人船員の雇用・賃金水準も最高期を迎える。
+    event_type: PEAK
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1973
+    title: 第1次石油ショック——海運不況の始まり
+    description: 原油価格4倍急騰。燃料費増加と荷動き減少による運賃下落が重なり、日本海運は初めてコスト構造の抜本的見直しを迫られる。
+    event_type: CRISIS
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev3
+    year: 1978
+    title: 第2次石油ショックと海運深刻不況
+    description: 建造過剰と需要低迷で世界的な船腹過剰状態。日本船社は大量の係船（休航）を余儀なくされ、FOC転換の検討が本格化。
+    event_type: CRISIS
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev4
+    year: 1979
+    title: 運輸省が「外国人船員混乗」を条件付きで容認
+    description: 海運不況への対策として、日本籍船への外国人船員一部乗船を認める行政解釈が示される。制度的なFOC化への第一歩。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 1985
+    title: プラザ合意——円高が決定打となる
+    description: G5合意でドル高是正が決定。1年以内に1ドル=240円台→120円台へ。ドル建て運賃に対し円建て人件費が倍増し、日本人船員雇用の維持が経営的に不可能になった。
+    event_type: POLICY_SHIFT
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev6
+    year: 1987
+    title: 日本郵船・商船三井がFOC転換を本格加速
+    description: 大手船社が相次いでパナマ・リベリア籍への転換を公式化。業界横並いの競争圧力によりFOC化が「業界標準」になる転換点。
+    event_type: RESTRUCTURING
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev7
+    year: 1989
+    title: 国際船舶法施行——妥協策として外国人混乗を制度化
+    description: 運輸省が日本籍船でも外国人船員混乗を認める「国際船舶登録制度」を創設。完全FOCより割高なため企業採用は限定的だった。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev8
+    year: 1995
+    title: 日本籍外航船が最盛期の約10分の1以下に激減
+    description: 日本籍外航船は100隻強まで減少。一方「日本の船社が管理する外国籍船」は数千隻規模を維持。所有と旗の分離が完成した。
+    event_type: RESTRUCTURING
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: nippon-yusen
+    name: 日本郵船（NYK）
+    kind: COMPANY
+    description: 日本最大の海運会社。FOC転換の先頭集団として1980年代後半に大規模転換を実施。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: mitsui-osk-lines
+    name: 商船三井（MOL）
+    kind: COMPANY
+    description: 日本第2位の海運会社。日本郵船とほぼ同時期にFOC転換を加速させた。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: kawasaki-kisen
+    name: 川崎汽船（K-Line）
+    kind: COMPANY
+    description: 日本第3位の海運会社。大手三社のうちの一角。コンテナ化とFOC化を並行して推進。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: zen-nihon-kaiin-kumiai
+    name: 全日本海員組合（全海員）
+    kind: INSTITUTION
+    description: 日本の外航船員を組織する労働組合。ITF（国際運輸労連）と連携してFOC化に抵抗したが、構造圧力を止められなかった。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: itf-international
+    name: 国際運輸労連（ITF）
+    kind: INSTITUTION
+    description: 交通運輸分野の国際労働組合連合。便宜置籍船に対するボイコットキャンペーンを主導。
+    roles_in_case:
+      - ENABLER
+
+  - slug: japan-ministry-of-transport
+    name: 運輸省（現・国土交通省海事局）
+    kind: INSTITUTION
+    description: 海運政策の所管官庁。日本籍船維持を政策目標としながら、現実には国際競争力維持のためFOC化を黙認・追認した。
+    roles_in_case:
+      - REGULATOR
+
+  - slug: panama-registry
+    name: パナマ船籍登録制度
+    kind: REGULATION
+    description: 外国船社が手続きのみで船籍を取得できる「開放登録」制度の代表例。世界最大の船籍国となっている。
+    roles_in_case:
+      - ENABLER
+
+  - slug: philippine-seafarers
+    name: フィリピン人船員
+    kind: REGION
+    description: FOC転換後に日本船社の主要雇用先となった低コスト外国人船員。フィリピンは世界最大の船員輸出国になった。
+    roles_in_case:
+      - OTHER
+
+lessons:
+  - id: l1
+    statement: 労働コストと規制水準の「制度的裁定機会」が存在する産業では、資本は一度条件が整うと一斉に裁定側へ移動する。個別企業の合理的選択が集合的な産業空洞化を生む。
+    kind: MECHANISM
+    applies_to: 国内高コスト産業、国境をまたぐ労働集約型サービス業、規制が国内外で非対称な産業全般
+    tag_refs:
+      - pattern/regulatory-arbitrage
+      - pattern/labor-displacement
+
+  - id: l2
+    statement: 設備の空洞化（可視的）と技能の空洞化（不可視）の間には数十年の時差がある。統計で見えにくい技能断絶は、見えた時には取り返しがつかない。
+    kind: PATTERN
+    applies_to: 製造業・海運・農業など技能継承に長期間を要する産業の政策分析
+    tag_refs:
+      - pattern/labor-displacement
+
+  - id: l3
+    statement: 「所有と旗の分離」「IPと運営の分離」など、分離の構造が同じでも、分離によって誰が価値を得て誰が失うかは力関係によって決まる。構造の類似は結果の類似を意味しない。
+    kind: HEURISTIC
+    applies_to: 事業構造の分析、産業分離・再統合の評価、M&A・アウトソーシング判断
+    tag_refs:
+      - pattern/regulatory-arbitrage
+
+  - id: l4
+    statement: 産業の国際競争力政策において、「守る」と「移行を管理する」は別戦略である。守れなかった時のために出口戦略（海技者教育維持など）を持っておくことが長期損失を最小化する。
+    kind: FORECAST_METHOD
+    applies_to: 産業政策、労働政策、地域経済政策
+
+  - id: l5
+    statement: 業界横並いの「囚人のジレンマ」構造は、一社の離脱が引き金となって全体が一斉に動く臨界点を持つ。その臨界点は外部ショック（為替・規制変更）によって突然出現する。
+    kind: MECHANISM
+    applies_to: 業界構造分析、政策変更の影響予測、競争戦略
+    tag_refs:
+      - pattern/regulatory-arbitrage
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: コンテナ物語——世界を変えたのは「箱」の発明だった
+    author: マルク・レビンソン
+    publisher: 日経BP
+    year: 2007
+    notes: コンテナ化と同時代の海運構造変革の文脈として参照。FOC化への言及も含む。
+
+  - source_key: src2
+    kind: BOOK
+    title: 日本海運業の現状と課題
+    author: 国土交通省海事局
+    publisher: 国土交通省
+    year: 2010
+    url: https://www.mlit.go.jp/
+    notes: 日本籍船・日本人船員の統計的推移を示す一次資料に近い官庁資料。
+
+  - source_key: src3
+    kind: ARTICLE
+    title: 便宜置籍船問題の構造と日本海運の対応
+    author: 寺田一薫
+    publisher: 海運経済研究
+    year: 1995
+    notes: FOC化の経済的・制度的構造を学術的に分析した文献。
+
+  - source_key: src4
+    kind: BOOK
+    title: 海運の経済学
+    author: 苦瀬博仁
+    publisher: 成山堂書店
+    year: 2002
+    notes: 日本海運業の構造変化と国際競争力を包括的に論じた教科書的文献。
+
+relations:
+  - to_case: containerization
+    relation_type: SAME_INDUSTRY
+    note: 同時代の海運業における二つの構造変革。コンテナ化は技術革新による変革、FOC化は制度裁定による変革。
+
+  - to_case: containerization
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも「誰が価値連鎖のどこを握るか」の再編であり、既存プレイヤー（港湾労働者・日本人船員）が代替された構造が類似。
+
+  - to_case: tdl-founding
+    relation_type: CONTRAST
+    note: 「所有と運営/旗の分離」という構造は共通だが、TDLは双方が利益を得た分離、FOC化は一方が雇用・税収を失った分離。

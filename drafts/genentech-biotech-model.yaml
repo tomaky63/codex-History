@@ -1,0 +1,191 @@
+# drafts/genentech-biotech-model.yaml
+# Genentechとバイオ創薬モデル——組換えDNAが産業になった日
+
+case:
+  slug: genentech-biotech-model
+  title: Genentechとバイオ創薬モデル——組換えDNAが産業になった日
+  period_start: 1976
+  period_end: 2009
+  primary_themes:
+    - regulatory-turning-points
+    - vertical-restructuring
+
+events:
+  - id: ev1
+    year: 1976
+    title: Genentech設立——生化学者とVCの「1,000ドルの握手」
+    description: UCSF生化学者のハーバート・ボイヤーと元VCのロバート・スワンソンが各500ドルを出し合い、Genentechを設立。「組換えDNA技術で医薬品を作る」という構想で合意したこの握手は、大学教授が起業することが異例だった時代の慣習への挑戦だった。翌年、ヒト成長ホルモン放出因子（ソマトスタチン）の大腸菌での合成に成功し、「原理の証明」が完了した。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1980
+    title: Genentech IPO・Bayh-Dole法——バイオテク産業の資金・法的インフラの確立
+    description: 1980年10月14日、Genentech IPO（$35/株）の株価は20分後に$89に急騰し、米国史上最大規模の初値上昇率を記録。「利益ゼロ・製品ゼロでも上場できる」バイオテクの資金調達モデルを確立した。同年、Bayh-Dole法の成立により連邦政府研究費由来の特許を大学が保有・ライセンスできるようになり、全米の大学発スピンアウトの制度的基盤が整った。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev3
+    year: 1982
+    title: Humulin FDA承認——人類初の組換えDNA医薬品、バイオ医薬品産業の誕生
+    description: FDAが組換えヒトインスリン「Humulin」（Genentech/イーライ・リリー共同開発）を承認。人類史上初めて組換えDNA技術で作られた医薬品が患者に届いた。FDAはこの審査プロセスでバイオ医薬品特有の評価基準を初めて構築した（後のBiologics License Application経路の原型）。Big Pharmaとの技術ライセンスモデルも確立。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev4
+    year: 1987
+    title: Activase（t-PA）承認・$2,200の価格論争——バイオ医薬品価格問題の端緒
+    description: 心筋梗塞治療薬Activaseが承認。ライバルのストレプトキナーゼ（$200/治療）の11倍にあたる$2,200/治療という価格設定が議会・医師コミュニティの批判を招いた。「研究開発コストを価格に反映する」製薬業界の論理と「命に関わる薬は安くあるべき」という社会的要請の対立を初めて正面から起こした事例。米国バイオ医薬品価格議論の原型。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 1990
+    title: ロシュによるGenentech株式60%取得——独立性維持×大企業資本の共存モデル
+    description: スイスのロシュ・ホールディングがGenentech株式の60%を$21億で取得。研究開発の独立性を保つことを条件に合意し、完全買収でも完全独立でもない「60%共存モデル」を選択した。Big Pharmaの資金力・グローバル販売網と、バイオテクの科学文化・スピードを両立させる構造として、その後のバイオテク/製薬の提携モデルの参照事例になった。
+    event_type: MERGER
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev6
+    year: 1998
+    title: Herceptin FDA承認——HER2陽性乳がんへの精密医療、コンパニオン診断の誕生
+    description: HER2陽性転移性乳がん（全乳がんの約20〜25%）に限定した分子標的抗体Herceptinが承認。「薬を使う前に分子診断が必要」というコンパニオン診断の先駆け。臨床試験での単剤失敗を経て患者集団を分割・再設計した粘り強い開発が結実。「全患者向けの薬」から「特定分子プロファイル患者向けの薬」というPrecision Medicine（精密医療）パラダイムが医療制度として初めて承認された転換点。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev7
+    year: 2009
+    title: ロシュによる完全買収（$468億）——バイオテク最大買収で産業の成熟を象徴
+    description: ロシュがGenentech残余株式を1株あたり$95（総額$468億）で取得し完全子会社化。バイオテク買収史上最大規模。South San Franciscoの研究拠点は独立した文化を維持する条件が設定された。1976年の$1,000から2009年の$468億——この33年間の価値創造がバイオテク産業モデルの「実績証明」として機能し、以後も世界中でGenentech型スピンアウトが生まれ続けた。
+    event_type: MERGER
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: genentech
+    name: Genentech（ジェネンテック）
+    kind: COMPANY
+    description: 1976年設立のバイオテク先駆企業。South San Francisco（カリフォルニア）に本社。Humulin（インスリン）・Protropin（成長ホルモン）・Activase（t-PA）・Herceptin（乳がん）・Avastin（抗血管新生）・Rituxan（リンパ腫）など多数の画期的バイオ医薬品を開発・商業化した。1990年よりロシュが60%保有し2009年に完全子会社化。「バイオ創薬産業の設計図」を体現した企業として、後続の全バイオテクの参照モデルになった。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: herb-boyer
+    name: ハーバート・ボイヤー
+    kind: PERSON
+    description: Genentech共同創業者・生化学者（1936〜）。UCSF教授。スタンフォードのスタンリー・コーエンとの共同研究で組換えDNA技術（Boyer-Cohen特許）を発明した。大学教授の起業が異例だった時代に起業し、「科学者起業家（Scientist-Entrepreneur）」というアーキタイプを作った。IPO後の富を学術支援に還元し、学術・産業の架け橋としての姿勢を維持し続けた。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: robert-swanson
+    name: ロバート・スワンソン
+    kind: PERSON
+    description: Genentech共同創業者・初代CEO（1947〜1999）。KPCBを辞めた28歳のVCが、組換えDNA技術の産業化可能性に賭けてボイヤーに電話した。技術は理解できないが「これが医薬品産業を変える」という確信だけを持って起業した。IPO・ロシュとの交渉・製品戦略を主導したビジネス側の立役者。1999年に脳腫瘍で逝去。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: roche-holding
+    name: ロシュ・ホールディング（Roche Holding AG）
+    kind: COMPANY
+    description: 1896年設立のスイスの製薬大手。1990年にGenentech株式60%を$21億で取得、2009年に残余株式を$468億で完全買収。製薬大手としてはバイオテクの「研究文化の独立性維持」に最も配慮した買収として知られる。ロシュのグローバル販売網がHerceptin・Avastin等の世界展開を可能にし、Genentechのサイエンスとロシュのコマーシャルのシナジーが双方の成長を支えた。
+    roles_in_case:
+      - ENABLER
+
+  - slug: eli-lilly
+    name: イーライ・リリー（Eli Lilly and Company）
+    kind: COMPANY
+    description: 1876年設立の米国製薬大手。1978年にGenentech開発の組換えヒトインスリン技術をライセンス契約で取得し、Humulinとして1982年に市場投入した。ブタ・ウシのすい臓からのインスリン抽出に依存していたイーライ・リリーにとって、Genentechのバイオ技術は供給量と品質の両面で革命的だった。「大学発バイオテクの技術を大手製薬会社が商業化する」という最初の大型成功事例を共同で作った。
+    roles_in_case:
+      - ENABLER
+
+lessons:
+  - id: l1
+    statement: 「科学者起業家」という慣習の逸脱が産業を作る。ボイヤーの起業は当時の学術規範への挑戦だったが、IPO後に「教授が会社を作る」ことが普通になり、バイオテク産業の人的供給源が大学に根付いた。規範破りが成功すると、規範自体が変わり後続の参入コストを下げる。
+    kind: PATTERN
+    applies_to: 学術研究の産業化、大学発スタートアップエコシステムの設計
+    tag_refs:
+      - pattern/academic-spinout
+      - pattern/outsider-innovation
+
+  - id: l2
+    statement: 「ゼロ収益上場」は非線形なR&Dへの資本配分を可能にする。12〜15年、数百億円のコストで成功確率5%以下というバイオ創薬の特性に、銀行融資は適合しない。VCとIPO市場だけが「確率的期待値」に投資できる。産業の特性に合った資金調達経路の設計が産業の成立条件になる。
+    kind: MECHANISM
+    applies_to: 非線形R&D（長期・高リスク・高リターン）への資金調達設計、バイオ・ディープテク産業の資本市場構造
+    tag_refs:
+      - pattern/academic-spinout
+      - driver/technology-shift
+
+  - id: l3
+    statement: 規制経路の「共同設計」は後続参入者への最強の参入障壁になる。Genentechがバイオ医薬品の審査基準をFDAと協働で構築したことで、後続企業は同じ基準に従う必要が生まれたが、Genentechは基準を知り尽くした優位を持った。「規制を破る」のではなく「規制を作る側になる」ことが長期的な支配力につながる。
+    kind: MECHANISM
+    applies_to: 規制産業（製薬・金融・エネルギー）での新規参入戦略、規制経路の先占とその後続への影響
+    tag_refs:
+      - pattern/standardization
+      - scope/industry-restructuring
+
+  - id: l4
+    statement: 精密医療の本質は「患者を分子プロファイルで分割し、効く患者だけに投与すること」であり、これが旧来の「全患者向け薬」モデルとは異なる価値命題を持つ。小さい市場×高い奏効率×高価格という新しい産業構造を生む。Herceptinはこのモデルを最初に実証した。
+    kind: MECHANISM
+    applies_to: 精密医療・コンパニオン診断の市場設計、「患者の分割」による医薬品の価値命題の変化
+    tag_refs:
+      - driver/technology-shift
+      - industry/biotech
+
+  - id: l5
+    statement: 「独立性を保ちながら大組織の傘下に入る」構造は、イノベーション文化と商業資源を両立させる一つの解だ。ロシュはGenentechの独立研究文化を19年間（60%取得から完全買収まで）維持し、その期間に最も生産的な創薬を実現した。完全独立か完全統合かの二択ではなく「60%共存」というモデルの有効性を示した。
+    kind: HEURISTIC
+    applies_to: 大企業によるスタートアップ・研究機関の買収・連携設計、イノベーション組織の自律性と商業化支援の両立
+    tag_refs:
+      - pattern/founder-driven
+      - scope/industry-restructuring
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: "Genentech: The Beginnings of Biotech"
+    author: Sally Smith Hughes
+    publisher: University of Chicago Press
+    year: 2011
+    notes: 科学史家によるGenentech創業の詳細な一次資料研究。ボイヤー・スワンソンへのインタビューを含む。1976年の設立から1980年のIPOまでの内部意思決定・学術界との葛藤・初期の科学的成果の経緯を記録した決定版。「科学者起業家モデル」の具体的な形成プロセスを理解するための基本文献。
+
+  - source_key: src2
+    kind: BOOK
+    title: The Gene
+    author: Siddhartha Mukherjee
+    publisher: Scribner（日本語版：早川書房「遺伝子——親密なる人類史」）
+    year: 2016
+    notes: ピューリッツァー賞受賞の腫瘍専門医による遺伝子の歴史。メンデルの遺伝法則から組換えDNA革命・ヒトゲノム計画・精密医療まで、遺伝学の産業化の文脈をGenentechの位置づけを含めて包括的に叙述。ボイヤーの発見がなぜ革命的だったかの科学的文脈を理解するための最良の文献。
+
+  - source_key: src3
+    kind: BOOK
+    title: The Billion Dollar Molecule
+    author: Barry Werth
+    publisher: Simon & Schuster
+    year: 1994
+    notes: バイオテク産業の初期を描いたノンフィクション。主にVertex Pharmaceuticalsの創業を通じて、バイオテク企業の資金調達・研究文化・FDA審査・Big Pharmaとの交渉の実態を詳述。Genentechが作ったモデルを後続企業がどう追随したかを理解するための参照文献。
+
+  - source_key: src4
+    kind: ARTICLE
+    title: "The Development of Herceptin"
+    author: Dennis Slamon et al.
+    publisher: Nature Reviews Drug Discovery
+    year: 2003
+    notes: HER2陽性乳がんの発見からHerceptin開発・FDA承認まで、治験設計の変更・患者集団の再定義・コンパニオン診断の開発経緯を学術的に記録。精密医療の「最初の事例」の科学的・臨床的・制度的側面を一次情報に近い形で記述した参照文献。
+
+relations:
+  - to_case: tsmc-foundry-model
+    relation_type: SIMILAR_MECHANISM
+    note: TSMCが「設計（ファブレス）と製造（ファウンドリ）の分離」により半導体業界に新しい垂直分業を作ったように、Genentechが確立したバイオテクモデルは「発見・開発（バイオテク）と製造・販売（Big Pharma）の分離」という新しい製薬業界の垂直分業を生んだ。どちらも「それまで一体だった機能を切り分けることで、より多くのプレイヤーがそれぞれの専門性で参入できる産業構造」を創造した。
+
+  - to_case: amazon-aws
+    relation_type: SIMILAR_MECHANISM
+    note: AWSが「インフラ構築コストをゼロに近づける」ことでスタートアップの参入障壁を下げたように、Genentechが確立した「バイオテクIPO＋FDA経路」の設計図は、科学的発見さえあれば医薬品産業に参入できる参入コストを下げた。どちらも「産業インフラのオープン化」によって後続の爆発的なイノベーションを可能にした。
+
+  - to_case: japan-semiconductor
+    relation_type: CONTRAST
+    note: 日本半導体が通産省主導の産業政策（VLSI計画等）で国家戦略として発展したのに対し、バイオテク産業はVC・学術・FDAという民間・規制機関のエコシステムで自発的に成立した。「国家vs民間エコシステム」という産業創造モデルの対比として、どちらがイノベーションの源泉になるかを対照する事例。

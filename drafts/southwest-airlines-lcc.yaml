@@ -1,0 +1,191 @@
+# drafts/southwest-airlines-lcc.yaml
+# サウスウエスト航空/LCC成立——規制の隙間から生まれたコスト革命と市場拡大効果
+
+case:
+  slug: southwest-airlines-lcc
+  title: サウスウエスト航空とLCCモデルの確立——規制の隙間から起こったコスト革命
+  period_start: 1967
+  period_end: 2001
+  primary_themes:
+    - regulatory-turning-points
+    - vertical-restructuring
+
+events:
+  - id: ev1
+    year: 1967
+    title: サウスウエスト航空設立——テキサス州内線として連邦規制を回避
+    description: ハーブ・ケラーとロレイン・キングがテキサス州ダラス近郊で設立。州際路線には連邦民間航空委員会（CAB）の規制が及ぶが、テキサス州内のみを飛ぶ「州内航空」はその外にある。この規制の抜け穴が、低価格参入の出発点となった。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1971
+    title: 初フライト——3年の法廷闘争を経て離陸
+    description: ブラニフ航空・テキサスインターナショナル航空・コンチネンタル航空が「競合阻止」を目的に3年にわたる法廷闘争を仕掛けた。資金が尽きかけた危機で1機を売却せざるを得なくなったことが、ターンアラウンド10分（当時業界標準は1時間超）の発明を生んだ。1971年6月、ダラス・ラブ・フィールドを拠点に初便を飛ばす。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev3
+    year: 1978
+    title: 航空規制緩和法（Airline Deregulation Act）成立——テキサス実験が全米に解放される
+    description: 連邦政府がCABを廃止し、新規参入・運賃設定・路線選択を市場に委ねる航空規制緩和法を成立させた。「テキサス州内の例外」として育ってきたサウスウエストモデルは、一夜にして全米規模の戦略的選択肢になった。同社は翌年から州際路線へ拡大を開始する。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev4
+    year: 1979
+    title: ラブ・フィールド修正条項——ダラスを「島」に閉じ込める政治的阻止
+    description: アメリカン航空らが議会に働きかけ、ダラス・ラブ・フィールドからの州外飛行を近隣州に限定する「ライト修正条項」を成立させた。サウスウエストは主拠点から長距離路線に出られない制約を受けたが、代わりにコスト構造を磨くことへの集中が深まった。この制約は2006年まで続く。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 1987
+    title: ボーイング737単一機種運用体制の完成——整備・訓練・部品在庫の統一
+    description: サウスウエストは1971年創業時から737を使ってきたが、1980年代を通じて完全な単一機種運用を徹底した。整備士・パイロットの訓練コスト、部品在庫、スケジュール最適化のすべてを一機種に集約することで、大手には真似のできないコスト構造が固まった。
+    event_type: POLICY_SHIFT
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev6
+    year: 1993
+    title: カリフォルニア路線進出——「サウスウエスト効果」の大規模実証
+    description: カリフォルニア州内路線（オークランド—バーバンク等）に参入すると、就航後6か月で旅客数が300〜500%増加した。米国運輸省（DOT）が1993年報告書で「Southwest Effect」と命名し、低運賃が市場そのものを拡大する効果を公式に確認。規制緩和後の低コスト参入が「既存市場の奪取」ではなく「潜在市場の顕在化」をもたらすことが立証された。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev7
+    year: 2001
+    title: 9.11テロ後——業界唯一の黒字と無解雇方針の宣言
+    description: 同時多発テロ後、米国主要航空会社は軒並み数千億円規模の赤字と大規模解雇に踏み切った。サウスウエストは燃油ヘッジ（先物買い）と低コスト構造により2001年通年で唯一の黒字を維持し、単一の解雇も行わなかった。「低コスト構造は景気後退・危機の時にこそ真価を発揮する」という証明になった。
+    event_type: CRISIS
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: southwest-airlines
+    name: サウスウエスト航空
+    kind: COMPANY
+    description: 1967年テキサス州設立のLCC（低コスト航空会社）。単一機種・ポイントツーポイント・ターンアラウンド最速・無料受託手荷物（当初）・フレンドリーサービスを組み合わせた独自モデルで、2001年の9.11後も黒字を維持する唯一の大手米国航空会社となった。現在は米国国内旅客数1位。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: herb-kelleher
+    name: ハーブ・ケラー
+    kind: PERSON
+    description: サウスウエスト航空共同創業者・CEO（在任1981〜2001）。弁護士出身。3年に及ぶ既存大手との法廷闘争を個人として主導し、ユニークな企業文化（「楽しさ・愛情・アグレッシブ低コスト」）の体現者となった。「従業員第一、顧客第二」の哲学でロイヤルティの高い労使関係を構築。2019年没。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: us-civil-aeronautics-board
+    name: 米国民間航空委員会（CAB）
+    kind: INSTITUTION
+    description: 1938〜1985年に存在した米国連邦機関。航空運賃・路線・新規参入を規制し、大手キャリアの寡占を守護していた。1978年航空規制緩和法によってその権限が剥奪され、1985年に廃止された。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: braniff-airways
+    name: ブラニフ航空
+    kind: COMPANY
+    description: テキサス州ダラス拠点の大手航空会社。設立当初のサウスウエストに対して、テキサス航空・コンチネンタルとともに3年間の妨害訴訟を起こした。規制緩和後の競争激化により1982年に経営破綻（米国初の大手航空会社破綻）。皮肉にもその後継者たちが作り上げた競争環境の中でサウスウエストが台頭した。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: ryanair
+    name: ライアンエア
+    kind: COMPANY
+    description: アイルランドの超低コスト航空会社（1984年設立、LCC転換は1991年）。サウスウエストモデルを欧州で実装したが、「補助金目当ての地方空港活用」「手荷物・座席指定等の徹底有料化」でさらに極端なコスト削減を追求した。マイケル・オリアリーCEO（1994年就任）のもとで「サウスウエストより過激なサウスウエスト」になった。
+    roles_in_case:
+      - ENABLER
+
+lessons:
+  - id: l1
+    statement: 規制産業では「法的に規制されていない隙間」を見つけた外部参入者が、既存プレイヤーが不可能な価格設定を実現できる。テキサス州内線での実験は、その後の規制緩和によって一夜にして全米モデルに転化した。
+    kind: MECHANISM
+    applies_to: 規制産業への新規参入戦略、規制緩和前後の競争力分析
+    tag_refs:
+      - pattern/regulatory-arbitrage
+      - driver/disruptive-entry
+
+  - id: l2
+    statement: コスト優位は単一の施策ではなく「相互強化する複数の自己制約」の束から生まれる。単一機種×ポイントツーポイント×高回転×直接販売は独立した省コスト策ではなく、それぞれが他の選択肢を閉じることで組み合わせ効果を生む。この構造は大手が個別施策を模倣しても全体を模倣できない理由でもある。
+    kind: PATTERN
+    applies_to: コスト競争力の分析、「なぜ大手は追随できないか」の評価
+    tag_refs:
+      - pattern/cost-structure-shift
+      - scope/industry-restructuring
+
+  - id: l3
+    statement: 低価格参入は既存市場のパイの奪い合いではなく、価格弾力性の高い潜在需要を顕在化させることで市場規模そのものを拡大する（サウスウエスト効果）。この「市場拡大効果」は参入前には競合からも規制当局からも正確に予測されない。
+    kind: MECHANISM
+    applies_to: 新規参入の市場影響評価、「価格破壊型イノベーションが市場を育てるか」の判断
+    tag_refs:
+      - pattern/cost-structure-shift
+      - pattern/outsider-innovation
+
+  - id: l4
+    statement: 既存大手が模倣に失敗するのは技術的理由ではなく組織的・構造的理由による。ハブ&スポーク網・多機種運用・組合協定・高コスト空港依存は短期には変えられない。既存大手は「部分的模倣」しかできず、それは中途半端なコスト構造を生んで競争力を持たない。
+    kind: ANTI_PATTERN
+    applies_to: 既存企業の低コスト競合への対応戦略評価、「なぜ大手は真似できないか」の構造分析
+    tag_refs:
+      - pattern/outsider-innovation
+      - scope/industry-restructuring
+
+  - id: l5
+    statement: 低コスト構造は好況期よりも危機時（9.11・景気後退・燃料高騰）にこそ競争優位が顕在化する。固定費が低い・ヘッジ戦略が持続可能・解雇せずにすむという選択肢が危機後の急速な回復を可能にする。
+    kind: HEURISTIC
+    applies_to: ビジネスモデルの危機耐性評価、コスト構造の景気サイクル分析
+    tag_refs:
+      - pattern/cost-structure-shift
+      - driver/disruptive-entry
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: Nuts! Southwest Airlines' Crazy Recipe for Business and Personal Success
+    author: Kevin Freiberg and Jackie Freiberg
+    publisher: Broadway Books
+    year: 1998
+    notes: サウスウエストの企業文化・経営哲学・ケラーのリーダーシップを内側から描いた定番書。ターンアラウンド革新の経緯、労使関係、「楽しさ」の制度化について詳述。ケースの「文化的競争優位」を理解する基本文献。
+
+  - source_key: src2
+    kind: PRIMARY_DOC
+    title: "The Airline Deregulation Evolution Continues: The Southwest Effect"
+    author: U.S. Department of Transportation, Office of Aviation Analysis
+    publisher: U.S. Department of Transportation
+    year: 1993
+    notes: サウスウエスト効果を公式に命名・定量化した米国運輸省の分析報告書。就航6か月後の旅客数増加率・運賃下落率の実測データを含む。ケースのコア主張（低価格は市場を拡大する）の一次資料。
+
+  - source_key: src3
+    kind: BOOK
+    title: Hard Landing
+    author: Thomas Petzinger Jr.
+    publisher: Three Rivers Press
+    year: 1996
+    notes: 1978年規制緩和後の米国航空業界の構造変化を描いたジャーナリスティックな通史。ブラニフの破綻、ピープル・エクスプレスの台頭と消滅、サウスウエストの拡大を並行して追う。規制緩和の全体像を理解するための基本文献。
+
+  - source_key: src4
+    kind: ARTICLE
+    title: "Southwest Airlines: In a Different World"
+    author: James L. Heskett and Roger Hallowell
+    publisher: Harvard Business School Case Study
+    year: 1993
+    notes: HBSによるサウスウエストのビジネスモデル分析ケーススタディ。コスト構造・収益モデル・組織文化・競争戦略を体系的に整理。特に「なぜ大手が模倣できないか」の構造的分析が詳しい。
+
+relations:
+  - to_case: walmart-retail-revolution
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも「既存プレイヤーが当然とみなしていたコスト構造」を根本から問い直し、シンプルさの徹底によって圧倒的なコスト優位を構築した。ウォルマートの「クロスドック物流×everyday low price」とサウスウエストの「単一機種×ポイントツーポイント×高回転」は構造的に同型のコスト革命。
+
+  - to_case: opec-oil-crisis
+    relation_type: PRECEDENT
+    note: 1973年・1979年の石油危機で燃料費が急騰したことが、米国航空規制緩和（1978年）の政治的背景になった——高コスト産業に規制という保護を与え続けることへの社会的批判が高まった。エネルギーコスト危機が産業規制の見直しを促すという因果の先例。
+
+  - to_case: japan-shipping-foc
+    relation_type: SIMILAR_MECHANISM
+    note: 日本海運が「便宜置籍船（FOC）」という制度的裏口を使って高コストな自国船員義務を迂回したように、サウスウエストは「テキサス州内線」という規制の外側を活用して連邦規制を迂回した。「制度の境界線の外側を活用した参入戦略」という共通メカニズム。

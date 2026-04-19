@@ -1,0 +1,164 @@
+case:
+  slug: spotify-creator-ecosystem
+  title: Spotifyのクリエイター・エコシステム形成——レーベル依存から供給者プラットフォームへ
+  one_liner: ビッグ3レーベルの「ライセンス人質」から始まり、Spotify for ArtistsとAnchor買収でコンテンツサプライヤーを直接抱えるプラットフォームに転換したSpotifyの逆転戦略
+  summary: >
+    2006年創業のSpotifyはビッグ3レーベルのライセンス人質という劣位に置かれたが、三段階の反転戦略を実行した。2015年のSpotify for Artists（アーティストへの直接データ提供でレーベルを情報ブローカーの地位から外す）、2019年のAnchor.fm買収（レーベル不要のポッドキャストエコシステム確立）、2020年のJoe Rogan独占契約（「Spotifyでしか聴けないコンテンツ」）。しかし音楽ロイヤリティの高止まりと独占ポッドキャストへの過剰投資が財務を圧迫し、2022-23年に戦略を修正。両面市場プラットフォームがサプライヤー側ゲートキーパーをどう扱うかという問いへの最大の実験事例。
+  period_start: 2006
+  period_end: 2023
+  status: published
+  body_path: content/cases/spotify-creator-ecosystem.md
+
+events:
+  - year: 2006
+    title: Spotify設立——「海賊版より便利な合法サービス」の創業ビジョン
+    description: Daniel EkとMartin Lorentzonがストックホルムでspotifyを創業。Napster以来の海賊版問題に対し「合法的で便利なストリーミング」で対抗するというビジョン。最大の課題はレーベルからのライセンス取得だった。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2008
+    title: ビッグ3レーベルとのライセンス合意——スウェーデンで正式サービス開始
+    description: UMG・Sony Music・Warner MusicとのライセンスをSpotifyが取得し、スウェーデンで招待制のサービスを開始。レーベルはSpotifyの株式も取得し「育てながら支配する」戦略を取った。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - year: 2011
+    title: Spotify米国上陸——Facebook連携とソーシャルリスニング
+    description: 米国市場に参入。FacebookのソーシャルグラフとSpotify連携で「友達が何を聴いているか」を可視化し口コミ拡散を加速。Apple iTunes支配の牙城に正面から挑戦した。
+    event_type: ENTRY
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2015
+    title: Spotify for Artists本格展開——データによるレーベル迂回の始動
+    description: アーティストが自分のストリーム数・リスナー属性・プレイリスト掲載状況をリアルタイムで確認できるダッシュボードを本格ローンチ。レーベルが独占していたデータをアーティストに直接開放し、情報非対称性を部分的に解消した。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - year: 2019
+    title: Anchor.fm・Gimlet Media買収——ポッドキャスト制作インフラの内製化
+    description: ポッドキャストホスティングのAnchor（約3億ドル）とポッドキャスト制作会社のGimlet Media（約2.3億ドル）を同時に買収。「誰でも無料でSpotifyに直接配信できる」仕組みを確立し、音楽ではできなかった「レーベル不要のコンテンツ供給」を実現した。
+    event_type: MERGER
+    is_turning_point: true
+    display_order: 1
+
+  - year: 2020
+    title: Joe Rogan Experience独占契約——「Spotifyでしか聴けない」コンテンツの確立
+    description: 世界最大のポッドキャスト番組Joe Rogan Experienceを$100M超とされる独占契約でSpotifyに移行。「ポッドキャストを聴くならSpotify」というポジションを強制的に作ろうとした。オバマ元大統領等の著名人との独占契約も続いた。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2022
+    title: 大規模レイオフと独占ポッドキャスト戦略の修正
+    description: 全社員の17%超をレイオフ（3回の人員削減）。Joe Roganの独占契約が実質的に非独占に移行。ポッドキャストへの過剰投資が財務を圧迫したことを認め、Spotifyマーケットプレイス（アーティスト有料露出）という新収益軸に転換。
+    event_type: RESTRUCTURING
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: spotify-ab
+    name: スポティファイ（Spotify AB）
+    kind: COMPANY
+    description: 2006年スウェーデン創業。世界最大の音楽ストリーミングサービス。2024年時点でMAU6億人超、有料会員2.3億人超。音楽ロイヤリティが収益の60%以上を占める構造的収益課題を抱えながら、ポッドキャストと広告事業で多角化を推進。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: daniel-ek
+    name: ダニエル・エク（Daniel Ek）
+    kind: PERSON
+    description: Spotify共同創業者・CEO（1983年スウェーデン生まれ）。「海賊版より便利な合法サービス」という信念でSpotifyを設立し、ビッグ3レーベルとの交渉を主導した。ポッドキャストへの戦略的転換を主導したが、財務的な逆風にも直面した。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: universal-music-group
+    name: ユニバーサル・ミュージック・グループ（Universal Music Group）
+    kind: COMPANY
+    description: 世界最大のレコードレーベル。ビッグ3（UMG・Sony Music・Warner Music）の筆頭で、テイラー・スウィフト・ドレイク・ビリー・アイリッシュ等の主要アーティストを傘下に持つ。Spotifyへのライセンス供与側として最大の交渉力を持つゲートキーパー。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: anchor-fm
+    name: Anchor.fm（現Spotify for Podcasters）
+    kind: COMPANY
+    description: 2015年創業のポッドキャストホスティング・配信プラットフォーム。2019年にSpotifyが買収。「誰でも無料でポッドキャストを作り配信できる」という民主化ツールとして、Spotifyのレーベル迂回戦略の物理的基盤になった。
+    roles_in_case:
+      - ENABLER
+
+  - slug: apple-music
+    name: Apple Music
+    kind: PRODUCT
+    description: Appleが2015年に開始した音楽ストリーミングサービス。iPhoneとiOSの垂直統合を背景に急速に成長し、Spotifyの最大の競合になった。SpotifyはApple Musicに対し「App Storeの30%手数料は不公平競争」として欧州規制当局に提訴した（2024年に一部認定）。
+    roles_in_case:
+      - ANTAGONIST
+
+lessons:
+  - statement: 両面市場プラットフォームが「コンテンツを所有するゲートキーパー」に囲まれている場合、ゲートキーパーが介在しない別コンテンツカテゴリー（ポッドキャスト）で直接サプライヤーとつながる迂回が有効
+    kind: MECHANISM
+    applies_to: コンテンツプラットフォームのサプライヤー戦略。特に既存権利保有者が支配するカテゴリーに依存しているプラットフォーム
+    display_order: 1
+
+  - statement: アーティスト・クリエイターに自分のデータを直接渡すことは、既存ゲートキーパー（レーベル）の「情報独占」を崩し、プラットフォームがアーティストとの直接関係を構築する起点になる
+    kind: PATTERN
+    applies_to: マーケットプレイス・プラットフォームの供給者向けツール設計。特に中間業者が情報を独占しているカテゴリー
+    display_order: 2
+
+  - statement: 独占コンテンツへの巨額投資は短期の差別化に有効だが、ROIが低く財務を圧迫する——「独占コンテンツ」より「コンテンツ制作インフラ（Anchor）」の方が長期的プラットフォーム価値が高い
+    kind: ANTI_PATTERN
+    applies_to: コンテンツプラットフォームの差別化戦略。「独占コンテンツ購入」と「制作インフラ構築」の選択
+    display_order: 3
+
+  - statement: 収益の60%以上を一つのサプライヤーカテゴリー（レーベル）へのロイヤリティで失うビジネスは、そのカテゴリーを迂回する新しい収益軸を持つまで永続的に収益性が低くなる
+    kind: HEURISTIC
+    applies_to: マーケットプレイス・流通プラットフォームの収益構造評価。特定のサプライヤーへの依存度が高い場合のリスク判断
+    display_order: 4
+
+  - statement: 「キュレーションされたプレイリスト支配」は新しい形のゲートキーパー機能になる——ラジオ局のプレイリストを支配した時代の音楽産業と同型の力学がストリーミングで再現される
+    kind: FORECAST_METHOD
+    applies_to: 音楽・コンテンツ流通の権力構造分析。「誰が発見経路をコントロールするか」がコンテンツ産業の利益分配を決める
+    display_order: 5
+
+sources:
+  - kind: BOOK
+    title: "Spotify Teardown: Inside the Black Box of the New Music Economy"
+    author: Maria Eriksson, Rasmus Fleischer, Anna Johansson, Pelle Snickars, Patrick Vonderau
+    publisher: MIT Press
+    year: 2019
+    notes: Spotifyのアルゴリズム・ライセンス構造・アーティストへの経済的影響を学術的に分析した定番。Spotify for Artistsのデータ政治学的な意味を詳述
+
+  - kind: BOOK
+    title: "Streamed: Music in the Digital Age"
+    author: Liz Pelly
+    publisher: The Baffler / Various Articles
+    year: 2018
+    notes: Spotifyのプレイリスト経済とアーティストへの経済的影響の批判的分析。「Spotifyが誰を豊かにし、誰を貧しくするか」の構造的問い
+
+  - kind: ARTICLE
+    title: "Spotify Technology S.A. Annual Report 2022 (Form 20-F)"
+    author: Spotify Technology S.A.
+    publisher: SEC Filing
+    year: 2023
+    notes: 音楽ロイヤリティ支払い・ポッドキャスト投資・MAU・有料会員数等の財務データの一次資料
+
+  - kind: ARTICLE
+    title: "Spotify's Joe Rogan Deal Was Worth at Least $200 Million"
+    author: Lucas Shaw
+    publisher: Bloomberg
+    year: 2021
+    notes: Joe Rogan独占契約の規模と背景。Spotifyのポッドキャスト戦略における独占コンテンツ投資の根拠と費用対効果の分析
+
+relations:
+  - to_case_slug: apple-app-store
+    relation_type: CONTRAST
+    note: AppleはApp Storeでクリエイター（開発者）を審査・管理し30%を徴収。SpotifyはAnchorでクリエイター（ポッドキャスター）に無料ツールを提供し直接関係を構築。「供給者をコントロールする」vs「供給者を解放する」という対照的な戦略
+
+  - to_case_slug: credit-card-network
+    relation_type: SIMILAR_MECHANISM
+    note: クレジットカードネットワークがカード保有者（消費者）とカード加盟店（サプライヤー）の両面市場を支配した構造と同型。Spotifyもリスナーとアーティスト/レーベルの両面を支配しようとしているが、音楽コンテンツの非排他性がカードネットワークとの決定的な違い
+
+  - to_case_slug: salesforce-saas-category
+    relation_type: SIMILAR_MECHANISM
+    note: SalesforceがAppExchangeでサードパーティ開発者エコシステムを構築したように、SpotifyはSpotify for Artists・Anchorでサードパーティクリエイターエコシステムを構築した。「プラットフォームがサプライヤーにツールを提供して直接関係を持つ」戦略の同型

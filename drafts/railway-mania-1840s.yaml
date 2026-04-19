@@ -1,0 +1,171 @@
+# drafts/railway-mania-1840s.yaml
+# 鉄道バブルと議会承認制度——1840年代イギリスで9500マイルのインフラを副産物として生んだ投機熱
+
+case:
+  slug: railway-mania-1840s
+  title: 鉄道バブルと議会承認制度——1840年代イギリスで9500マイルのインフラを副産物として生んだ投機熱
+  one_liner: 議会承認プロセスが投機を整流し、崩壊後に9500マイルの鉄道網を遺産として残した1840年代イギリスの典型的インフラバブル
+  summary: >
+    1844年のGladstone鉄道法を起点に、英国では「鉄道が時代を変える」という確信と「議会承認という希少なゲート」が組み合わさり、歴史上最大規模の単一産業投機バブルが形成された。1845年に272件もの鉄道会社設立法案が議会に提出され、地主・聖職者・農民まで巻き込んだ株式投機が展開。しかしイングランド銀行の利上げ（1847年）と農業不作による穀物価格高騰が資本を吸収し、鉄道株は平均70%超下落した。「Railway King」と呼ばれたGeorge Hudsonの会計不正発覚（1849年）が象徴するとおり、バブル期の「成功者」の多くは実力ではなく詐欺に依存していた。しかし崩壊後に残った9500マイルの路線が19世紀後半の英国経済の骨格を形成した。
+  period_start: 1830
+  period_end: 1855
+  status: published
+  body_path: content/cases/railway-mania-1840s.md
+
+events:
+  - year: 1830
+    title: リバプール・マンチェスター鉄道開業——蒸気鉄道の商業的実証
+    description: George Stephensonが設計したリバプール・マンチェスター鉄道が開業。蒸気機関車が旅客・貨物輸送の商業的手段として機能することを実証し、「鉄道は馬車に代わる」という確信を英国社会に植えつけた。投資家はこの成功から「鉄道への投資は採算が取れる」という信念を形成した。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - year: 1836
+    title: 第一次鉄道バブル——小規模な投機的過熱と収束
+    description: 1836〜37年に最初の鉄道株式投機が発生。ロンドン・バーミンガム鉄道など主要幹線への投資が集中し、小規模な投機ブームが起きた。しかし当時は機関投資家が中心で、中産階級の参加は限定的だった。1837年の信用収縮で収束し、次の本格バブルの前史となった。
+    event_type: BUBBLE
+    is_turning_point: false
+    display_order: 1
+
+  - year: 1844
+    title: Gladstone鉄道法成立——投機を正当化した規制枠組みの誕生
+    description: 商務省長官ウィリアム・グラッドストンが主導した鉄道法が成立。第三等客への1ペニー/マイル運賃規制（「議会列車」）と、政府による20年後の鉄道買取権を明記した。市場は政府買取権を「政府保証付き投資」と誤読し、鉄道投資のリスクを著しく過小評価した。これが本格バブルの認知的起爆剤となった。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: true
+    display_order: 1
+
+  - year: 1845
+    title: バブル絶頂——272件の鉄道法案、全階層が投機に参加
+    description: 1845年11月に議会へ提出された鉄道設立法案は272件に達し、要求資本総額は£2億超。地主・聖職者・農民・家政婦まで鉄道株を購入し始めた。George Hudsonが「Railway King」として崇拝され、彼が推奨する株は確実に上昇した。しかし彼の配当は新規株主からの払込金で賄われており、ポンジー的構造が内包されていた。
+    event_type: BUBBLE
+    is_turning_point: true
+    display_order: 1
+
+  - year: 1847
+    title: 金融恐慌とバブル崩壊——イングランド銀行利上げと穀物危機
+    description: アイルランドのジャガイモ飢饉で穀物価格が急騰し農業向け資金需要が激増。イングランド銀行が8〜9月に割引率を3%→6%に引き上げ。建設中の路線で株主への追加払込請求（calls）が殺到し、多くの中産階級投資家が現金不足に陥った。鉄道株は6ヶ月で平均70〜80%下落し、数千人が全財産を失った。
+    event_type: CRASH
+    is_turning_point: true
+    display_order: 1
+
+  - year: 1849
+    title: George Hudson不正発覚・失墜——バブル成功者の正体
+    description: 議会の調査でGeorge Hudsonが配当維持のために新規株払込金を流用していたことが発覚。彼は保有株を売却して個人資産を確保しており、数十万ポンドの損害賠償を命じられ晩年は債務者として過ごした。しかし彼が推進したヨーク・ノース・ミッドランド鉄道等の路線は完成しており、不正発覚後も運行を続けた。
+    event_type: CRISIS
+    is_turning_point: false
+    display_order: 1
+
+  - year: 1852
+    title: 生き残り路線の統合——ミッドランド鉄道等の大手形成
+    description: バブル崩壊後、資金不足で建設途中の路線は大手鉄道会社に吸収された。ミッドランド鉄道、ロンドン・ノース・ウェスタン鉄道など、後世に続く幹線鉄道会社がこの時期の統合で形成された。1850年代初頭に英国の主要路線網はほぼ完成し、バブルの遺産が経済インフラとして確定した。約9500マイルの路線が20世紀まで使われ続けた。
+    event_type: RESTRUCTURING
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: george-hudson-railway-king
+    name: ジョージ・ハドソン（George Hudson）
+    kind: PERSON
+    description: ヨーク出身の実業家で「Railway King」の異名を持つ。1840年代に複数の鉄道会社を支配し、バブル期の象徴的人物となった。配当維持のために新規株主の払込金を流用するポンジー的手法を使い、1849年に発覚・失墜。しかし彼が推進した路線の多くは完成し、英国鉄道網の骨格を形成した。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: george-stephenson
+    name: ジョージ・スティーブンソン（George Stephenson）
+    kind: PERSON
+    description: 蒸気機関車の父。リバプール・マンチェスター鉄道（1830年）を設計・建設し、蒸気鉄道の商業的実用性を実証した。1848年没。彼の実証が鉄道投資ブームの技術的基盤を提供したが、彼自身はバブルには慎重な姿勢を持ち、「多くの路線は採算が取れない」と警告していた。
+    roles_in_case:
+      - ENABLER
+
+  - slug: william-gladstone
+    name: ウィリアム・グラッドストン（William Gladstone）
+    kind: PERSON
+    description: 英国商務省長官（1843〜45年）、後に首相（1868〜74年ほか）。1844年鉄道法を主導し、第三等運賃規制と政府買取権を制度化した。市場が法律を「政府保証」と誤読することは意図していなかったが、その誤読がバブルを加速した。後年は鉄道投資の過熱に批判的な立場を取った。
+    roles_in_case:
+      - REGULATOR
+
+  - slug: bank-of-england
+    name: イングランド銀行（Bank of England）
+    kind: INSTITUTION
+    description: 英国の中央銀行。1844年のPeel's Bank Charter Actで金本位制の番人として位置づけられた。1847年の金融恐慌で割引率を3%から6%に引き上げ、鉄道バブル崩壊のトリガーを引いた。利上げは農業危機（穀物価格高騰）への対応だったが、鉄道投資家への資金供給を急激に収縮させた。
+    roles_in_case:
+      - REGULATOR
+
+  - slug: midland-railway
+    name: ミッドランド鉄道（Midland Railway）
+    kind: COMPANY
+    description: バブル崩壊後の路線統合を経て形成された英国主要幹線鉄道会社。1844年にGeorge Hudsonが主導する形でノッティンガム、ダービー、リーズ方面の路線を統合して設立。Hudson失墜後も運行を継続し、後にイギリス国鉄（British Railways）の前身となるグループに合流した。「生き残ったバブル遺産」の典型。
+    roles_in_case:
+      - PROTAGONIST
+
+lessons:
+  - statement: インフラバブルは崩壊後に過剰建設されたインフラを残す。次世代のプレイヤーはそのインフラを格安で活用して、バブル投資家が夢見た需要を実現させる。投機は損をするが、インフラは残る。
+    kind: PATTERN
+    applies_to: インフラ産業（鉄道・通信・エネルギー）のバブル崩壊後の評価。「バブルの遺産を誰が回収するか」の分析
+    display_order: 1
+
+  - statement: 「希少な承認ゲート（議会）」が存在する産業では、「今申請しないと競合が枠を取る」という競争心理がバブルを起動・加速する。制度的ボトルネックは市場を抑制するどころか、意図せず投機のアクセルになりうる。
+    kind: MECHANISM
+    applies_to: 規制産業への参入戦略。特に政府承認・ライセンス制度がある産業での競争行動分析
+    display_order: 2
+
+  - statement: バブル期に「成功者」に見えた人物ほど、その成功の多くが詐欺的手法（ポンジー的配当、内部情報を使った売却）に基づいていた。株価が上昇し続ける間は詐欺が実力に見える——崩壊後に初めて「水着なしで泳いでいた者」が明らかになる。
+    kind: ANTI_PATTERN
+    applies_to: バブル期の「成功した投資家・経営者」の評価。高配当・高成長が実力か詐欺かを区別する指標の分析
+    display_order: 3
+
+  - statement: 規制（Gladstone法）が「政府が関与する＝安全な投資」という誤読を生み、本来リスクに慎重なはずの中産階級まで引き込んだ。立法者の意図と市場の解釈は乖離しうる——規制の設計者はその誤読リスクを事前に評価すべきだ。
+    kind: HEURISTIC
+    applies_to: 規制立案の影響評価。政府の産業政策が金融市場をどう動かすかの事前分析
+    display_order: 4
+
+  - statement: バブルは内部矛盾だけでは崩壊しない。外部ショック（農業危機、利上げ）が「追加払込請求」という現実の現金需要を作り出し、「紙の価格」と「実際に必要な現金」の乖離が臨界を超えた時に崩壊する。
+    kind: FORECAST_METHOD
+    applies_to: バブルの崩壊タイミング予測。「バブルはいつ崩壊するか」を外部ショックの観点から分析するレンズ
+    display_order: 5
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: "Fire & Steam: A New History of the Railways in Britain"
+    author: Christian Wolmar
+    publisher: Atlantic Books
+    year: 2007
+    notes: 英国の主要鉄道史家クリスチャン・ウォルマーによる英国鉄道通史。Railway Maniaの章では1840年代の投機熱とGeorge Hudsonの台頭・失墜を物語形式で詳述。技術・政治・金融が交差する全体像を把握するための基本文献。
+
+  - source_key: src2
+    kind: ARTICLE
+    title: "Collective hallucinations and inefficient markets: The British Railway Mania of the 1840s"
+    author: Andrew Odlyzko
+    publisher: University of Minnesota (Working Paper)
+    year: 2010
+    notes: AT&T研究所出身の数学者・アンドリュー・オドリズコによる定量的分析。実際の株価データと当時の新聞記事を使い、情報が市場に反映されていなかった証拠を示す。通信バブルとの比較分析も含む。鉄道バブルの経済学的分析として最も重要な現代論文。
+
+  - source_key: src3
+    kind: BOOK
+    title: "The Railway King: A Biography of George Hudson"
+    author: Robert Beaumont
+    publisher: Headline Book Publishing
+    year: 2002
+    notes: George Hudsonの詳細な伝記。ヨーク出身の商人から「Railway King」への台頭、会計操作の詳細、失墜後の晩年を追う。バブル期の「成功した詐欺師」の心理と行動の一次的分析として貴重。
+
+  - source_key: src4
+    kind: BOOK
+    title: "Extraordinary Popular Delusions and the Madness of Crowds"
+    author: Charles Mackay
+    publisher: Richard Bentley
+    year: 1841
+    notes: スコットランドのジャーナリスト・チャールズ・マッカイがバブルの最中に著した群衆心理の古典。南海バブル・チューリップバブルと並べて投機熱の普遍的パターンを記述した。鉄道バブルとほぼ同時代に書かれており、当時の市場心理を理解する一次資料としても機能する。
+
+relations:
+  - to_case_slug: global-crossing-telecom-bubble
+    relation_type: SIMILAR_MECHANISM
+    note: 鉄道バブルと通信バブルはいずれも「技術的需要は正しかったが、投資の規模と時間軸が狂っていた」インフラバブルの典型例。崩壊後に過剰建設されたインフラ（鉄道路線 / 光ファイバー網）が次世代プレイヤーに安価で提供され、バブル投資家が夢見た需要を後世が実現した。「投機は損をするが、インフラは残る」という同型パターン。
+
+  - to_case_slug: tokaido-shinkansen
+    relation_type: CONTRAST
+    note: 東海道新幹線は民間投機ではなく国家主導・世銀借款という「不可逆化のコミットメント」で建設されたインフラ。鉄道バブルが「市場の失敗がインフラを残した」のに対し、新幹線は「政治的意志がインフラを強制した」という対照的な建設メカニズム。どちらも「誰もが採算を疑った」インフラが最終的に価値を持ったという結果は同じ。
+
+  - to_case_slug: jnr-privatization
+    relation_type: SAME_INDUSTRY
+    note: 日本国鉄の民営化は、国家が運営する鉄道インフラを市場原理に解放する試みであり、英国の鉄道バブルが「市場が過剰建設して国家が整理した」流れと逆方向の構造。英国では民間→政府方向への流れ（Nationalization 1948年）が最終的に起きたことも含め、「鉄道は市場に任せるべきか国家が運営すべきか」という200年間続く問いの両端事例。

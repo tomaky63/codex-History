@@ -1,0 +1,196 @@
+# drafts/walmart-retail-revolution.yaml
+# ウォルマートと小売革命——農村部から始まった流通覇権の確立
+
+case:
+  slug: walmart-retail-revolution
+  title: ウォルマートと小売革命——農村部から始まった流通覇権の確立
+  period_start: 1962
+  period_end: 2002
+  primary_themes:
+    - vertical-restructuring
+    - standardization-wins
+
+events:
+  - id: ev1
+    year: 1962
+    title: ウォルマート1号店開業——農村市場という「空白地帯」戦略の起点
+    description: アーカンソー州ロジャーズ（人口約6,000人）に1号店を開店。同年KmartとTargetも創業したが、両社は都市近郊を選んだ。「人口5万人以下の小都市には大手が来ない」という空白を意図的に狙い、競争なきフィールドでスケールと物流インフラを構築する時間を確保した。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1970
+    title: IPO実施——物流インフラ投資の資本基盤を確立
+    description: ニューヨーク証券取引所（NYSE）に上場し、株式公開によって資本調達を実現。この資本が1970年代の自社配送センターネットワーク構築と飽和戦略の展開を可能にした。IPOと同時期に自社物流の垂直統合を進め、競合が個別店舗への直送に依存する中、ウォルマートは集中物流の構造的優位を確立した。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev3
+    year: 1975
+    title: 「飽和戦略」の確立——物流センター中心の面的展開
+    description: 配送センターを建て、半径500マイル圏内の小都市を順次ウォルマートで埋めていく「飽和戦略（Saturation Strategy）」が本格的に機能し始める。クロスドッキング（商品を即転送、長期保管しない）で在庫コストを最小化。競合が後から同じネットワークを作ろうとしても数十年のリードを追いかけることになる、複製困難な物理インフラが完成した。
+    event_type: POLICY_SHIFT
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev4
+    year: 1983
+    title: サムズ・クラブ開業——会員制倉庫型小売という新フォーマット
+    description: 会員費を取る代わりに極限まで価格を下げた倉庫型小売「Sam's Club」を開業。コストコと同型のモデルで、中小企業オーナーと大口消費者を顧客に持つ新たな市場を開拓。ウォルマートの「フォーマット多角化」戦略の第一歩で、単一業態への依存から脱却し競合の真似をされにくい多層構造を作った。
+    event_type: ENTRY
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 1987
+    title: 自社衛星ネットワーク稼働——全店舗リアルタイム接続と情報覇権の確立
+    description: 当時米国最大の民間衛星通信ネットワークを稼働。全店舗・配送センター・本社がリアルタイムで接続された。この基盤の上にRetail Linkシステム（1990年代）が構築され、サプライヤーがウォルマート全店の自社製品の在庫・販売速度をリアルタイムで閲覧できるようになった。情報の非対称性を逆転させ、「データを見るためにウォルマートに依存する」構造をサプライヤーに植え付けた。
+    event_type: TECHNOLOGY_SHIFT
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev6
+    year: 1988
+    title: スーパーセンター1号店——食料品と一般商品の統合で市場を拡大
+    description: 食料品スーパーと一般ディスカウント店を統合した「スーパーセンター」フォーマットを開始。「一度で全て揃う」利便性で消費者の購買を集約し、既存スーパーマーケット・ドラッグストアも競合圏に取り込んだ。2000年代には米国最大のスーパーマーケットチェーンになり、食料品市場での占有率でも産業構造を変えた。
+    event_type: ENTRY
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev7
+    year: 1990
+    title: 米国最大小売業者に——Kmartを抜き、メーカーへの交渉力が臨界点を超える
+    description: 年間売上高でKmartを抜き、米国最大の小売業者となった。この時点でP&Gなど主要メーカーにとってウォルマートは最大の単一顧客となりはじめ、「ウォルマートの値下げ要求を断れない」状況が現実化した。製造業者から小売業者への価値連鎖の権力移転が完成する臨界点。P&Gがベントンビル（ウォルマート本社）に専用チームを常駐させたことがその象徴。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev8
+    year: 2002
+    title: フォーチュン500首位——全世界で売上高最大の企業に
+    description: 売上高約2,440億ドルでフォーチュン500の首位となり、全世界で最も売上の大きな企業の地位を獲得。米国国内だけでなく、国際展開（1991年のメキシコ進出以降）でも拡大。ウォルマートが米国小売産業の覇者として確立された歴史的節目。
+    event_type: PEAK
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: walmart
+    name: ウォルマート（Walmart）
+    kind: COMPANY
+    description: 1962年創業の米国小売業者。農村市場への参入・物流垂直統合・EDLP・情報技術の先行活用によって、1990年に米国最大、2002年に世界最大の売上を誇る企業となった。製造業者から小売業者への価値連鎖の権力移転を完成させた。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: sam-walton
+    name: サム・ウォルトン（Sam Walton）
+    kind: PERSON
+    description: ウォルマート創業者（1918〜1992）。ベン・フランクリンのフランチャイジーとして小売業を学び、農村市場への参入・EDLP・物流垂直統合という三位一体の戦略を設計した。1985年にフォーブス誌で米国最高の富豪と認定された後も、生涯を通じて中古ピックアップトラックを運転した徹底したコスト意識の体現者。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: kmart
+    name: Kmart
+    kind: COMPANY
+    description: 1962年創業のディスカウント小売チェーン。都市・郊外への集中戦略とウォルマートの農村展開への無反応が致命的な失策となった。1990年にウォルマートに米国最大の座を明け渡し、2002年に倒産。SearsとKmart Holdingsとして再生するも2018年に再倒産した。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: sears-roebuck
+    name: シアーズ（Sears, Roebuck and Co.）
+    kind: COMPANY
+    description: 20世紀前半に米国最大の小売業者として君臨した伝統的百貨店。ウォルマートの台頭と消費者行動の変化に対応できず、2000年代から急速に凋落。2018年に倒産申請した。「かつての王者」として、ウォルマートの逆説（後に自分もAmazonに同じことをされる）と対比される。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: procter-gamble
+    name: プロクター・アンド・ギャンブル（P&G）
+    kind: COMPANY
+    description: 世界最大の消費財メーカー。1980年代にウォルマートとのEDI・Retail Linkによる情報共有パートナーシップのパイオニアとなった。専用チームをベントンビルに常駐させた初の大手メーカーであり、「メーカーが小売業者に従属する」時代の象徴的事例を体現した。
+    roles_in_case:
+      - ENABLER
+
+lessons:
+  - id: l1
+    statement: 競合が「採算が合わない」と判断して参入しない市場（空白地帯）への先行参入は、競争なきフィールドでスケールとインフラを構築する時間を与える。先行者の束縛がない場所で最新の方法を全面採用できる点では、後発優位と同型の論理が機能する。
+    kind: MECHANISM
+    applies_to: 新市場参入戦略の評価、「競争が薄い市場」と「市場規模が小さい市場」の区別
+    tag_refs:
+      - pattern/outsider-innovation
+
+  - id: l2
+    statement: 物流インフラへの先行投資は「複製に時間がかかる構造的競争優位」を生む。配送センターネットワーク・クロスドッキング・飽和戦略のように、物理インフラは後から参入する競合が短期間では追いつけない「時間ベースの競争優位」を持つ。
+    kind: PATTERN
+    applies_to: 物理インフラ事業の競争優位評価、「先行投資vs後発模倣」のコスト比較
+    tag_refs:
+      - pattern/cost-structure-shift
+      - pattern/burn-the-boats
+
+  - id: l3
+    statement: スケールが「購買集中度の閾値」を超えると、サプライヤーへの交渉力が逆転する。単一バイヤーがサプライヤーの売上の10〜20%を占めるようになると、価格・条件の主導権はバイヤー側に移る。
+    kind: MECHANISM
+    applies_to: 小売・流通の買い手交渉力分析、サプライヤーの顧客集中リスク評価
+    tag_refs:
+      - pattern/customer-interface-winner
+
+  - id: l4
+    statement: EDLP（毎日最安値）は価格戦略ではなく組織設計の原理だ。広告費削減・需要平準化・仕入れ交渉の単純化を一体として実現するモデルであり、「同じ価格にする」だけでは競合できない——それを支える組織・物流・調達の全体を設計しなければ機能しない。
+    kind: MECHANISM
+    applies_to: 小売の価格戦略分析、「コスト優位の源泉」を価格表面ではなくオペレーション設計に求める分析
+    tag_refs:
+      - pattern/cost-structure-shift
+
+  - id: l5
+    statement: 「販売データの共有」は表面上は協力だが、データアクセスへの依存を通じて相手の業務を自社システムに統合する権力構造を生む。プラットフォームが参加者に提供する「便利なツール」が、実質的にプラットフォームへの依存を深める構造は、Retail Linkから現代のAmazon・Appleまで反復される。
+    kind: PATTERN
+    applies_to: プラットフォームの支配力分析、「協力関係」と「依存関係」の境界線の診断
+    tag_refs:
+      - pattern/customer-interface-winner
+      - pattern/network-effect
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: Made in America——サム・ウォルトン自伝
+    author: サム・ウォルトン
+    publisher: 講談社
+    year: 1993
+    notes: ウォルマート創業者の自伝。農村市場戦略・EDLP・物流投資の判断理由を本人の言葉で語る。飽和戦略と「コスト意識の体現」の哲学を理解するための最重要一次資料。
+
+  - source_key: src2
+    kind: BOOK
+    title: The Wal-Mart Effect
+    author: Charles Fishman
+    publisher: Penguin Press
+    year: 2006
+    notes: ウォルマートがサプライヤー・地域経済・米国製造業に与えた影響を詳細に記録。P&GとのRetail Link連携、サプライヤーへの価格圧力、海外移転との連鎖を具体的な事例で示す。「ウォルマーエフェクト」論争の基本文献。
+
+  - source_key: src3
+    kind: BOOK
+    title: "Walmart: A History of Sam Walton's Retail Phenomenon"
+    author: Sandra Stringer Vance, Roy Vernon Scott
+    publisher: Twayne Publishers
+    year: 1994
+    notes: ウォルマートの成長史を詳述した学術的な企業史。飽和戦略・物流インフラ・競合との比較を整理した参照文献。
+
+  - source_key: src4
+    kind: ARTICLE
+    title: Wal-Mart's Supply Chain Management Practices
+    author: Kasturi Rangan, Marie Bell
+    publisher: Harvard Business School Case Study
+    year: 2006
+    notes: HBSによるウォルマートのサプライチェーン管理の詳細分析。クロスドッキング・Retail Link・EDLP・衛星ネットワークの相互関係を体系的に整理。
+
+relations:
+  - to_case: containerization
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも「物流の標準化・効率化が産業の価値連鎖の権力構造を変えた」事例。コンテナ規格化が海運の主導権をISOとMcLeanに与えたように、ウォルマートの物流垂直統合とEDLPがサプライヤーより小売業者に主導権を与えた。「誰が物理的なモノの流れを設計・管理するか」が産業の利益配分を決める、という共通メカニズム。
+
+  - to_case: japan-steel-postwar
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも「競合が参入しない市場（農村部/廃墟）」という空白地帯から、最新の方法（EDLP+物流/LD転炉+臨海製鉄）を全面採用して台頭した。そして両者とも「自分が使った勝利の方程式（物流+情報/製造技術）を次の挑戦者（Amazon/POSCO）に再演された」という構造的宿命も共通する。
+
+  - to_case: famicom-platform
+    relation_type: SIMILAR_MECHANISM
+    note: Retail Linkシステム（販売データ共有）はサプライヤーをウォルマートのエコシステムに囲い込んだ。任天堂のロックチップ+ライセンス管理がサードパーティをファミコンエコシステムに囲い込んだのと同型。「プラットフォームへのアクセスを通じて、参加者を依存させ、そこから利益を抽出する」というメカニズムが共通する。

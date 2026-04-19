@@ -1,0 +1,234 @@
+# drafts/famicom-platform.yaml
+# ファミコン革命とプラットフォーム支配 — 構造データ
+
+case:
+  slug: famicom-platform
+  title: ファミコン革命とプラットフォーム支配——Atariの崩壊から任天堂の独占、Sonyの逆転まで
+  period_start: 1977
+  period_end: 1996
+  primary_themes:
+    - standardization-wins
+    - bubble-and-crash
+    - vertical-restructuring
+
+events:
+  - id: ev1
+    year: 1977
+    title: Atari 2600発売——家庭用ゲーム市場の黄金期が始まる
+    description: Atari 2600が発売され、交換可能カートリッジ方式の家庭用ゲーム機市場が始まる。誰でもソフトを発売できるオープンプラットフォームで急成長。1982年には米国市場で32億ドル規模に達した。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1982
+    title: 映画「E.T.」ゲーム化——粗悪品量産の象徴
+    description: 映画「E.T.」をゲーム化したAtariのタイトルが大失敗。数百万本が売れ残り、後にニューメキシコ州の砂漠に埋められた。Atariショックを象徴する事件として語り継がれる。
+    event_type: CRISIS
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev3
+    year: 1983
+    title: ファミリーコンピュータ発売——任天堂のクローズドプラットフォーム始動
+    description: 任天堂が15,000円でファミリーコンピュータを発売。10NESロックチップによる非ライセンスソフト排除と任天堂品質保証シール制度を導入。品質管理を制度として組み込んだプラットフォーム設計の出発点。
+    event_type: FOUNDING
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev4
+    year: 1983
+    title: Atariショック——米国家庭用ゲーム市場が97%崩壊
+    description: 1983年、米国家庭用ゲーム市場が32億ドルから約1億ドルへと97%以上縮小。粗悪ソフトの氾濫による消費者の信頼喪失が原因。小売業者がゲームを棚から排除し始め、市場が自己強化的に死滅した。
+    event_type: CRASH
+    is_turning_point: true
+    display_order: 2
+
+  - id: ev5
+    year: 1985
+    title: NES北米発売——死んだ市場をEntertainment Systemとして再建
+    description: 任天堂が北米でNintendo Entertainment System（NES）として発売。「ゲーム機」ではなく「エンターテイメントシステム」と命名し、玩具売り場での販売戦略でゲームへの消費者不信を回避した。市場は復活し始める。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev6
+    year: 1988
+    title: Tengenが10NESチップを解析——非ライセンスソフト発売
+    description: AtariのゲームブランドTengenが10NESロックチップをリバースエンジニアリングして非ライセンスソフトを発売。任天堂との法廷闘争（1992年任天堂勝訴）に発展。この事件で任天堂の独占への業界の不満が可視化された。
+    event_type: CRISIS
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev7
+    year: 1989
+    title: 任天堂の北米市場シェア90%超——独占プラットフォームの完成
+    description: 北米における任天堂の家庭用ゲーム機市場シェアが90%を超える。カートリッジ製造独占とライセンス料（1本あたり12〜14ドル）で超過利潤を獲得。サードパーティの「小作人」的地位が固定化した。
+    event_type: PEAK
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev8
+    year: 1991
+    title: FTC反トラスト調査——独占者としての認定
+    description: 米国連邦取引委員会（FTC）がTengen訴訟を契機に任天堂の独占的商慣行を調査。任天堂は最終的にライセンス条件の一部緩和を余儀なくされた。業界内で「任天堂は独占者」という認識が定着した。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev9
+    year: 1994
+    title: Sony PlayStation発売——CD-ROMとサードパーティ離反
+    description: ソニーが1994年12月にPlayStationを発売。CD-ROM採用でカートリッジの1/10以下の製造コストを実現。開発者向けSDKの整備と優遇ライセンス条件でサードパーティを引き寄せた。スクウェア・エニックスらの主力IPが移行を決断。
+    event_type: ENTRY
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev10
+    year: 1996
+    title: スクウェアがFF7をPlayStation独占発売——構造転換の完成
+    description: スクウェアがファイナルファンタジー7をPlayStation独占タイトルとして発売。任天堂の主力サードパーティが競合プラットフォームに移行したことで、第5世代における任天堂の敗北が確定した。
+    event_type: RESTRUCTURING
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: nintendo-co
+    name: 任天堂
+    kind: COMPANY
+    description: ファミコン・NESを開発・販売した日本のゲームメーカー。クローズドプラットフォーム戦略でAtariショック後の市場を再建し、1990年代初頭に独占を達成した。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: atari-inc
+    name: Atari
+    kind: COMPANY
+    description: 1977年にAtari 2600を発売した米国の家庭用ゲーム機の先駆者。オープンプラットフォーム戦略が品質崩壊を招き、1983年のAtariショックを引き起こした。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: sony-computer-entertainment
+    name: Sony Computer Entertainment（SCE）
+    kind: COMPANY
+    description: 1994年にPlayStationを発売したソニーのゲーム事業子会社。CD-ROM採用と開発者優遇で任天堂の独占を崩した。
+    roles_in_case:
+      - DISRUPTOR
+
+  - slug: sega-corporation
+    name: セガ
+    kind: COMPANY
+    description: 1989年に北米でSega Genesis（メガドライブ）を発売し、任天堂の独占に最初に正面挑戦した競合。PlayStationの台頭前には「ソニックvsマリオ」の競争軸を作った。
+    roles_in_case:
+      - DISRUPTOR
+
+  - slug: yamauchi-hiroshi
+    name: 山内溥
+    kind: PERSON
+    description: 任天堂第3代社長。Atariショックを「品質管理の失敗」と正確に診断し、ロックチップと厳格なライセンス制度によるクローズドプラットフォームを設計した。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: square-co
+    name: スクウェア（現スクウェア・エニックス）
+    kind: COMPANY
+    description: ファイナルファンタジーシリーズで任天堂プラットフォームを代表するサードパーティ。FF7のPlayStation独占発売で任天堂からの離反を象徴した。
+    roles_in_case:
+      - ENABLER
+
+  - slug: tengen-atari-games
+    name: Tengen（Atari Games）
+    kind: COMPANY
+    description: AtariのゲームブランドがNES向けに設立したレーベル。10NESチップのリバースエンジニアリングを行い、非ライセンスソフト発売で任天堂と法廷闘争した。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: us-ftc
+    name: 米国連邦取引委員会（FTC）
+    kind: INSTITUTION
+    description: 任天堂の独占的商慣行を調査した米国の競争規制機関。Tengen訴訟を契機に介入し、任天堂にライセンス条件の一部緩和を求めた。
+    roles_in_case:
+      - REGULATOR
+
+lessons:
+  - id: l1
+    statement: プラットフォームの品質は「公共財」的な性質を持ち、参入規制なき開放は品質崩壊スパイラルに必ず陥る。Atariの失敗はゲーム業界に固有ではなく、参入障壁ゼロのプラットフォームが辿る普遍的な経路だ。
+    kind: MECHANISM
+    applies_to: プラットフォームビジネスの設計、マーケットプレイスのキュレーション戦略、アプリストア・コンテンツ配信プラットフォームの品質管理
+    tag_refs:
+      - pattern/customer-interface-winner
+      - pattern/network-effect
+
+  - id: l2
+    statement: 独占プラットフォームから抽出するレント（超過利潤）は、次世代の競合プラットフォームを招き入れる磁場を自ら作る。閉じた城は高いほど、脱出への動機が強くなる。
+    kind: ANTI_PATTERN
+    applies_to: プラットフォームのライセンス価格設計、App Storeの手数料設定、フランチャイズのロイヤリティ交渉
+    tag_refs:
+      - pattern/customer-interface-winner
+      - pattern/regulatory-arbitrage
+
+  - id: l3
+    statement: 技術変化（CD-ROM）は既存の不満を「解放」するトリガーになる。不満が蓄積されている場合、技術的なコスト革命は単なる効率改善ではなく構造転換の起爆剤として機能する。
+    kind: MECHANISM
+    applies_to: 技術変化が産業構造に与える影響の分析、新規参入者の戦略立案
+    tag_refs:
+      - pattern/network-effect
+
+  - id: l4
+    statement: プラットフォーム支配に永続する最適解はない。開放しすぎると品質崩壊、閉じすぎると離反——このジレンマは解消できず、管理するしかない。
+    kind: HEURISTIC
+    applies_to: プラットフォームのガバナンス設計、エコシステム戦略の長期評価
+    tag_refs:
+      - pattern/customer-interface-winner
+
+  - id: l5
+    statement: 産業崩壊（Atariショック）は次世代の正確な設計図を提供する。危機の原因を正確に診断した者が、次のサイクルの支配者になる可能性が高い。
+    kind: FORECAST_METHOD
+    applies_to: 産業崩壊後の参入戦略、危機からの教訓抽出
+    tag_refs:
+      - pattern/burn-the-boats
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: Game Over — How Nintendo Conquered the World
+    author: David Sheff
+    publisher: Random House
+    year: 1993
+    notes: 任天堂の北米市場支配と山内溥の経営を詳細に記した定番ノンフィクション。ファミコン/NES戦略の一次情報として最重要。
+
+  - source_key: src2
+    kind: BOOK
+    title: Console Wars — Sega, Nintendo, and the Battle that Defined a Generation
+    author: Blake J. Harris
+    publisher: Dey Street Books
+    year: 2014
+    notes: セガvs任天堂の競争を当事者へのインタビューをもとに描いた作品。第三者視点でのプラットフォーム競争の内実を理解するのに有用。
+
+  - source_key: src3
+    kind: BOOK
+    title: The Ultimate History of Video Games
+    author: Steven L. Kent
+    publisher: Three Rivers Press
+    year: 2001
+    notes: Atariショックからファミコン再建までの産業史の詳細な記録。事実確認に有用。
+
+  - source_key: src4
+    kind: ARTICLE
+    title: How Nintendo Conquered the Game Industry with the Nintendo Entertainment System
+    author: Jeremy Parish
+    publisher: Ars Technica
+    year: 2015
+    notes: NES北米発売戦略（玩具売り場への展開・命名戦略）の詳細を論じた記事。
+
+relations:
+  - to_case: containerization
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも「プラットフォームの標準化→ネットワーク効果→最大プレイヤーへの集中」というメカニズムで動いた。コンテナはISO規格という公共財的標準化、ファミコンは私有プラットフォームの標準化という違いがある。
+
+  - to_case: tdl-founding
+    relation_type: CONTRAST
+    note: TDLはIP保有者（Disney）と顧客接点（OLC）を分離してwin-winを実現した。任天堂はIPもプラットフォームも流通も垂直統合した。分離による共存 vs 統合による独占という対照的な戦略。
+
+  - to_case: subsea-cable
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも最大の利用者・コンテンツ提供者がプラットフォーム層を支配する垂直統合の論理で動いた。海底ケーブルはBig Techがインフラを私有化、ファミコンは任天堂がソフト流通を内製化。

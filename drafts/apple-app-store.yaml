@@ -1,0 +1,164 @@
+case:
+  slug: apple-app-store
+  title: Apple App Storeの形成とモバイルソフトウェア流通の再設計
+  one_liner: iPhoneという閉じたハードウェアに世界中の開発者を引き込む両面市場を作り、ソフトウェア流通そのものを独占したApp Storeの形成史
+  summary: >
+    2007年のiPhone発売時、スティーブ・ジョブズはサードパーティ製アプリを認めないと宣言した——「セキュリティのため」。しかし開発者コミュニティの圧力と内部の説得を受け、2008年7月にApp Storeを開設し、iOS SDKを公開した。この「閉じた庭の開放」は、過去最大規模の両面市場を作り上げた。Appleは開発者に「世界中のiPhoneユーザーへのアクセス」を与え、見返りとして販売額の30%を徴収するという構造を確立した。これがApp Economyの爆発を引き起こしたが、2020年のEpic対Apple訴訟でプラットフォーム独占の問題が法廷に持ち込まれ、Walled Gardenの構造が歴史的な転換点に来ていることが明らかになった。
+  period_start: 2007
+  period_end: 2022
+  status: published
+  body_path: content/cases/apple-app-store.md
+
+events:
+  - year: 2007
+    title: iPhone発売——「ウェブアプリで十分」サードパーティアプリ不可の方針
+    description: Appleが初代iPhoneを発売。ジョブズはネイティブサードパーティアプリを認めず「ウェブアプリで十分」と宣言した。開発者コミュニティによるジェイルブレイクが急速に広まる。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2008
+    title: iOS SDK公開・App Store開設——開発者エコシステムの誕生
+    description: AppleがiOS SDKを公開し、2008年7月にApp Storeを開設。開設初日に500件超のアプリが登録。販売額の70%を開発者に、30%をAppleが受け取る構造を確立した。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - year: 2009
+    title: App内課金（In-App Purchase）導入——フリーミアムモデルの発明
+    description: アプリ内でアイテム・機能・コンテンツを個別課金できるIn-App Purchase機能を導入。無料配布+課金というfreemiumモデルが可能になり、ゲームアプリのマネタイズが爆発的に拡大した。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - year: 2011
+    title: App Store売上$30億超え・Angry Birds/Instagramの時代
+    description: App Store累計売上が30億ドルを突破。Angry Birdsが世界2億DLを超え、Instagramが1000万ユーザーを達成。「アプリ」が文化・産業・コミュニティを定義する単位になった。
+    event_type: PEAK
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2015
+    title: Spotifyが30%手数料問題を公言——プラットフォーム独占批判の始まり
+    description: Spotifyが「App Store内サブスク登録に30%の手数料を課されると競争上不公平」として公式に批判を開始。Appleがサブスク継続に対して15%の特例を設けたが、開発者の不満は高まった。
+    event_type: CRISIS
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2020
+    title: Epic対Apple訴訟——Fortnite削除とWalled Garden問題の法廷化
+    description: Epic GamesがApp Store外決済を強行、AppleはFortniteを即座に削除し開発者アカウントを停止。EpicはAppleを独禁法違反で提訴。EU、日本、米国でも同時期にApp Store独占への規制論が台頭した。
+    event_type: CRISIS
+    is_turning_point: true
+    display_order: 1
+
+  - year: 2022
+    title: EU デジタル市場法（DMA）成立——サイドローディング義務化への布石
+    description: EUがApple・Google等の「ゲートキーパー」に対し、サードパーティのアプリストアやサイドローディングを認めることを義務付けるDMAを成立させた。Appleは2024年よりEU域内でApp Store以外からのインストールを部分的に解放。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: apple-inc
+    name: アップル（Apple Inc.）
+    kind: COMPANY
+    description: 1976年創業。iPhone・iPad・Macのハードウェア、iOS・macOSのOSとApp Storeを垂直統合で支配する世界最大のテクノロジー企業。App Storeは年間$1000億超の流通額を持つ。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: steve-jobs
+    name: スティーブ・ジョブズ（Steve Jobs）
+    kind: PERSON
+    description: Apple共同創業者・CEO（1997-2011）。iPhone発売とApp Store設計の最終意思決定者。当初サードパーティアプリを拒否したが、後に転換してApp Storeを設計した。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: google-llc
+    name: グーグル（Google LLC）
+    kind: COMPANY
+    description: Androidを開発・配布し、Google Play Storeを運営するAppleの最大の競合。オープンなAndroidエコシステムを対比として、iOSの閉鎖性の議論を定義する存在。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: epic-games
+    name: エピック・ゲームズ（Epic Games）
+    kind: COMPANY
+    description: Fortniteを開発するゲーム会社。2020年にApp Storeの30%手数料への挑戦を意図的に仕掛け、Appleと法廷闘争を起こした。Unreal Engineの提供者でもあり、モバイルゲーム産業全体の利害を代理して戦った。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: ios-sdk
+    name: iOS SDK（ソフトウェア開発キット）
+    kind: TECHNOLOGY
+    description: Appleが2008年に公開したiOSアプリ開発のツールセット。App Storeエコシステムの物理的基盤であり、SDKの公開なしには開発者エコシステムは成立しなかった。
+    roles_in_case:
+      - ENABLER
+
+lessons:
+  - statement: 両面市場（開発者 × 消費者）を支配するプラットフォームは、ハードウェアで先に消費者を確保することで「鶏と卵」問題をバイパスし、後から開発者を強制的に引き込める
+    kind: MECHANISM
+    applies_to: プラットフォームビジネスの設計。特にマーケットプレイスやアプリストア型ビジネスの立ち上げ戦略
+    display_order: 1
+
+  - statement: 閉鎖的な審査制度はプラットフォームの「品質シグナル」になり、オープンな競合より消費者の信頼を獲得しやすい——消費者がプレミアム支払いに応じる根拠になる
+    kind: PATTERN
+    applies_to: マーケットプレイス・プラットフォームの品質管理設計。クローズドとオープンの選択に迷う場面
+    display_order: 2
+
+  - statement: 代替流通チャネルがない独占的プラットフォームの手数料は「競争上の手数料」ではなく「独占地代」となり、長期的に規制リスクを蓄積する
+    kind: ANTI_PATTERN
+    applies_to: プラットフォーム手数料の設計と長期リスク評価。規制当局との関係を考慮すべき場面
+    display_order: 3
+
+  - statement: ハードウェアとソフトウェア流通を垂直統合すると、「ハードウェアの価値 ≒ ソフトウェアエコシステムの豊かさ」という循環が成立し、後発が追いつく参入障壁が飛躍的に高まる
+    kind: HEURISTIC
+    applies_to: テクノロジー企業の垂直統合戦略。ハードウェア×ソフトウェア×流通の統合を検討する場面
+    display_order: 4
+
+  - statement: プラットフォームの健全性は「開発者のROI」で測定できる——開発者が儲からなくなると、最初にクリエイティブな開発者が離れ、次にエコシステム全体が衰退する
+    kind: FORECAST_METHOD
+    applies_to: プラットフォームの持続可能性評価。エコシステムの健全性モニタリング指標の設計
+    display_order: 5
+
+sources:
+  - kind: BOOK
+    title: "Steve Jobs"
+    author: Walter Isaacson
+    publisher: Simon & Schuster
+    year: 2011
+    notes: Jobs自身へのインタビューに基づくApp Store設計思想と「ウェブアプリで十分」から転換した経緯の一次証言
+
+  - kind: BOOK
+    title: "The App Generation: How Today's Youth Navigate Identity, Intimacy, and Imagination in a Digital World"
+    author: Howard Gardner, Katie Davis
+    publisher: Yale University Press
+    year: 2013
+    notes: App Economyの社会・文化的影響の分析。アプリが世代のアイデンティティ形成に与えた影響
+
+  - kind: ARTICLE
+    title: "Epic Games, Inc. v. Apple Inc., Case No. 4:20-cv-05640"
+    author: U.S. District Court, Northern District of California
+    publisher: Federal Court Filing
+    year: 2021
+    notes: Epic対Apple訴訟の判決文。App Storeの独占性・30%手数料の競争法上の問題について最も詳細な法的分析
+
+  - kind: ARTICLE
+    title: "App Store Review Guidelines"
+    author: Apple Inc.
+    publisher: Apple Developer Documentation
+    year: 2022
+    notes: Appleが公式に定めるApp Store審査ガイドライン。Walled Gardenの具体的ルールの一次資料
+
+relations:
+  - to_case_slug: famicom-platform
+    relation_type: SIMILAR_MECHANISM
+    note: 任天堂がサードパーティゲームを審査・管理してファミコンプラットフォームを支配した構造の、数十年後・数百倍規模の再現。「ハードウェア支配 → ソフトウェア流通支配」のメカニズムが同型
+
+  - to_case_slug: credit-card-network
+    relation_type: SIMILAR_MECHANISM
+    note: クレジットカードネットワークも加盟店（開発者）と消費者の両面市場であり、取引毎の手数料（約2-3%）という収益構造が類似。App Storeの30%は「決済インフラ+流通独占」の複合対価
+
+  - to_case_slug: intel-inside-ingredient-branding
+    relation_type: CONTRAST
+    note: IntelはオープンなPCエコシステムでブランド浸透（誰でも組み立てPC可）、AppleはクローズドなiOSで品質担保（Appleしか制御できない）という対照的なプラットフォーム支配戦略

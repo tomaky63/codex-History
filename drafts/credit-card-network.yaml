@@ -1,0 +1,191 @@
+# drafts/credit-card-network.yaml
+# クレジットカード決済ネットワーク——二面市場とインターチェンジ料が作った決済インフラの堀
+
+case:
+  slug: credit-card-network
+  title: クレジットカード決済ネットワークの成立——二面市場とインターチェンジ料が作った決済インフラの堀
+  period_start: 1950
+  period_end: 2010
+  primary_themes:
+    - standardization-wins
+    - vertical-restructuring
+
+events:
+  - id: ev1
+    year: 1950
+    title: Diners Club設立——汎用クレジットカードの誕生
+    description: フランク・マクナマラとラルフ・シュナイダーがDiners Clubを設立。加盟レストラン14軒・会員200人からスタートした「署名で払える会員カード」は、二面市場（加盟店と消費者を同時に集める）のチキン&エッグ問題に最初に挑戦した事業モデルだった。T&E（旅行・娯楽）市場に特化することで初期の加盟店獲得を可能にし、1年後に会員2万人・加盟店1,000店に達した。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1958
+    title: BankAmericardとAmerican Expressカード——銀行系汎用カードの誕生
+    description: Bank of Americaがカリフォルニア州で60万枚のBankAmericardを既存口座保有者に一斉送付。「申し込みゼロ・一夜でカード保有者大量生成」という手法でチキン&エッグの保有者側を解決した。同年American Expressも一般向けカードを発行。BofAの「銀行の配布力を活用する」アプローチは後のVisa/Mastercardネットワーク設計の原型となった。
+    event_type: ENTRY
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev3
+    year: 1968
+    title: BankAmericardの全米銀行ライセンス展開——二面市場ネットワークの臨界質量
+    description: Bank of AmericaがBankAmericardのブランド・規則を全米の他銀行にライセンス展開し始めた。同年、東部銀行群が対抗してInterbank Card Association（後のMastercard）を設立。Dee Hock（ディー・ホック）が混乱状態のBankAmericardライセンス網を整理するため1970年にNBIを設立し「Chaordic（分散自律＋共通規則）」設計の協同組合を作った。全国銀行の参加でネットワーク臨界質量を超え、後発者の追随を経済的に不可能にする堀が形成された。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev4
+    year: 1976
+    title: BankAmericard → Visa・Master Charge → Mastercard——国際ブランドの確立
+    description: BankAmericardが「Visa」に改名（1976年）、Master Chargeが「Mastercard」に改名（1979年）し、国際展開を加速した。言語・通貨・国境を超えて通用する統一ブランドとインターチェンジ清算システムが整備され、「世界中で使えるカード」という価値命題が確立。ネットワーク効果が国境を越えて自己強化するグローバル規模の堀が完成した。
+    event_type: POLICY_SHIFT
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 2003
+    title: 大手小売業者との反トラスト和解——Honor All Cardsルールへの初めての規制的打撃
+    description: ウォルマート・シアーズ等の大手小売業者が1996年に起こした集団訴訟で、Visa/Mastercardが「Honor All Cards」ルール（デビット強制受け入れ問題）に関して$3Bの和解金を支払い、デビットとクレジットの分離受け入れを認めた。しかしインターチェンジ水準自体は維持され、加盟店の交渉力の限界が露呈した。ネットワーク周縁部は修正されたが核心は変わらなかった。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev6
+    year: 2008
+    title: Visa IPO（$17.9B）——協同組合から独立プラットフォーム企業へ
+    description: 2008年3月、VisaがIPOを実施。調達額$17.9Bは当時米国史上最大。銀行の協同組合として生まれたVisaが独立した利益主体（株式会社）となり、ネットワーク価値が資本市場に可視化された。2006年のMastercard IPO（$2.4B）に続くこの転換は「ルールを設定するプラットフォーム自体の価値」を証明した。IPO後数年でVisaの時価総額は主要米国銀行を超えた。
+    event_type: RESTRUCTURING
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev7
+    year: 2010
+    title: Durbin修正条項——デビットカードインターチェンジへの初めての上限規制
+    description: Dodd-Frank金融改革法に含まれるDurbin修正条項が、デビットカードのインターチェンジ手数料の上限を約$0.21（従来水準の約1/3）に規制した。EU（2015年）・英国・オーストラリアも同様の規制を導入。「インターチェンジという見えない税」に規制の光が当たり、クレジットカードインターチェンジへの規制圧力の前例が確立した。規制後、複数の銀行がデビットリワードを廃止・口座手数料を引き上げ「コスト転嫁」論争を生んだ。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: true
+    display_order: 1
+
+entities:
+  - slug: visa-inc
+    name: Visa Inc.
+    kind: COMPANY
+    description: 1970年にNBI（National BankAmericard Inc.）として設立された銀行協同組合が前身。1976年にVisaに改名。2008年のIPOで独立した株式会社となり、時価総額は現在5,000億ドルを超える世界最大の決済会社。カードの発行も加盟店契約も行わず、インターチェンジ規則の設定・ブランド管理・清算システムの運営のみを担う純粋なネットワーク事業者。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: mastercard-inc
+    name: Mastercard Inc.
+    kind: COMPANY
+    description: 1966年にInterbank Card Association（後にMaster Charge、1979年にMastercard）として東部の銀行群が設立。2006年にIPO。Visaとともに世界の決済ネットワークの二極を形成する。加盟店受け入れ拠点・発行カード数ではVisaより若干規模が小さいが、ビジネスモデルは同型。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: dee-hock
+    name: ディー・ホック（Dee Hock）
+    kind: PERSON
+    description: NBI（後のVisa）初代CEO（1970〜1984）。混乱状態だったBankAmericardライセンス網を「Chaordic（カオスと秩序の合成）」と呼ぶ設計思想で再編し、「参加銀行が自律的に競争しながら共通規則に従う」協同組合ガバナンスを設計した。Visaの組織設計はインターネットのプロトコル設計（分散・共通規則）と類似すると後に評される。著書"Birth of the Chaordic Age"(1999)でその思想を展開。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: bank-of-america
+    name: Bank of America
+    kind: COMPANY
+    description: 1958年にBankAmericardを開始したVisa前身ネットワークの創設者。既存口座保有者への一斉送付という「配布力の活用」でクレジットカード普及の臨界質量を最初に達成した。1970年のNBI設立でネットワークの管理権を協同組合に移管し、1980年代以降は参加銀行の一つとしてVisaカードを発行する立場に転じた。
+    roles_in_case:
+      - ENABLER
+
+  - slug: diners-club
+    name: Diners Club
+    kind: COMPANY
+    description: 1950年設立、世界初の汎用クレジットカード会社。T&E（旅行・娯楽）市場に特化した「会員制チャージカード（月末全額支払い）」として出発し、二面市場の最初の挑戦者となった。後にCitigroupが買収し、現在はDiscoverが保有。Visa/Mastercardの「銀行配布ネットワーク」モデルには規模で敵わなかったが、業界の原型を作った。
+    roles_in_case:
+      - PROTAGONIST
+
+lessons:
+  - id: l1
+    statement: 二面市場のチキン&エッグ問題は「片面の大量獲得」で解決できる。BankAmericardが銀行の配布力（既存口座保有者）を活用してカード保有者側を一気に確保したように、ネットワーク効果が働く市場では「どちらかの面を先に安く大量獲得する」戦略が成立する。
+    kind: MECHANISM
+    applies_to: 二面市場プラットフォームの参入戦略、チキン&エッグ問題の解法設計
+    tag_refs:
+      - pattern/customer-interface-winner
+      - mechanism/network-effect
+
+  - id: l2
+    statement: インターチェンジ・フィーは「加盟店→発行銀行」への資金フローを制度化し、発行銀行をカード普及の営業部隊にするインセンティブ設計だ。高所得者へのリワードを低所得者（現金払い含む全消費者）が負担するという逆進的な「見えない補助金」が持続的に機能している。
+    kind: MECHANISM
+    applies_to: 決済プラットフォームの収益構造分析、「誰が誰を補助しているか」の費用負担設計評価
+    tag_refs:
+      - pattern/customer-interface-winner
+      - industry/finance
+
+  - id: l3
+    statement: ネットワーク効果が臨界質量を大幅に超えたインフラは、技術的優位性だけでは代替できない。代替には加盟店・発行銀行・消費者が「同時に乗り換える」調整コストが必要で、フィンテック企業でさえVisaとMastercardの「上で」動かざるを得ない。
+    kind: PATTERN
+    applies_to: ネットワーク効果産業への参入障壁評価、フィンテックの「脅威の実質的評価」
+    tag_refs:
+      - mechanism/network-effect
+      - scope/platform-ecosystem
+
+  - id: l4
+    statement: 「Honor All Cards」のようなプラットフォームが設定するルールは、参加者の選択肢を体系的に閉じることで交渉力の非対称性を制度化する。加盟店は「全種類のVisaを受け入れるか、Visa保有者全員を失うか」の二択に置かれ、個別インターチェンジ水準への異議を申し立てる手段を持てない。
+    kind: ANTI_PATTERN
+    applies_to: プラットフォームルール設計の競争政策評価、「参加の条件」が交渉力に与える影響分析
+    tag_refs:
+      - pattern/customer-interface-winner
+      - scope/platform-ecosystem
+
+  - id: l5
+    statement: 協同組合から株式会社（IPO）への転換は、ネットワーク参加者の所有からネットワーク自体の独立した利益主体への転換を意味する。Visa IPO後、VisaはAppleやフィンテック企業との交渉で「発行銀行の利益」より「ネットワーク普及」を優先することが可能になり、参加銀行との利益相反が顕在化した。
+    kind: HEURISTIC
+    applies_to: プラットフォームのガバナンス構造変化の影響評価、「協同組合 vs 株式会社」の設計選択
+    tag_refs:
+      - scope/platform-ecosystem
+      - industry/finance
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: "Paying with Plastic: The Digital Revolution in Buying and Borrowing"
+    author: David S. Evans and Richard Schmalensee
+    publisher: MIT Press
+    year: 2005
+    notes: 二面市場理論の第一人者（エバンス）によるクレジットカード産業の経済分析。インターチェンジ・フィーの経済的根拠・競争政策上の問題・四者モデルの機能を経済学的に詳述。「インターチェンジは価格調整機能を持つ」という業界側の主張と規制当局の批判を公平に分析した標準的学術書。
+
+  - source_key: src2
+    kind: BOOK
+    title: "Birth of the Chaordic Age"
+    author: Dee Hock
+    publisher: Berrett-Koehler Publishers
+    year: 1999
+    notes: Visa初代CEO・ディー・ホック自身による組織設計思想の記述。BankAmericardライセンス網のカオス、NBI設立交渉、「Chaordic」組織設計の経緯を一人称で記録した一次資料に近い文献。「分散自律と共通規則の組み合わせ」というガバナンス思想を理解する必読書。
+
+  - source_key: src3
+    kind: BOOK
+    title: "The Credit Card Nation"
+    author: Robert D. Manning
+    publisher: Basic Books
+    year: 2000
+    notes: 消費社会学者によるクレジットカード産業の批判的分析。インターチェンジの「逆補助金」構造、リワードプログラムの所得格差強化効果、銀行の利益相反問題を消費者側の視点から詳述。産業の「設計の意図」と「社会的影響」の乖離を理解するための重要文献。
+
+  - source_key: src4
+    kind: PRIMARY_DOC
+    title: "Interchange Fees in Various Countries: Developments and Regulatory Approaches"
+    author: Bank for International Settlements (BIS), Committee on Payment and Settlement Systems
+    publisher: BIS
+    year: 2012
+    notes: 国際決済銀行（BIS）によるインターチェンジ規制の国際比較報告書。米国Durbin修正条項・EU規制・オーストラリア規制の内容・効果・副作用（消費者へのコスト転嫁）を定量的に比較分析した一次資料。規制の実効性評価の基礎データ。
+
+relations:
+  - to_case: famicom-platform
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも「二面市場（ゲーム開発者＆プレイヤー / 加盟店＆消費者）」を設計し、ネットワーク効果が臨界質量を超えた後は参入障壁が天文学的に高くなるプラットフォーム。ファミコンの「サードパーティ管理ルール」とVisaの「Honor All Cards」ルールは、プラットフォームが参加者の選択肢を閉じることで優位性を維持するという同型の設計。
+
+  - to_case: seven-eleven-japan
+    relation_type: SIMILAR_MECHANISM
+    note: セブン-イレブンのPOS・単品管理は「誰が何を買ったか」のデータを蓄積して発注・品揃えを最適化した。Visa/Mastercardの取引データは「誰がどこで何を買ったか」のグローバルな消費データベースだ。どちらも「顧客との接点を持つプラットフォームが情報を独占することで競争優位を持続する」という構造。
+
+  - to_case: containerization
+    relation_type: SIMILAR_MECHANISM
+    note: コンテナ化がISO668規格を通じて「物理的な荷物の輸送インターフェース」を標準化し、標準採用者が世界の物流インフラを支配したように、Visa/Mastercardは「電子決済のインターフェース規格」を標準化し世界の決済インフラを支配した。「インターフェースの標準化→ネットワーク効果→覇権」という共通のメカニズム。

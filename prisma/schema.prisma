@@ -1,0 +1,227 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// SQLite は enum 非対応のため全フィールドは String。
+// 取りうる値は src/types/domain.ts の定数で管理する。
+
+model Case {
+  id          Int      @id @default(autoincrement())
+  slug        String   @unique
+  title       String
+  oneLiner    String   @default("")
+  summary     String   @default("")
+  bodyPath    String?
+  bodyVersion Int      @default(1)
+  periodStart Int?
+  periodEnd   Int?
+  status      String   @default("DRAFT")  // DRAFT | REVIEW | PUBLISHED
+  meta        String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  themes        CaseTheme[]
+  tags          CaseTag[]
+  entities      CaseEntity[]
+  sources       CaseSource[]
+  events        Event[]
+  lessons       Lesson[]
+  relationsFrom CaseRelation[] @relation("CaseRelationFrom")
+  relationsTo   CaseRelation[] @relation("CaseRelationTo")
+
+  @@index([status])
+  @@index([periodStart])
+  @@index([updatedAt])
+}
+
+model Theme {
+  id             Int      @id @default(autoincrement())
+  slug           String   @unique
+  name           String
+  description    String?
+  parentId       Int?
+  parent         Theme?   @relation("ThemeHierarchy", fields: [parentId], references: [id])
+  children       Theme[]  @relation("ThemeHierarchy")
+  coverEssayPath String?
+  displayOrder   Int      @default(0)
+  createdAt      DateTime @default(now())
+
+  cases CaseTheme[]
+
+  @@index([parentId])
+}
+
+model CaseTheme {
+  caseId  Int
+  themeId Int
+  case    Case  @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  theme   Theme @relation(fields: [themeId], references: [id], onDelete: Cascade)
+
+  @@id([caseId, themeId])
+  @@index([themeId])
+}
+
+model Tag {
+  id             Int      @id @default(autoincrement())
+  slug           String   @unique
+  name           String
+  category       String?  // PATTERN | INDUSTRY | REGION | ERA | MECHANISM
+  synonymOfTagId Int?
+  synonymOf      Tag?     @relation("TagSynonym", fields: [synonymOfTagId], references: [id])
+  synonyms       Tag[]    @relation("TagSynonym")
+  createdAt      DateTime @default(now())
+
+  cases   CaseTag[]
+  lessons LessonTag[]
+
+  @@index([category])
+}
+
+model CaseTag {
+  caseId Int
+  tagId  Int
+  case   Case @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  tag    Tag  @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([caseId, tagId])
+  @@index([tagId])
+}
+
+model Entity {
+  id          Int      @id @default(autoincrement())
+  slug        String   @unique
+  name        String
+  kind        String   // PERSON | COMPANY | INSTITUTION | REGULATION | TECHNOLOGY | REGION | PRODUCT
+  description String?
+  meta        String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  cases  CaseEntity[]
+  events EventEntity[]
+
+  @@index([kind])
+}
+
+model CaseEntity {
+  caseId   Int
+  entityId Int
+  role     String  // PROTAGONIST | ANTAGONIST | ENABLER | DISRUPTOR | REGULATOR | CUSTOMER | SUPPLIER | PARTNER | OTHER
+  notes    String?
+  case     Case   @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  entity   Entity @relation(fields: [entityId], references: [id], onDelete: Cascade)
+
+  @@id([caseId, entityId, role])
+  @@index([entityId])
+}
+
+model Event {
+  id             Int      @id @default(autoincrement())
+  caseId         Int
+  year           Int
+  month          Int?
+  day            Int?
+  title          String
+  description    String?
+  eventType      String   @default("OTHER")  // FOUNDING | REGULATORY_CHANGE | CRISIS | BREAKTHROUGH | ...
+  isTurningPoint Boolean  @default(false)
+  displayOrder   Int      @default(0)
+  meta           String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  case     Case          @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  entities EventEntity[]
+
+  @@index([caseId, year, displayOrder])
+  @@index([isTurningPoint])
+}
+
+model EventEntity {
+  eventId  Int
+  entityId Int
+  note     String?
+  event    Event  @relation(fields: [eventId], references: [id], onDelete: Cascade)
+  entity   Entity @relation(fields: [entityId], references: [id], onDelete: Cascade)
+
+  @@id([eventId, entityId])
+}
+
+model Source {
+  id        Int      @id @default(autoincrement())
+  kind      String   // BOOK | ARTICLE | PAPER | WEBSITE | INTERVIEW | STATISTICS | PRIMARY_DOC | OTHER
+  title     String
+  author    String?
+  publisher String?
+  year      Int?
+  url       String?
+  isbn      String?  @unique
+  notes     String?
+  meta      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  cases CaseSource[]
+
+  @@index([kind])
+  @@index([title])
+}
+
+model CaseSource {
+  caseId   Int
+  sourceId Int
+  locator  String?
+  note     String?
+  case     Case   @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  source   Source @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+
+  @@id([caseId, sourceId])
+  @@index([sourceId])
+}
+
+model Lesson {
+  id           Int      @id @default(autoincrement())
+  caseId       Int
+  statement    String
+  kind         String   // PATTERN | ANTI_PATTERN | MECHANISM | FORECAST_METHOD | HEURISTIC
+  appliesTo    String?
+  displayOrder Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  case Case      @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  tags LessonTag[]
+
+  @@index([caseId])
+  @@index([kind])
+}
+
+model LessonTag {
+  lessonId Int
+  tagId    Int
+  lesson   Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  tag      Tag    @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([lessonId, tagId])
+  @@index([tagId])
+}
+
+model CaseRelation {
+  id           Int      @id @default(autoincrement())
+  fromCaseId   Int
+  toCaseId     Int
+  relationType String   // CONTRAST | PRECEDENT | DERIVATIVE | SIMILAR_MECHANISM | SAME_INDUSTRY | SAME_PATTERN
+  note         String?
+  createdAt    DateTime @default(now())
+
+  fromCase Case @relation("CaseRelationFrom", fields: [fromCaseId], references: [id], onDelete: Cascade)
+  toCase   Case @relation("CaseRelationTo",   fields: [toCaseId],   references: [id], onDelete: Cascade)
+
+  @@unique([fromCaseId, toCaseId, relationType])
+  @@index([toCaseId])
+}

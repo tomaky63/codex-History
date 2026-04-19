@@ -1,0 +1,191 @@
+# drafts/reit-j-reit-financialization.yaml
+# REIT/J-REITと不動産の金融化——非流動資産を証券に変えた40年
+
+case:
+  slug: reit-j-reit-financialization
+  title: REIT/J-REITと不動産の金融化——非流動資産を証券に変えた40年
+  period_start: 1960
+  period_end: 2008
+  primary_themes:
+    - regulatory-turning-points
+    - vertical-restructuring
+
+events:
+  - id: ev1
+    year: 1960
+    title: 米国REIT法制化——「不動産の証券化」という概念の誕生
+    description: アイゼンハワー大統領がCigar Excise Tax Extension Act of 1960に署名し、不動産投資信託（REIT）制度が創設された。複数の不動産をファンドに集め、株式のように小口化して証券取引所で売買できるようにする仕組み。ただし「外部管理義務」など制約が多く、高品質な不動産の流入は限定的だった。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1986
+    title: 米国税制改革法——REITに有利な税制環境の確立
+    description: レーガン政権の Tax Reform Act of 1986 により、それまで不動産投資の主流だった不動産有限責任組合（Real Estate Limited Partnership）への税優遇が廃止。相対的にREITが有利になり、機関投資家参入の下地が整った。1990年代のREIT近代化の直接的な前提条件。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev3
+    year: 1993
+    title: UPREIT構造の発明——既存オーナーの課税障壁を解消し市場を質的転換
+    description: Taubman Centersが初めてUPREIT（Umbrella Partnership REIT）構造を活用したIPOを実施。不動産オーナーが物件をOP（Operating Partnership）ユニットと交換することでキャピタルゲイン課税を繰り延べる仕組みにより、大型高品質物件が一気にREIT市場に流入した。1993〜2000年で米国REIT市場は400億ドルから1,400億ドルへ3.5倍成長。現代的なREIT市場の起点。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev4
+    year: 2000
+    title: 日本「投資法人法」整備完了——J-REIT制度の法的基盤が完成
+    description: 1997年のSPC法・1998年資産流動化法・2000年投資信託及び投資法人法改正と段階的に制度整備が完了。金融庁・国土交通省の双方が関与する二省庁体制でJ-REIT制度が設計された。バブル崩壊後の不良債権処理と外資誘致という政策目的のもと、アジア初のREIT市場を官製で創造する方針が確定した。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 2001
+    title: J-REIT第1号上場——日本の不動産金融化と透明な価格形成の開始
+    description: 2001年9月、東証に日本ビルファンド投資法人とジャパンリアルエステイト投資法人の2銘柄がJ-REIT第1号として上場。アジア太平洋地域初のREIT市場の誕生。「凍りついた」日本の不動産市場に証券価格という透明な価格シグナルが生まれ、外資ファンド・機関投資家が日本不動産への投資経路を得た。不良債権処理の出口としても機能した。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev6
+    year: 2007
+    title: J-REIT市場バブル——東証REIT指数2,612ポイントのピーク
+    description: 低金利（10年国債1〜2%）と分配金利回り3〜5%の利回りギャップを背景に投機資金が流入し、東証REIT指数が2007年5月に2,612ポイントのピークを記録。銘柄数も40超に増加したが、中小型住居系J-REITを中心に過剰レバレッジと物件取得価格の過大評価が進んでいた。政策目的（不良債権処理）から離れた純粋な投機化の段階。
+    event_type: PEAK
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev7
+    year: 2008
+    title: ニューシティレジデンス破綻——J-REIT初の上場廃止と「流動化のリスク」の露呈
+    description: 2008年10月、住居特化型のニューシティレジデンス投資法人がJ-REIT初の上場廃止（実質破産）。リーマンショックによる信用収縮でREITの資金調達が途絶した。東証REIT指数は2009年3月に704ポイントまで下落（ピーク比▲73%）。「証券化された不動産は金融危機時に証券市場の論理で暴落する」という流動化パラドックスが可視化された。
+    event_type: CRISIS
+    is_turning_point: true
+    display_order: 1
+
+entities:
+  - slug: nippon-building-fund
+    name: 日本ビルファンド投資法人
+    kind: COMPANY
+    description: 2001年9月に東証に上場したJ-REIT第1号の一つ。三井不動産グループが主要スポンサー。都市部のオフィスビルに特化した大型J-REITとして成長し、J-REIT市場の「旗艦銘柄」として機関投資家の信頼を確立した。2023年時点でJ-REIT最大規模の一つ。J-REIT市場の正統性を証明したパイオニア的存在。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: sam-zell
+    name: サム・ゼル
+    kind: PERSON
+    description: 米国の不動産投資家（1941〜2023）。「墓掘り人（Grave Dancer）」の異名を持ち、不況期にディストレスト不動産を買い漁りREITとして組成・上場させた手法でREIT市場の発展を牽引した。Equity Commonwealth・Equity Residential・EOP等を主導。2007年にEOP（Equity Office Properties）を$390億でブラックストーンに売却しREITバブルの頂点で逃げた投資家として知られる。REITを「不動産の効率的な金融化ツール」として制度的に確立した立役者の一人。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: fsa-japan
+    name: 金融庁（Financial Services Agency）
+    kind: INSTITUTION
+    description: 1998年設立の日本の金融規制当局。J-REIT制度では「金融商品」としての側面を規制する立場。国土交通省との縦割り調整を経て投資法人法を整備し、J-REIT市場の創設に関与。2008年危機後はレバレッジ規制・情報開示要件の強化など、J-REIT市場の安定化に向けた制度改正を主導。
+    roles_in_case:
+      - REGULATOR
+
+  - slug: new-city-residence-trust
+    name: ニューシティレジデンス投資法人
+    kind: COMPANY
+    description: 2004年設立の住居専門J-REIT。クリードグループがスポンサー。2008年10月に資金調達難から日本初のJ-REIT上場廃止（実質的な破産）となった。外部委託（アセットマネジャー）との利益相反、過剰なレバレッジ（LTV70%超）、レジデンス特化による賃料下落リスクの集中という「J-REIT制度設計の弱点」を体現した事例。
+    roles_in_case:
+      - OTHER
+
+  - slug: nareit
+    name: NAREIT（全米不動産投資信託協会）
+    kind: INSTITUTION
+    description: 1960年設立の米国REITの業界団体。REIT制度の改善ロビー活動（UPREITの法的整備を含む）、機関投資家への普及活動、グローバルREIT市場の標準化推進を担った。FTSEとの共同でFTSE NAREIT指数を開発し、機関投資家がREITをポートフォリオに組み込む際のベンチマークを提供。REITの「資産クラスとしての正統性確立」に最も貢献した組織。
+    roles_in_case:
+      - ENABLER
+
+lessons:
+  - id: l1
+    statement: 非流動資産の証券化は「流動性のトレードオフ」を内包する。REITは不動産に流動性を与えた代わりに、証券市場のボラティリティを不動産に移植した。安定資産のはずの不動産が金融危機時に株式と同様に暴落する——この矛盾はすべての証券化商品に潜む構造問題だ。
+    kind: MECHANISM
+    applies_to: 非流動資産（不動産・インフラ・売掛債権）の証券化リスク評価、流動性プレミアムと流動性リスクのトレードオフ分析
+    tag_refs:
+      - pattern/securitization
+      - industry/real-estate
+
+  - id: l2
+    statement: 「参加コストの壁」が良い制度の普及を阻む。1960年から33年間機能しなかったREITは、UPREIT構造という「既存オーナーの課税コスト解消」という一点の設計変更で質的に転換した。制度設計は「誰が何に困っているか」を最初に問うべきだ。
+    kind: MECHANISM
+    applies_to: 新しい金融制度・プラットフォームの普及設計、既存プレイヤーの参加インセンティブ設計
+    tag_refs:
+      - pattern/standardization
+      - pattern/network-effect
+
+  - id: l3
+    statement: 「官製イノベーション」は政策目的が達成された後も市場が自走できるかどうかで成否が決まる。J-REITは不良債権処理という政策目的のもとで設計されたが、危機後に市場参加者が制度を改善・深化させ、最終的に「政策ツール」から「資本市場インフラ」へ昇格した。
+    kind: PATTERN
+    applies_to: 政府主導の市場創造プロジェクト評価、「官製市場」が自律的に発展する条件の分析
+    tag_refs:
+      - driver/political-reform
+      - scope/industry-restructuring
+
+  - id: l4
+    statement: 金融化（Financialization）は産業の「比較可能性」を高めるが、「同期リスク」も高める。J-REITが不動産の価格を透明にしたことで市場の効率性は上がったが、全J-REIT銘柄が金融ショック時に同時に動くという同期リスクが生まれた。産業全体が「証券化」されると、個別資産の固有リスクより市場全体のリスクの影響が大きくなる。
+    kind: ANTI_PATTERN
+    applies_to: 産業全体の証券化・金融化の副作用評価、「市場効率性vs同期リスク」のトレードオフ
+    tag_refs:
+      - pattern/securitization
+      - driver/speculative-investment
+
+  - id: l5
+    statement: サイクルの頂点を知る最善の方法は「レバレッジ水準」の観察だ。2007年のJ-REITバブルもサブプライムバブルも、「レバレッジが実態価値を超えた資産取得」が共通の先行指標だった。金融資産バブルでは利回りの水準より、取得を支えるレバレッジの質と量が崩壊の引き金になる。
+    kind: FORECAST_METHOD
+    applies_to: 不動産・金融資産バブルの先行指標分析、「いつ売るか」の判断基準としてのレバレッジ観察
+    tag_refs:
+      - driver/speculative-investment
+      - industry/real-estate
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: The REITs Report (Annual)
+    author: NAREIT
+    publisher: National Association of Real Estate Investment Trusts
+    year: 2023
+    notes: NAREITが毎年発行するREIT市場の統計報告書。米国REIT市場の時価総額・銘柄数・セクター別パフォーマンスの長期データを収録。UPREITの普及・市場成長の定量的推移を確認するための基本資料。
+
+  - source_key: src2
+    kind: BOOK
+    title: グレイブダンサー——サム・ゼルの不動産哲学
+    author: Sam Zell
+    publisher: HarperBusiness（日本語版：東洋経済新報社）
+    year: 2017
+    notes: サム・ゼルの自伝。ディストレスト不動産のREIT組成・上場戦略、2007年のEOP売却タイミングの判断プロセス、「流動性をいつ確保すべきか」という考え方が述べられている。REITを「不動産の金融化ツール」として体系的に活用した実践者の視点。
+
+  - source_key: src3
+    kind: BOOK
+    title: J-REIT徹底活用ガイド（第2版）
+    author: 三井住友トラスト基礎研究所
+    publisher: 日本経済新聞出版社
+    year: 2014
+    notes: J-REIT制度の全体像・上場銘柄の分析方法・投資戦略を解説した実務書。制度設計の経緯（SPC法からの流れ）・外部委託義務の問題・銘柄選択の視点を網羅。2008年危機後の制度改正内容も含む。
+
+  - source_key: src4
+    kind: ARTICLE
+    title: The History of REITs
+    author: Calvin Schnure and Steve Devaney
+    publisher: Journal of Real Estate Research
+    year: 2019
+    notes: 米国REIT制度の1960年設立から現代までの制度史・市場成長・危機と回復を学術的に分析した論文。1986年税制改革・UPREIT革命・2000年代グローバル化の各段階を定量データと制度変化の両面から整理。
+
+relations:
+  - to_case: credit-card-network
+    relation_type: SIMILAR_MECHANISM
+    note: クレジットカードネットワークが「加盟店と消費者の二面市場を標準化インフラで繋ぐ」ことで新しい金融インフラを創造したように、REITは「不動産オーナーと投資家の二面市場を証券化で繋ぐ」新しい金融インフラを創造した。どちらも「参加者が増えるほど価値が高まるネットワーク効果」と「参加コスト解消が普及の鍵」という同型の構造。
+
+  - to_case: japan-electricity-liberalization
+    relation_type: SIMILAR_MECHANISM
+    note: J-REIT（不動産の流動化）と電力自由化（発電市場の競争化）はともに「規制によって守られた非効率な独占市場を、政策的に競争・流動化させる」という官製の市場創造として同型。どちらもバブル崩壊後の日本で政策目標を持って導入され、既存プレイヤーの抵抗を経て定着した。
+
+  - to_case: global-crossing-telecom-bubble
+    relation_type: SIMILAR_MECHANISM
+    note: 通信投資バブルが「技術的正しさ＋過剰投資＋会計不正」の組み合わせで崩壊したように、J-REITバブルは「制度的正しさ＋過剰レバレッジ＋外資投機資金」の組み合わせで崩壊した。「正当な制度・技術に乗った投機的過剰拡大が崩壊を招く」という産業バブルの共通パターン。

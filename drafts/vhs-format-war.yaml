@@ -1,0 +1,178 @@
+# drafts/vhs-format-war.yaml
+# VHS対ベータマックス——規格戦争とネットワーク効果の勝利
+
+case:
+  slug: vhs-format-war
+  title: VHS対ベータマックス——規格戦争とネットワーク効果の勝利
+  period_start: 1975
+  period_end: 1988
+  primary_themes:
+    - standardization-wins
+
+events:
+  - id: ev1
+    year: 1975
+    title: ソニーがベータマックスを発売——家庭用VTR市場の幕開け
+    description: ソニーが家庭用VTRとしてベータマックスを日本で発売。業務用VTRの技術を家庭向けに小型化した製品で、画質・コンパクトさで高い評価を得た。しかし初期の録画時間は最長1時間に過ぎず、これが後の敗因の根本となった。
+    event_type: ENTRY
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1976
+    title: JVCがVHSを発売——「録画時間2時間」という決定的差別化
+    description: JVC（日本ビクター）がVHSを日本で発売。βよりカセットが大きく画質でやや劣ったが、録画時間2時間を初期から実現した。映画1本・野球中継1試合を録り切れるこの差は、消費者の主要ユースケースに直結する。「エンジニアが誇る品質」よりも「ユーザーが必要とする録画時間」を優先した設計哲学の差が、規格戦争の本質を決めた。
+    event_type: ENTRY
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev3
+    year: 1977
+    title: 松下電器がVHSを採用——「産業の重力」が動き、陣営の構造が確定
+    description: 日本最大の家電メーカー・松下電器産業がVHSを採用。National/Panasonicブランドの巨大な流通網がVHSの普及速度を一変させた。同時にJVCは日立・シャープ・三菱電機・米国RCAへのライセンスを進め、VHS連合が形成された。ソニーが単独でβを展開する間、VHSは多数のメーカーと流通網を抱える「陣営」になった。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev4
+    year: 1980
+    title: 米国でVHSシェアが60%超に——ネットワーク効果が加速局面へ
+    description: 米国でVHSプレーヤーの市場シェアが約60%を超え、VHSの優勢が数字で明確になった。RCAによる大量販売・価格下落・タイトル数の増加が相互に強化し合い、βは「先行者の優位」を完全に失った。消費者が「どちらが将来も買えるか」という観点でVHSを選び始め、ループが自走段階に入った。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 1984
+    title: ビデオレンタル産業がVHSを事実上の標準に——コンテンツ囲い込みの完成
+    description: 米国でビデオレンタル産業が急成長した1984〜1985年、レンタル店がVHSタイトルを優先し、βコーナーを縮小し始めた。「レンタルで借りたいものが借りられない」という現実がβユーザーの乗り換えを加速させ、ネットワーク効果の「負のループ」がβを圧迫した。この時点で技術的追い上げでは逆転不可能な構造的優位がVHSに確立した。
+    event_type: POLICY_SHIFT
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev6
+    year: 1988
+    title: ソニーがVHS方式のVCRを製造開始——事実上の敗北宣言
+    description: ソニーが自社ブランドでVHS方式のVCRを発売すると発表。1975年からの13年間、ベータマックスへの技術的信念を貫いたソニーが、市場の審判を受け入れた。規格戦争の終焉を意味すると同時に、ソニーが「コンテンツを先に囲い込む」という戦略を学習する転換点ともなった（後のPS・Blu-rayへの教訓として機能する）。
+    event_type: RESTRUCTURING
+    is_turning_point: true
+    display_order: 1
+
+entities:
+  - slug: sony
+    name: ソニー（Sony）
+    kind: COMPANY
+    description: ベータマックスを開発・販売した日本の電機メーカー。画質・コンパクトさでVHSより優れた技術を持ちながら、録画時間・開放ライセンス戦略で後れを取り、1988年にVHS製造を始めて事実上の敗北を認めた。後にPS・Blu-rayでβの教訓を活かした逆転を果たす。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: jvc
+    name: 日本ビクター（JVC）
+    kind: COMPANY
+    description: VHSを開発・発売した日本のビデオ・オーディオメーカー。松下電器の関連会社として設立。録画時間2時間とオープンライセンス戦略でVHS連合を形成し、規格戦争に勝利した。「ユーザーが最も必要とする機能」を最優先した設計哲学が勝因。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: matsushita-electric
+    name: 松下電器産業（National/Panasonic）
+    kind: COMPANY
+    description: 1977年にVHSを採用した日本最大の家電メーカー。National専売店ネットワークと国際OEM供給網によってVHSの普及速度を決定的に加速させた。松下の選択が「JVCの規格」を「産業標準の有力候補」に格上げした。
+    roles_in_case:
+      - ENABLER
+
+  - slug: rca-corp
+    name: RCA（Radio Corporation of America）
+    kind: COMPANY
+    description: 米国最大のテレビメーカー。1977年にVHSを採用・自社ブランドで大量販売し、米国市場でのVHS普及を決定的に加速させた。松下と並ぶVHS陣営の最重要パートナー。RCAの参入がなければ米国市場でのVHSの早期優勢はなかったと言われる。
+    roles_in_case:
+      - ENABLER
+
+  - slug: ibuka-masaru
+    name: 井深大
+    kind: PERSON
+    description: ソニーの共同創業者。ベータマックスの技術開発を主導し、1975年末には松下電器への規格共有を打診したが不調に終わった。技術的完成度への信念が強く、録画時間という「ユーザー価値の軸」への転換を遅らせた側面がある。
+    roles_in_case:
+      - ANTAGONIST
+
+lessons:
+  - id: l1
+    statement: ユーザーが評価する機能次元と、エンジニアが磨く機能次元は異なる。「技術的に優れた製品が負けた」ではなく、「間違った次元で優れていた製品が負けた」が正確だ。設計の出発点は「ユーザーが製品で何をしたいか」でなければならない。
+    kind: HEURISTIC
+    applies_to: 製品設計の優先順位設定、「技術競争」と「ユーザー価値競争」の区別
+    tag_refs:
+      - pattern/customer-interface-winner
+
+  - id: l2
+    statement: プラットフォーム競争（ハード＋コンテンツの二面市場）では、技術的優位より「陣営の形成速度」と「ネットワーク効果の先行起動」が勝敗を決める。開放ライセンスは自社利益を薄める代わりに、陣営の拡大スピードと普及台数の先行を可能にする。
+    kind: MECHANISM
+    applies_to: 規格・プラットフォーム競争の戦略設計、オープン vs クローズドの選択判断
+    tag_refs:
+      - pattern/network-effect
+      - pattern/standardization
+
+  - id: l3
+    statement: 二面市場（ハードとコンテンツ）で一方（コンテンツ）が傾くと、それがハードの選択を規定し、ハードの普及がさらにコンテンツを傾ける「自己強化ループ」が動く。このループが臨界点を超えると、技術的追い上げでは逆転できない。
+    kind: MECHANISM
+    applies_to: プラットフォームのティッピングポイント分析、「逆転不可能な優勢」の認識タイミング
+    tag_refs:
+      - pattern/network-effect
+
+  - id: l4
+    statement: 業界内の「重力源」（最大の流通力・市場シェアを持つプレイヤー）の選択は、その選択それ自体が産業標準の形成を加速する。規格競争の初期において最重要なのは、その重力源を先に引き込むことだ。
+    kind: HEURISTIC
+    applies_to: 規格・プラットフォーム競争の陣営形成戦略、B2B業界での標準化プロセス分析
+    tag_refs:
+      - pattern/standardization
+
+  - id: l5
+    statement: 規格戦争での敗北は、負けた組織が「コンテンツを先に囲い込む→ハードで普及ループを回す」という戦略を体得する学習機会になりうる。ソニーはβで失敗し、PlayStation・Blu-rayでその逆転を実行した。
+    kind: PATTERN
+    applies_to: 組織が連続する規格競争から学ぶプロセスの分析
+    tag_refs:
+      - pattern/network-effect
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: ソニー自伝
+    author: 盛田昭夫
+    publisher: 新潮社
+    year: 1987
+    notes: ソニー創業者・盛田昭夫によるソニーの経営哲学と戦略の自伝。ベータマックス戦略に関するソニー側の視点を直接語っている重要な一次資料。
+
+  - source_key: src2
+    kind: BOOK
+    title: ソニーvs松下——家電覇権の歴史
+    author: 立石泰則
+    publisher: 講談社
+    year: 2006
+    notes: ベータマックスとVHSの規格戦争を含む、ソニーと松下の競争史を詳述。松下のVHS選択の内幕と業界連合形成の経緯を記録している。
+
+  - source_key: src3
+    kind: BOOK
+    title: The Betamax Case — VHS, Betamax, and the Home Video Revolution
+    author: Gary Edgerton
+    publisher: Wayne State University Press
+    year: 1999
+    notes: VHS対βの規格戦争を産業史・文化史の視点から分析した英語圏の基本文献。米国市場でのビデオレンタル産業の成長とVHSの勝利の関係を詳論。
+
+  - source_key: src4
+    kind: BOOK
+    title: イノベーションのジレンマ——技術革新が巨大企業を滅ぼすとき
+    author: クレイトン・クリステンセン
+    publisher: 翔泳社
+    year: 2001
+    notes: VHS対βの事例を「ユーザーが評価する性能次元の変化」という観点で解釈する枠組みを提供する。「エンジニアが磨く次元とユーザーが必要とする次元の不一致」の理論的背景として参照。
+
+relations:
+  - to_case: famicom-platform
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも「ハード（ゲーム機/VCR）とコンテンツ（ソフト/テープ）の二面市場でネットワーク効果が勝敗を決めた」プラットフォーム競争。Atariショックの原因（品質なき開放）とVHSの勝因（陣営を広げる開放ライセンス）は「開放の質」が違う。コンテンツの質の担保の仕組みが異なる同型構造。
+
+  - to_case: containerization
+    relation_type: SAME_PATTERN
+    note: どちらも「規格の標準化が勝者を決める」パターン。コンテナはISO第三者機関による公共財標準化、VHSはJVCが所有しながら開放ライセンスする「私的所有＋開放」モデル。規格形成の制度設計は異なるが、「早期に多くのプレイヤーを巻き込んだ規格が標準になる」という帰結は同じ。
+
+  - to_case: japan-semiconductor
+    relation_type: CONTRAST
+    note: 日本半導体（NEC・東芝）は製造品質で世界最高水準を持ちながら「価値の移動先（設計・アーキテクチャ）」への対応に失敗した。VHSのソニー（β）は技術的に洗練されていたが「ユーザー価値の軸（録画時間）」を見誤った。どちらも「技術的優位≠市場的優位」を示すが、失敗のメカニズムは異なる——半導体は産業構造の転換への適応失敗、βはユーザーニーズ認識の失敗。

@@ -1,0 +1,180 @@
+# drafts/marriott-asset-light.yaml
+# マリオットのアセットライト化——ホテル不動産を手放してブランドと管理契約だけを持つ構造変革
+
+case:
+  slug: marriott-asset-light
+  title: マリオットのアセットライト化——ホテル不動産を手放してブランドと管理契約だけを持つ構造変革
+  period_start: 1957
+  period_end: 2016
+  primary_themes:
+    - asset-operation-split
+    - vertical-restructuring
+
+events:
+  - id: ev1
+    year: 1957
+    title: 最初のマリオット・モーター・ホテル開業——不動産所有型ホテルチェーンの起動
+    description: J.W.マリオット・ジュニア（ビル・マリオット）が米バージニア州アーリントンに最初のマリオット・モーター・ホテルを開業。土地・建物を自社で取得・建設・運営する「資産重型」ホテルチェーンとして拡大を開始した。父J.W.マリオット・シニアが1927年に創業した外食事業の延長として始まったホテル事業の起点。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1982
+    title: 「開発→売却→管理契約維持」モデルの体系化——プロト・アセットライトの実践
+    description: マリオットは1980年代初頭に重要な財務革新を体系化した。ホテルを開発して機関投資家・年金基金・リミテッド・パートナーシップに不動産として売却し、自社は20〜30年の管理契約だけを手元に残す手法だ。バランスシートを軽くしながら管理客室数と管理フィー収入を増やす「プロト・アセットライト」の実践。1993年の正式分割を準備した10年間の実験期。
+    event_type: POLICY_SHIFT
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev3
+    year: 1993
+    title: マリオット・コーポレーション分割——マリオット・インターナショナルとホスト・マリオットへ
+    description: CFOスティーブン・ボレンバックが設計した会社分割により、マリオット・コーポレーションがマリオット・インターナショナル（ブランド・管理・フランチャイズ）とホスト・マリオット（不動産保有）に分割された。負債約30億ドルの大半をホスト・マリオット側に移転した構造はボンドホルダーの激しい反発を招き、「マリオット条項」という債券保護条項が業界標準になる副産物を生んだ。アセットライト化の制度的完成。
+    event_type: RESTRUCTURING
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev4
+    year: 1997
+    title: ルネッサンス・ホテルズ買収——マルチブランド戦略の本格始動
+    description: マリオット・インターナショナルがルネッサンス・ホテルズ・インターナショナルを買収し、中・高価格帯のブランドポートフォリオを拡充した。不動産を取得せず「ブランドと管理契約の権利」を取得するという純粋なアセットライト型M&Aのモデルを確立。Courtyard・Residence Inn・Fairfield Inn等のセグメント別ブランドと組み合わせ、価格帯を横断したマルチブランド戦略が完成した。
+    event_type: MERGER
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 2008
+    title: リーマンショック——アセットライトの「不況耐性」が実証される
+    description: 世界金融危機で商業不動産市場が崩壊し、多数のホテルオーナーが破綻した。ホスト・マリオット（旧不動産部門、当時はREITとして独立）の株価も急落した一方、マリオット・インターナショナルはホテル不動産評価損をゼロに抑えた。管理フィーは稼働率低下で減少したが、不動産減損リスクから完全に隔離された効果は決定的だった。危機によって「持たない構造の安全性」が実証された。
+    event_type: CRISIS
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev6
+    year: 2016
+    title: スターウッド・ホテルズ&リゾーツ買収——30ブランド・110万室、世界最大のホテル運営会社へ
+    description: マリオット・インターナショナルが当時史上最大のホテル合併となる約140億ドルでスターウッド・ホテルズ&リゾーツ（Westin・Sheraton・W・St. Regis・Le Méridien等を傘下に持つ）を買収。30ブランド・110万室超・130カ国以上、ボンヴォイ会員1億人超という規模で世界最大のホテル運営会社が誕生した。取得したのは不動産ではなくブランドとロイヤルティプログラム——純粋なアセットライト型の最大規模M&A。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+entities:
+  - slug: marriott-international
+    name: マリオット・インターナショナル
+    kind: COMPANY
+    description: 1993年の分割でマリオット・コーポレーションから独立した、ブランド管理・ホテル運営・フランチャイズを担う会社。ホテル不動産を一切保有せず、管理フィーとフランチャイズ手数料のみで世界最大のホテル運営会社となった。現在30ブランド・8,000超のホテル・約160万室を管理。ボンヴォイロイヤルティプログラムに1.7億人以上の会員を持つ。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: jw-marriott-jr
+    name: J.W.マリオット・ジュニア（ビル・マリオット）
+    kind: PERSON
+    description: マリオット・インターナショナル元会長兼CEO。父J.W.マリオット・シニアから経営を引き継ぎ、1993年の会社分割を承認してアセットライト化を実行した。「実物のホテルを所有する会社」というアイデンティティへの思想的愛着を持ちながら、CFOボレンバックの論理を受け入れてモデル変革を主導した。マリオットのブランドと「サービスの精神」の体現者。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: host-marriott
+    name: ホスト・マリオット（現ホスト・ホテルズ&リゾーツ）
+    kind: COMPANY
+    description: 1993年の分割でマリオット・コーポレーションから分離した不動産保有会社。現在は米国最大のホテルREIT（不動産投資信託）として独立上場。1993年分割時にマリオット・コーポレーションの大部分の負債を引き受けた。アセットライトモデルの「資産側」を体現する対照軸。
+    roles_in_case:
+      - OTHER
+
+  - slug: stephen-bollenbach
+    name: スティーブン・ボレンバック
+    kind: PERSON
+    description: マリオット・コーポレーションCFO（在任1992〜1993年）。1993年の会社分割スキームを設計した人物。分割後にディズニーCFOとしてキャピタル・シティーズ/ABC買収（190億ドル）を手がけ、その後ヒルトン・ホテルズCEOに就任してヒルトンのアセットライト化を主導した。ホスピタリティ業界のアセットライト変革を連続して実行したキーパーソン。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: starwood-hotels
+    name: スターウッド・ホテルズ&リゾーツ
+    kind: COMPANY
+    description: Westin・Sheraton・W・St. Regis・Le Méridien等のブランドを擁していた米国第2位のホテル運営会社。1998年にバリー・スターンリクトが設立したホールディングス。既にアセットライトモデルを採用しており、2016年にマリオットに買収された。SPGロイヤルティプログラムの高い顧客ロイヤルティがマリオットの買収動機の中核。
+    roles_in_case:
+      - PROTAGONIST
+
+lessons:
+  - id: l1
+    statement: 物理資産（不動産）を分離し、ブランド・管理能力・顧客データだけを保有することで、バランスシートの制約から切り離された成長が可能になる。管理下客室数は自社が保有する客室数の制約を超えて拡大でき、資本利益率（ROIC）は劇的に向上する。
+    kind: MECHANISM
+    applies_to: ホスピタリティ・フランチャイズ・プラットフォーム事業の資本効率分析、アセットライト化の効果評価
+    tag_refs:
+      - pattern/asset-light
+      - pattern/long-term-concession
+
+  - id: l2
+    statement: 長期管理契約（20〜30年）とロイヤルティプログラム（会員ネットワーク）の組み合わせは、ホテルオーナーのスイッチングコストを極めて高くし、ブランドへの長期依存を作る。プラットフォームが持つ「参加者が抜けられない構造」はWalmartのRetail LinkやセブンイレブンのPOSシステムと同型だ。
+    kind: MECHANISM
+    applies_to: フランチャイズ・ライセンスビジネスのロックイン設計、ブランドプラットフォームの競争優位分析
+    tag_refs:
+      - pattern/customer-interface-winner
+      - pattern/license-royalty
+
+  - id: l3
+    statement: 物理資産と運営能力（ブランド・管理）は比較優位が異なる。物理資産は不動産投資家（資本効率・節税・長期保有が得意）が持つべきで、運営能力はオペレーター（ブランド構築・人材管理が得意）が持つべきだ。「誰が何を持つか」を比較優位で再設計することが、産業全体の価値総量を最大化する。
+    kind: PATTERN
+    applies_to: アセットオペレーション分離の意思決定、「誰が何を所有すべきか」の産業分析
+    tag_refs:
+      - pattern/asset-light
+
+  - id: l4
+    statement: アセットライトモデルの弱点は収益の景気連動性だ。管理フィーは売上の一定%であるため、稼働率が下がれば収入が減少する（固定費への転換が限られる）。ただし不動産評価損・減価償却の影響を受けないため、資産重型競合と比較すると危機時のバランスシートの毀損は大幅に小さい。
+    kind: HEURISTIC
+    applies_to: アセットライト企業の景気サイクル耐性評価、ビジネスモデルのリスク構造比較
+    tag_refs:
+      - pattern/asset-light
+
+  - id: l5
+    statement: アセットライト化（スピンオフ・分割）は株主にとって価値創造でも、既存債権者にとっては「担保の喪失」になりうる。1993年のマリオット分割はボンドホルダーを激怒させ「マリオット条項」という債券保護条項を業界標準にした。構造変革のコストは利害関係者間で非対称に分配される。
+    kind: ANTI_PATTERN
+    applies_to: M&A・スピンオフ時の利害関係者分析、構造変革の副作用評価
+    tag_refs:
+      - pattern/asset-light
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: "The Spirit to Serve: Marriott's Way"
+    author: J.W. Marriott Jr. and Kathi Ann Brown
+    publisher: HarperBusiness
+    year: 1997
+    notes: マリオット・ジュニア自身による経営哲学と会社史の記述。アセットライト化への道筋・1993年分割の意思決定背景・サービス文化の形成を本人の言葉で語る重要な一次資料に近い文献。ホスピタリティ経営の古典。
+
+  - source_key: src2
+    kind: ARTICLE
+    title: "Hotel Management Contracts — Past and Present"
+    author: Jan A. deRoos
+    publisher: Cornell Hospitality Quarterly
+    year: 2010
+    notes: コーネル大学ホスピタリティ研究所による管理契約の構造・条件・交渉力分析の学術論文。管理フィーの構造（基本フィー＋インセンティブフィー）・契約期間・解約条件の業界標準を詳述。マリオットモデルの具体的な経済条件を理解するための基本文献。
+
+  - source_key: src3
+    kind: PRIMARY_DOC
+    title: Marriott International Annual Report 2016
+    author: Marriott International, Inc.
+    publisher: Marriott International
+    year: 2016
+    notes: スターウッド買収完了年次の年次報告書。買収条件・統合後のブランドポートフォリオ・管理下客室数・フィー収入構造・ボンヴォイ会員数・地域別展開を定量的に確認できる一次資料。アセットライトモデルの成熟期の財務構造を分析するための基礎データ。
+
+  - source_key: src4
+    kind: ARTICLE
+    title: "The Marriott Corporation's 1993 Restructuring"
+    author: Benjamin Esty
+    publisher: Harvard Business School Case Study
+    year: 1995
+    notes: HBSによる1993年マリオット分割の詳細ケーススタディ。ボレンバックが設計した分割スキームの財務構造・ボンドホルダーの反発・「マリオット条項」の誕生を詳述。コーポレートファイナンスの観点からアセットライト化の光と影を分析した標準的教材。
+
+relations:
+  - to_case: tdl-founding
+    relation_type: SAME_PATTERN
+    note: どちらも「物理資産の保有者（オリエンタルランド/ホテルオーナー）」と「ブランド・運営能力の保有者（ディズニー/マリオット）」を分離し、それぞれが比較優位に集中するアセットオペレーション分離の教科書的事例。ただし起源が異なる——TDLはIPホルダーが分離を設計し、マリオットはオペレーターが自らの不動産を切り離した。
+
+  - to_case: japan-shipping-foc
+    relation_type: SIMILAR_MECHANISM
+    note: 日本海運のFOC（便宜置籍船）は「船籍（所有の形式）と運航（実質的管理）を分離」し、船主と船社が別々の主体で成立することを可能にした。マリオットは「建物所有と運営管理の分離」によって、不動産投資家とホテルオペレーターが別主体で成立する構造を作った。「所有と管理の分離による資本効率最大化」という共通メカニズム。
+
+  - to_case: seven-eleven-japan
+    relation_type: SIMILAR_MECHANISM
+    note: セブン-イレブンのフランチャイズモデルは「本部（ブランド・システム所有者）」と「加盟店（店舗運営・設備投資者）」の分離で成立する。マリオットの管理契約・フランチャイズモデルも同型——「ブランド・システム所有者（マリオット）」と「物理資産所有者（ホテルオーナー）」の分離だ。どちらも「ブランドネットワーク依存によるロックイン」がプラットフォーム優位の源泉。

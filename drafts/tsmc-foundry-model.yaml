@@ -1,0 +1,188 @@
+# drafts/tsmc-foundry-model.yaml
+# TSMCとファウンドリモデルの成立——「設計と製造の分離」が生んだ台湾の先端半導体独占
+
+case:
+  slug: tsmc-foundry-model
+  title: TSMCとファウンドリモデルの成立——「設計と製造の分離」が生んだ台湾の先端半導体独占
+  period_start: 1987
+  period_end: 2020
+  primary_themes:
+    - vertical-restructuring
+    - standardization-wins
+
+events:
+  - id: ev1
+    year: 1987
+    title: TSMC設立——製造専業ファウンドリという前例のないモデルの創始
+    description: モリス・チャン（張忠謀）が台湾政府系研究機関ITRIの技術移転を受け、新竹科学工業園区にTSMCを設立。「製品を持たない製造専業会社——顧客の設計を受託製造するが、自社製品で顧客と競合しない」という前例のないビジネスモデルを掲げた。当時の半導体業界の常識（設計と製造は垂直統合すべき）への根本的な挑戦。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1988
+    title: 初期ファブレス顧客の獲得——AlteraとXilinxがFPGA製造を委託
+    description: FPGA大手のAltera（後にIntelが買収）とXilinxがTSMCに製造を委託し、ファウンドリモデルが実際に機能することを最初に実証した。FPGAは設計複雑度が高く最先端プロセスを要求するため、TSMCのプロセス技術向上の最初のドライバーになった。「製品を持たない会社に最先端チップ製造は頼めない」という懐疑論を実績で覆す第一歩。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev3
+    year: 1994
+    title: TSMC上場とファブレス産業の確立——産業構造の分離が資本市場に認証された
+    description: TSMCが台湾証券取引所に上場し、製造専業ファウンドリが投資対象として成立することを資本市場が認証した。同時期にNvidia（1993年創業）・Qualcomm・Marvellなどファブレス設計会社の第一世代が確立し、「設計に集中してTSMCに製造を委ねる」という産業モデルが完成した。上場によって得た資本がプロセス技術投資を次の段階に引き上げた転換点。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev4
+    year: 2009
+    title: AMD/GlobalFoundries設立——IDMモデルの自己否定と製造の分離加速
+    description: IntelのCPU競合だったAMDが製造部門をスピンオフしてGlobalFoundriesを設立し、設計専業のファブレスに転換した。IDMモデルの大手当事者が「製造を維持することが財務的に困難になった」と自認した歴史的転換。その後AMD自身のCPU（Ryzen/EPYC）がTSMCの7nmで製造されIntelを追い上げることになる。IDMモデルの後退を象徴する転換点。
+    event_type: RESTRUCTURING
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev5
+    year: 2014
+    title: Apple A8（iPhone 6）の製造受注——最大ファブレス顧客がSamsungからTSMCへ
+    description: AppleがiPhone 6搭載のA8チップ（20nmプロセス）の製造をSamsungからTSMCに切り替えた。理由はSamsungがAppleのスマートフォン競合であるという利益相反の解消。「製品を持たないから信頼される」というTSMCのモデルが世界最大の時価総額企業に選ばれた証明であり、その後A-series/M-seriesチップの全製造をTSMCが担う長期関係の始まり。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev6
+    year: 2019
+    title: TSMC 7nm量産——半導体製造技術の主導権がIntelから台湾へ移った転換点
+    description: TSMCがApple A12・AMD Zen2（EPYC）・HiSilicon Kirin等で7nmを量産した一方、IntelはPC向けCPUの10nm移行を繰り返し遅延した。1960年代から半世紀以上にわたって半導体製造技術のリーダーだったIntelを、受託製造専業のTSMCが技術的に逆転した歴史的転換点。この逆転はその後5nm（2020年）・3nm（2022年）と継続し、先端製造技術の重心が恒久的に台湾に移ったことを意味した。
+    event_type: TECHNOLOGY_SHIFT
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev7
+    year: 2020
+    title: TSMC 5nm量産——世界の先端半導体製造の独占的地位の確立
+    description: TSMCがApple A14（iPhone 12）・Apple M1（Mac/iPad）の5nmプロセスを量産開始。AMD EPYC・Nvidia Ampere・Qualcomm Snapdragon 888など世界の主要先端チップをほぼ独占的に製造する地位を確立した。「シリコンシールド」論（TSMCの存在が台湾の安全保障に不可欠）が国際政治の現実として認識され始め、半導体が地政学の中心議題となった。
+    event_type: PEAK
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: tsmc
+    name: 台湾積体電路製造（TSMC）
+    kind: COMPANY
+    description: 1987年にモリス・チャンが台湾新竹科学工業園区に設立した世界初の本格的純粋受託製造ファウンドリ。「製品を持たない製造専業」というビジネスモデルでファブレス革命を可能にし、2019年にはプロセス技術でIntelを逆転。現在は世界の先端半導体製造の大半を独占する。時価総額・製造能力ともに世界最大の半導体企業。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: morris-chang
+    name: モリス・チャン（張忠謀）
+    kind: PERSON
+    description: TSMC創業者（1931〜）。テキサス・インスツルメンツ（TI）副社長を経て台湾に渡り、1987年にTSMCを創業。「顧客と競合しない製造専業者」という前例のないビジネスモデルを設計し、半導体産業のバリューチェーンを再定義した。2018年に会長を退任（87歳）するまで30年以上にわたってTSMCを経営。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: itri-taiwan
+    name: 工業技術研究院（ITRI）
+    kind: INSTITUTION
+    description: 1973年設立の台湾政府系研究機関。1976年にRCA（米国）からCMOSプロセス技術をライセンス取得し、台湾に半導体製造の技術基盤を整備した。1985年にモリス・チャンを院長として招聘し、1987年のTSMC設立（ITRI技術の民間移転）を実現した。日本の通産省と超LSI研究組合に対応する台湾側の産業政策実行主体。
+    roles_in_case:
+      - ENABLER
+
+  - slug: qualcomm
+    name: クアルコム（Qualcomm）
+    kind: COMPANY
+    description: 1985年設立の米国ファブレス半導体企業。CDMA技術をもとにモバイルチップ（Snapdragonシリーズ）を設計し、TSMCに製造を委託。ファブを一切持たずに世界最大のモバイルチップメーカーになった、ファブレスモデルの代表的成功例。TSMCなしにはQualcommの事業は存在できない——その依存関係がファウンドリエコシステムの核心を体現する。
+    roles_in_case:
+      - ENABLER
+
+  - slug: intel-corporation
+    name: インテル（Intel）
+    kind: COMPANY
+    description: x86アーキテクチャCPUで世界のPC市場を支配した米国最大のIDM。1960年代から半世紀にわたり半導体製造技術のリーダーだったが、2019年にTSMCに逆転された。2020年代には自社製造の遅延が深刻化し、Intelの一部チップをTSMCに外注する判断が報道された（IDM2.0戦略）。TSMCの台頭の対照軸として機能する最重要の比較対象。
+    roles_in_case:
+      - ANTAGONIST
+
+lessons:
+  - id: l1
+    statement: 産業のバリューチェーンを分解（設計と製造の分離）すると、それまで垂直統合の壁で守られていた両端の専業特化が可能になる。TSMCの登場が「ファブレス設計会社」というカテゴリーを存在可能にした——製造能力なしに設計のみで会社が成立する条件を作ったからだ。
+    kind: MECHANISM
+    applies_to: 垂直統合産業の分解可能性分析、「分業構造の変化が生む新参入機会」の評価
+    tag_refs:
+      - pattern/cost-structure-shift
+
+  - id: l2
+    statement: 「顧客と競合しない」という自己制約がビジネスモデルの核心的差別化になる。TSMCが自社製品を持たないことは一見競争力を弱めるが、実際は「最高機密の設計図を競合に渡す」という顧客の心理的障壁を制度的に解消し、AppleやQualcommが選ぶ唯一の製造業者になった。制約が信頼を生み、信頼が独占を生む。
+    kind: PATTERN
+    applies_to: プラットフォーム・受託事業の設計評価、「競合しない」という自己制約の戦略的価値分析
+    tag_refs:
+      - scope/platform-ecosystem
+
+  - id: l3
+    statement: 複数顧客の製造を集約するファウンドリは、単独製品ラインのIDMが不可能な規模で設備投資を正当化できる。この規模の経済の非対称性が微細化コストの増大とともに拡大し、長期的に「製造専業者がIDMの技術投資力を超える」逆転を生んだ。
+    kind: MECHANISM
+    applies_to: 製造業のビジネスモデル比較（専業受託 vs 垂直統合）、投資規模と技術優位の関係分析
+    tag_refs:
+      - pattern/cost-structure-shift
+      - scope/industry-restructuring
+
+  - id: l4
+    statement: 先端製造への投資障壁が指数関数的に増大すると、「競合可能な会社の数」は収束していく。この収束の帰結として自然独占が生まれる産業では、早期に規模と技術リードを確立した者が「移転コストが無限大に近い」地位を獲得する。TSMCの先端プロセスの代替を建設するには5〜10年と数兆円を要する。
+    kind: FORECAST_METHOD
+    applies_to: 製造技術の自然独占化プロセスの予測、「先端製造への参入コスト」の評価
+    tag_refs:
+      - scope/industry-restructuring
+
+  - id: l5
+    statement: 産業の競争優位が「代替不可能性」の閾値を超えると、地政学的庇護を呼び込む。OPECの石油が中東の地政学的重要性を作ったように、TSMCの先端製造独占は台湾の「シリコンシールド」を作った。これは戦略的計画でなく競争優位の追求の帰結だが、一旦成立すると軍事・外交の計算を根本から変える。
+    kind: HEURISTIC
+    applies_to: 産業支配力と地政学的重要性の関係分析、「代替不可能なインフラ」の戦略的価値評価
+    tag_refs:
+      - scope/platform-ecosystem
+      - pattern/cost-structure-shift
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: チップウォー——世界最重要テクノロジーをめぐる国家間の戦い
+    author: クリス・ミラー
+    publisher: ダイヤモンド社
+    year: 2023
+    notes: 半導体産業の地政学と技術史を網羅した標準的参考書。TSMCの設立経緯・モリス・チャンの戦略・ITRIからの技術移転・ファウンドリモデルの台頭を詳細に記述。英語原題はChip War（2022年）。プリッツァー賞の歴史家による一次資料に基づく叙述。
+
+  - source_key: src2
+    kind: BOOK
+    title: 半導体覇権——日本の失敗とTSMCの勝利
+    author: 韓国産業研究院（KIET）
+    publisher: 日経BP
+    year: 2021
+    notes: TSMCの競争力と日本半導体の凋落を対比的に分析。ファウンドリモデルの経済合理性・ITRIの役割・台湾政府の産業政策とTSMCの相互作用を数値データとともに詳述。日韓台の半導体競争を同時に鳥瞰できる。
+
+  - source_key: src3
+    kind: BOOK
+    title: 晶片島上的光芒——台積電、半導體與台灣新未來
+    author: 林宏文
+    publisher: 遠見天下文化
+    year: 2022
+    notes: 台湾人ジャーナリストによるTSMC取材の集大成。モリス・チャンへの複数回インタビューをもとにTSMC創業・ファウンドリモデル設計の内幕・台湾政府との関係を詳述（中国語原著、日本語訳未刊）。TSMCを内側から理解するための最重要一次情報に近い資料。
+
+  - source_key: src4
+    kind: PRIMARY_DOC
+    title: TSMC Annual Report 2022
+    author: Taiwan Semiconductor Manufacturing Company Limited
+    publisher: TSMC
+    year: 2022
+    notes: TSMCの年次報告書。売上・R&D投資・設備投資・顧客別売上比率・プロセス技術ロードマップを確認できる。1987年以降の財務・技術指標の長期推移を定量的に把握するための一次資料。
+
+relations:
+  - to_case: japan-semiconductor
+    relation_type: CONTRAST
+    note: 日本半導体（NEC・東芝）は超LSI研究組合で製造品質世界首位に立ったが、「ファブレス+ファウンドリ」という産業構造の分離に乗り遅れて凋落した。TSMCは同じ時代に「誰のために作るか」という問いに答え、製造専業という代替不可能な地位を構築した。どちらも政府主導の技術移転（超LSI / ITRI-RCA）を起点としたが、そこから選択したゲームが異なる——汎用メモリの製造コスト競争 vs 製造専業プラットフォームの信頼ゲーム。
+
+  - to_case: famicom-platform
+    relation_type: SIMILAR_MECHANISM
+    note: TSMCはファブレス設計会社の「製造プラットフォーム」として機能する。ファブレス会社が増えるほどTSMCの利用率が上がり投資が正当化され技術が向上し、さらに多くの会社が参入するという正のループは、任天堂がサードパーティーの増加とハードウェアの普及が相互強化するプラットフォーム構造と同型。ただしTSMCは「顧客と競合しない」という任天堂と異なる信頼モデルを採用。
+
+  - to_case: containerization
+    relation_type: SIMILAR_MECHANISM
+    note: コンテナが海運の積み卸し単位を標準化し、その上に専業の船社・港湾・物流会社が分業できる産業構造を作ったように、TSMCが半導体製造プロセスの標準化・専業化をすることで、その上に専業設計会社が分業できる産業構造が生まれた。「標準化された製造インフラの確立が、専業分業を可能にし産業の裾野を広げる」という共通メカニズム。

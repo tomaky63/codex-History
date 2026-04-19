@@ -1,0 +1,192 @@
+# drafts/global-crossing-telecom-bubble.yaml
+# グローバル・クロッシングと通信投資バブル——規制緩和が招いた$1兆の過剰投資と崩壊
+
+case:
+  slug: global-crossing-telecom-bubble
+  title: グローバル・クロッシングと通信投資バブル——規制緩和が招いた$1兆の過剰投資と崩壊
+  period_start: 1996
+  period_end: 2002
+  primary_themes:
+    - regulatory-turning-points
+    - infrastructure-mega-project
+
+events:
+  - id: ev1
+    year: 1996
+    title: 米国通信法（Telecom Act of 1996）成立——参入完全自由化の法的起動
+    description: クリントン政権下で成立した通信法改正により、地域電話・長距離・ケーブルテレビ・インターネット接続のすべての参入障壁が撤廃された。「競争がイノベーションを加速する」という命題のもと、FCCは新規参入を促進した。資本市場は「最初に規模を確保した企業が総取りする」と解釈し、通信インフラへの大規模投資競争の引き金となった。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1997
+    title: グローバル・クロッシング設立・大西洋横断ケーブル着工
+    description: 元ジャンクボンド業者のゲイリー・ウィニックが設立したグローバル・クロッシングが、大西洋横断光ファイバーケーブル（FLAG）の敷設に着工した。「ケーブル完成前に帯域幅利用権を法人に前払いで売る」という資金調達モデルで建設費を早期回収する設計だった。このモデルが成功したことが、同業他社の模倣を促した。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev3
+    year: 1999
+    title: 通信投資バブルのピーク——スワップ取引の常態化・グローバル・クロッシング時価総額$47B
+    description: グローバル・クロッシングの時価総額が$47Bに達し、同年コカ・コーラを超えた。世界中で海底ケーブル・光ファイバー網への投資が競争的に拡大し、推計$1兆以上の資本が通信インフラに流れ込んだ。一方、帯域幅価格崩壊を前に収益を維持するため、A社とB社が互いの帯域幅を売買して収益計上する「スワップ取引」が業界横断的に常態化した。
+    event_type: BUBBLE
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev4
+    year: 2000
+    title: ナスダック崩壊・通信株暴落——正のフィードバックループの逆回転
+    description: 2000年3月にナスダック総合指数がピークをつけた後、急落が始まった。通信株の下落は特に急で、グローバル・クロッシングは$64→$0.50（▲99.2%）、WorldComも年末に$15を割り込んだ。株価下落→資金調達困難→設備投資凍結→稼働率低下→さらなる株価下落という負のスパイラルが始まり、2001年末の大西洋横断ケーブル稼働率は2〜3%まで落ちた。
+    event_type: CRASH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev5
+    year: 2001
+    title: 通信企業連鎖破綻の開始——360ネットワークス・ウィンスター等
+    description: 2001年を通じて、360ネットワークス・ウィンスター・ITC DeltaCom・マクロディアなど中堅以下の通信会社が次々と破産申請した。帯域幅価格は1999年比で98%超下落し、いかなるコスト構造も収益を生み出せない水準になった。Level 3 Communicationsなど財務余力のある企業は、破産会社の資産を格安で取得し始めた。
+    event_type: CRISIS
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev6
+    year: 2002
+    month: 1
+    title: グローバル・クロッシング破産申請——当時史上4番目の大型破産
+    description: 2002年1月28日、グローバル・クロッシングが破産申請。負債総額約$12B、当時史上4番目の大型破産だった。創業者ゲイリー・ウィニックが破産前に個人保有株$735M分を売却していたことが判明し、議会公聴会で追及された。SECはスワップ取引による収益水増しを調査し、民事和解$25Mで決着した（刑事訴追なし）。
+    event_type: BANKRUPTCY
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev7
+    year: 2002
+    month: 7
+    title: WorldCom破産・$11B会計不正発覚——史上最大の企業破綻
+    description: WorldComが負債$41Bで破産申請。CFOスコット・サリバンが主導した$11Bの会計不正（オペレーティングコストを資本的支出に付け替えて利益を水増し）が内部監査担当キャシー・ウォーターズの告発で発覚した。CEOバーニー・エバーズは懲役25年の判決を受けた。同年8月、議会はサーベンス・オクスリー法（SOX法）を制定し、CEO個人の財務諸表責任を法定化した。
+    event_type: BANKRUPTCY
+    is_turning_point: true
+    display_order: 1
+
+entities:
+  - slug: global-crossing
+    name: グローバル・クロッシング
+    kind: COMPANY
+    description: 1997年設立（ゲイリー・ウィニック）。大西洋・太平洋・カリブ海の海底ケーブル網を構築し1999年に時価総額$47Bに達した。帯域幅スワップ取引による収益水増しが発覚し、2002年1月に破産申請。その後中国企業（聯想集団）に買収され、現在はZayo Group傘下の一部となっている。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: gary-winnick
+    name: ゲイリー・ウィニック
+    kind: PERSON
+    description: グローバル・クロッシング創業者。元ドレクセル・バーナムのジャンクボンド業者で、マイケル・ミルケンのもとで働いた経歴を持つ。大西洋横断ケーブルプロジェクトを立ち上げ、IPO前に多くの機関投資家から資金を調達した。破産申請前に個人保有株$735Mを売却し議会で追及されたが刑事訴追は免れた。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: worldcom
+    name: WorldCom（MCI WorldCom）
+    kind: COMPANY
+    description: バーニー・エバーズが構築した通信持株会社。1990年代に65件以上のM&Aを繰り返し米国第2位の長距離通信会社になったが、$11Bの会計不正が2002年6月に発覚。負債$41Bで同年7月に破産申請し、当時史上最大の企業破綻となった。2004年にMCI Inc.として再上場し、2006年にベライゾンが買収。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: bernie-ebbers
+    name: バーニー・エバーズ
+    kind: PERSON
+    description: WorldCom CEO（在任1985〜2002）。ミシシッピ州の小さな電話会社を出発点に積極的なM&AでWorldComを構築した。CFOサリバンと組んで$11Bの会計不正を主導し、懲役25年の判決（2005年）を受けた。2020年に健康悪化を理由に仮釈放され、同年死去。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: jack-grubman
+    name: ジャック・グラブマン
+    kind: PERSON
+    description: Salomon Smith Barney（シティグループ傘下）の通信株アナリスト（1994〜2002）。WorldCom・グローバル・クロッシング・AT&Tなどの買いレーティングを維持しながら、同じ会社のIPO・M&A承認業務から年間数千万ドルの手数料収入を部門にもたらしていた。利益相反のまま楽観的レーティングを発信し続けた象徴的人物。2002年にSECと$15Mで和解、終身証券業務禁止。
+    roles_in_case:
+      - ENABLER
+
+lessons:
+  - id: l1
+    statement: 「技術的需要の正しさ」と「投資の経済的正しさ」は別の命題である。帯域幅需要は長期的にギルダーの予測通りに実現したが、その時間軸・価格水準・収益モデルは投資家の期待と10〜15年ずれていた。技術の正しさは事業収益の正しさを保証しない。
+    kind: MECHANISM
+    applies_to: テクノロジー投資の評価、「技術が正しくても投資が報われない」ケースの分析
+    tag_refs:
+      - driver/speculative-investment
+      - scope/industry-restructuring
+
+  - id: l2
+    statement: 業界横断的な「帯域幅スワップ」のような収益水増し手法は、一社の不正ではなく「みんながやっているから慣行だ」という集団的自己欺瞞として制度化される。この段階に至ると個別企業の内部統制では止められず、規制当局の介入が必要になる。
+    kind: ANTI_PATTERN
+    applies_to: 会計不正の早期警戒指標分析、業界横断的な異常収益パターンの識別
+    tag_refs:
+      - driver/speculative-investment
+      - industry/telecoms
+
+  - id: l3
+    statement: 投資銀行のアナリスト部門と承認業務部門の兼業は、構造的に楽観バイアスを生産する。個人の倫理ではなく制度設計の問題であり、分離（チャイニーズ・ウォール）を強制する規制なしには解決しない。
+    kind: MECHANISM
+    applies_to: 金融機関の利益相反設計評価、アナリストレポートの信頼性判断
+    tag_refs:
+      - driver/speculative-investment
+
+  - id: l4
+    statement: インフラバブルは崩壊後に「遺産」を残す。過剰投資された設備は格安で次世代プレイヤーが取得し、バブル時代の投資家が夢見た需要を次の10〜20年で現実化させる。鉄道バブル（1840年代）・半導体バブル（1980年代）・通信バブル（2000年代）のいずれもこのパターンをたどった。
+    kind: PATTERN
+    applies_to: バブル崩壊後の投資機会評価、「残存者利益を意図的に狙う」戦略の分析
+    tag_refs:
+      - driver/speculative-investment
+      - scope/industry-restructuring
+
+  - id: l5
+    statement: 「先行者が総取りする」という命題はネットワーク効果の働く市場では成立するが、コモディティ的なインフラ（誰の帯域幅でも同質）では成立しない。競争優位は「最初に敷設した者」ではなく「最低コストで提供できる者」に移る。
+    kind: HEURISTIC
+    applies_to: インフラ産業の競争優位分析、「ファースト・ムーバー優位」の適用条件の識別
+    tag_refs:
+      - driver/speculative-investment
+      - industry/telecoms
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: "Broadbandits: Inside the $750 Billion Telecom Heist"
+    author: Om Malik
+    publisher: Wiley
+    year: 2003
+    notes: テクノロジー・ジャーナリストのオム・マリックによる通信バブルの詳細なルポ。グローバル・クロッシング・WorldCom・Qwest・ウィンスター等の主要プレイヤーの投資決定・会計操作・経営者の行動を取材に基づいて記述。バブルの現場感覚を伝える基本文献。
+
+  - source_key: src2
+    kind: PRIMARY_DOC
+    title: "WorldCom Inc. Financial Fraud Investigation"
+    author: Dick Thornburgh (Bankruptcy Examiner)
+    publisher: US Bankruptcy Court, Southern District of New York
+    year: 2002
+    notes: WorldCom破産審査官による会計不正の公式調査報告書。$11Bの不正の具体的手法（Opex→Capex付け替え）・関与した経営幹部の証言・内部統制の失敗経緯を法的証拠に基づいて詳述した一次資料。SOX法制定の直接的根拠文書。
+
+  - source_key: src3
+    kind: ARTICLE
+    title: "Fiber Optic Fantasies"
+    author: Andrew Odlyzko
+    publisher: IEEE Spectrum
+    year: 2003
+    notes: AT&T研究所の数学者・アンドリュー・オドリズコによる実証分析。ギルダーの法則（帯域幅需要は年100%増加）の実測値との比較検証。実際の帯域幅トラフィック増加率は年50〜60%だったが、価格低下のペースが早すぎて収益が成立しなかったことを定量的に示す。「技術的需要と経済的採算の乖離」を理解するための重要文献。
+
+  - source_key: src4
+    kind: PRIMARY_DOC
+    title: "In the Matter of Jack Grubman — Order Instituting Administrative Proceedings"
+    author: Securities and Exchange Commission
+    publisher: U.S. Securities and Exchange Commission
+    year: 2003
+    notes: SECによるジャック・グラブマン処分に関する行政手続き文書。承認業務と調査業務の兼業による利益相反の具体的事実、虚偽・誇大なレーティングの発信経緯を法的に認定した一次資料。投資銀行のアナリスト利益相反問題の標準的一次資料。
+
+relations:
+  - to_case: japan-semiconductor
+    relation_type: SIMILAR_MECHANISM
+    note: 日本の半導体投資バブル（1980年代）も「需要が永続的に増加する」という予測のもと過剰設備投資が行われ、価格崩壊と連鎖赤字で終わった。「技術的需要は正しかったが、投資の時間軸と規模が狂っていた」という構造が同型。ただし日本半導体は国策・寡占構造、通信バブルは規制緩和・多数乱立という違いがある。
+
+  - to_case: ntt-privatization
+    relation_type: SIMILAR_MECHANISM
+    note: 日本の1985年通信自由化と米国の1996年通信法は、同じ「規制緩和→新規参入→競争促進」という命題を異なる時代に実行した。日本はNTTのラストマイル独占が競争を限定したが、米国は競争過多（過剰投資）でバブルを生んだ。「通信自由化の失敗の二つの形」として対比できる。
+
+  - to_case: southwest-airlines-lcc
+    relation_type: CONTRAST
+    note: サウスウエストは同じ「規制緩和後の新規参入」でも実需（価格弾力性の高い潜在的航空旅客）を掘り起こして市場を拡大した。通信バブルは「実需ではなく投機的需要予測」に依存した投資だった。「規制緩和後の健全な成功」と「規制緩和後の投機的失敗」という教科書的な対比。

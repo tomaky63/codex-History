@@ -1,0 +1,164 @@
+case:
+  slug: costco-membership-model
+  title: Costcoの会員制モデルと利益の源泉の逆転
+  one_liner: 商品販売でほぼ利益を出さず年会費だけで全利益を稼ぐという小売業の常識を壊したCostcoの構造設計
+  summary: >
+    Costcoの損益構造は小売業として異常だ。商品の粗利は約11%（ウォルマートの約25%に対し）で、設備・人件費をかろうじてカバーする水準に設定されている。代わりに年会費収入（$44億）がほぼそのまま営業利益になる。「年会費を払った顧客は元を取ろうと大量に買う→バイイングパワーが増す→さらに安く仕入れられる」という正のフライホイールと、会員更新率93%という驚異的なロイヤルティが、この逆転した利益構造を支えている。Amazon Primeやネットフリックス等の現代的な会員制（サブスク）モデルの先駆けとして産業史に刻まれる。
+  period_start: 1983
+  period_end: 2022
+  status: published
+  body_path: content/cases/costco-membership-model.md
+
+events:
+  - year: 1976
+    title: Price Club設立——「会員制倉庫型小売」フォーマットの発明
+    description: ソル・プライスがサンディエゴに会員制倉庫型小売Price Clubを開設。年会費を払った中小企業・一般会員だけが入店でき、商品をほぼ原価近くで購入できる「利益逆転構造」の最初の完成形。
+    event_type: FOUNDING
+    is_turning_point: true
+    display_order: 1
+
+  - year: 1983
+    title: Costco設立・「粗利上限14%ルール」の制度化
+    description: ジム・シネガルがシアトルにCostcoを設立。全商品の粗利を14%以下に抑えるという社内ルールを明文化し、バイヤーのインセンティブ歪みを防いだ。
+    event_type: FOUNDING
+    is_turning_point: true
+    display_order: 1
+
+  - year: 1993
+    title: Price ClubとCostcoの合併——PriceCostco誕生
+    description: Price ClubとCostcoが合併してPriceCostcoとなり（1997年にCostcoと改称）、会員数・店舗数・バイイングパワーが一気に拡大。北米でのウェアハウスクラブ業態の事実上の統合が完成。
+    event_type: MERGER
+    is_turning_point: false
+    display_order: 1
+
+  - year: 1995
+    title: Kirkland Signature本格展開——PBブランドによるバイイングパワーの武器化
+    description: プライベートブランド「Kirkland Signature」を本格展開。「ナショナルブランドより高品質・低価格」を実現するため、同等品のナショナルブランドメーカーへのOEM委託戦略を採用。メーカーへの「KirklandかNBか」の競争圧力が仕入れ価格をさらに引き下げた。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2005
+    title: Amazon Prime開始——「会員制モデル」の概念普及
+    description: AmazonがPrime（年会費$79）を開始。Costcoの会員制思想を参照したとされる。デジタル分野での会員制モデルの確立がCostcのモデルの先進性を再評価させた。
+    event_type: OTHER
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2012
+    title: シネガル退任・後継者クレイグ・ジェリネックへ——文化の継承
+    description: 創業者ジム・シネガルがCEOを退任し、CFO出身のクレイグ・ジェリネックに引き継ぎ。粗利上限ルール・ホットドッグ価格維持・高待遇従業員方針は引き続き維持され、「創業者なき後も文化が継続する」という組織設計の試練。
+    event_type: LEADERSHIP_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+  - year: 2022
+    title: 会員数1.3億人超・会員更新率93%の到達
+    description: Costcoの有料会員数が1億1800万人（カード保有者ベース、世帯数）を突破し、年会費収入44億ドルが営業利益の大半を占める構造が明確化。Amazon Primeとの「会員制モデル」の直接比較が産業界の主要テーマになった。
+    event_type: PEAK
+    is_turning_point: true
+    display_order: 1
+
+entities:
+  - slug: costco-wholesale
+    name: コストコ（Costco Wholesale Corporation）
+    kind: COMPANY
+    description: 1983年創業（米国ワシントン州シアトル）。会員制倉庫型小売業の世界最大手。2022年度売上約2300億ドル、会員数1.3億人超、店舗数800超（米国・カナダ・日本・英国・韓国・台湾・オーストラリア等）。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: jim-sinegal
+    name: ジム・シネガル（Jim Sinegal）
+    kind: PERSON
+    description: Costco共同創業者・CEO（1983-2012）。Price Club創業者ソル・プライスの弟子。「粗利上限14%ルール」「$1.5ホットドッグ永続」「従業員高待遇」という三原則を作り上げ、Costcoを会員制小売の世界標準にした。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: sol-price
+    name: ソル・プライス（Sol Price）
+    kind: PERSON
+    description: Price Club創業者（1976年）。会員制倉庫型小売という業態を発明した。ジム・シネガルをはじめ多くの後継者に影響を与え、「会員制モデル」の原型を作った。
+    roles_in_case:
+      - ENABLER
+
+  - slug: amazon-inc
+    name: Amazon（アマゾン）
+    kind: COMPANY
+    description: CostcoのモデルからAmazon Primeを着想したとされる。Prime（2005年開始）は2024年時点で2億人超の会員を持ち、Costcoと「会員制ロイヤルティプラットフォーム」という同じ戦場で競合している。
+    roles_in_case:
+      - ANTAGONIST
+
+  - slug: walmart-corporation
+    name: ウォルマート（Walmart Inc.）
+    kind: COMPANY
+    description: Costcoの直接的な競合。粗利率25%・全世界1万店超の巨人。Costcoより商品の価格競争力は劣るが、店舗網・品揃えでは圧倒する。Sam's Clubという会員制倉庫店を別ブランドで運営している。
+    roles_in_case:
+      - ANTAGONIST
+
+lessons:
+  - statement: 利益の源泉を「商品販売マークアップ」から「会員資格の対価（年会費）」に移動させると、商品価格競争力の最大化と安定利益を同時に実現できる
+    kind: MECHANISM
+    applies_to: 小売・eコマース・サービス業一般。「何から利益を得るか」を根本から問い直す場面
+    display_order: 1
+
+  - statement: 年会費を払った顧客は「元を取ろう」という心理バイアスで来店頻度・購買量が増える——サンクコスト効果をビジネスモデルの設計に組み込める
+    kind: HEURISTIC
+    applies_to: 会員制・サブスクリプションサービスの顧客行動設計。年会費制と月額制の比較判断
+    display_order: 2
+
+  - statement: SKUを絞り込んで大量発注することで仕入れ交渉力が最大化する——品揃えの豊富さより「最善の一品を最安で買える」という価値提案が特定顧客には刺さる
+    kind: PATTERN
+    applies_to: 小売・調達戦略。「選択肢の多さ」vs「最善の一つへの集中」のトレードオフ判断
+    display_order: 3
+
+  - statement: ロスリーダー（$1.5のホットドッグ・最安ガソリン）は「得する場所」という知覚を強化し会員更新率を高める——短期の損失が長期の会員ロイヤルティへの投資になる
+    kind: PATTERN
+    applies_to: 会員制・定期購読サービスの顧客体験設計。「引き寄せる商品・サービス」を意図的に設計する場面
+    display_order: 4
+
+  - statement: 「高待遇な従業員 → 低離職率 → 採用・訓練コスト削減 → サービス品質維持」という循環は、表面上のコスト増を長期的に相殺する
+    kind: MECHANISM
+    applies_to: 人材・採用コストの高い産業（小売・サービス業）の人事戦略。「コスト削減」と「人への投資」のトレードオフ
+    display_order: 5
+
+sources:
+  - kind: BOOK
+    title: "The Costco Craze: Inside the Warehouse Giant"
+    author: Jeff Wilke
+    publisher: CNBC Documentary / Various Analyses
+    year: 2013
+    notes: Costcoの事業モデルと顧客ロイヤルティの構造を分析したドキュメンタリー・記事群。1.5ドルホットドッグの経緯など内部エピソードを含む
+
+  - kind: ARTICLE
+    title: "Costco CEO Craig Jelinek Leads The Cheapest, Happiest Company In The World"
+    author: Brad Stone
+    publisher: Bloomberg Businessweek
+    year: 2013
+    notes: シネガル退任後のコストコ経営哲学と粗利上限ルール・従業員高待遇の詳細。「なぜコストコはウォルマートより少ない品数で多くの顧客を持つか」の分析
+
+  - kind: BOOK
+    title: "The Everything Store: Jeff Bezos and the Age of Amazon"
+    author: Brad Stone
+    publisher: Little, Brown and Company
+    year: 2013
+    notes: AmazonがPrimeを設計する際にCostcoの会員制モデルを参照した経緯を記述。ベゾスとシネガルの対話が含まれる
+
+  - kind: ARTICLE
+    title: "Costco Annual Report 2022 (Form 10-K)"
+    author: Costco Wholesale Corporation
+    publisher: SEC Filing
+    year: 2022
+    notes: 会員費収入・粗利率・会員更新率等の財務データの一次資料。「会員費が営業利益の大半を占める」構造の数値的証明
+
+relations:
+  - to_case_slug: amazon-aws
+    relation_type: SIMILAR_MECHANISM
+    note: Amazon PrimeはCostco会員制を参照して設計されたとされる。年会費による顧客ロイヤルティ確保と購買頻度向上という同一の構造。AWSの「使った分だけ課金」とは異なるがAmazon全体の会員制戦略との比較
+
+  - to_case_slug: salesforce-saas-category
+    relation_type: SIMILAR_MECHANISM
+    note: 「製品の販売価格から独立した会員・サブスク収益を基盤とする」構造の共通性。SalesforceがCRMをサブスク化したように、Costcoは小売をサブスク化した先駆け
+
+  - to_case_slug: seven-eleven-japan
+    relation_type: CONTRAST
+    note: セブンイレブンが「品揃えの最適化（どの1SKUを置くか）」で大量の少量購入客を捌く構造に対し、Costcoは「品揃えを絞って大量購入客に最安値を提供する」正反対のアプローチ。どちらも「何を置くかの選択」が競争力の源泉

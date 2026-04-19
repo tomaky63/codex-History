@@ -1,0 +1,214 @@
+# drafts/subsea-cable.yaml
+# 海底ケーブルの支配構造 — 構造データ
+
+case:
+  slug: subsea-cable
+  title: 海底ケーブルの支配構造——国家から通信キャリア、そしてBig Techへ
+  period_start: 1956
+  period_end: 2020
+  primary_themes:
+    - regulatory-turning-points
+    - vertical-restructuring
+    - bubble-and-crash
+
+events:
+  - id: ev1
+    year: 1956
+    title: TAT-1開通——世界初の大西洋横断電話ケーブル
+    description: AT&T・BT共同で建設。36回線、通話品質は不安定だったが「大西洋を結ぶ電話」の時代が始まった。国家コンソーシアムモデルの始点。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1988
+    title: TAT-8開通——光ファイバー革命、容量が1000倍に
+    description: 世界初の大西洋横断光ファイバーケーブル。36回線→40,000回線以上。この容量の桁違いの変化が「ケーブルは希少財」から「豊富なインフラ」への転換を起こした。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev3
+    year: 1996
+    title: FLAG開通——初の純民間資本による環アジア・欧州ケーブル
+    description: FLAG Telecomが国家キャリアなしに民間資本だけで建設した初の長距離ケーブル。ドットコムバブルの加速と民営化時代の象徴。
+    event_type: ENTRY
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev4
+    year: 1999
+    title: ドットコムバブルによる海底ケーブル過剰投資の頂点
+    description: インターネット需要の過大予測を受け、世界中で同時多発的にケーブル建設が進む。数十億ドル規模の投資が競合するように行われた。
+    event_type: BUBBLE
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 2001
+    title: ドットコム崩壊——容量の96%が暗ファイバーに
+    description: バブル崩壊と9.11テロで需要予測が外れ、建設済みケーブル容量の96%が未使用状態（暗ファイバー）に。多くのケーブル事業者が破綻。資産が時価の5-10%で市場に出回り始める。
+    event_type: CRASH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev6
+    year: 2008
+    title: GoogleがUnityケーブルコンソーシアムに参加——Big Tech参入の始まり
+    description: Googleが初めてアジア太平洋のケーブルコンソーシアムに共同出資者として参加。当初はキャリアとの共同投資だったが、これが自社所有ケーブルへの移行の出発点となった。
+    event_type: ENTRY
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev7
+    year: 2016
+    title: Google・Facebook・Microsoftが完全自社所有ケーブルを相次ぎ発表
+    description: FacebookとMicrosoftが共同でMARE NOSTRUM（大西洋）を、GoogleがCurie（米〜南米）を単独所有で発表。「ITサービス企業がインフラ層を垂直統合する」という産業秩序の転換宣言。
+    event_type: RESTRUCTURING
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev8
+    year: 2020
+    title: 米日豪が中国系ケーブル企業を安全保障上の理由で排除
+    description: Pacific Light Cable Network等のプロジェクトで中国系企業（HMN Technologies=旧ファーウェイ海洋）の参加を米日豪が認可拒否。ケーブルが地政学の最前線に。Big Tech集中がさらに加速。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: att-corp
+    name: AT&T
+    kind: COMPANY
+    description: 第1期・第2期を通じた海底ケーブルの主要事業者。第3期にBig Techの台頭で主導権を失った。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: kddi-kdd
+    name: KDD / KDDI
+    kind: COMPANY
+    description: 日本の国際通信キャリア。KDD時代から日本発着の海底ケーブルに参加し続け、国内着陸点を保有するゲートキーパー的地位を維持している。
+    roles_in_case:
+      - ENABLER
+
+  - slug: flag-telecom
+    name: FLAG Telecom
+    kind: COMPANY
+    description: 1996年に初の純民間資本ケーブルを建設した先駆者。ドットコム崩壊で破綻したが、民間参入の道を開いた。
+    roles_in_case:
+      - ENABLER
+
+  - slug: google-alphabet
+    name: Google（Alphabet）
+    kind: COMPANY
+    description: 2008年から海底ケーブルへの投資を開始。現在は世界最多の自社所有海底ケーブルを持つ企業。
+    roles_in_case:
+      - DISRUPTOR
+
+  - slug: meta-facebook
+    name: Meta（旧Facebook）
+    kind: COMPANY
+    description: 2016年以降、自社専用の大西洋・太平洋ケーブルを積極的に建設。Big Tech私有化の共同推進者。
+    roles_in_case:
+      - DISRUPTOR
+
+  - slug: itu-telecom
+    name: 国際電気通信連合（ITU）
+    kind: INSTITUTION
+    description: 海底ケーブルの国際標準・安全規制を担うUNの専門機関。所有集中リスクを繰り返し警告してきたが、規制的手段は限定的。
+    roles_in_case:
+      - REGULATOR
+
+  - slug: us-fcc-gov
+    name: 米国連邦通信委員会（FCC）
+    kind: INSTITUTION
+    description: 米国へのケーブル着陸許可を審査する規制機関。国家安全保障の観点から中国系企業の参加を制限してきた。
+    roles_in_case:
+      - REGULATOR
+
+  - slug: subcom-alcatel
+    name: SubCom / アルカテル・サブマリン・ネットワークス
+    kind: COMPANY
+    description: 海底ケーブルの主要製造・施工会社。所有者がBig Techに移った後も、施工・保守の技術サービス事業者として役割を維持している。
+    roles_in_case:
+      - SUPPLIER
+
+lessons:
+  - id: l1
+    statement: 最大のインフラ利用者は遅かれ早かれ所有者になる。使用コストが競争上の重要変数になった時、借りるより持つ方が安いという計算が成立し、内製化が進む。
+    kind: PATTERN
+    applies_to: クラウドインフラ、物流、エネルギー供給など大量利用者が固定費を内製化できる産業全般
+    tag_refs:
+      - pattern/customer-interface-winner
+      - pattern/network-effect
+
+  - id: l2
+    statement: バブル崩壊は過剰投資を破壊するが、同時に「次の秩序の覇者が安値で資産を取得する機会」を生む。崩壊後に財務的に生き残った企業が次の支配者になる構造は繰り返す。
+    kind: MECHANISM
+    applies_to: バブル後の産業再編分析、投資タイミングの判断、破綻資産の取得機会評価
+    tag_refs:
+      - pattern/regulatory-arbitrage
+
+  - id: l3
+    statement: 「見えないインフラ」は政治的関心を集めにくく、所有集中が進んでも問題化が遅れる。顕在化する頃には集中が固定化している。
+    kind: ANTI_PATTERN
+    applies_to: インフラ政策立案、規制設計、公益財の民営化議論
+
+  - id: l4
+    statement: プラットフォーム企業が「インフラ層」への投資を開始した産業では、そのインフラ層の在来型事業者の競争優位が5〜10年以内に消滅する可能性が高い。
+    kind: FORECAST_METHOD
+    applies_to: 電力・通信・物流インフラへのテック企業参入動向の予測
+    tag_refs:
+      - pattern/customer-interface-winner
+
+  - id: l5
+    statement: 物理インフラは標準化された後に「最大利用者への集中」が起きる。標準化が先、集中が後という順序はcontainerizationと共通のパターン。
+    kind: MECHANISM
+    applies_to: インフラ産業の競争構造分析、標準化政策の長期影響評価
+    tag_refs:
+      - pattern/network-effect
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: The New Great Game — How the Battle for Internet Infrastructure Will Shape the Global Economy
+    author: Tim Stronge / TeleGeography
+    publisher: TeleGeography
+    year: 2022
+    notes: TeleGeographyによる海底ケーブル産業の包括的分析。Big Tech所有比率の統計的根拠。
+
+  - source_key: src2
+    kind: ARTICLE
+    title: Submarine cables and the geopolitics of the internet
+    author: Camille Morel
+    publisher: Atlantic Council
+    year: 2021
+    notes: 海底ケーブルの地政学的側面を論じた政策分析。地政学的リスクの整理に有用。
+
+  - source_key: src3
+    kind: BOOK
+    title: コンテナ物語——世界を変えたのは「箱」の発明だった
+    author: マルク・レビンソン
+    publisher: 日経BP
+    year: 2007
+    notes: 同時代の物理インフラ革命との比較のため参照。標準化→集中というパターンの比較軸。
+
+  - source_key: src4
+    kind: WEBSITE
+    title: Submarine Cable Map
+    author: TeleGeography
+    url: https://www.submarinecablemap.com/
+    notes: 現在の海底ケーブル所有構造をビジュアルで確認できる無料ツール。一次データとして参照。
+
+relations:
+  - to_case: containerization
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも「物理インフラの標準化→ネットワーク効果→最大利用者への所有集中」という共通メカニズムで動いた。コンテナはMcLean、ケーブルはBig Techが「最大利用者にして所有者」になった。
+
+  - to_case: japan-shipping-foc
+    relation_type: SIMILAR_MECHANISM
+    note: どちらも国家的な担い手（日本籍船社・国家コンソーシアム）が構造変化で中核から外れた。日本海運はコスト裁定で、海底ケーブルは技術変化と資本力差で。
+
+  - to_case: tdl-founding
+    relation_type: CONTRAST
+    note: TDLはIP（Disney）と運営（OLC）の分離で双方が利益を得た。海底ケーブルはBig Techがインフラと情報サービスを垂直統合し、従来のキャリアを排除した。分離vs統合という対照的な戦略。

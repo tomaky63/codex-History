@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =====================
+   Design tokens
+   ===================== */
+:root {
+  --bg:           #f7f3ec;
+  --bg-card:      #fffdf7;
+  --bg-soft:      #faf5e8;
+  --bg-strong:    #ede4d1;
+  --text:         #1a1a1a;
+  --text-muted:   #52463a;
+  --text-caption: #8a7a58;
+  --border:       #d9cfb8;
+  --accent:       #6e1f2a;
+  --accent-soft:  #ede4d1;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-serif), -apple-system, BlinkMacSystemFont,
+               "Hiragino Kaku Gothic ProN", "Yu Gothic UI", system-ui, sans-serif;
+  /* body default uses sans-serif; serif is only pulled in via .font-serif utilities. */
+  font-family: -apple-system, BlinkMacSystemFont,
+               "Hiragino Kaku Gothic ProN", "Yu Gothic UI", system-ui, sans-serif;
+}
+
+/* =====================
+   Prose (Markdown 本文)
+   ===================== */
+.prose {
+  color: var(--text);
+}
+.prose h2 {
+  @apply font-serif text-xl font-bold mt-10 mb-3 border-b border-cream-500 pb-2 text-ink-900 tracking-tight;
+}
+.prose h3 {
+  @apply font-serif text-base font-semibold mt-6 mb-2 text-ink-900;
+}
+.prose h4 {
+  @apply font-serif text-sm font-semibold mt-4 mb-1 text-ink-700;
+}
+.prose p {
+  @apply leading-[1.9] mb-4 text-ink-900;
+}
+.prose ul {
+  @apply list-disc pl-5 mb-4 space-y-1;
+}
+.prose ol {
+  @apply list-decimal pl-5 mb-4 space-y-1;
+}
+.prose li {
+  @apply text-ink-900;
+}
+.prose pre {
+  @apply bg-cream-100 border border-cream-500 rounded p-4 overflow-x-auto text-sm mb-4;
+}
+.prose code {
+  @apply bg-cream-100 border border-cream-500 rounded px-1 text-sm font-mono text-ink-700;
+}
+.prose pre code {
+  @apply bg-transparent border-0 p-0;
+}
+.prose strong {
+  @apply font-semibold text-ink-900;
+}
+.prose em {
+  @apply italic;
+}
+.prose blockquote {
+  @apply border-l-4 border-wine pl-4 text-ink-700 italic my-4;
+}
+.prose a {
+  @apply text-wine underline underline-offset-2 hover:text-wine-dark;
+}
+.prose hr {
+  @apply border-cream-500 my-8;
+}
+.prose table {
+  @apply w-full border-collapse my-4 text-sm;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.prose th {
+  @apply text-left font-semibold text-ink-700 bg-cream-100 border border-cream-500 px-3 py-2;
+}
+.prose td {
+  @apply border border-cream-500 px-3 py-2 align-top;
+}
+.prose img {
+  @apply max-w-full h-auto;
+}

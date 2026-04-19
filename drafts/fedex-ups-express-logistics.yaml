@@ -1,0 +1,191 @@
+# drafts/fedex-ups-express-logistics.yaml
+# FedEx/UPSとエクスプレス物流ネットワーク——「翌日届く」を産業に変えた50年
+
+case:
+  slug: fedex-ups-express-logistics
+  title: FedEx/UPSとエクスプレス物流ネットワーク——「翌日届く」を産業に変えた50年
+  period_start: 1971
+  period_end: 2022
+  primary_themes:
+    - standardization-wins
+    - regulatory-turning-points
+
+events:
+  - id: ev1
+    year: 1971
+    title: Federal Express設立——ハブ&スポーク夜間航空貨物という「論文のアイデア」を会社にする
+    description: フレッド・スミスがイェール大学在学中に構想した「すべての荷物を中央ハブに集め、夜間ソートして翌朝届ける」アイデアを会社にした。家族信託の約400万ドルと外部VCから調達した7千万ドルを元手にFederal Express Corporationを設立。当時の常識は「点と点を直送する」宅配で、ハブ経由という迂回は非効率に見えた。スミスは「スケールした時にのみ合理的になるモデル」に賭けた。
+    event_type: FOUNDING
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev2
+    year: 1973
+    title: 初運航——14都市・186個の小包と「時間確定配達」という新商品カテゴリーの誕生
+    description: 1973年4月17日夜、FedExの14機がメンフィスハブに集結し、翌朝14都市への配達を完了（186個）。「翌日午前10時30分までに届けます」という時間確定保証を初めて実現した。速さではなく確実性——これが新しい商品だった。1975年に損益分岐点を超え、1983年には買収なしで米国初の売上10億ドルサービス企業に。スローガン「Absolutely, Positively Overnight」は時間確定という競争軸を象徴した。
+    event_type: BREAKTHROUGH
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev3
+    year: 1978
+    title: 米国航空規制緩和法——小型機制約の撤廃でFedExのスケールが解放
+    description: カーター大統領署名のAirline Deregulation Act（航空規制緩和法）が航空貨物の路線・機材・料金規制を撤廃。それまでFedExは積載量7,500ポンド以下の小型機しか使えない制約の中で運営していた。規制撤廃後、大型ジェット（727・747）を即時導入し、1機当たり輸送量を大幅拡大。1978〜1985年で売上は6倍以上に成長した。同法はSouthwest Airlinesの旅客路線拡大も同時に解放した。
+    event_type: REGULATORY_CHANGE
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev4
+    year: 1986
+    title: COSMOSとPOWERSHIPによる物流の情報化——「物の物流」から「情報＋物の物流」へ
+    description: 1979年導入のCOSMOS（全荷物リアルタイム追跡）に続き、1986年からPOWERSHIP端末を大口顧客施設に設置。顧客が自社内でラベル印刷・出荷記録管理・追跡照会を行えるようにした。FedExが顧客の業務プロセスに統合されることで、スイッチングコストが急上昇した。UPSも1994年のUPS Onlineで応答。「物流のIT化」が物理ネットワークと同等の競争優位になった転換点。
+    event_type: TECHNOLOGY_SHIFT
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev5
+    year: 1999
+    title: UPS NYSE上場（$547億）・FedEx Ground創設——eコマース物流インフラとして確立
+    description: 1999年、UPSが$54.7億を調達するNYSE史上最大規模のIPOを実施。1907年の創業から92年間プライベートだったUPSが「テクノロジー会社でもある物流企業」として資本市場に登場。同年FedExはCaliber Systemを買収してFedEx Ground（2000年創設）を形成し、地上配送網を補完した。Amazon（1994年設立）・eBay（1995年）のeコマース台頭で、B2C小口配送需要が爆発的に拡大する中、両社がその主要インフラとして確立した。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+  - id: ev6
+    year: 2013
+    title: Amazon Logistics立ち上げ——最大顧客が競合になる構造転換
+    description: 2013年クリスマスシーズンにFedEx・UPSがAmazonの急増荷物を捌き切れず大規模配達遅延が発生。Amazonは「物流の外部依存は戦略リスク」と判断し自社物流網の内製化を開始。2016年にAmazon Airを立ち上げ、2018年にDSP（Delivery Service Partner）プログラムでラストワンマイル網を急拡大。2021年に米国で年間約46億個を配送し、2022年に米国小口宅配のシェアでFedExとUPSを個別に上回った。数十年で構築したネットワークが8年で複製された。
+    event_type: CRISIS
+    is_turning_point: true
+    display_order: 1
+
+  - id: ev7
+    year: 2020
+    title: コロナ禍のeコマース急増——FedEx/UPS需要最高水準とAmazonの最終追い越し
+    description: 2020年のコロナ禍で世界的なeコマース需要が急増し、FedEx・UPS両社は過去最高の荷物量と売上を記録。一方でAmazon Logisticsもコロナ禍で急拡大。FedExは2019年にAmazonとの契約を打ち切りBtoC直販に注力する戦略を取ったが、Amazon依存からの脱却と競合との向き合いを同時に進める難しい局面に入った。UPSも収益性改善のため高単価荷物への選別を進め、量より利益を重視する戦略に転換した。
+    event_type: BREAKTHROUGH
+    is_turning_point: false
+    display_order: 1
+
+entities:
+  - slug: fedex
+    name: FedEx（フェデックス）
+    kind: COMPANY
+    description: 1971年設立（米国テネシー州メンフィス）。フレッド・スミスによるハブ&スポーク夜間航空貨物ネットワークの発明と「時間確定配達保証」という新商品カテゴリーの創造者。2022年時点で世界220カ国・1日平均1,600万個以上を配達。航空機保有数では世界最大規模。2019年にAmazonとの契約を終了し、BtoC直販・医薬品・高付加価値荷物へ注力する戦略転換を実行中。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: ups
+    name: UPS（United Parcel Service）
+    kind: COMPANY
+    description: 1907年設立（米国ジョージア州アトランタ）。ジム・ケイシーの地上宅配から出発し、1988年に自社航空会社を取得してエクスプレス物流に参入。1999年NYSE上場。2022年時点で世界220カ国・1日平均2,400万個以上を配達。FedExが航空起源なのに対しUPSは地上網が起源で、eコマースB2C配送での強みを持つ。「テクノロジー会社でもある物流会社」として自己定義。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: fred-smith
+    name: フレデリック・スミス
+    kind: PERSON
+    description: FedEx創業者・元CEO（1944〜）。イェール大学在学中にハブ&スポーク夜間配送ネットワークのアイデアを構想。ベトナム帰還後の1971年に設立し、4年間の莫大な赤字と倒産リスクを「ネットワーク型ビジネスには臨界規模まで投資が必要」という確信で乗り越えた。フォーチュン500社の中で最も「論文が会社になった」珍しい起業家の一人。2022年に会長に退き後継者に譲った。
+    roles_in_case:
+      - PROTAGONIST
+
+  - slug: amazon-inc
+    name: Amazon.com, Inc.
+    kind: COMPANY
+    description: 1994年設立。eコマースの急成長によりFedEx・UPSの最大顧客となったが、2013年から自社物流網の構築を開始。Amazon Air・DSPプログラム・アマゾンロジスティクスにより、2022年に米国小口宅配シェアでFedEX・UPSを個別に超えた。「最大顧客が最大競合になる」という構造変化の象徴的事例。FedExは2019年にAmazonとの配送契約を打ち切り、競合関係を鮮明にした。
+    roles_in_case:
+      - DISRUPTOR
+
+  - slug: dhl
+    name: DHL（ドイツポスト・DHL）
+    kind: COMPANY
+    description: 1969年設立（米国）のエクスプレス物流会社。2002年にドイツポストに完全買収されてドイツポストDHLグループの中核ブランドに。欧州・新興国市場でのエクスプレス物流でFedEx・UPSと競合し、特にアジア・中東・アフリカでの存在感が強い。FedEX・UPSの二強に対して欧州と新興国市場で競争を挑む第三の軸として機能し、「グローバル物流三強」体制を形成している。
+    roles_in_case:
+      - ANTAGONIST
+
+lessons:
+  - id: l1
+    statement: ネットワーク型ビジネスは「スケール前は常に赤字」という構造を持つ。FedExは1973〜1975年の2年間、明らかに赤字で運営を続けた。この「臨界規模の手前での死の谷」を渡り切れる資本と確信があるかどうかが、ネットワーク型産業の参入障壁の本質だ。
+    kind: MECHANISM
+    applies_to: ネットワーク型ビジネス（物流・通信・プラットフォーム）への参入評価、「臨界規模前の赤字」の判断
+    tag_refs:
+      - pattern/network-effect
+      - pattern/cost-structure-shift
+
+  - id: l2
+    statement: 「速さ」より「確実性」の方が価格プレミアムを正当化する。FedExはUSPSより10〜20倍高い価格でも「絶対確実に翌日届く」という確定性に対してプレミアムを課した。顧客が本当に払っているのは「速度」ではなく「予測可能性のリスクヘッジ」だ。
+    kind: MECHANISM
+    applies_to: プレミアム価格設定の根拠設計、「速さ」「安さ」に代わる競争軸の発見
+    tag_refs:
+      - pattern/customer-interface-winner
+      - pattern/standardization
+
+  - id: l3
+    statement: 顧客の業務プロセスへの統合（POWERSHIP型）は価格競争を無効化する最強の参入障壁になる。FedExが顧客施設にPOWERSHIPを設置したことで、競合への乗り換えには「ITシステム移行＋トレーニング＋データ移行」のコストが発生した。「物を届ける」のではなく「業務の一部になる」ことがネットワークの粘着性を高める。
+    kind: PATTERN
+    applies_to: B2Bサービスの顧客統合戦略、スイッチングコストを設計するための「業務プロセス統合」の評価
+    tag_refs:
+      - pattern/customer-interface-winner
+      - driver/technology-shift
+
+  - id: l4
+    statement: 「最大顧客が競合になる」リスクはプラットフォーム依存の構造的帰結だ。FedEx・UPSがAmazonの荷物量に依存するほど、Amazonは物流ノウハウを学習し、やがて自社内製化の動機と能力を得た。単一顧客への依存が高まるほど、その顧客が「内製化」することのリスクが高まる。
+    kind: ANTI_PATTERN
+    applies_to: 大口単一顧客への依存リスク評価、顧客が競合になる「垂直統合による内製化」の予測
+    tag_refs:
+      - pattern/network-effect
+      - scope/industry-restructuring
+
+  - id: l5
+    statement: ハブ&スポークは「直感的には非効率に見えるが、スケールすると最も効率的」な構造の典型だ。N都市の直接接続はN(N-1)/2ルートが必要だが、ハブ経由ならNルートで済む。ネットワーク設計では「個々の取引の効率」より「ネットワーク全体の最適化」の方が重要な場合がある。
+    kind: HEURISTIC
+    applies_to: ネットワーク・インフラ設計の最適化判断、「直接接続vs中継」のトレードオフ評価
+    tag_refs:
+      - pattern/network-effect
+      - pattern/standardization
+
+sources:
+  - source_key: src1
+    kind: BOOK
+    title: "Absolutely, Positively: A Story of Federal Express and Leadership"
+    author: Laurie Deschamps
+    publisher: HarperBusiness
+    year: 1996
+    notes: FedExの創業期から成長期の組織文化・フレッド・スミスのリーダーシップ・ハブ&スポークシステムの設計思想を内側から描いたノンフィクション。「時間確定保証」という競争軸の発明がどのように意思決定されたかを理解するための参照文献。
+
+  - source_key: src2
+    kind: BOOK
+    title: Big Brown — The Untold Story of UPS
+    author: Greg Niemann
+    publisher: Jossey-Bass
+    year: 2007
+    notes: 1907年のジム・ケイシー創業から2000年代のeコマース対応まで、UPSの100年の歴史を追った企業史。地上配送の漸進的最適化文化・従業員持ち株制度・1999年IPOの意思決定プロセスを詳述。FedExとの対比でUPSの独自性を理解するための文献。
+
+  - source_key: src3
+    kind: BOOK
+    title: The Everything Store
+    author: Brad Stone
+    publisher: Little, Brown and Company
+    year: 2013
+    notes: Amazon の成長史。第10章以降でAmazonがFedEx・UPSへの依存から自社物流構築へ転換するプロセスを詳述。「最大顧客が競合になる」構造変化の意思決定プロセスを理解するための一次情報に近い文献。
+
+  - source_key: src4
+    kind: ARTICLE
+    title: "The Logic of Hub-and-Spoke Networks"
+    author: Jan Brueckner
+    publisher: Journal of Law and Economics
+    year: 2002
+    notes: 航空ハブ&スポークネットワークの経済的合理性を航空産業の実データで分析した学術論文。FedExモデルを経済学的に説明するためのネットワーク効果・ロードファクター・コスト構造の定量的裏付けを提供。ハブ経由が「なぜ直送より効率的か」を理論的に理解するための参照文献。
+
+relations:
+  - to_case: southwest-airlines-lcc
+    relation_type: SIMILAR_MECHANISM
+    note: 1978年の航空規制緩和法という同じ制度変更が、Southwest Airlinesの旅客路線拡大とFedExの大型機導入・ネットワーク拡大を同時に解放した。規制が「産業を凍結する」という点では同じ構造だが、Southwest（ポイントツーポイント）とFedEx（ハブ&スポーク）という逆のネットワーク設計が、どちらも同じ規制緩和から生まれた対照的な事例。
+
+  - to_case: containerization
+    relation_type: SIMILAR_MECHANISM
+    note: コンテナ化が「規格化された鉄箱」で海運の荷役コストを激減させたように、FedExは「規格化された夜間配達プロセス」でエクスプレス物流のコストを激減させた。どちらも「物理的な輸送手段ではなく、輸送プロセスの標準化」が革命をもたらした。マルコム・マクリーンとフレッド・スミスの共通点は「既存業界の外部からの問い直し」。
+
+  - to_case: amazon-aws
+    relation_type: SIMILAR_MECHANISM
+    note: AmazonがAWSを通じて「インフラ構築コストを内製化してサードパーティに提供する」モデルを作ったように、Amazon Logisticsは「物流インフラを内製化してサードパーティ出品者に提供する」モデルを構築した。FedEx/UPSはAWSにとってのIBMサーバーと同じ立場——自社のインフラが「プラットフォームの一機能」に置き換えられる脅威に直面している。
