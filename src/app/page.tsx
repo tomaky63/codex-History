@@ -114,14 +114,14 @@ export default async function HomePage() {
               <Link
                 key={t.slug}
                 href={`/themes/${t.slug}`}
-                className="border border-cream-500 rounded-[10px] bg-cream-50 p-5 hover:border-wine/40 hover:shadow-sm transition-all"
+                className="min-w-0 overflow-hidden border border-cream-500 rounded-[10px] bg-cream-50 p-5 hover:border-wine/40 hover:shadow-sm transition-all"
               >
-                <div className="flex items-baseline justify-between mb-1.5">
-                  <h3 className="font-serif text-[17px] font-bold leading-snug tracking-tight">{t.name}</h3>
-                  <span className="font-mono text-[11px] text-ink-500">{t.cases.length}</span>
+                <div className="flex items-baseline justify-between gap-2 mb-1.5">
+                  <h3 className="min-w-0 font-serif text-[17px] font-bold leading-snug tracking-tight break-words">{t.name}</h3>
+                  <span className="font-mono text-[11px] text-ink-500 shrink-0">{t.cases.length}</span>
                 </div>
                 {t.description && (
-                  <p className="text-[12px] text-ink-600 leading-[1.65]">{t.description}</p>
+                  <p className="text-[12px] text-ink-600 leading-[1.65] break-words">{t.description}</p>
                 )}
               </Link>
             ))}

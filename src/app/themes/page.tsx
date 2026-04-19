@@ -42,14 +42,14 @@ export default async function ThemesPage() {
             <Link
               key={t.id}
               href={`/themes/${t.slug}`}
-              className="block border border-cream-500 rounded-[10px] bg-cream-50 p-5 hover:border-wine/40 hover:shadow-sm transition-all"
+              className="min-w-0 overflow-hidden block border border-cream-500 rounded-[10px] bg-cream-50 p-5 hover:border-wine/40 hover:shadow-sm transition-all"
             >
-              <div className="flex justify-between items-start mb-2">
-                <h2 className="font-serif text-[20px] font-bold tracking-tight">{t.name}</h2>
-                <span className="font-mono text-[12px] text-ink-500">{t.cases.length}</span>
+              <div className="flex justify-between items-start gap-2 mb-2">
+                <h2 className="min-w-0 font-serif text-[20px] font-bold tracking-tight break-words">{t.name}</h2>
+                <span className="font-mono text-[12px] text-ink-500 shrink-0">{t.cases.length}</span>
               </div>
               {t.description && (
-                <p className="text-[13px] text-ink-700 leading-[1.75] mb-3.5">{t.description}</p>
+                <p className="text-[13px] text-ink-700 leading-[1.75] mb-3.5 break-words">{t.description}</p>
               )}
               <div className="pt-3 border-t border-cream-400">
                 {t.cases.slice(0, 3).map(ct => (
