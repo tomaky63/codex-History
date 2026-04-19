@@ -20,7 +20,7 @@ jobs:
     env:
       # DB は CI で seed から構築する。
       DATABASE_URL: "file:./prisma/data/codex.db"
-      NEXT_PUBLIC_BASE_PATH: /codex-history
+      NEXT_PUBLIC_BASE_PATH: /codex-History
       NEXT_PUBLIC_HIDE_ADMIN_LINKS: "1"
     steps:
       - uses: actions/checkout@v4
